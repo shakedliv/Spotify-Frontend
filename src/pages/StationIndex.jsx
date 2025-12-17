@@ -55,7 +55,7 @@ export function StationIndex() {
     return (
         <main className="station-index">
             <header>
-                <h2>Stations</h2>
+                <h2>Stations!</h2>
                 {userService.getLoggedinUser() && <button onClick={onAddStation}>Add a Station</button>}
             </header>
             <StationFilter filterBy={filterBy} setFilterBy={setFilterBy} />
