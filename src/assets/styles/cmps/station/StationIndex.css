@@ -1,5 +1,5 @@
 .station-index {
-    & header {
+    /* & header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -14,5 +14,7 @@
 
     & button {
         margin-inline-end: 0;
-    }
+    } */
+
+  
 }

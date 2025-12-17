@@ -32,11 +32,11 @@ export function StationDetails() {
       <h1>Station Details</h1>
       {station && <div>
         <h3>{station.name}</h3>
-        <h4>{station.speed} KMH</h4>
+
         <pre> {JSON.stringify(station, null, 2)} </pre>
       </div>
       }
-      <button onClick={() => { onAddStationMsg(station._id) }}>Add station msg</button>
+   
 
     </section>
   )

@@ -28,41 +28,15 @@ export function StationIndex() {
         }
     }
 
-    async function onAddStation() {
-        const station = stationService.getEmptyStation()
-        station.name = prompt('Name?', 'Some Name')
-        try {
-            const savedStation = await addStation(station)
-            showSuccessMsg(`Station added (id: ${savedStation._id})`)
-        } catch (err) {
-            showErrorMsg('Cannot add station')
-        }        
-    }
 
-    async function onUpdateStation(station) {
-        const speed = +prompt('New speed?', station.speed) || 0
-        if(speed === 0 || speed === station.speed) return
 
-        const stationToSave = { ...station, speed }
-        try {
-            const savedStation = await updateStation(stationToSave)
-            showSuccessMsg(`Station updated, new speed: ${savedStation.speed}`)
-        } catch (err) {
-            showErrorMsg('Cannot update station')
-        }        
-    }
 
     return (
         <main className="station-index">
-            <header>
-                <h2>Stations!</h2>
-                {userService.getLoggedinUser() && <button onClick={onAddStation}>Add a Station!!</button>}
-            </header>
-            <StationFilter filterBy={filterBy} setFilterBy={setFilterBy} />
+            {/* <StationFilter filterBy={filterBy} setFilterBy={setFilterBy} /> */}
             <StationList 
-                stations={stations}
                 onRemoveStation={onRemoveStation} 
-                onUpdateStation={onUpdateStation}/>
+               />
         </main>
     )
 }
