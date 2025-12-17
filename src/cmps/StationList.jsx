@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
-import { userService } from '../services/user'
+
 import { StationPreview } from './StationPreview'
-import { Link } from 'react-router-dom'
+
 
 export function StationList({ onRemoveStation }) {
 
