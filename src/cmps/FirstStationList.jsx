@@ -3,10 +3,8 @@ import { useSelector } from 'react-redux'
 import { StationPreview } from './StationPreview'
 
 
-export function FirstStationList({ onRemoveStation }) {
+export function FirstStationList({ onRemoveStation, stations }) {
 
-
-    const stations = useSelector(storeState => storeState.stationModule.stations)
 
 
     return (

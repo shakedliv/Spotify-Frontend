@@ -3,8 +3,9 @@ import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-import { loadStation } from '../store/actions/station.actions'
+import { loadStation, updateStation } from '../store/actions/station.actions'
 import { StationEdit } from '../cmps/StationEdit'
+import { TrackList } from '../cmps/TrackList'
 
 
 export function StationDetails() {
@@ -20,6 +21,19 @@ export function StationDetails() {
 
   console.log(station)
 
+  async function onRemoveTrack(trackId) {
+    const updatedTracks = station.tracks.filter(track => track.id !== trackId)
+    const updatedStation = { ...station, tracks: updatedTracks }
+    await updateStation(updatedStation)
+  }
+
+  async function onAddTrack(track) {
+    const updatedTracks = [...station.tracks, track]
+    const updatedStation = { ...station, tracks: updatedTracks }
+    await updateStation(updatedStation)
+  }
+
+
   if (!station) return <div>Loading...</div>
 
   return (
@@ -33,7 +47,18 @@ export function StationDetails() {
         <h5>station creator</h5>
       </header>
 
+      <section className='station-details-btns'>
+        <button className='play-btn'>Play</button>
+        <button className='shuffle-btn'>Shuffle</button>
+        <button>List</button>
+      </section>
+
       {/* onaddTrack/ onremoveTrack */}
+      <TrackList
+        tracks={station.tracks}
+        onRemoveTrack={onRemoveTrack}
+        onAddTrack={onAddTrack}
+      />
 
       {isEditOpen && (
         <StationEdit

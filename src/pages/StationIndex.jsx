@@ -31,24 +31,25 @@ export function StationIndex() {
     }
 
 
-
-
     return (
         <main className="station-index">
             {/* <StationFilter filterBy={filterBy} setFilterBy={setFilterBy} /> */}
             <section >
                 <FirstStationList
                     onRemoveStation={onRemoveStation}
+                    stations={stations}
                 />
             </section>
             <h2>Made For</h2>
             <StationList
                 onRemoveStation={onRemoveStation}
+                stations={stations}
             />
 
             <h2>Jump back in</h2>
             <StationList
                 onRemoveStation={onRemoveStation}
+                stations={stations}
             />
         </main>
     )
