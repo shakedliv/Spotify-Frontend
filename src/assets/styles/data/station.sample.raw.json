@@ -1,0 +1,5263 @@
+{
+  "playlist": {
+    "collaborative": false,
+    "description": "A daily selection of chill beats - perfect to help you relax &amp; study 📚  <a href=\"http://bit.ly/42PyZWt\">Click here if you need lofi sleep 💤 </a>",
+    "external_urls": {
+      "spotify": "https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM"
+    },
+    "href": "https://api.spotify.com/v1/playlists/0vvXsWCC9xrXsKd4FyS8kM",
+    "id": "0vvXsWCC9xrXsKd4FyS8kM",
+    "images": [
+      {
+        "height": null,
+        "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c8bc80c95b9d248cf462c0bd1",
+        "width": null
+      }
+    ],
+    "name": "Lofi Girl - beats to relax/study to",
+    "owner": {
+      "display_name": "Lofi Girl",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/user/chilledcow"
+      },
+      "href": "https://api.spotify.com/v1/users/chilledcow",
+      "id": "chilledcow",
+      "type": "user",
+      "uri": "spotify:user:chilledcow"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "AAA1+avPfklsH9IR5Z3HJ3Ks+U/EivbV",
+    "tracks": {
+      "href": "https://api.spotify.com/v1/playlists/0vvXsWCC9xrXsKd4FyS8kM/tracks",
+      "total": 500
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:0vvXsWCC9xrXsKd4FyS8kM"
+  },
+  "tracks": {
+    "href": "https://api.spotify.com/v1/playlists/0vvXsWCC9xrXsKd4FyS8kM/tracks?offset=0&limit=50&market=US&locale=*",
+    "items": [
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/667RkTKDzJP6Hi3viSrkWI"
+              },
+              "href": "https://api.spotify.com/v1/artists/667RkTKDzJP6Hi3viSrkWI",
+              "id": "667RkTKDzJP6Hi3viSrkWI",
+              "name": "Lotus Beats",
+              "type": "artist",
+              "uri": "spotify:artist:667RkTKDzJP6Hi3viSrkWI"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6Ez42bOoRelk95xv7GBMhx"
+              },
+              "href": "https://api.spotify.com/v1/artists/6Ez42bOoRelk95xv7GBMhx",
+              "id": "6Ez42bOoRelk95xv7GBMhx",
+              "name": "Notation",
+              "type": "artist",
+              "uri": "spotify:artist:6Ez42bOoRelk95xv7GBMhx"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 1,
+          "duration_ms": 138860,
+          "external_ids": {
+            "isrc": "UKZGC2510866"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/4viVdoTUvtwDfC4Rv2POvR"
+          },
+          "href": "https://api.spotify.com/v1/tracks/4viVdoTUvtwDfC4Rv2POvR",
+          "id": "4viVdoTUvtwDfC4Rv2POvR",
+          "name": "Notebooks",
+          "popularity": 21,
+          "uri": "spotify:track:4viVdoTUvtwDfC4Rv2POvR",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0nQZzyHhW4sVoTLR7kS8ZT",
+            "id": "0nQZzyHhW4sVoTLR7kS8ZT",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f6ee8a8ee5156efd1c8a33a2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f6ee8a8ee5156efd1c8a33a2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f6ee8a8ee5156efd1c8a33a2",
+                "width": 64
+              }
+            ],
+            "name": "Somewhere in Rain",
+            "release_date": "2025-11-17",
+            "release_date_precision": "day",
+            "uri": "spotify:album:0nQZzyHhW4sVoTLR7kS8ZT",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+                },
+                "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+                "id": "0wcen0V8FgQu6xYupnZMbB",
+                "name": "softy",
+                "type": "artist",
+                "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0nQZzyHhW4sVoTLR7kS8ZT"
+            },
+            "total_tracks": 15
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+              "id": "0wcen0V8FgQu6xYupnZMbB",
+              "name": "softy",
+              "type": "artist",
+              "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5zUSfxfP1NETZiaWt0Ui0a"
+              },
+              "href": "https://api.spotify.com/v1/artists/5zUSfxfP1NETZiaWt0Ui0a",
+              "id": "5zUSfxfP1NETZiaWt0Ui0a",
+              "name": "Casiio",
+              "type": "artist",
+              "uri": "spotify:artist:5zUSfxfP1NETZiaWt0Ui0a"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 15,
+          "duration_ms": 109261,
+          "external_ids": {
+            "isrc": "UKZGC2508615"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/0hOfpu6p8BMbXeMPJoscIv"
+          },
+          "href": "https://api.spotify.com/v1/tracks/0hOfpu6p8BMbXeMPJoscIv",
+          "id": "0hOfpu6p8BMbXeMPJoscIv",
+          "name": "Lament",
+          "popularity": 52,
+          "uri": "spotify:track:0hOfpu6p8BMbXeMPJoscIv",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/5yal8ikdXdfgcRoVifBbXL",
+            "id": "5yal8ikdXdfgcRoVifBbXL",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273d93a14608edfd6614f5d7239",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02d93a14608edfd6614f5d7239",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851d93a14608edfd6614f5d7239",
+                "width": 64
+              }
+            ],
+            "name": "Psy Fi",
+            "release_date": "2025-11-19",
+            "release_date_precision": "day",
+            "uri": "spotify:album:5yal8ikdXdfgcRoVifBbXL",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/225l1KEprObX8xgl8xo2Gc"
+                },
+                "href": "https://api.spotify.com/v1/artists/225l1KEprObX8xgl8xo2Gc",
+                "id": "225l1KEprObX8xgl8xo2Gc",
+                "name": "BluntOne",
+                "type": "artist",
+                "uri": "spotify:artist:225l1KEprObX8xgl8xo2Gc"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0aYl19xgofsjP7TpVlGODO"
+                },
+                "href": "https://api.spotify.com/v1/artists/0aYl19xgofsjP7TpVlGODO",
+                "id": "0aYl19xgofsjP7TpVlGODO",
+                "name": "dmtbeatz",
+                "type": "artist",
+                "uri": "spotify:artist:0aYl19xgofsjP7TpVlGODO"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5yal8ikdXdfgcRoVifBbXL"
+            },
+            "total_tracks": 11
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/225l1KEprObX8xgl8xo2Gc"
+              },
+              "href": "https://api.spotify.com/v1/artists/225l1KEprObX8xgl8xo2Gc",
+              "id": "225l1KEprObX8xgl8xo2Gc",
+              "name": "BluntOne",
+              "type": "artist",
+              "uri": "spotify:artist:225l1KEprObX8xgl8xo2Gc"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0aYl19xgofsjP7TpVlGODO"
+              },
+              "href": "https://api.spotify.com/v1/artists/0aYl19xgofsjP7TpVlGODO",
+              "id": "0aYl19xgofsjP7TpVlGODO",
+              "name": "dmtbeatz",
+              "type": "artist",
+              "uri": "spotify:artist:0aYl19xgofsjP7TpVlGODO"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 9,
+          "duration_ms": 160012,
+          "external_ids": {
+            "isrc": "UKZGC2508624"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/29Nd1GaXtzR8yQaZXSv3mt"
+          },
+          "href": "https://api.spotify.com/v1/tracks/29Nd1GaXtzR8yQaZXSv3mt",
+          "id": "29Nd1GaXtzR8yQaZXSv3mt",
+          "name": "Bambusz",
+          "popularity": 54,
+          "uri": "spotify:track:29Nd1GaXtzR8yQaZXSv3mt",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4gGsx7blPpBj7gKGmDBEfI"
+              },
+              "href": "https://api.spotify.com/v1/artists/4gGsx7blPpBj7gKGmDBEfI",
+              "id": "4gGsx7blPpBj7gKGmDBEfI",
+              "name": "Sleepermane",
+              "type": "artist",
+              "uri": "spotify:artist:4gGsx7blPpBj7gKGmDBEfI"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6dY8i34qqvAmPgYeOzHTO9"
+              },
+              "href": "https://api.spotify.com/v1/artists/6dY8i34qqvAmPgYeOzHTO9",
+              "id": "6dY8i34qqvAmPgYeOzHTO9",
+              "name": "Sling Dilly",
+              "type": "artist",
+              "uri": "spotify:artist:6dY8i34qqvAmPgYeOzHTO9"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 6,
+          "duration_ms": 108062,
+          "external_ids": {
+            "isrc": "UKZGC2510883"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/2SKnphd5d4szhRJX04TBO8"
+          },
+          "href": "https://api.spotify.com/v1/tracks/2SKnphd5d4szhRJX04TBO8",
+          "id": "2SKnphd5d4szhRJX04TBO8",
+          "name": "Saffron",
+          "popularity": 26,
+          "uri": "spotify:track:2SKnphd5d4szhRJX04TBO8",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2eI1oBbt2dIjtPDHsXk7sK"
+              },
+              "href": "https://api.spotify.com/v1/artists/2eI1oBbt2dIjtPDHsXk7sK",
+              "id": "2eI1oBbt2dIjtPDHsXk7sK",
+              "name": "meadowy",
+              "type": "artist",
+              "uri": "spotify:artist:2eI1oBbt2dIjtPDHsXk7sK"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 5,
+          "duration_ms": 116176,
+          "external_ids": {
+            "isrc": "UKZGC2510913"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/0D6qRJLQkLUAnVbKRLEjzf"
+          },
+          "href": "https://api.spotify.com/v1/tracks/0D6qRJLQkLUAnVbKRLEjzf",
+          "id": "0D6qRJLQkLUAnVbKRLEjzf",
+          "name": "bumping gums",
+          "popularity": 32,
+          "uri": "spotify:track:0D6qRJLQkLUAnVbKRLEjzf",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/7ME0KZJSMPtPHlRD7ENEU5",
+            "id": "7ME0KZJSMPtPHlRD7ENEU5",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2739667f2c5702a999612b4955a",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e029667f2c5702a999612b4955a",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048519667f2c5702a999612b4955a",
+                "width": 64
+              }
+            ],
+            "name": "Stories of Synergy",
+            "release_date": "2022-06-13",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7ME0KZJSMPtPHlRD7ENEU5",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4tQMVafcBzEyxZqY81q3Fj"
+                },
+                "href": "https://api.spotify.com/v1/artists/4tQMVafcBzEyxZqY81q3Fj",
+                "id": "4tQMVafcBzEyxZqY81q3Fj",
+                "name": "Tonion",
+                "type": "artist",
+                "uri": "spotify:artist:4tQMVafcBzEyxZqY81q3Fj"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6ysKfYgiKUTMCuq2fSTLK3"
+                },
+                "href": "https://api.spotify.com/v1/artists/6ysKfYgiKUTMCuq2fSTLK3",
+                "id": "6ysKfYgiKUTMCuq2fSTLK3",
+                "name": "xander.",
+                "type": "artist",
+                "uri": "spotify:artist:6ysKfYgiKUTMCuq2fSTLK3"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7ME0KZJSMPtPHlRD7ENEU5"
+            },
+            "total_tracks": 8
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4tQMVafcBzEyxZqY81q3Fj"
+              },
+              "href": "https://api.spotify.com/v1/artists/4tQMVafcBzEyxZqY81q3Fj",
+              "id": "4tQMVafcBzEyxZqY81q3Fj",
+              "name": "Tonion",
+              "type": "artist",
+              "uri": "spotify:artist:4tQMVafcBzEyxZqY81q3Fj"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6ysKfYgiKUTMCuq2fSTLK3"
+              },
+              "href": "https://api.spotify.com/v1/artists/6ysKfYgiKUTMCuq2fSTLK3",
+              "id": "6ysKfYgiKUTMCuq2fSTLK3",
+              "name": "xander.",
+              "type": "artist",
+              "uri": "spotify:artist:6ysKfYgiKUTMCuq2fSTLK3"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0EocooOvTYLsjqSSQdqiyi"
+              },
+              "href": "https://api.spotify.com/v1/artists/0EocooOvTYLsjqSSQdqiyi",
+              "id": "0EocooOvTYLsjqSSQdqiyi",
+              "name": "Dario Lessing",
+              "type": "artist",
+              "uri": "spotify:artist:0EocooOvTYLsjqSSQdqiyi"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 4,
+          "duration_ms": 205714,
+          "external_ids": {
+            "isrc": "GBKQU2255693"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/4jVUDGxnhwSeExTkDPGeG4"
+          },
+          "href": "https://api.spotify.com/v1/tracks/4jVUDGxnhwSeExTkDPGeG4",
+          "id": "4jVUDGxnhwSeExTkDPGeG4",
+          "name": "Holy Cloud",
+          "popularity": 54,
+          "uri": "spotify:track:4jVUDGxnhwSeExTkDPGeG4",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0O1CZH5FQWGXcPKCzqFQDK",
+            "id": "0O1CZH5FQWGXcPKCzqFQDK",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273e7661e00d4a18818812f35d3",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02e7661e00d4a18818812f35d3",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851e7661e00d4a18818812f35d3",
+                "width": 64
+              }
+            ],
+            "name": "Silent River",
+            "release_date": "2020-07-27",
+            "release_date_precision": "day",
+            "uri": "spotify:album:0O1CZH5FQWGXcPKCzqFQDK",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3gdyXwWMfOPBIZrIDMg40u"
+                },
+                "href": "https://api.spotify.com/v1/artists/3gdyXwWMfOPBIZrIDMg40u",
+                "id": "3gdyXwWMfOPBIZrIDMg40u",
+                "name": "Mila Coolness",
+                "type": "artist",
+                "uri": "spotify:artist:3gdyXwWMfOPBIZrIDMg40u"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0O1CZH5FQWGXcPKCzqFQDK"
+            },
+            "total_tracks": 7
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3gdyXwWMfOPBIZrIDMg40u"
+              },
+              "href": "https://api.spotify.com/v1/artists/3gdyXwWMfOPBIZrIDMg40u",
+              "id": "3gdyXwWMfOPBIZrIDMg40u",
+              "name": "Mila Coolness",
+              "type": "artist",
+              "uri": "spotify:artist:3gdyXwWMfOPBIZrIDMg40u"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 7,
+          "duration_ms": 159000,
+          "external_ids": {
+            "isrc": "TCAFA2001031"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/0So6OTqnnSv0yQse81c8gj"
+          },
+          "href": "https://api.spotify.com/v1/tracks/0So6OTqnnSv0yQse81c8gj",
+          "id": "0So6OTqnnSv0yQse81c8gj",
+          "name": "Far Away",
+          "popularity": 52,
+          "uri": "spotify:track:0So6OTqnnSv0yQse81c8gj",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6QtkNSYRqYxK8EkuITV3fk"
+              },
+              "href": "https://api.spotify.com/v1/artists/6QtkNSYRqYxK8EkuITV3fk",
+              "id": "6QtkNSYRqYxK8EkuITV3fk",
+              "name": "Chronodrift",
+              "type": "artist",
+              "uri": "spotify:artist:6QtkNSYRqYxK8EkuITV3fk"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 8,
+          "duration_ms": 173682,
+          "external_ids": {
+            "isrc": "UKZGC2510891"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/3kCE5QpM7etUKQ74WPfx00"
+          },
+          "href": "https://api.spotify.com/v1/tracks/3kCE5QpM7etUKQ74WPfx00",
+          "id": "3kCE5QpM7etUKQ74WPfx00",
+          "name": "Follow",
+          "popularity": 21,
+          "uri": "spotify:track:3kCE5QpM7etUKQ74WPfx00",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0Q6S7QIOyuvDYzbhpvM5FO"
+              },
+              "href": "https://api.spotify.com/v1/artists/0Q6S7QIOyuvDYzbhpvM5FO",
+              "id": "0Q6S7QIOyuvDYzbhpvM5FO",
+              "name": "Kanisan",
+              "type": "artist",
+              "uri": "spotify:artist:0Q6S7QIOyuvDYzbhpvM5FO"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2ZSBQcpkzOiygKAT0uRmaH"
+              },
+              "href": "https://api.spotify.com/v1/artists/2ZSBQcpkzOiygKAT0uRmaH",
+              "id": "2ZSBQcpkzOiygKAT0uRmaH",
+              "name": "LUQĘT",
+              "type": "artist",
+              "uri": "spotify:artist:2ZSBQcpkzOiygKAT0uRmaH"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 21,
+          "duration_ms": 131572,
+          "external_ids": {
+            "isrc": "UKZGC2510865"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/4XwqGefr6eAUjk3AjWDKEu"
+          },
+          "href": "https://api.spotify.com/v1/tracks/4XwqGefr6eAUjk3AjWDKEu",
+          "id": "4XwqGefr6eAUjk3AjWDKEu",
+          "name": "Sleepless Nights",
+          "popularity": 21,
+          "uri": "spotify:track:4XwqGefr6eAUjk3AjWDKEu",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/15EnJpBZRVPboRqgYYgyQb",
+            "id": "15EnJpBZRVPboRqgYYgyQb",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273212dcf7711fb26cbb4ce5517",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02212dcf7711fb26cbb4ce5517",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851212dcf7711fb26cbb4ce5517",
+                "width": 64
+              }
+            ],
+            "name": "Between Worlds",
+            "release_date": "2022-08-29",
+            "release_date_precision": "day",
+            "uri": "spotify:album:15EnJpBZRVPboRqgYYgyQb",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4XbnhifKeOnyfTsCInrQsX"
+                },
+                "href": "https://api.spotify.com/v1/artists/4XbnhifKeOnyfTsCInrQsX",
+                "id": "4XbnhifKeOnyfTsCInrQsX",
+                "name": "No Spirit",
+                "type": "artist",
+                "uri": "spotify:artist:4XbnhifKeOnyfTsCInrQsX"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/15EnJpBZRVPboRqgYYgyQb"
+            },
+            "total_tracks": 9
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4XbnhifKeOnyfTsCInrQsX"
+              },
+              "href": "https://api.spotify.com/v1/artists/4XbnhifKeOnyfTsCInrQsX",
+              "id": "4XbnhifKeOnyfTsCInrQsX",
+              "name": "No Spirit",
+              "type": "artist",
+              "uri": "spotify:artist:4XbnhifKeOnyfTsCInrQsX"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 7,
+          "duration_ms": 135600,
+          "external_ids": {
+            "isrc": "GBKQU2278941"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/0wqIORu9VDFF2iasJZQpm8"
+          },
+          "href": "https://api.spotify.com/v1/tracks/0wqIORu9VDFF2iasJZQpm8",
+          "id": "0wqIORu9VDFF2iasJZQpm8",
+          "name": "7 Suns",
+          "popularity": 50,
+          "uri": "spotify:track:0wqIORu9VDFF2iasJZQpm8",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/5aybUV9B3sif16GQUSTTLr",
+            "id": "5aybUV9B3sif16GQUSTTLr",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273fdc81852835c53ecfb593c53",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02fdc81852835c53ecfb593c53",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851fdc81852835c53ecfb593c53",
+                "width": 64
+              }
+            ],
+            "name": "the life a of a lofi boy (instrumentals)",
+            "release_date": "2025-07-16",
+            "release_date_precision": "day",
+            "uri": "spotify:album:5aybUV9B3sif16GQUSTTLr",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5aybUV9B3sif16GQUSTTLr"
+            },
+            "total_tracks": 7
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7185Q95lPFld0aoPqO6e0U"
+              },
+              "href": "https://api.spotify.com/v1/artists/7185Q95lPFld0aoPqO6e0U",
+              "id": "7185Q95lPFld0aoPqO6e0U",
+              "name": "Blue Wednesday",
+              "type": "artist",
+              "uri": "spotify:artist:7185Q95lPFld0aoPqO6e0U"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1eDIWVJt7ZWKsrXw5WVNsN"
+              },
+              "href": "https://api.spotify.com/v1/artists/1eDIWVJt7ZWKsrXw5WVNsN",
+              "id": "1eDIWVJt7ZWKsrXw5WVNsN",
+              "name": "Lofi Girl",
+              "type": "artist",
+              "uri": "spotify:artist:1eDIWVJt7ZWKsrXw5WVNsN"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6bmlMHgSheBauioMgKv2tn"
+              },
+              "href": "https://api.spotify.com/v1/artists/6bmlMHgSheBauioMgKv2tn",
+              "id": "6bmlMHgSheBauioMgKv2tn",
+              "name": "Powfu",
+              "type": "artist",
+              "uri": "spotify:artist:6bmlMHgSheBauioMgKv2tn"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 2,
+          "duration_ms": 145154,
+          "external_ids": {
+            "isrc": "UKZGC2506362"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/5prg752VhhJHudG8wRsTj5"
+          },
+          "href": "https://api.spotify.com/v1/tracks/5prg752VhhJHudG8wRsTj5",
+          "id": "5prg752VhhJHudG8wRsTj5",
+          "name": "bridge to my heart - instrumental",
+          "popularity": 57,
+          "uri": "spotify:track:5prg752VhhJHudG8wRsTj5",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/5yal8ikdXdfgcRoVifBbXL",
+            "id": "5yal8ikdXdfgcRoVifBbXL",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273d93a14608edfd6614f5d7239",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02d93a14608edfd6614f5d7239",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851d93a14608edfd6614f5d7239",
+                "width": 64
+              }
+            ],
+            "name": "Psy Fi",
+            "release_date": "2025-11-19",
+            "release_date_precision": "day",
+            "uri": "spotify:album:5yal8ikdXdfgcRoVifBbXL",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/225l1KEprObX8xgl8xo2Gc"
+                },
+                "href": "https://api.spotify.com/v1/artists/225l1KEprObX8xgl8xo2Gc",
+                "id": "225l1KEprObX8xgl8xo2Gc",
+                "name": "BluntOne",
+                "type": "artist",
+                "uri": "spotify:artist:225l1KEprObX8xgl8xo2Gc"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0aYl19xgofsjP7TpVlGODO"
+                },
+                "href": "https://api.spotify.com/v1/artists/0aYl19xgofsjP7TpVlGODO",
+                "id": "0aYl19xgofsjP7TpVlGODO",
+                "name": "dmtbeatz",
+                "type": "artist",
+                "uri": "spotify:artist:0aYl19xgofsjP7TpVlGODO"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5yal8ikdXdfgcRoVifBbXL"
+            },
+            "total_tracks": 11
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/225l1KEprObX8xgl8xo2Gc"
+              },
+              "href": "https://api.spotify.com/v1/artists/225l1KEprObX8xgl8xo2Gc",
+              "id": "225l1KEprObX8xgl8xo2Gc",
+              "name": "BluntOne",
+              "type": "artist",
+              "uri": "spotify:artist:225l1KEprObX8xgl8xo2Gc"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0aYl19xgofsjP7TpVlGODO"
+              },
+              "href": "https://api.spotify.com/v1/artists/0aYl19xgofsjP7TpVlGODO",
+              "id": "0aYl19xgofsjP7TpVlGODO",
+              "name": "dmtbeatz",
+              "type": "artist",
+              "uri": "spotify:artist:0aYl19xgofsjP7TpVlGODO"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 7,
+          "duration_ms": 130048,
+          "external_ids": {
+            "isrc": "UKZGC2508622"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/3oC11O9bOulXIR9hzQhoWN"
+          },
+          "href": "https://api.spotify.com/v1/tracks/3oC11O9bOulXIR9hzQhoWN",
+          "id": "3oC11O9bOulXIR9hzQhoWN",
+          "name": "Serenityville",
+          "popularity": 53,
+          "uri": "spotify:track:3oC11O9bOulXIR9hzQhoWN",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0r7O4KBzhl6RxxDjyvWy8j"
+              },
+              "href": "https://api.spotify.com/v1/artists/0r7O4KBzhl6RxxDjyvWy8j",
+              "id": "0r7O4KBzhl6RxxDjyvWy8j",
+              "name": "Klemsis",
+              "type": "artist",
+              "uri": "spotify:artist:0r7O4KBzhl6RxxDjyvWy8j"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 18,
+          "duration_ms": 109714,
+          "external_ids": {
+            "isrc": "UKZGC2510897"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/4zlg7rGdvgHDJBGmmyOkce"
+          },
+          "href": "https://api.spotify.com/v1/tracks/4zlg7rGdvgHDJBGmmyOkce",
+          "id": "4zlg7rGdvgHDJBGmmyOkce",
+          "name": "Dreaming",
+          "popularity": 36,
+          "uri": "spotify:track:4zlg7rGdvgHDJBGmmyOkce",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0nQZzyHhW4sVoTLR7kS8ZT",
+            "id": "0nQZzyHhW4sVoTLR7kS8ZT",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f6ee8a8ee5156efd1c8a33a2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f6ee8a8ee5156efd1c8a33a2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f6ee8a8ee5156efd1c8a33a2",
+                "width": 64
+              }
+            ],
+            "name": "Somewhere in Rain",
+            "release_date": "2025-11-17",
+            "release_date_precision": "day",
+            "uri": "spotify:album:0nQZzyHhW4sVoTLR7kS8ZT",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+                },
+                "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+                "id": "0wcen0V8FgQu6xYupnZMbB",
+                "name": "softy",
+                "type": "artist",
+                "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0nQZzyHhW4sVoTLR7kS8ZT"
+            },
+            "total_tracks": 15
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+              "id": "0wcen0V8FgQu6xYupnZMbB",
+              "name": "softy",
+              "type": "artist",
+              "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 6,
+          "duration_ms": 120000,
+          "external_ids": {
+            "isrc": "UKZGC2508606"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/4bHezbxRxWIzmz3W0b1Fy0"
+          },
+          "href": "https://api.spotify.com/v1/tracks/4bHezbxRxWIzmz3W0b1Fy0",
+          "id": "4bHezbxRxWIzmz3W0b1Fy0",
+          "name": "Nimbus",
+          "popularity": 52,
+          "uri": "spotify:track:4bHezbxRxWIzmz3W0b1Fy0",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/4VoRbaeHOWTIa3WYaGhr55",
+            "id": "4VoRbaeHOWTIa3WYaGhr55",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2735c18cc55bbead3397d196c3f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e025c18cc55bbead3397d196c3f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048515c18cc55bbead3397d196c3f",
+                "width": 64
+              }
+            ],
+            "name": "Lofi Girl x Assassin's Creed Shadows - stealthy beats to relax to",
+            "release_date": "2025-03-26",
+            "release_date_precision": "day",
+            "uri": "spotify:album:4VoRbaeHOWTIa3WYaGhr55",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/4VoRbaeHOWTIa3WYaGhr55"
+            },
+            "total_tracks": 20
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1eDIWVJt7ZWKsrXw5WVNsN"
+              },
+              "href": "https://api.spotify.com/v1/artists/1eDIWVJt7ZWKsrXw5WVNsN",
+              "id": "1eDIWVJt7ZWKsrXw5WVNsN",
+              "name": "Lofi Girl",
+              "type": "artist",
+              "uri": "spotify:artist:1eDIWVJt7ZWKsrXw5WVNsN"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5ct8AlcDgWMp4O25vbcjpC"
+              },
+              "href": "https://api.spotify.com/v1/artists/5ct8AlcDgWMp4O25vbcjpC",
+              "id": "5ct8AlcDgWMp4O25vbcjpC",
+              "name": "Assassin's Creed",
+              "type": "artist",
+              "uri": "spotify:artist:5ct8AlcDgWMp4O25vbcjpC"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1XFN3VcuKr4tsTtQlRiTgK"
+              },
+              "href": "https://api.spotify.com/v1/artists/1XFN3VcuKr4tsTtQlRiTgK",
+              "id": "1XFN3VcuKr4tsTtQlRiTgK",
+              "name": "Mondo Loops",
+              "type": "artist",
+              "uri": "spotify:artist:1XFN3VcuKr4tsTtQlRiTgK"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 19,
+          "duration_ms": 135529,
+          "external_ids": {
+            "isrc": "UKZGC2502577"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/6lyVunXcysd1AMWhwsnNYs"
+          },
+          "href": "https://api.spotify.com/v1/tracks/6lyVunXcysd1AMWhwsnNYs",
+          "id": "6lyVunXcysd1AMWhwsnNYs",
+          "name": "Junjiro (Little Tanuki) - Mondo Loops Remix",
+          "popularity": 57,
+          "uri": "spotify:track:6lyVunXcysd1AMWhwsnNYs",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/5RbXHleouovtb7niQy6S4S",
+            "id": "5RbXHleouovtb7niQy6S4S",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f5c35aa6c17c4da93e05c0a4",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f5c35aa6c17c4da93e05c0a4",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f5c35aa6c17c4da93e05c0a4",
+                "width": 64
+              }
+            ],
+            "name": "Pool Days",
+            "release_date": "2022-01-07",
+            "release_date_precision": "day",
+            "uri": "spotify:album:5RbXHleouovtb7niQy6S4S",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6TeBxtluBMQixZcKkJ3ZrB"
+                },
+                "href": "https://api.spotify.com/v1/artists/6TeBxtluBMQixZcKkJ3ZrB",
+                "id": "6TeBxtluBMQixZcKkJ3ZrB",
+                "name": "HM Surf",
+                "type": "artist",
+                "uri": "spotify:artist:6TeBxtluBMQixZcKkJ3ZrB"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5RbXHleouovtb7niQy6S4S"
+            },
+            "total_tracks": 14
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6TeBxtluBMQixZcKkJ3ZrB"
+              },
+              "href": "https://api.spotify.com/v1/artists/6TeBxtluBMQixZcKkJ3ZrB",
+              "id": "6TeBxtluBMQixZcKkJ3ZrB",
+              "name": "HM Surf",
+              "type": "artist",
+              "uri": "spotify:artist:6TeBxtluBMQixZcKkJ3ZrB"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 2,
+          "duration_ms": 141003,
+          "external_ids": {
+            "isrc": "GBLV62137823"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/6AJqu3x3CXRejmOyY9ASgU"
+          },
+          "href": "https://api.spotify.com/v1/tracks/6AJqu3x3CXRejmOyY9ASgU",
+          "id": "6AJqu3x3CXRejmOyY9ASgU",
+          "name": "A Little Help",
+          "popularity": 55,
+          "uri": "spotify:track:6AJqu3x3CXRejmOyY9ASgU",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "single",
+            "href": "https://api.spotify.com/v1/albums/6lBsWeUlf1cHTocQWlBkMA",
+            "id": "6lBsWeUlf1cHTocQWlBkMA",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b27327d75eb152068c4ad1139b90",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e0227d75eb152068c4ad1139b90",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d0000485127d75eb152068c4ad1139b90",
+                "width": 64
+              }
+            ],
+            "name": "After Hours",
+            "release_date": "2021-03-11",
+            "release_date_precision": "day",
+            "uri": "spotify:album:6lBsWeUlf1cHTocQWlBkMA",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7185Q95lPFld0aoPqO6e0U"
+                },
+                "href": "https://api.spotify.com/v1/artists/7185Q95lPFld0aoPqO6e0U",
+                "id": "7185Q95lPFld0aoPqO6e0U",
+                "name": "Blue Wednesday",
+                "type": "artist",
+                "uri": "spotify:artist:7185Q95lPFld0aoPqO6e0U"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/6lBsWeUlf1cHTocQWlBkMA"
+            },
+            "total_tracks": 5
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7185Q95lPFld0aoPqO6e0U"
+              },
+              "href": "https://api.spotify.com/v1/artists/7185Q95lPFld0aoPqO6e0U",
+              "id": "7185Q95lPFld0aoPqO6e0U",
+              "name": "Blue Wednesday",
+              "type": "artist",
+              "uri": "spotify:artist:7185Q95lPFld0aoPqO6e0U"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 3,
+          "duration_ms": 154310,
+          "external_ids": {
+            "isrc": "GBKQU2124156"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/0PDcQRIteJQqADoRYhLIxl"
+          },
+          "href": "https://api.spotify.com/v1/tracks/0PDcQRIteJQqADoRYhLIxl",
+          "id": "3QsiuKJn3I2ygYoerq6xqo",
+          "name": "Wildflower",
+          "popularity": 0,
+          "uri": "spotify:track:3QsiuKJn3I2ygYoerq6xqo",
+          "is_local": false,
+          "linked_from": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0PDcQRIteJQqADoRYhLIxl"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0PDcQRIteJQqADoRYhLIxl",
+            "id": "0PDcQRIteJQqADoRYhLIxl",
+            "type": "track",
+            "uri": "spotify:track:0PDcQRIteJQqADoRYhLIxl"
+          }
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2Cqn7ymgFOsf2QMhLloUuT"
+              },
+              "href": "https://api.spotify.com/v1/artists/2Cqn7ymgFOsf2QMhLloUuT",
+              "id": "2Cqn7ymgFOsf2QMhLloUuT",
+              "name": "Aboueb",
+              "type": "artist",
+              "uri": "spotify:artist:2Cqn7ymgFOsf2QMhLloUuT"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5iMUho98faEp2w6j5p44PH"
+              },
+              "href": "https://api.spotify.com/v1/artists/5iMUho98faEp2w6j5p44PH",
+              "id": "5iMUho98faEp2w6j5p44PH",
+              "name": "j'san",
+              "type": "artist",
+              "uri": "spotify:artist:5iMUho98faEp2w6j5p44PH"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 10,
+          "duration_ms": 124694,
+          "external_ids": {
+            "isrc": "UKZGC2510890"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/3bElEWfK6JfqzCVmb7Ojut"
+          },
+          "href": "https://api.spotify.com/v1/tracks/3bElEWfK6JfqzCVmb7Ojut",
+          "id": "3bElEWfK6JfqzCVmb7Ojut",
+          "name": "missed call",
+          "popularity": 33,
+          "uri": "spotify:track:3bElEWfK6JfqzCVmb7Ojut",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0nQZzyHhW4sVoTLR7kS8ZT",
+            "id": "0nQZzyHhW4sVoTLR7kS8ZT",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f6ee8a8ee5156efd1c8a33a2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f6ee8a8ee5156efd1c8a33a2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f6ee8a8ee5156efd1c8a33a2",
+                "width": 64
+              }
+            ],
+            "name": "Somewhere in Rain",
+            "release_date": "2025-11-17",
+            "release_date_precision": "day",
+            "uri": "spotify:album:0nQZzyHhW4sVoTLR7kS8ZT",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+                },
+                "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+                "id": "0wcen0V8FgQu6xYupnZMbB",
+                "name": "softy",
+                "type": "artist",
+                "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0nQZzyHhW4sVoTLR7kS8ZT"
+            },
+            "total_tracks": 15
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+              "id": "0wcen0V8FgQu6xYupnZMbB",
+              "name": "softy",
+              "type": "artist",
+              "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 12,
+          "duration_ms": 153000,
+          "external_ids": {
+            "isrc": "UKZGC2508612"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/4II101QJCWd63Ewf45E1wm"
+          },
+          "href": "https://api.spotify.com/v1/tracks/4II101QJCWd63Ewf45E1wm",
+          "id": "4II101QJCWd63Ewf45E1wm",
+          "name": "Lavish",
+          "popularity": 51,
+          "uri": "spotify:track:4II101QJCWd63Ewf45E1wm",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/2oQ0gGxPjHhQxhw0NBdQNl",
+            "id": "2oQ0gGxPjHhQxhw0NBdQNl",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2732c2ce9f110976e68870332c8",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e022c2ce9f110976e68870332c8",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048512c2ce9f110976e68870332c8",
+                "width": 64
+              }
+            ],
+            "name": "Solemn",
+            "release_date": "2022-03-04",
+            "release_date_precision": "day",
+            "uri": "spotify:album:2oQ0gGxPjHhQxhw0NBdQNl",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1bbah9s09626gweOzzLbKG"
+                },
+                "href": "https://api.spotify.com/v1/artists/1bbah9s09626gweOzzLbKG",
+                "id": "1bbah9s09626gweOzzLbKG",
+                "name": "Towerz",
+                "type": "artist",
+                "uri": "spotify:artist:1bbah9s09626gweOzzLbKG"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/2oQ0gGxPjHhQxhw0NBdQNl"
+            },
+            "total_tracks": 7
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1bbah9s09626gweOzzLbKG"
+              },
+              "href": "https://api.spotify.com/v1/artists/1bbah9s09626gweOzzLbKG",
+              "id": "1bbah9s09626gweOzzLbKG",
+              "name": "Towerz",
+              "type": "artist",
+              "uri": "spotify:artist:1bbah9s09626gweOzzLbKG"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7H7VmOfvvzunl84e6UK9QR"
+              },
+              "href": "https://api.spotify.com/v1/artists/7H7VmOfvvzunl84e6UK9QR",
+              "id": "7H7VmOfvvzunl84e6UK9QR",
+              "name": "edelwize",
+              "type": "artist",
+              "uri": "spotify:artist:7H7VmOfvvzunl84e6UK9QR"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 7,
+          "duration_ms": 163328,
+          "external_ids": {
+            "isrc": "GBKQU2221372"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/46vLgpK4iNwrZgy8akhJUg"
+          },
+          "href": "https://api.spotify.com/v1/tracks/46vLgpK4iNwrZgy8akhJUg",
+          "id": "46vLgpK4iNwrZgy8akhJUg",
+          "name": "Buds of May",
+          "popularity": 50,
+          "uri": "spotify:track:46vLgpK4iNwrZgy8akhJUg",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "single",
+            "href": "https://api.spotify.com/v1/albums/15zmZ9YGAMKuFs4i22mMgV",
+            "id": "15zmZ9YGAMKuFs4i22mMgV",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273dc8f0c30d94a3a7ef13de7a9",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02dc8f0c30d94a3a7ef13de7a9",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851dc8f0c30d94a3a7ef13de7a9",
+                "width": 64
+              }
+            ],
+            "name": "In Motion",
+            "release_date": "2020-09-29",
+            "release_date_precision": "day",
+            "uri": "spotify:album:15zmZ9YGAMKuFs4i22mMgV",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1jDbZQQs4VNtiC4AerpIg4"
+                },
+                "href": "https://api.spotify.com/v1/artists/1jDbZQQs4VNtiC4AerpIg4",
+                "id": "1jDbZQQs4VNtiC4AerpIg4",
+                "name": "ENRA",
+                "type": "artist",
+                "uri": "spotify:artist:1jDbZQQs4VNtiC4AerpIg4"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/15zmZ9YGAMKuFs4i22mMgV"
+            },
+            "total_tracks": 6
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1jDbZQQs4VNtiC4AerpIg4"
+              },
+              "href": "https://api.spotify.com/v1/artists/1jDbZQQs4VNtiC4AerpIg4",
+              "id": "1jDbZQQs4VNtiC4AerpIg4",
+              "name": "ENRA",
+              "type": "artist",
+              "uri": "spotify:artist:1jDbZQQs4VNtiC4AerpIg4"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 3,
+          "duration_ms": 124450,
+          "external_ids": {
+            "isrc": "GBLV62001629"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/5qyKaZXmc3pGYjCjgQmdMf"
+          },
+          "href": "https://api.spotify.com/v1/tracks/5qyKaZXmc3pGYjCjgQmdMf",
+          "id": "5qyKaZXmc3pGYjCjgQmdMf",
+          "name": "Consequences",
+          "popularity": 55,
+          "uri": "spotify:track:5qyKaZXmc3pGYjCjgQmdMf",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/5wJIyaro488CBphiDI8bu5",
+            "id": "5wJIyaro488CBphiDI8bu5",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2732fbe3a62f9e6fff502057708",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e022fbe3a62f9e6fff502057708",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048512fbe3a62f9e6fff502057708",
+                "width": 64
+              }
+            ],
+            "name": "Best-of lofi hip-hop 2023",
+            "release_date": "2023-12-31",
+            "release_date_precision": "day",
+            "uri": "spotify:album:5wJIyaro488CBphiDI8bu5",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5wJIyaro488CBphiDI8bu5"
+            },
+            "total_tracks": 54
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5xJ9q1lHwa8AShRof94oIt"
+              },
+              "href": "https://api.spotify.com/v1/artists/5xJ9q1lHwa8AShRof94oIt",
+              "id": "5xJ9q1lHwa8AShRof94oIt",
+              "name": "Phlocalyst",
+              "type": "artist",
+              "uri": "spotify:artist:5xJ9q1lHwa8AShRof94oIt"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5TGFw78FIV0hLV90O8A7an"
+              },
+              "href": "https://api.spotify.com/v1/artists/5TGFw78FIV0hLV90O8A7an",
+              "id": "5TGFw78FIV0hLV90O8A7an",
+              "name": "Myríad",
+              "type": "artist",
+              "uri": "spotify:artist:5TGFw78FIV0hLV90O8A7an"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3wSSMiYpzOTY4DOCrTmycP"
+              },
+              "href": "https://api.spotify.com/v1/artists/3wSSMiYpzOTY4DOCrTmycP",
+              "id": "3wSSMiYpzOTY4DOCrTmycP",
+              "name": "Hilaria",
+              "type": "artist",
+              "uri": "spotify:artist:3wSSMiYpzOTY4DOCrTmycP"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1eDIWVJt7ZWKsrXw5WVNsN"
+              },
+              "href": "https://api.spotify.com/v1/artists/1eDIWVJt7ZWKsrXw5WVNsN",
+              "id": "1eDIWVJt7ZWKsrXw5WVNsN",
+              "name": "Lofi Girl",
+              "type": "artist",
+              "uri": "spotify:artist:1eDIWVJt7ZWKsrXw5WVNsN"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 31,
+          "duration_ms": 187500,
+          "external_ids": {
+            "isrc": "UKZGC2304310"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/3aIguFSaFd8N5t5VD1fQ56"
+          },
+          "href": "https://api.spotify.com/v1/tracks/3aIguFSaFd8N5t5VD1fQ56",
+          "id": "3aIguFSaFd8N5t5VD1fQ56",
+          "name": "Gloomy Nights",
+          "popularity": 49,
+          "uri": "spotify:track:3aIguFSaFd8N5t5VD1fQ56",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/05lL4SY6yBcYMHTgsxjmaz",
+            "id": "05lL4SY6yBcYMHTgsxjmaz",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273b8a0a91152dc0ce14b792c0d",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02b8a0a91152dc0ce14b792c0d",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851b8a0a91152dc0ce14b792c0d",
+                "width": 64
+              }
+            ],
+            "name": "limitless skies ii",
+            "release_date": "2025-12-08",
+            "release_date_precision": "day",
+            "uri": "spotify:album:05lL4SY6yBcYMHTgsxjmaz",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5oYQJceaUGHcz6d7TGry4q"
+                },
+                "href": "https://api.spotify.com/v1/artists/5oYQJceaUGHcz6d7TGry4q",
+                "id": "5oYQJceaUGHcz6d7TGry4q",
+                "name": "luv pug",
+                "type": "artist",
+                "uri": "spotify:artist:5oYQJceaUGHcz6d7TGry4q"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4ApyJoQGYHAcMtJEvK5tRx"
+                },
+                "href": "https://api.spotify.com/v1/artists/4ApyJoQGYHAcMtJEvK5tRx",
+                "id": "4ApyJoQGYHAcMtJEvK5tRx",
+                "name": "steezy prime",
+                "type": "artist",
+                "uri": "spotify:artist:4ApyJoQGYHAcMtJEvK5tRx"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/05lL4SY6yBcYMHTgsxjmaz"
+            },
+            "total_tracks": 15
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5oYQJceaUGHcz6d7TGry4q"
+              },
+              "href": "https://api.spotify.com/v1/artists/5oYQJceaUGHcz6d7TGry4q",
+              "id": "5oYQJceaUGHcz6d7TGry4q",
+              "name": "luv pug",
+              "type": "artist",
+              "uri": "spotify:artist:5oYQJceaUGHcz6d7TGry4q"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4ApyJoQGYHAcMtJEvK5tRx"
+              },
+              "href": "https://api.spotify.com/v1/artists/4ApyJoQGYHAcMtJEvK5tRx",
+              "id": "4ApyJoQGYHAcMtJEvK5tRx",
+              "name": "steezy prime",
+              "type": "artist",
+              "uri": "spotify:artist:4ApyJoQGYHAcMtJEvK5tRx"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 1,
+          "duration_ms": 141172,
+          "external_ids": {
+            "isrc": "UKZGC2508919"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/7gzXIeGqphHEyXqN55hXvS"
+          },
+          "href": "https://api.spotify.com/v1/tracks/7gzXIeGqphHEyXqN55hXvS",
+          "id": "7gzXIeGqphHEyXqN55hXvS",
+          "name": "sage",
+          "popularity": 46,
+          "uri": "spotify:track:7gzXIeGqphHEyXqN55hXvS",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1pvbdPT4qv8egDvkcOhBN0"
+              },
+              "href": "https://api.spotify.com/v1/artists/1pvbdPT4qv8egDvkcOhBN0",
+              "id": "1pvbdPT4qv8egDvkcOhBN0",
+              "name": "Swink",
+              "type": "artist",
+              "uri": "spotify:artist:1pvbdPT4qv8egDvkcOhBN0"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 7,
+          "duration_ms": 129938,
+          "external_ids": {
+            "isrc": "UKZGC2510894"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/3V3K7Ad1Y2Wd3Q21QGMT8p"
+          },
+          "href": "https://api.spotify.com/v1/tracks/3V3K7Ad1Y2Wd3Q21QGMT8p",
+          "id": "3V3K7Ad1Y2Wd3Q21QGMT8p",
+          "name": "Pathway",
+          "popularity": 20,
+          "uri": "spotify:track:3V3K7Ad1Y2Wd3Q21QGMT8p",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/5TKbwLo2xQ0WH3uOB3jnR6",
+            "id": "5TKbwLo2xQ0WH3uOB3jnR6",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ad3c7e1df21bc88dfe1d3aa6",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ad3c7e1df21bc88dfe1d3aa6",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ad3c7e1df21bc88dfe1d3aa6",
+                "width": 64
+              }
+            ],
+            "name": "Conscious Ego",
+            "release_date": "2020-05-30",
+            "release_date_precision": "day",
+            "uri": "spotify:album:5TKbwLo2xQ0WH3uOB3jnR6",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/39c9r5tc96HMSEX9BbxE4T"
+                },
+                "href": "https://api.spotify.com/v1/artists/39c9r5tc96HMSEX9BbxE4T",
+                "id": "39c9r5tc96HMSEX9BbxE4T",
+                "name": "Fatb",
+                "type": "artist",
+                "uri": "spotify:artist:39c9r5tc96HMSEX9BbxE4T"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5TKbwLo2xQ0WH3uOB3jnR6"
+            },
+            "total_tracks": 7
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/39c9r5tc96HMSEX9BbxE4T"
+              },
+              "href": "https://api.spotify.com/v1/artists/39c9r5tc96HMSEX9BbxE4T",
+              "id": "39c9r5tc96HMSEX9BbxE4T",
+              "name": "Fatb",
+              "type": "artist",
+              "uri": "spotify:artist:39c9r5tc96HMSEX9BbxE4T"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6bA2OonnJsG1tN9yClu2aC"
+              },
+              "href": "https://api.spotify.com/v1/artists/6bA2OonnJsG1tN9yClu2aC",
+              "id": "6bA2OonnJsG1tN9yClu2aC",
+              "name": "mell-ø",
+              "type": "artist",
+              "uri": "spotify:artist:6bA2OonnJsG1tN9yClu2aC"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 7,
+          "duration_ms": 108648,
+          "external_ids": {
+            "isrc": "TCAEX2021177"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/2BzbAd4RRMdmmzwLlwuQ31"
+          },
+          "href": "https://api.spotify.com/v1/tracks/2BzbAd4RRMdmmzwLlwuQ31",
+          "id": "2BzbAd4RRMdmmzwLlwuQ31",
+          "name": "Aurora Boreale",
+          "popularity": 51,
+          "uri": "spotify:track:2BzbAd4RRMdmmzwLlwuQ31",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/38IQYBWX7szTI1dx67HYUR",
+            "id": "38IQYBWX7szTI1dx67HYUR",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c4413972e23175a881a40741",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c4413972e23175a881a40741",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c4413972e23175a881a40741",
+                "width": 64
+              }
+            ],
+            "name": "Best-of lofi hip-hop 2021",
+            "release_date": "2021-12-31",
+            "release_date_precision": "day",
+            "uri": "spotify:album:38IQYBWX7szTI1dx67HYUR",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/38IQYBWX7szTI1dx67HYUR"
+            },
+            "total_tracks": 100
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/40GMyQ5sv1bfiui9CrEPME"
+              },
+              "href": "https://api.spotify.com/v1/artists/40GMyQ5sv1bfiui9CrEPME",
+              "id": "40GMyQ5sv1bfiui9CrEPME",
+              "name": "Lawrence Walther",
+              "type": "artist",
+              "uri": "spotify:artist:40GMyQ5sv1bfiui9CrEPME"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1eDIWVJt7ZWKsrXw5WVNsN"
+              },
+              "href": "https://api.spotify.com/v1/artists/1eDIWVJt7ZWKsrXw5WVNsN",
+              "id": "1eDIWVJt7ZWKsrXw5WVNsN",
+              "name": "Lofi Girl",
+              "type": "artist",
+              "uri": "spotify:artist:1eDIWVJt7ZWKsrXw5WVNsN"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/37gab2kHkQ8LnCRXYRPHxe"
+              },
+              "href": "https://api.spotify.com/v1/artists/37gab2kHkQ8LnCRXYRPHxe",
+              "id": "37gab2kHkQ8LnCRXYRPHxe",
+              "name": "Less Gravity",
+              "type": "artist",
+              "uri": "spotify:artist:37gab2kHkQ8LnCRXYRPHxe"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 35,
+          "duration_ms": 177164,
+          "external_ids": {
+            "isrc": "GBLV62130159"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/0wPjPSnuE2eXKPte0m5dDS"
+          },
+          "href": "https://api.spotify.com/v1/tracks/0wPjPSnuE2eXKPte0m5dDS",
+          "id": "7qdIU3vprOQQJQHRuo1LfY",
+          "name": "Floating, Drifting",
+          "popularity": 8,
+          "uri": "spotify:track:7qdIU3vprOQQJQHRuo1LfY",
+          "is_local": false,
+          "linked_from": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0wPjPSnuE2eXKPte0m5dDS"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0wPjPSnuE2eXKPte0m5dDS",
+            "id": "0wPjPSnuE2eXKPte0m5dDS",
+            "type": "track",
+            "uri": "spotify:track:0wPjPSnuE2eXKPte0m5dDS"
+          }
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/2HEjlnR6Vs5QBKcXjPz4dI",
+            "id": "2HEjlnR6Vs5QBKcXjPz4dI",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273bce9b75925b149ed54277c6a",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02bce9b75925b149ed54277c6a",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851bce9b75925b149ed54277c6a",
+                "width": 64
+              }
+            ],
+            "name": "Argo",
+            "release_date": "2021-05-30",
+            "release_date_precision": "day",
+            "uri": "spotify:album:2HEjlnR6Vs5QBKcXjPz4dI",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5D6V4Z6oPz4waooiuBaWIf"
+                },
+                "href": "https://api.spotify.com/v1/artists/5D6V4Z6oPz4waooiuBaWIf",
+                "id": "5D6V4Z6oPz4waooiuBaWIf",
+                "name": "Sátyr",
+                "type": "artist",
+                "uri": "spotify:artist:5D6V4Z6oPz4waooiuBaWIf"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5xJ9q1lHwa8AShRof94oIt"
+                },
+                "href": "https://api.spotify.com/v1/artists/5xJ9q1lHwa8AShRof94oIt",
+                "id": "5xJ9q1lHwa8AShRof94oIt",
+                "name": "Phlocalyst",
+                "type": "artist",
+                "uri": "spotify:artist:5xJ9q1lHwa8AShRof94oIt"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/2HEjlnR6Vs5QBKcXjPz4dI"
+            },
+            "total_tracks": 7
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5D6V4Z6oPz4waooiuBaWIf"
+              },
+              "href": "https://api.spotify.com/v1/artists/5D6V4Z6oPz4waooiuBaWIf",
+              "id": "5D6V4Z6oPz4waooiuBaWIf",
+              "name": "Sátyr",
+              "type": "artist",
+              "uri": "spotify:artist:5D6V4Z6oPz4waooiuBaWIf"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wN7ALPeSqOb16sG7vl4RC"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wN7ALPeSqOb16sG7vl4RC",
+              "id": "0wN7ALPeSqOb16sG7vl4RC",
+              "name": "Drxnk",
+              "type": "artist",
+              "uri": "spotify:artist:0wN7ALPeSqOb16sG7vl4RC"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 1,
+          "duration_ms": 126315,
+          "external_ids": {
+            "isrc": "GBKQU2160331"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/1wYqGwnv0dOlO2ITJTCvDx"
+          },
+          "href": "https://api.spotify.com/v1/tracks/1wYqGwnv0dOlO2ITJTCvDx",
+          "id": "6kw7s0n12EgF3nDnw3g9MZ",
+          "name": "Flood",
+          "popularity": 0,
+          "uri": "spotify:track:6kw7s0n12EgF3nDnw3g9MZ",
+          "is_local": false,
+          "linked_from": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1wYqGwnv0dOlO2ITJTCvDx"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1wYqGwnv0dOlO2ITJTCvDx",
+            "id": "1wYqGwnv0dOlO2ITJTCvDx",
+            "type": "track",
+            "uri": "spotify:track:1wYqGwnv0dOlO2ITJTCvDx"
+          }
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/7bqGTCApU94LBW4lHhbciD",
+            "id": "7bqGTCApU94LBW4lHhbciD",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273bd78dd480b8a9a5ba17e48b7",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02bd78dd480b8a9a5ba17e48b7",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851bd78dd480b8a9a5ba17e48b7",
+                "width": 64
+              }
+            ],
+            "name": "Daydreaming",
+            "release_date": "2021-06-09",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7bqGTCApU94LBW4lHhbciD",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6ysKfYgiKUTMCuq2fSTLK3"
+                },
+                "href": "https://api.spotify.com/v1/artists/6ysKfYgiKUTMCuq2fSTLK3",
+                "id": "6ysKfYgiKUTMCuq2fSTLK3",
+                "name": "xander.",
+                "type": "artist",
+                "uri": "spotify:artist:6ysKfYgiKUTMCuq2fSTLK3"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7bqGTCApU94LBW4lHhbciD"
+            },
+            "total_tracks": 11
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6ysKfYgiKUTMCuq2fSTLK3"
+              },
+              "href": "https://api.spotify.com/v1/artists/6ysKfYgiKUTMCuq2fSTLK3",
+              "id": "6ysKfYgiKUTMCuq2fSTLK3",
+              "name": "xander.",
+              "type": "artist",
+              "uri": "spotify:artist:6ysKfYgiKUTMCuq2fSTLK3"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 1,
+          "duration_ms": 193333,
+          "external_ids": {
+            "isrc": "GBKQU2161422"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/55v0qQRNpvwviqvxRmkGWa"
+          },
+          "href": "https://api.spotify.com/v1/tracks/55v0qQRNpvwviqvxRmkGWa",
+          "id": "55v0qQRNpvwviqvxRmkGWa",
+          "name": "Cabin In A Forest",
+          "popularity": 55,
+          "uri": "spotify:track:55v0qQRNpvwviqvxRmkGWa",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2zNmlxTlRfyMAAifd2f71Q"
+              },
+              "href": "https://api.spotify.com/v1/artists/2zNmlxTlRfyMAAifd2f71Q",
+              "id": "2zNmlxTlRfyMAAifd2f71Q",
+              "name": "amies",
+              "type": "artist",
+              "uri": "spotify:artist:2zNmlxTlRfyMAAifd2f71Q"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 33,
+          "duration_ms": 177714,
+          "external_ids": {
+            "isrc": "UKZGC2510871"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/2BtNULrWCEIQf1Ifaxuuad"
+          },
+          "href": "https://api.spotify.com/v1/tracks/2BtNULrWCEIQf1Ifaxuuad",
+          "id": "2BtNULrWCEIQf1Ifaxuuad",
+          "name": "Solution",
+          "popularity": 23,
+          "uri": "spotify:track:2BtNULrWCEIQf1Ifaxuuad",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2XHa2Sy9IYid9hnQ2YmtGl"
+              },
+              "href": "https://api.spotify.com/v1/artists/2XHa2Sy9IYid9hnQ2YmtGl",
+              "id": "2XHa2Sy9IYid9hnQ2YmtGl",
+              "name": "Shopan",
+              "type": "artist",
+              "uri": "spotify:artist:2XHa2Sy9IYid9hnQ2YmtGl"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 15,
+          "duration_ms": 121479,
+          "external_ids": {
+            "isrc": "UKZGC2510893"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/11UqPb7lH5aEBtDIiYDFfV"
+          },
+          "href": "https://api.spotify.com/v1/tracks/11UqPb7lH5aEBtDIiYDFfV",
+          "id": "11UqPb7lH5aEBtDIiYDFfV",
+          "name": "Eighty Five",
+          "popularity": 23,
+          "uri": "spotify:track:11UqPb7lH5aEBtDIiYDFfV",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/6fCxHAh209OFUJ1WSzvhRh",
+            "id": "6fCxHAh209OFUJ1WSzvhRh",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273164e3a5cc0fde7e5d0c9e86f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02164e3a5cc0fde7e5d0c9e86f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851164e3a5cc0fde7e5d0c9e86f",
+                "width": 64
+              }
+            ],
+            "name": "Distant Worlds",
+            "release_date": "2020-12-30",
+            "release_date_precision": "day",
+            "uri": "spotify:album:6fCxHAh209OFUJ1WSzvhRh",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/73aKnLT4O8G2pBEfdlQzrE"
+                },
+                "href": "https://api.spotify.com/v1/artists/73aKnLT4O8G2pBEfdlQzrE",
+                "id": "73aKnLT4O8G2pBEfdlQzrE",
+                "name": "Purrple Cat",
+                "type": "artist",
+                "uri": "spotify:artist:73aKnLT4O8G2pBEfdlQzrE"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/6fCxHAh209OFUJ1WSzvhRh"
+            },
+            "total_tracks": 11
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/73aKnLT4O8G2pBEfdlQzrE"
+              },
+              "href": "https://api.spotify.com/v1/artists/73aKnLT4O8G2pBEfdlQzrE",
+              "id": "73aKnLT4O8G2pBEfdlQzrE",
+              "name": "Purrple Cat",
+              "type": "artist",
+              "uri": "spotify:artist:73aKnLT4O8G2pBEfdlQzrE"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 11,
+          "duration_ms": 192312,
+          "external_ids": {
+            "isrc": "GBLV62037949"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/0xnqC77vIxbidlB5BsG7Ca"
+          },
+          "href": "https://api.spotify.com/v1/tracks/0xnqC77vIxbidlB5BsG7Ca",
+          "id": "0xnqC77vIxbidlB5BsG7Ca",
+          "name": "Tabula Rasa",
+          "popularity": 54,
+          "uri": "spotify:track:0xnqC77vIxbidlB5BsG7Ca",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/25hlMt5vPtNJbJXxZuQ756",
+            "id": "25hlMt5vPtNJbJXxZuQ756",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2730524954faee2e4237d14fb1a",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e020524954faee2e4237d14fb1a",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048510524954faee2e4237d14fb1a",
+                "width": 64
+              }
+            ],
+            "name": "Finding Beauty",
+            "release_date": "2021-05-12",
+            "release_date_precision": "day",
+            "uri": "spotify:album:25hlMt5vPtNJbJXxZuQ756",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4n9z9czt00gzw36hdoVU3G"
+                },
+                "href": "https://api.spotify.com/v1/artists/4n9z9czt00gzw36hdoVU3G",
+                "id": "4n9z9czt00gzw36hdoVU3G",
+                "name": "Kainbeats",
+                "type": "artist",
+                "uri": "spotify:artist:4n9z9czt00gzw36hdoVU3G"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/25hlMt5vPtNJbJXxZuQ756"
+            },
+            "total_tracks": 10
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4n9z9czt00gzw36hdoVU3G"
+              },
+              "href": "https://api.spotify.com/v1/artists/4n9z9czt00gzw36hdoVU3G",
+              "id": "4n9z9czt00gzw36hdoVU3G",
+              "name": "Kainbeats",
+              "type": "artist",
+              "uri": "spotify:artist:4n9z9czt00gzw36hdoVU3G"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1bbah9s09626gweOzzLbKG"
+              },
+              "href": "https://api.spotify.com/v1/artists/1bbah9s09626gweOzzLbKG",
+              "id": "1bbah9s09626gweOzzLbKG",
+              "name": "Towerz",
+              "type": "artist",
+              "uri": "spotify:artist:1bbah9s09626gweOzzLbKG"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 9,
+          "duration_ms": 158823,
+          "external_ids": {
+            "isrc": "GBKQU2155127"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/09fFmAeZS1o3COvaF0l7WD"
+          },
+          "href": "https://api.spotify.com/v1/tracks/09fFmAeZS1o3COvaF0l7WD",
+          "id": "09fFmAeZS1o3COvaF0l7WD",
+          "name": "Glass Spire",
+          "popularity": 53,
+          "uri": "spotify:track:09fFmAeZS1o3COvaF0l7WD",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0nQZzyHhW4sVoTLR7kS8ZT",
+            "id": "0nQZzyHhW4sVoTLR7kS8ZT",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f6ee8a8ee5156efd1c8a33a2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f6ee8a8ee5156efd1c8a33a2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f6ee8a8ee5156efd1c8a33a2",
+                "width": 64
+              }
+            ],
+            "name": "Somewhere in Rain",
+            "release_date": "2025-11-17",
+            "release_date_precision": "day",
+            "uri": "spotify:album:0nQZzyHhW4sVoTLR7kS8ZT",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+                },
+                "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+                "id": "0wcen0V8FgQu6xYupnZMbB",
+                "name": "softy",
+                "type": "artist",
+                "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0nQZzyHhW4sVoTLR7kS8ZT"
+            },
+            "total_tracks": 15
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+              "id": "0wcen0V8FgQu6xYupnZMbB",
+              "name": "softy",
+              "type": "artist",
+              "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 10,
+          "duration_ms": 144000,
+          "external_ids": {
+            "isrc": "UKZGC2508610"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/3JqMep49bJhzESJbPK1qhQ"
+          },
+          "href": "https://api.spotify.com/v1/tracks/3JqMep49bJhzESJbPK1qhQ",
+          "id": "3JqMep49bJhzESJbPK1qhQ",
+          "name": "Valuwe",
+          "popularity": 52,
+          "uri": "spotify:track:3JqMep49bJhzESJbPK1qhQ",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0lJdRZGhx6cUQ1pajqU8Cr",
+            "id": "0lJdRZGhx6cUQ1pajqU8Cr",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273497886c26058ee8f8c6bf3fb",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02497886c26058ee8f8c6bf3fb",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851497886c26058ee8f8c6bf3fb",
+                "width": 64
+              }
+            ],
+            "name": "Silent Emotions",
+            "release_date": "2021",
+            "release_date_precision": "year",
+            "uri": "spotify:album:0lJdRZGhx6cUQ1pajqU8Cr",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/46RYzJ2442SuhtOTl281nz"
+                },
+                "href": "https://api.spotify.com/v1/artists/46RYzJ2442SuhtOTl281nz",
+                "id": "46RYzJ2442SuhtOTl281nz",
+                "name": "Dimension 32",
+                "type": "artist",
+                "uri": "spotify:artist:46RYzJ2442SuhtOTl281nz"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0lJdRZGhx6cUQ1pajqU8Cr"
+            },
+            "total_tracks": 9
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/46RYzJ2442SuhtOTl281nz"
+              },
+              "href": "https://api.spotify.com/v1/artists/46RYzJ2442SuhtOTl281nz",
+              "id": "46RYzJ2442SuhtOTl281nz",
+              "name": "Dimension 32",
+              "type": "artist",
+              "uri": "spotify:artist:46RYzJ2442SuhtOTl281nz"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+              "id": "0wcen0V8FgQu6xYupnZMbB",
+              "name": "softy",
+              "type": "artist",
+              "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 6,
+          "duration_ms": 158455,
+          "external_ids": {
+            "isrc": "GBLV62100870"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/7c9zubjktm2D4LrbZdldgw"
+          },
+          "href": "https://api.spotify.com/v1/tracks/7c9zubjktm2D4LrbZdldgw",
+          "id": "7c9zubjktm2D4LrbZdldgw",
+          "name": "Silent Emotions",
+          "popularity": 52,
+          "uri": "spotify:track:7c9zubjktm2D4LrbZdldgw",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0nQZzyHhW4sVoTLR7kS8ZT",
+            "id": "0nQZzyHhW4sVoTLR7kS8ZT",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f6ee8a8ee5156efd1c8a33a2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f6ee8a8ee5156efd1c8a33a2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f6ee8a8ee5156efd1c8a33a2",
+                "width": 64
+              }
+            ],
+            "name": "Somewhere in Rain",
+            "release_date": "2025-11-17",
+            "release_date_precision": "day",
+            "uri": "spotify:album:0nQZzyHhW4sVoTLR7kS8ZT",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+                },
+                "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+                "id": "0wcen0V8FgQu6xYupnZMbB",
+                "name": "softy",
+                "type": "artist",
+                "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0nQZzyHhW4sVoTLR7kS8ZT"
+            },
+            "total_tracks": 15
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+              "id": "0wcen0V8FgQu6xYupnZMbB",
+              "name": "softy",
+              "type": "artist",
+              "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 4,
+          "duration_ms": 117073,
+          "external_ids": {
+            "isrc": "UKZGC2508604"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/1n2unoBYNT6WI5d2VghASb"
+          },
+          "href": "https://api.spotify.com/v1/tracks/1n2unoBYNT6WI5d2VghASb",
+          "id": "1n2unoBYNT6WI5d2VghASb",
+          "name": "Hush",
+          "popularity": 51,
+          "uri": "spotify:track:1n2unoBYNT6WI5d2VghASb",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1TFqjcoVis5TzVQxrHMSfA"
+              },
+              "href": "https://api.spotify.com/v1/artists/1TFqjcoVis5TzVQxrHMSfA",
+              "id": "1TFqjcoVis5TzVQxrHMSfA",
+              "name": "cxlt.",
+              "type": "artist",
+              "uri": "spotify:artist:1TFqjcoVis5TzVQxrHMSfA"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 26,
+          "duration_ms": 153901,
+          "external_ids": {
+            "isrc": "UKZGC2510879"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/7jS3ZWsnHsK0J30NuJvifo"
+          },
+          "href": "https://api.spotify.com/v1/tracks/7jS3ZWsnHsK0J30NuJvifo",
+          "id": "7jS3ZWsnHsK0J30NuJvifo",
+          "name": "What A Day",
+          "popularity": 23,
+          "uri": "spotify:track:7jS3ZWsnHsK0J30NuJvifo",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/3sr3l08oggIR4Rmwgt709X",
+            "id": "3sr3l08oggIR4Rmwgt709X",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ae9c1e837432d24b22c3dcbe",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ae9c1e837432d24b22c3dcbe",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ae9c1e837432d24b22c3dcbe",
+                "width": 64
+              }
+            ],
+            "name": "Spacefall",
+            "release_date": "2025-11-10",
+            "release_date_precision": "day",
+            "uri": "spotify:album:3sr3l08oggIR4Rmwgt709X",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7INJXFDyMoyqqp91q0FWqh"
+                },
+                "href": "https://api.spotify.com/v1/artists/7INJXFDyMoyqqp91q0FWqh",
+                "id": "7INJXFDyMoyqqp91q0FWqh",
+                "name": "Nuver",
+                "type": "artist",
+                "uri": "spotify:artist:7INJXFDyMoyqqp91q0FWqh"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0liH4Jfiz66Rqjz4DH3JZk"
+                },
+                "href": "https://api.spotify.com/v1/artists/0liH4Jfiz66Rqjz4DH3JZk",
+                "id": "0liH4Jfiz66Rqjz4DH3JZk",
+                "name": "S N U G",
+                "type": "artist",
+                "uri": "spotify:artist:0liH4Jfiz66Rqjz4DH3JZk"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/3sr3l08oggIR4Rmwgt709X"
+            },
+            "total_tracks": 8
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7INJXFDyMoyqqp91q0FWqh"
+              },
+              "href": "https://api.spotify.com/v1/artists/7INJXFDyMoyqqp91q0FWqh",
+              "id": "7INJXFDyMoyqqp91q0FWqh",
+              "name": "Nuver",
+              "type": "artist",
+              "uri": "spotify:artist:7INJXFDyMoyqqp91q0FWqh"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0liH4Jfiz66Rqjz4DH3JZk"
+              },
+              "href": "https://api.spotify.com/v1/artists/0liH4Jfiz66Rqjz4DH3JZk",
+              "id": "0liH4Jfiz66Rqjz4DH3JZk",
+              "name": "S N U G",
+              "type": "artist",
+              "uri": "spotify:artist:0liH4Jfiz66Rqjz4DH3JZk"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 4,
+          "duration_ms": 178158,
+          "external_ids": {
+            "isrc": "UKZGC2508540"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/6oubNIqxB3eTf2aFxaGUvS"
+          },
+          "href": "https://api.spotify.com/v1/tracks/6oubNIqxB3eTf2aFxaGUvS",
+          "id": "6oubNIqxB3eTf2aFxaGUvS",
+          "name": "dust",
+          "popularity": 53,
+          "uri": "spotify:track:6oubNIqxB3eTf2aFxaGUvS",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/7IYBCoJQlRLuiuN4kB3WTa",
+            "id": "7IYBCoJQlRLuiuN4kB3WTa",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273fa2a1bf6488b7473f66d78d7",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02fa2a1bf6488b7473f66d78d7",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851fa2a1bf6488b7473f66d78d7",
+                "width": 64
+              }
+            ],
+            "name": "Amidst the Seven Seas",
+            "release_date": "2021-11-16",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7IYBCoJQlRLuiuN4kB3WTa",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5ffORofXMmNRRtwIeQsyW3"
+                },
+                "href": "https://api.spotify.com/v1/artists/5ffORofXMmNRRtwIeQsyW3",
+                "id": "5ffORofXMmNRRtwIeQsyW3",
+                "name": "Charlee Nguyen",
+                "type": "artist",
+                "uri": "spotify:artist:5ffORofXMmNRRtwIeQsyW3"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1XFN3VcuKr4tsTtQlRiTgK"
+                },
+                "href": "https://api.spotify.com/v1/artists/1XFN3VcuKr4tsTtQlRiTgK",
+                "id": "1XFN3VcuKr4tsTtQlRiTgK",
+                "name": "Mondo Loops",
+                "type": "artist",
+                "uri": "spotify:artist:1XFN3VcuKr4tsTtQlRiTgK"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7IYBCoJQlRLuiuN4kB3WTa"
+            },
+            "total_tracks": 8
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5ffORofXMmNRRtwIeQsyW3"
+              },
+              "href": "https://api.spotify.com/v1/artists/5ffORofXMmNRRtwIeQsyW3",
+              "id": "5ffORofXMmNRRtwIeQsyW3",
+              "name": "Charlee Nguyen",
+              "type": "artist",
+              "uri": "spotify:artist:5ffORofXMmNRRtwIeQsyW3"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1XFN3VcuKr4tsTtQlRiTgK"
+              },
+              "href": "https://api.spotify.com/v1/artists/1XFN3VcuKr4tsTtQlRiTgK",
+              "id": "1XFN3VcuKr4tsTtQlRiTgK",
+              "name": "Mondo Loops",
+              "type": "artist",
+              "uri": "spotify:artist:1XFN3VcuKr4tsTtQlRiTgK"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 1,
+          "duration_ms": 142325,
+          "external_ids": {
+            "isrc": "GBLV62119375"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/4fzRTBtVytPCLIt6GZG2BD"
+          },
+          "href": "https://api.spotify.com/v1/tracks/4fzRTBtVytPCLIt6GZG2BD",
+          "id": "5Jz0m7Rq3NWQ70CrdXiG0R",
+          "name": "Heart of the Sea",
+          "popularity": 0,
+          "uri": "spotify:track:5Jz0m7Rq3NWQ70CrdXiG0R",
+          "is_local": false,
+          "linked_from": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4fzRTBtVytPCLIt6GZG2BD"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4fzRTBtVytPCLIt6GZG2BD",
+            "id": "4fzRTBtVytPCLIt6GZG2BD",
+            "type": "track",
+            "uri": "spotify:track:4fzRTBtVytPCLIt6GZG2BD"
+          }
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0nQZzyHhW4sVoTLR7kS8ZT",
+            "id": "0nQZzyHhW4sVoTLR7kS8ZT",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f6ee8a8ee5156efd1c8a33a2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f6ee8a8ee5156efd1c8a33a2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f6ee8a8ee5156efd1c8a33a2",
+                "width": 64
+              }
+            ],
+            "name": "Somewhere in Rain",
+            "release_date": "2025-11-17",
+            "release_date_precision": "day",
+            "uri": "spotify:album:0nQZzyHhW4sVoTLR7kS8ZT",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+                },
+                "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+                "id": "0wcen0V8FgQu6xYupnZMbB",
+                "name": "softy",
+                "type": "artist",
+                "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0nQZzyHhW4sVoTLR7kS8ZT"
+            },
+            "total_tracks": 15
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+              "id": "0wcen0V8FgQu6xYupnZMbB",
+              "name": "softy",
+              "type": "artist",
+              "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 8,
+          "duration_ms": 125714,
+          "external_ids": {
+            "isrc": "UKZGC2508608"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/1naOpGa7Os8QjLzng9tVGw"
+          },
+          "href": "https://api.spotify.com/v1/tracks/1naOpGa7Os8QjLzng9tVGw",
+          "id": "1naOpGa7Os8QjLzng9tVGw",
+          "name": "Floater",
+          "popularity": 51,
+          "uri": "spotify:track:1naOpGa7Os8QjLzng9tVGw",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "single",
+            "href": "https://api.spotify.com/v1/albums/3tyVWBn2zoOcSmrxnnPb0n",
+            "id": "3tyVWBn2zoOcSmrxnnPb0n",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273e403ee2cecdac6f8178c5405",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02e403ee2cecdac6f8178c5405",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851e403ee2cecdac6f8178c5405",
+                "width": 64
+              }
+            ],
+            "name": "Calm Lands",
+            "release_date": "2020-04-16",
+            "release_date_precision": "day",
+            "uri": "spotify:album:3tyVWBn2zoOcSmrxnnPb0n",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/50nVKm0xa3p8KYXXssG2ym"
+                },
+                "href": "https://api.spotify.com/v1/artists/50nVKm0xa3p8KYXXssG2ym",
+                "id": "50nVKm0xa3p8KYXXssG2ym",
+                "name": "Monma",
+                "type": "artist",
+                "uri": "spotify:artist:50nVKm0xa3p8KYXXssG2ym"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/3tyVWBn2zoOcSmrxnnPb0n"
+            },
+            "total_tracks": 6
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/50nVKm0xa3p8KYXXssG2ym"
+              },
+              "href": "https://api.spotify.com/v1/artists/50nVKm0xa3p8KYXXssG2ym",
+              "id": "50nVKm0xa3p8KYXXssG2ym",
+              "name": "Monma",
+              "type": "artist",
+              "uri": "spotify:artist:50nVKm0xa3p8KYXXssG2ym"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 1,
+          "duration_ms": 145945,
+          "external_ids": {
+            "isrc": "TCAET2039758"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/78pATVtCPzSFJXHO5j0k4U"
+          },
+          "href": "https://api.spotify.com/v1/tracks/78pATVtCPzSFJXHO5j0k4U",
+          "id": "78pATVtCPzSFJXHO5j0k4U",
+          "name": "Chrono",
+          "popularity": 55,
+          "uri": "spotify:track:78pATVtCPzSFJXHO5j0k4U",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/7lyv9IgjZdLivpxIvj57nS",
+            "id": "7lyv9IgjZdLivpxIvj57nS",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce163791d29316fe78367b5f",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce163791d29316fe78367b5f",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce163791d29316fe78367b5f",
+                "width": 64
+              }
+            ],
+            "name": "5 AM Study Session",
+            "release_date": "2025-12-15",
+            "release_date_precision": "day",
+            "uri": "spotify:album:7lyv9IgjZdLivpxIvj57nS",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/7lyv9IgjZdLivpxIvj57nS"
+            },
+            "total_tracks": 34
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/57WUQBBdhGg58XkvPleu9e"
+              },
+              "href": "https://api.spotify.com/v1/artists/57WUQBBdhGg58XkvPleu9e",
+              "id": "57WUQBBdhGg58XkvPleu9e",
+              "name": "surfin",
+              "type": "artist",
+              "uri": "spotify:artist:57WUQBBdhGg58XkvPleu9e"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 24,
+          "duration_ms": 143543,
+          "external_ids": {
+            "isrc": "UKZGC2510881"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/7JfQqbUY8rR2tRXYBaJZmy"
+          },
+          "href": "https://api.spotify.com/v1/tracks/7JfQqbUY8rR2tRXYBaJZmy",
+          "id": "7JfQqbUY8rR2tRXYBaJZmy",
+          "name": "all nighter",
+          "popularity": 20,
+          "uri": "spotify:track:7JfQqbUY8rR2tRXYBaJZmy",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/5yal8ikdXdfgcRoVifBbXL",
+            "id": "5yal8ikdXdfgcRoVifBbXL",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273d93a14608edfd6614f5d7239",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02d93a14608edfd6614f5d7239",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851d93a14608edfd6614f5d7239",
+                "width": 64
+              }
+            ],
+            "name": "Psy Fi",
+            "release_date": "2025-11-19",
+            "release_date_precision": "day",
+            "uri": "spotify:album:5yal8ikdXdfgcRoVifBbXL",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/225l1KEprObX8xgl8xo2Gc"
+                },
+                "href": "https://api.spotify.com/v1/artists/225l1KEprObX8xgl8xo2Gc",
+                "id": "225l1KEprObX8xgl8xo2Gc",
+                "name": "BluntOne",
+                "type": "artist",
+                "uri": "spotify:artist:225l1KEprObX8xgl8xo2Gc"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0aYl19xgofsjP7TpVlGODO"
+                },
+                "href": "https://api.spotify.com/v1/artists/0aYl19xgofsjP7TpVlGODO",
+                "id": "0aYl19xgofsjP7TpVlGODO",
+                "name": "dmtbeatz",
+                "type": "artist",
+                "uri": "spotify:artist:0aYl19xgofsjP7TpVlGODO"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5yal8ikdXdfgcRoVifBbXL"
+            },
+            "total_tracks": 11
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/225l1KEprObX8xgl8xo2Gc"
+              },
+              "href": "https://api.spotify.com/v1/artists/225l1KEprObX8xgl8xo2Gc",
+              "id": "225l1KEprObX8xgl8xo2Gc",
+              "name": "BluntOne",
+              "type": "artist",
+              "uri": "spotify:artist:225l1KEprObX8xgl8xo2Gc"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0aYl19xgofsjP7TpVlGODO"
+              },
+              "href": "https://api.spotify.com/v1/artists/0aYl19xgofsjP7TpVlGODO",
+              "id": "0aYl19xgofsjP7TpVlGODO",
+              "name": "dmtbeatz",
+              "type": "artist",
+              "uri": "spotify:artist:0aYl19xgofsjP7TpVlGODO"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 2,
+          "duration_ms": 153796,
+          "external_ids": {
+            "isrc": "UKZGC2508617"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/2O6dXb1MPQMKjwUDSRJlye"
+          },
+          "href": "https://api.spotify.com/v1/tracks/2O6dXb1MPQMKjwUDSRJlye",
+          "id": "2O6dXb1MPQMKjwUDSRJlye",
+          "name": "Grúz",
+          "popularity": 52,
+          "uri": "spotify:track:2O6dXb1MPQMKjwUDSRJlye",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0nQZzyHhW4sVoTLR7kS8ZT",
+            "id": "0nQZzyHhW4sVoTLR7kS8ZT",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f6ee8a8ee5156efd1c8a33a2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f6ee8a8ee5156efd1c8a33a2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f6ee8a8ee5156efd1c8a33a2",
+                "width": 64
+              }
+            ],
+            "name": "Somewhere in Rain",
+            "release_date": "2025-11-17",
+            "release_date_precision": "day",
+            "uri": "spotify:album:0nQZzyHhW4sVoTLR7kS8ZT",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+                },
+                "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+                "id": "0wcen0V8FgQu6xYupnZMbB",
+                "name": "softy",
+                "type": "artist",
+                "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0nQZzyHhW4sVoTLR7kS8ZT"
+            },
+            "total_tracks": 15
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+              "id": "0wcen0V8FgQu6xYupnZMbB",
+              "name": "softy",
+              "type": "artist",
+              "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 5,
+          "duration_ms": 128275,
+          "external_ids": {
+            "isrc": "UKZGC2508605"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/7n2eJUDk5MpT1x31gbUbLt"
+          },
+          "href": "https://api.spotify.com/v1/tracks/7n2eJUDk5MpT1x31gbUbLt",
+          "id": "7n2eJUDk5MpT1x31gbUbLt",
+          "name": "Lenticel",
+          "popularity": 52,
+          "uri": "spotify:track:7n2eJUDk5MpT1x31gbUbLt",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "compilation",
+            "href": "https://api.spotify.com/v1/albums/6olByBOFm4qohkw8R2hKHt",
+            "id": "6olByBOFm4qohkw8R2hKHt",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273fda9a616638cfc217962ade8",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02fda9a616638cfc217962ade8",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851fda9a616638cfc217962ade8",
+                "width": 64
+              }
+            ],
+            "name": "Best-of lofi hip-hop 2022",
+            "release_date": "2022-12-31",
+            "release_date_precision": "day",
+            "uri": "spotify:album:6olByBOFm4qohkw8R2hKHt",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                },
+                "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                "id": "0LyfQWJT6nXafLPZqxe9Of",
+                "name": "Various Artists",
+                "type": "artist",
+                "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/6olByBOFm4qohkw8R2hKHt"
+            },
+            "total_tracks": 75
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7tYro3kW5Ocevel9uXDCKA"
+              },
+              "href": "https://api.spotify.com/v1/artists/7tYro3kW5Ocevel9uXDCKA",
+              "id": "7tYro3kW5Ocevel9uXDCKA",
+              "name": "another silent weekend",
+              "type": "artist",
+              "uri": "spotify:artist:7tYro3kW5Ocevel9uXDCKA"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3vVw6m3rihy77VuqxApdLA"
+              },
+              "href": "https://api.spotify.com/v1/artists/3vVw6m3rihy77VuqxApdLA",
+              "id": "3vVw6m3rihy77VuqxApdLA",
+              "name": "Blurred Figures",
+              "type": "artist",
+              "uri": "spotify:artist:3vVw6m3rihy77VuqxApdLA"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1eDIWVJt7ZWKsrXw5WVNsN"
+              },
+              "href": "https://api.spotify.com/v1/artists/1eDIWVJt7ZWKsrXw5WVNsN",
+              "id": "1eDIWVJt7ZWKsrXw5WVNsN",
+              "name": "Lofi Girl",
+              "type": "artist",
+              "uri": "spotify:artist:1eDIWVJt7ZWKsrXw5WVNsN"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 33,
+          "duration_ms": 155076,
+          "external_ids": {
+            "isrc": "GBKQU2291574"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/0LzJES8sImwgwGo5RHSeeD"
+          },
+          "href": "https://api.spotify.com/v1/tracks/0LzJES8sImwgwGo5RHSeeD",
+          "id": "2rzlS908ocTsEZS8KOddYl",
+          "name": "hey how are you",
+          "popularity": 6,
+          "uri": "spotify:track:2rzlS908ocTsEZS8KOddYl",
+          "is_local": false,
+          "linked_from": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0LzJES8sImwgwGo5RHSeeD"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0LzJES8sImwgwGo5RHSeeD",
+            "id": "0LzJES8sImwgwGo5RHSeeD",
+            "type": "track",
+            "uri": "spotify:track:0LzJES8sImwgwGo5RHSeeD"
+          }
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/14ornWEXyfUL3S7JbRg8bX",
+            "id": "14ornWEXyfUL3S7JbRg8bX",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2734f0025940f89d05e2e09fa21",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e024f0025940f89d05e2e09fa21",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048514f0025940f89d05e2e09fa21",
+                "width": 64
+              }
+            ],
+            "name": "The Realization",
+            "release_date": "2023-09-11",
+            "release_date_precision": "day",
+            "uri": "spotify:album:14ornWEXyfUL3S7JbRg8bX",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4CSOdm2yCuB71TxCfV105e"
+                },
+                "href": "https://api.spotify.com/v1/artists/4CSOdm2yCuB71TxCfV105e",
+                "id": "4CSOdm2yCuB71TxCfV105e",
+                "name": "Kinissue",
+                "type": "artist",
+                "uri": "spotify:artist:4CSOdm2yCuB71TxCfV105e"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/14ornWEXyfUL3S7JbRg8bX"
+            },
+            "total_tracks": 10
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4CSOdm2yCuB71TxCfV105e"
+              },
+              "href": "https://api.spotify.com/v1/artists/4CSOdm2yCuB71TxCfV105e",
+              "id": "4CSOdm2yCuB71TxCfV105e",
+              "name": "Kinissue",
+              "type": "artist",
+              "uri": "spotify:artist:4CSOdm2yCuB71TxCfV105e"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 2,
+          "duration_ms": 160588,
+          "external_ids": {
+            "isrc": "UKZGC2306562"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/1xYBDCComkNeNQq3vFTPM9"
+          },
+          "href": "https://api.spotify.com/v1/tracks/1xYBDCComkNeNQq3vFTPM9",
+          "id": "1xYBDCComkNeNQq3vFTPM9",
+          "name": "Sacrifice",
+          "popularity": 51,
+          "uri": "spotify:track:1xYBDCComkNeNQq3vFTPM9",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/6FHPo3FZIq8WvFQw2fCzrs",
+            "id": "6FHPo3FZIq8WvFQw2fCzrs",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273d3116d3de92d7308ae9006c5",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02d3116d3de92d7308ae9006c5",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851d3116d3de92d7308ae9006c5",
+                "width": 64
+              }
+            ],
+            "name": "holding space",
+            "release_date": "2025-01-13",
+            "release_date_precision": "day",
+            "uri": "spotify:album:6FHPo3FZIq8WvFQw2fCzrs",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6NlDyXtng5iheiZRAzt4NF"
+                },
+                "href": "https://api.spotify.com/v1/artists/6NlDyXtng5iheiZRAzt4NF",
+                "id": "6NlDyXtng5iheiZRAzt4NF",
+                "name": "azayaka",
+                "type": "artist",
+                "uri": "spotify:artist:6NlDyXtng5iheiZRAzt4NF"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/6FHPo3FZIq8WvFQw2fCzrs"
+            },
+            "total_tracks": 12
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6NlDyXtng5iheiZRAzt4NF"
+              },
+              "href": "https://api.spotify.com/v1/artists/6NlDyXtng5iheiZRAzt4NF",
+              "id": "6NlDyXtng5iheiZRAzt4NF",
+              "name": "azayaka",
+              "type": "artist",
+              "uri": "spotify:artist:6NlDyXtng5iheiZRAzt4NF"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 3,
+          "duration_ms": 148356,
+          "external_ids": {
+            "isrc": "UKZGC2409496"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/4UzDTGoRX8RZdIav7kfPte"
+          },
+          "href": "https://api.spotify.com/v1/tracks/4UzDTGoRX8RZdIav7kfPte",
+          "id": "4UzDTGoRX8RZdIav7kfPte",
+          "name": "from town to town",
+          "popularity": 54,
+          "uri": "spotify:track:4UzDTGoRX8RZdIav7kfPte",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "single",
+            "href": "https://api.spotify.com/v1/albums/4ktK0PC4NZjqmmLPLJlcI2",
+            "id": "4ktK0PC4NZjqmmLPLJlcI2",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2733c55d37a87e3e2808bb05f34",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e023c55d37a87e3e2808bb05f34",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048513c55d37a87e3e2808bb05f34",
+                "width": 64
+              }
+            ],
+            "name": "Way of Life",
+            "release_date": "2020-06-07",
+            "release_date_precision": "day",
+            "uri": "spotify:album:4ktK0PC4NZjqmmLPLJlcI2",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/53rCVzFVlyntj7jEjnY2oM"
+                },
+                "href": "https://api.spotify.com/v1/artists/53rCVzFVlyntj7jEjnY2oM",
+                "id": "53rCVzFVlyntj7jEjnY2oM",
+                "name": "Yasumu",
+                "type": "artist",
+                "uri": "spotify:artist:53rCVzFVlyntj7jEjnY2oM"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/4ktK0PC4NZjqmmLPLJlcI2"
+            },
+            "total_tracks": 6
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/53rCVzFVlyntj7jEjnY2oM"
+              },
+              "href": "https://api.spotify.com/v1/artists/53rCVzFVlyntj7jEjnY2oM",
+              "id": "53rCVzFVlyntj7jEjnY2oM",
+              "name": "Yasumu",
+              "type": "artist",
+              "uri": "spotify:artist:53rCVzFVlyntj7jEjnY2oM"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 6,
+          "duration_ms": 148500,
+          "external_ids": {
+            "isrc": "TCAEX2073339"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/6dgegoRp7BrEg1Rax4w4pq"
+          },
+          "href": "https://api.spotify.com/v1/tracks/6dgegoRp7BrEg1Rax4w4pq",
+          "id": "6dgegoRp7BrEg1Rax4w4pq",
+          "name": "Midnight Thoughts",
+          "popularity": 51,
+          "uri": "spotify:track:6dgegoRp7BrEg1Rax4w4pq",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/0nQZzyHhW4sVoTLR7kS8ZT",
+            "id": "0nQZzyHhW4sVoTLR7kS8ZT",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f6ee8a8ee5156efd1c8a33a2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f6ee8a8ee5156efd1c8a33a2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f6ee8a8ee5156efd1c8a33a2",
+                "width": 64
+              }
+            ],
+            "name": "Somewhere in Rain",
+            "release_date": "2025-11-17",
+            "release_date_precision": "day",
+            "uri": "spotify:album:0nQZzyHhW4sVoTLR7kS8ZT",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+                },
+                "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+                "id": "0wcen0V8FgQu6xYupnZMbB",
+                "name": "softy",
+                "type": "artist",
+                "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/0nQZzyHhW4sVoTLR7kS8ZT"
+            },
+            "total_tracks": 15
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wcen0V8FgQu6xYupnZMbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wcen0V8FgQu6xYupnZMbB",
+              "id": "0wcen0V8FgQu6xYupnZMbB",
+              "name": "softy",
+              "type": "artist",
+              "uri": "spotify:artist:0wcen0V8FgQu6xYupnZMbB"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 11,
+          "duration_ms": 120000,
+          "external_ids": {
+            "isrc": "UKZGC2508611"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/6uolxWc3GGfaRZPJxmrUV0"
+          },
+          "href": "https://api.spotify.com/v1/tracks/6uolxWc3GGfaRZPJxmrUV0",
+          "id": "6uolxWc3GGfaRZPJxmrUV0",
+          "name": "Polen",
+          "popularity": 52,
+          "uri": "spotify:track:6uolxWc3GGfaRZPJxmrUV0",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "single",
+            "href": "https://api.spotify.com/v1/albums/4AqBdHhblg4mhfsnpHtcvp",
+            "id": "4AqBdHhblg4mhfsnpHtcvp",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273cf4cb885caecb80b77b89df2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02cf4cb885caecb80b77b89df2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851cf4cb885caecb80b77b89df2",
+                "width": 64
+              }
+            ],
+            "name": "Been Thinking",
+            "release_date": "2020-12-18",
+            "release_date_precision": "day",
+            "uri": "spotify:album:4AqBdHhblg4mhfsnpHtcvp",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1R9fj5Tiy9XMFp5ANzS7FA"
+                },
+                "href": "https://api.spotify.com/v1/artists/1R9fj5Tiy9XMFp5ANzS7FA",
+                "id": "1R9fj5Tiy9XMFp5ANzS7FA",
+                "name": "Jhove",
+                "type": "artist",
+                "uri": "spotify:artist:1R9fj5Tiy9XMFp5ANzS7FA"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/4AqBdHhblg4mhfsnpHtcvp"
+            },
+            "total_tracks": 6
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1R9fj5Tiy9XMFp5ANzS7FA"
+              },
+              "href": "https://api.spotify.com/v1/artists/1R9fj5Tiy9XMFp5ANzS7FA",
+              "id": "1R9fj5Tiy9XMFp5ANzS7FA",
+              "name": "Jhove",
+              "type": "artist",
+              "uri": "spotify:artist:1R9fj5Tiy9XMFp5ANzS7FA"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 4,
+          "duration_ms": 156000,
+          "external_ids": {
+            "isrc": "GBLV62033019"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/5oOzw7HROEVOACvuLMjE2f"
+          },
+          "href": "https://api.spotify.com/v1/tracks/5oOzw7HROEVOACvuLMjE2f",
+          "id": "5oOzw7HROEVOACvuLMjE2f",
+          "name": "About Us",
+          "popularity": 53,
+          "uri": "spotify:track:5oOzw7HROEVOACvuLMjE2f",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2025-12-17T03:00:33Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/chilledcow"
+          },
+          "href": "https://api.spotify.com/v1/users/chilledcow",
+          "id": "chilledcow",
+          "type": "user",
+          "uri": "spotify:user:chilledcow"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "preview_url": null,
+          "is_playable": true,
+          "explicit": false,
+          "type": "track",
+          "episode": false,
+          "track": true,
+          "album": {
+            "is_playable": true,
+            "type": "album",
+            "album_type": "album",
+            "href": "https://api.spotify.com/v1/albums/5ei5kNiH4m3Guj24DBrZa9",
+            "id": "5ei5kNiH4m3Guj24DBrZa9",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2736a3c3109528bd7dc3e2ac3c5",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e026a3c3109528bd7dc3e2ac3c5",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048516a3c3109528bd7dc3e2ac3c5",
+                "width": 64
+              }
+            ],
+            "name": "Quartier de Nuit",
+            "release_date": "2024-09-09",
+            "release_date_precision": "day",
+            "uri": "spotify:album:5ei5kNiH4m3Guj24DBrZa9",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7pRU1CndlfPZTkcMG5ZkBD"
+                },
+                "href": "https://api.spotify.com/v1/artists/7pRU1CndlfPZTkcMG5ZkBD",
+                "id": "7pRU1CndlfPZTkcMG5ZkBD",
+                "name": "HoKø",
+                "type": "artist",
+                "uri": "spotify:artist:7pRU1CndlfPZTkcMG5ZkBD"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5ei5kNiH4m3Guj24DBrZa9"
+            },
+            "total_tracks": 13
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7pRU1CndlfPZTkcMG5ZkBD"
+              },
+              "href": "https://api.spotify.com/v1/artists/7pRU1CndlfPZTkcMG5ZkBD",
+              "id": "7pRU1CndlfPZTkcMG5ZkBD",
+              "name": "HoKø",
+              "type": "artist",
+              "uri": "spotify:artist:7pRU1CndlfPZTkcMG5ZkBD"
+            }
+          ],
+          "disc_number": 1,
+          "track_number": 1,
+          "duration_ms": 155192,
+          "external_ids": {
+            "isrc": "UKZGC2407934"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/1Uas8hPaV8wm4DBbPbir6t"
+          },
+          "href": "https://api.spotify.com/v1/tracks/1Uas8hPaV8wm4DBbPbir6t",
+          "id": "1Uas8hPaV8wm4DBbPbir6t",
+          "name": "Quartier de Nuit",
+          "popularity": 53,
+          "uri": "spotify:track:1Uas8hPaV8wm4DBbPbir6t",
+          "is_local": false
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      }
+    ],
+    "limit": 50,
+    "next": "https://api.spotify.com/v1/playlists/0vvXsWCC9xrXsKd4FyS8kM/tracks?offset=50&limit=50&market=US&locale=*",
+    "offset": 0,
+    "previous": null,
+    "total": 500
+  }
+}
