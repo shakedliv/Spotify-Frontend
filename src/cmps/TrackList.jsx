@@ -22,11 +22,16 @@ export function TrackList({
     const [trackNum, setTrackNum] = useState(0)
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
-
+   //useState of tracks
     function handleDragStart(event) {
         setActiveId(event.active.id)
     }
-
+   function onSort(sortType) {
+      // create trackstosort (new pointer)
+      // if else sorttype === name
+      // sort by name
+      // after sort reorder the tracks with use state of Tracks
+}
     function handleDragEnd(event) {
         const { active, over } = event
         if (active.id !== over.id) {
@@ -41,7 +46,7 @@ export function TrackList({
 
     return (
         <>
-            <TracksHeader />
+          <TracksHeader onSort={ onSort} />
             <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
@@ -62,10 +67,8 @@ export function TrackList({
                                  trackNum={index + 1}
                                     key={track.id}
                                     track={track}
-                                    onRemoveTrack={() =>
-                                        onRemoveTrack(track.id)
-                                    }
-                                    onAddTrack={() => onAddTrack(track.id)}
+                                    onRemoveTrack={onRemoveTrack}
+                                    onAddTrack={onAddTrack}
                                 />
                             </SortableTrack>
                         ))}

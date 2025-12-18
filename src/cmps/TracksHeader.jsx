@@ -8,6 +8,7 @@ export function TracksHeader() {
             <span>Album</span>
             <span>Date added</span>
             <span>🕑</span>
+            <span>ℹ️</span>
         </section>
     )
 }

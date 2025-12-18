@@ -30,3 +30,6 @@
         grid-area: artist;
     }
 }
+.track-preview:hover{
+   background-color: var(--bg-highlight);
+}
