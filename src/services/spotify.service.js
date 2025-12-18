@@ -1,30 +1,33 @@
 import rawTracks from '../services/spotify/data/tracks.raw.json'
 
 export const spotifyService = {
-    searchTracks
+    searchTracks,
 }
 
 function searchTracks(query) {
     if (!query) return []
 
-    const q = query.toLowerCase().trim()
+    const term = query.toLowerCase().trim()
 
     return rawTracks
         .filter(track =>
-            track.name.toLowerCase().startsWith(q)
+            track.name.toLowerCase().startsWith(term)
         )
-        .map(normalizeTrack)
+        .map(adaptTrackForList)
 }
 
-function normalizeTrack(track) {
+function adaptTrackForList(track) {
     return {
         id: track.id,
-        title: track.name,
-        artist: track.artists.map(artist => artist.name).join(', '),
-        img:
-            track.album.images[2]?.url ||
-            track.album.images[0]?.url,
-        album: track.album.name,
-        duration: track.duration_ms
+        track: {
+            name: track.name,
+            artists: track.artists.map(artist => ({
+                name: artist.name,
+            })),
+            album: {
+                name: track.album.name,
+                images: track.album.images,
+            },
+        },
     }
 }

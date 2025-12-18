@@ -67,3 +67,16 @@ export function formatDate(timestamp) {
 
     return date.toLocaleDateString('en-US', options)
 }
+// returns duration in M:SS format (example: '3:22')
+export function formatDuration(durationMs) {
+    if (!durationMs) return '0:00'
+
+    // Convert milliseconds to total seconds
+    const totalSeconds = Math.floor(durationMs / 1000)
+    
+    const minutes = Math.floor(totalSeconds / 60)
+    const seconds = totalSeconds % 60
+
+    // padStart ensures we get '05' instead of '5' for seconds
+    return `${minutes}:${seconds.toString().padStart(2, '0')}`
+}
