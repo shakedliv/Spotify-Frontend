@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { spotifyService } from "../services/spotify.service";
-import { SearchSongPreview } from "../cmps/SearchSongPreview";
+import { TrackList } from "../cmps/TrackList";
 
 export function Search() {
   const [searchParams] = useSearchParams();
@@ -21,10 +21,7 @@ export function Search() {
 
   return (
     <section className="search-page">
-      {tracks.map((track) => (
-        // <SearchSongPreview key={track.id} track={track} />
-        <pre key={track.id}>{JSON.stringify(track, null, 2)}</pre>
-      ))}
+      <TrackList tracks={tracks} />
     </section>
   );
 }

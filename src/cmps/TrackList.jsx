@@ -9,7 +9,7 @@ import { SortableTrack } from './SortableTrack.jsx'
 import { TrackPreview } from './TrackPreview.jsx'
 import { TracksHeader } from './TracksHeader.jsx'
 import stationSample from '../assets/data/station.sample.raw.json'
-const demoData = stationSample.tracks.items
+const demoData = null //stationSample.tracks.items
 console.log('demoData:', demoData)
 function doNothing() {}
 export function TrackList({
