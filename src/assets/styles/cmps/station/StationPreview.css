@@ -1,13 +1,10 @@
-.station-preview {
+.station-list .station-preview {
     display: grid;
     border-radius: 8px;
     padding: 16px;
-    width: fit-content;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.2s ease;
     color: #9d9d9d;
-    width: 220px;
-
 
     &:hover {
         background-color: #181818;
@@ -29,7 +26,6 @@
 
 
     }
-
     .station-desc {
         white-space: nowrap;
         overflow: hidden;
@@ -37,9 +33,4 @@
 
     }
 
-    .station-link{
-     
-    }
 }
-
-

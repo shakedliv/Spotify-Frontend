@@ -11,7 +11,7 @@ export function FirstStationList({ onRemoveStation }) {
 
     return (
         <div className="first-station-list">
-            {stations.map(station => (
+            {stations.slice(0, 8).map(station => (
                 <StationPreview
                     key={station._id}
                     station={station}

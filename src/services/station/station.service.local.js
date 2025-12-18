@@ -2,7 +2,7 @@
 import { storageService } from '../async-storage.service'
 import { makeId } from '../util.service'
 import { userService } from '../user'
-
+import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
 import demoPlaylist from '../../assets/styles/data/station.sample.raw.json'
 
 const STORAGE_KEY = 'station'
@@ -17,8 +17,8 @@ window.cs = stationService
 
 
 async function query(filterBy = { txt: '' }) {
-    let stations = [_mapSpotifyPlaylistToStation(demoPlaylist)]
-    // var stations = await storageService.query(STORAGE_KEY)
+    // let stations = [_mapSpotifyPlaylistToStation(demoPlaylist)]
+    var stations = await storageService.query(STORAGE_KEY)
     const { txt, sortField, sortDir } = filterBy
 
     if (txt) {
@@ -31,7 +31,6 @@ async function query(filterBy = { txt: '' }) {
             station1[sortField].localeCompare(station2[sortField]) * +sortDir)
     }
 
-    // stations = stations.map(({ _id, name, owner }) => ({ _id, name, owner }))
     console.log(stations)
 
     return stations
@@ -49,16 +48,13 @@ async function remove(stationId) {
 async function save(station) {
     var savedStation
     if (station._id) {
-        const stationToSave = {
-            _id: station._id,
-        }
-        savedStation = await storageService.put(STORAGE_KEY, stationToSave)
+
+        savedStation = await storageService.put(STORAGE_KEY, station)
     } else {
         const stationToSave = {
             name: station.name,
-            // Later, owner is set by the backend
+            imgUrl: station.imgUrl || defaultStationImg,
             owner: userService.getLoggedinUser(),
-
         }
         savedStation = await storageService.post(STORAGE_KEY, stationToSave)
     }

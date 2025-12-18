@@ -1,7 +1,7 @@
 .station-list {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    display: flex;
     gap: 20px;
+    overflow: hidden;
+   
     background-color: var(--clr5);
 }

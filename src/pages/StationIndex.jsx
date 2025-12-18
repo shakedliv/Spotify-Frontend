@@ -36,10 +36,9 @@ export function StationIndex() {
     return (
         <main className="station-index">
             {/* <StationFilter filterBy={filterBy} setFilterBy={setFilterBy} /> */}
-            <section className='first-station-list'>
+            <section >
                 <FirstStationList
                     onRemoveStation={onRemoveStation}
-                   
                 />
             </section>
             <h2>Made For</h2>
