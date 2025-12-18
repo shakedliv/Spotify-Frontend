@@ -5,22 +5,31 @@
 
     .basic-info-container {
         display: grid;
-        grid-template-columns: 64px 64px 2fr;
+        align-items: center;
+        grid-template-columns:auto auto 1fr;
         grid-template-areas:
             'num img name'
             'num img artist';
     }
+    /* .track-num , .track-name, .track-img, .track-artist{
+      place-self: center;
+    } */
+
     .track-num {
         grid-area: num;
+        justify-self: center;
     }
     .track-name {
         grid-area: name;
     }
     .track-img {
         grid-area: img;
-        place-self: center;
+       
     }
     .track-artist {
         grid-area: artist;
     }
+}
+.track-preview:hover{
+   background-color: var(--bg-highlight);
 }

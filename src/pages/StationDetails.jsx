@@ -1,42 +1,46 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service'
-import { loadStation, addStationMsg } from '../store/actions/station.actions'
+import { loadStation } from '../store/actions/station.actions'
+import { StationEdit } from '../cmps/StationEdit'
 
 
 export function StationDetails() {
 
-  const {stationId} = useParams()
+  const { stationId } = useParams()
   const station = useSelector(storeState => storeState.stationModule.station)
+
+  const [isEditOpen, setIsEditOpen] = useState(false)
 
   useEffect(() => {
     loadStation(stationId)
   }, [stationId])
 
-  async function onAddStationMsg(stationId) {
-    try {
-        await addStationMsg(stationId, 'bla bla ' + parseInt(Math.random()*10))
-        showSuccessMsg(`Station msg added`)
-    } catch (err) {
-        showErrorMsg('Cannot add station msg')
-    }        
+  console.log(station)
 
-}
+  if (!station) return <div>Loading...</div>
 
   return (
     <section className="station-details">
       <Link to="/station">Back to list</Link>
-      <h1>Station Details</h1>
-      {station && <div>
-        <h3>{station.name}</h3>
-        <h4>{station.speed} KMH</h4>
-        <pre> {JSON.stringify(station, null, 2)} </pre>
-      </div>
-      }
-      <button onClick={() => { onAddStationMsg(station._id) }}>Add station msg</button>
+
+      <header>
+        <img src={station.imgUrl || ''} alt={station.name} />
+        <h1 onClick={() => setIsEditOpen(true)}>{station.name}</h1>
+        <h4 className='desc'>{station.description || ''}</h4>
+        <h5>station creator</h5>
+      </header>
+
+      {/* onaddTrack/ onremoveTrack */}
+
+      {isEditOpen && (
+        <StationEdit
+          station={station}
+          onClose={() => setIsEditOpen(false)}
+        />
+      )}
 
     </section>
   )

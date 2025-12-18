@@ -1,0 +1,40 @@
+.station-details {
+    color: var(--gray1);
+    padding: 2em;
+
+
+    header {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        column-gap: 24px;
+        row-gap: 8px;
+
+
+        grid-template-areas:
+            "img ."
+            "img h"
+            "img e"
+            "img c";
+
+        h1 {
+            grid-area: h;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        .desc {
+            grid-area: e;
+        }
+
+        h5 {
+            grid-area: c;
+        }
+
+        img {
+            grid-area: img;
+            width: 230px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    }
+}
