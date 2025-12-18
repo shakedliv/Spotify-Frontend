@@ -2,19 +2,16 @@ import { useState } from 'react'
 import { updateStation } from '../store/actions/station.actions'
 
 export function StationEdit({ station, onClose }) {
-  const [name, setName] = useState(station.name || '')
-  const [description, setDescription] = useState(station.description || '')
-  const [imgUrl, setImgUrl] = useState(station.imgUrl || '')
+  const [stationToEdit, setStationToEdit] = useState(station)
+
+  function handleChange({ target }) {
+    const { name, value } = target
+    setStationToEdit(prev => ({ ...prev, [name]: value }))
+  }
 
   async function onSave(ev) {
     ev.preventDefault()
-    const updatedStation = {
-      ...station,
-      name,
-      description,
-      imgUrl,
-    }
-    await updateStation(updatedStation)
+    await updateStation(stationToEdit)
     onClose()
   }
 
@@ -26,18 +23,19 @@ export function StationEdit({ station, onClose }) {
         <form onSubmit={onSave} className="station-edit-form">
           <label>
             <input
-              value={name}
-              onChange={ev => setName(ev.target.value)}
+              name="name"
+              value={stationToEdit.name || ''}
+              onChange={handleChange}
             />
           </label>
 
           <label>
             <textarea
-              value={description}
-              onChange={ev => setDescription(ev.target.value)}
+              name="description"
+              value={stationToEdit.description || ''}
+              onChange={handleChange}
             />
           </label>
-
 
           <div className="actions">
             <button type="button" onClick={onClose}>Cancel</button>

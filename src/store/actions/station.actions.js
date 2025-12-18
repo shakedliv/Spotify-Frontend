@@ -66,6 +66,23 @@ export async function addStationMsg(stationId, txt) {
     }
 }
 
+
+// export async function addTrackToStation(station,track) {
+//     try {
+//         const msg = await stationService.addStationMsg(stationId, txt)
+//         store.dispatch(getCmdAddStationMsg(msg))
+//         return msg
+//     } catch (err) {
+//         console.log('Cannot add station msg', err)
+//         throw err
+//     }
+// }
+
+
+
+
+
+
 // Command Creators:
 function getCmdSetStations(stations) {
     return {
