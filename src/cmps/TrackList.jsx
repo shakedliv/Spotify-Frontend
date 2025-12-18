@@ -5,11 +5,18 @@ import {
     SortableContext,
     verticalListSortingStrategy,
 } from '@dnd-kit/sortable'
-
 import { SortableTrack } from './SortableTrack.jsx'
 import { TrackPreview } from './TrackPreview.jsx'
-
-export function TrackList({ tracks, onRemoveTrack, onReorder }) {
+import stationSample from '../assets/data/station.sample.raw.json'
+const demoData = stationSample.tracks.items
+console.log('demoData:', demoData)
+function doNothing() {}
+export function TrackList({
+    tracks = demoData,
+    onRemoveTrack = doNothing,
+    onReorder = doNothing,
+    onAddTrack = doNothing,
+}) {
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
 
@@ -47,8 +54,10 @@ export function TrackList({ tracks, onRemoveTrack, onReorder }) {
                             track={track}
                         >
                             <TrackPreview
+                                key={track.id}
                                 track={track}
-                                onRemove={() => onRemoveTrack(track.id)}
+                                onRemoveTrack={() => onRemoveTrack(track.id)}
+                                onAddTrack={() => onAddTrack(track.id)}
                             />
                         </SortableTrack>
                     ))}

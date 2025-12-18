@@ -8,6 +8,7 @@ import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
 import { socketService, SOCKET_EVENT_REVIEW_ADDED, SOCKET_EVENT_REVIEW_REMOVED } from '../services/socket.service'
 import { ReviewList } from '../cmps/ReviewList'
 import { ReviewEdit } from '../cmps/ReviewEdit'
+import { TrackList } from '../cmps/TrackList'
 
 export function ReviewIndex() {
 	const loggedInUser = useSelector(storeState => storeState.userModule.user)
@@ -45,10 +46,7 @@ export function ReviewIndex() {
 	}
 
 	return <div className="review-index">
-        <h2>Reviews and Gossip</h2>
-        {loggedInUser && <ReviewEdit/>}
-        <ReviewList 
-            reviews={reviews} 
-            onRemoveReview={onRemoveReview}/>
+        <h2>Track List</h2>
+        <TrackList />
     </div>
 }
