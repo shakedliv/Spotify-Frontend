@@ -3,7 +3,7 @@ import { storageService } from '../async-storage.service'
 import { makeId } from '../util.service'
 import { userService } from '../user'
 import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
-import demoPlaylist from '../../assets/styles/data/station.sample.raw.json'
+// import demoPlaylist from '../../assets/styles/data/station.sample.raw.json'
 
 const STORAGE_KEY = 'station'
 

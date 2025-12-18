@@ -1,5 +1,6 @@
 import { storageService } from '../async-storage.service'
-import { utilService } from '../util.service'
+
+import { makeId } from '../util.service'
 
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 
@@ -71,7 +72,7 @@ function getLoggedinUser() {
 
 function saveLoggedinUser(user) {
     user = {
-        _id: user._id || utilService.makeId(),
+        _id: user._id || makeId(),
         fullname: user.fullname,
         imgUrl: user.imgUrl,
         isAdmin: user.isAdmin,

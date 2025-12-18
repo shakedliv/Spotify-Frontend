@@ -1,40 +1,41 @@
 import React, { useEffect } from 'react'
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router"
 
-import { HomePage } from "./pages/HomePage";
-import { AboutUs, AboutTeam, AboutVision } from "./pages/AboutUs";
-import { StationIndex } from "./pages/StationIndex.jsx";
-import { ReviewIndex } from "./pages/ReviewIndex.jsx";
-import { ChatApp } from "./pages/Chat.jsx";
-import { AdminIndex } from "./pages/AdminIndex.jsx";
+import { HomePage } from "./pages/HomePage"
+import { AboutUs, AboutTeam, AboutVision } from "./pages/AboutUs"
+import { StationIndex } from "./pages/StationIndex.jsx"
 
-import { StationDetails } from "./pages/StationDetails";
-import { UserDetails } from "./pages/UserDetails";
+import { ChatApp } from "./pages/Chat.jsx"
+import { AdminIndex } from "./pages/AdminIndex.jsx"
+
+import { StationDetails } from "./pages/StationDetails"
+import { UserDetails } from "./pages/UserDetails"
 
 
-import { AppHeader } from "./cmps/AppHeader";
-import { PlayerFooter } from "./cmps/PlayerFooter";
-import { AppFooter } from "./cmps/AppFooter";
-import { UserMsg } from "./cmps/UserMsg.jsx";
-import { LoginSignup } from "./pages/LoginSignup.jsx";
-import { Login } from "./pages/Login.jsx";
-import { Signup } from "./pages/Signup.jsx";
+import { AppHeader } from "./cmps/AppHeader"
+import { PlayerFooter } from "./cmps/PlayerFooter"
+import { AppFooter } from "./cmps/AppFooter"
+import { UserMsg } from "./cmps/UserMsg.jsx"
+import { LoginSignup } from "./pages/LoginSignup.jsx"
+import { Login } from "./pages/Login.jsx"
+import { Signup } from "./pages/Signup.jsx"
 
 import { Library } from './cmps/Library.jsx'
 import { loadStations } from './store/actions/station.actions.js'
 
 export function RootCmp() {
 
-     useEffect(() => {
-        loadStations()
-    }, [])
+  useEffect(() => {
+    loadStations()
+  }, [])
 
   return (
     <div className="main-container">
       <AppHeader />
       <UserMsg />
 
-      <main>
+      <main className='main-layout'>
+        <Library />
         <Routes>
           <Route path="" element={<HomePage />} />
           <Route path="about" element={<AboutUs />}>
@@ -44,7 +45,7 @@ export function RootCmp() {
           <Route path="station" element={<StationIndex />} />
           <Route path="station/:stationId" element={<StationDetails />} />
           <Route path="user/:id" element={<UserDetails />} />
-          <Route path="review" element={<ReviewIndex />} />
+
           <Route path="chat" element={<ChatApp />} />
           <Route path="admin" element={<AdminIndex />} />
           <Route path="login" element={<LoginSignup />}>
@@ -53,8 +54,9 @@ export function RootCmp() {
           </Route>
         </Routes>
       </main>
+
       <PlayerFooter />
       <AppFooter />
     </div>
-  );
+  )
 }
