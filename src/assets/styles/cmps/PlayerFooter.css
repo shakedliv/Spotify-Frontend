@@ -1,0 +1,96 @@
+.player-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 0 16px;
+  color: #fff;
+  z-index: 100;
+}
+
+.player-footer-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.player-footer-left img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-title {
+  font-size: 14px;
+}
+
+.track-artist {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.player-footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.player-controls button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.player-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.player-progress span {
+  font-size: 11px;
+  color: #b3b3b3;
+}
+
+.player-progress input[type="range"] {
+  flex: 1;
+}
+
+.player-footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.player-footer-right button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.player-footer-right input[type="range"] {
+  width: 100px;
+}

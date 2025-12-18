@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import { TrackList } from '../cmps/TrackList'
 
 export function AboutUs() {
     const [count, setCount] = useState(100)
@@ -32,7 +33,6 @@ export function AboutUs() {
                 <h3>{count.toLocaleString()} Followers</h3>
                 <button onClick={onTellMeMore}>Tell me More</button>
             </FancyBox>
-
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aperiam quo veniam velit dolor reprehenderit, laudantium consequatur neque numquam labore quae. Accusamus libero perferendis ducimus? Alias unde hic quisquam doloremque.</p>
         </section>
     )

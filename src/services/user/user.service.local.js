@@ -1,4 +1,5 @@
 import { storageService } from '../async-storage.service'
+import { utilService } from '../util.service'
 
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 
@@ -13,6 +14,9 @@ export const userService = {
     getLoggedinUser,
     saveLoggedinUser,
 }
+
+_createLoggedinUser()
+
 
 async function getUsers() {
     const users = await storageService.query('user')
@@ -35,7 +39,7 @@ async function update({ _id, score }) {
     user.score = score
     await storageService.put('user', user)
 
-	// When admin updates other user's details, do not update loggedinUser
+    // When admin updates other user's details, do not update loggedinUser
     const loggedinUser = getLoggedinUser()
     if (loggedinUser._id === user._id) saveLoggedinUser(user)
 
@@ -66,28 +70,28 @@ function getLoggedinUser() {
 }
 
 function saveLoggedinUser(user) {
-	user = { 
-        _id: user._id, 
-        fullname: user.fullname, 
-        imgUrl: user.imgUrl, 
-        score: user.score, 
-        isAdmin: user.isAdmin 
+    user = {
+        _id: user._id || utilService.makeId(),
+        fullname: user.fullname,
+        imgUrl: user.imgUrl,
+        isAdmin: user.isAdmin,
+        username: user.username,
+        password: user.password,
+        likedSongs: user.likedSongs || [],
     }
-	sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
-	return user
+    sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
+    return user
 }
 
 // To quickly create an admin user, uncomment the next line
-// _createAdmin()
-async function _createAdmin() {
+async function _createLoggedinUser() {
     const user = {
         username: 'admin',
         password: 'admin',
         fullname: 'Mustafa Adminsky',
         imgUrl: 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png',
-        score: 10000,
-    }
+        isAdmin: true
 
-    const newUser = await storageService.post('user', userCred)
-    console.log('newUser: ', newUser)
+    }
+    saveLoggedinUser(user)
 }
