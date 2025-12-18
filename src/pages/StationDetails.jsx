@@ -31,8 +31,9 @@ export function StationDetails() {
         <h1 onClick={() => setIsEditOpen(true)}>{station.name}</h1>
         <h4 className='desc'>{station.description || ''}</h4>
         <h5>station creator</h5>
-
       </header>
+
+      {/* onaddTrack/ onremoveTrack */}
 
       {isEditOpen && (
         <StationEdit
