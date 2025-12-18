@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { formatDate, formatDuration } from '../services/util.service.js'
 export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
     const organizedTrack = track.track
-    console.log('organizedTrack:', organizedTrack)
     return (
         <article className='track-preview'>
             <section className='basic-info-container'>

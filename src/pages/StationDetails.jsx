@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 import { loadStation } from '../store/actions/station.actions'
 import { StationEdit } from '../cmps/StationEdit'
+import { TrackList } from '../cmps/TrackList'
 
 
 export function StationDetails() {
@@ -42,6 +43,7 @@ export function StationDetails() {
         />
       )}
 
-    </section>
+        <TrackList />
+     </section>
   )
 }

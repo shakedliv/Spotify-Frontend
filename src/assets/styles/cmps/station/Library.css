@@ -1,6 +1,6 @@
 .Library {
     color: whitesmoke;
-    background-color: var(--clr5);
+    background-color: var(--bg-elevated-base);
 
     .library-header {
         display: flex;
