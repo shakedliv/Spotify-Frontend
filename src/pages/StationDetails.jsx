@@ -43,7 +43,6 @@ export function StationDetails() {
         />
       )}
 
-        <TrackList />
      </section>
   )
 }

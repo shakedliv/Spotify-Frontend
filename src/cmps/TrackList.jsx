@@ -25,24 +25,46 @@ export function TrackList({
     //useState of tracks
     function handleDragStart(event) {
         setActiveId(event.active.id)
-    }
-    function onSort(sortBy) {
-        // sortBy = {sortField: name, sortDirection: -1}
-        const tracksToSort = [...currTracks]
+   }
+   function onSort(sortBy) {
+      // sortBy = {sortField: name, sortDirection: -1}
+      const tracksToSort = [...currTracks]
         const { sortField, sortDirection } = sortBy
 
-        if (sortField === 'name' || sortField === 'album') {
+      //   if (sortField === 'name' || sortField === 'album') {
+      //       tracksToSort.sort(
+      //           (track1, track2) =>
+      //               track1[sortField].localeCompare(track2[sortField]) *
+      //               +sortDirection
+      //       )
+      if (sortField === 'name') {
             tracksToSort.sort(
-                (track1, track2) =>
-                    track1[sortField].localeCompare(track2[sortField]) *
-                    +sortDirection
+               (track1, track2) => 
+                  track1.track.name.localeCompare(track2.track.name) *
+                     +sortDirection
+               
             )
-        } else if (sortField === 'duration') {
+      }
+      else if (sortField === 'album') {
+            tracksToSort.sort(
+               (track1, track2) =>  
+                  track1.track.album.name.localeCompare(track2.track.album.name) *
+                     +sortDirection
+               
+            )
+        } 
+      else if (sortField === 'duration') {
             tracksToSort.sort(
                 (track1, track2) =>
-                    track1[sortField] - track2[sortField] * +sortDirection
+                (track1.track.duration_ms - track2.track.duration_ms) * +sortDirection
             )
         }
+      // else if (sortField === 'date-added') {
+      //       tracksToSort.sort(
+      //           (track1, track2) =>
+      //           (track1.dateAdded - track2.dateAdded) * +sortDirection
+      //       )
+      //   }
         setCurrTracks(tracksToSort)
     }
     function handleDragEnd(event) {
