@@ -6,7 +6,7 @@ export function StationPreview({ station }) {
             <Link to={`/station/${station._id}`}>{station.name}</Link>
         </header>
 
-        <p>Speed: <span>{station.speed.toLocaleString()} Km/h</span></p>
+        {/* <p>Speed: <span>{station.speed.toLocaleString()} Km/h</span></p> */}
         {station.owner && <p>Owner: <span>{station.owner.fullname}</span></p>}
         
     </article>
