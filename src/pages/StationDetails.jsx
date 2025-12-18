@@ -18,7 +18,7 @@ export function StationDetails() {
 
   console.log(station)
 
-  if(!station) return <div>Loading...</div>
+  if (!station) return <div>Loading...</div>
 
   return (
     <section className="station-details">
@@ -27,7 +27,9 @@ export function StationDetails() {
       <header>
         <img src={station.imgUrl || ''} alt={station.name} />
         <h1>{station.name}</h1>
-        <h4>tracksCount , duration</h4>
+        <h4 className='desc'>station description</h4>
+        <h5>station creator</h5>
+
       </header>
 
 

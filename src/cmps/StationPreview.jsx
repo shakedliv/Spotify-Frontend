@@ -6,6 +6,11 @@ export function StationPreview({ station, onRemoveStation, type }) {
     const user = userService.getLoggedinUser()
     const canEdit = user && station.owner?._id === user._id
 
+    console.log(user);
+    
+
+
+
 
     if (type === 'first') {
         return (
@@ -22,8 +27,6 @@ export function StationPreview({ station, onRemoveStation, type }) {
         )
 
     }
-
-
 
     return (
         <Link to={`/station/${station._id}`} className="station-link">

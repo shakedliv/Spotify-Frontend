@@ -13,7 +13,8 @@
         grid-template-areas:
             "img ."
             "img h"
-            "img e";
+            "img e"
+            "img c";
 
         h1 {
             grid-area: h;
@@ -21,8 +22,12 @@
             font-weight: 800;
         }
 
-        h4 {
+        .desc {
             grid-area: e;
+        }
+
+        h5 {
+            grid-area: c;
         }
 
         img {
