@@ -1,4 +1,26 @@
-.track-preview{
-   display: flex;
-   justify-content : space-between;
+.track-preview {
+   /* background-color: ; */
+    display: flex;
+    justify-content: space-between;
+
+    .basic-info-container {
+        display: grid;
+        grid-template-columns: 64px 64px 2fr;
+        grid-template-areas:
+            'num img name'
+            'num img artist';
+    }
+    .track-num {
+        grid-area: num;
+    }
+    .track-name {
+        grid-area: name;
+    }
+    .track-img {
+        grid-area: img;
+        place-self: center;
+    }
+    .track-artist {
+        grid-area: artist;
+    }
 }

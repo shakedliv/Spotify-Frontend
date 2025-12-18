@@ -7,6 +7,7 @@ import {
 } from '@dnd-kit/sortable'
 import { SortableTrack } from './SortableTrack.jsx'
 import { TrackPreview } from './TrackPreview.jsx'
+import { TracksHeader } from './TracksHeader.jsx'
 import stationSample from '../assets/data/station.sample.raw.json'
 const demoData = stationSample.tracks.items
 console.log('demoData:', demoData)
@@ -36,7 +37,9 @@ export function TrackList({
         setActiveId(null)
     }
 
-    return (
+   return (
+      <>
+         <TracksHeader />
         <DndContext
             collisionDetection={closestCenter}
             onDragStart={handleDragStart}
@@ -69,6 +72,7 @@ export function TrackList({
                     <TrackPreview track={activeTrack} isDragging />
                 ) : null}
             </DragOverlay>
-        </DndContext>
+         </DndContext>
+         </>
     )
 }

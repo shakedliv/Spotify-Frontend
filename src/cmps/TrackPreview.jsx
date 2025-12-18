@@ -1,17 +1,18 @@
 export function TrackPreview({ track, onAddTrack, onRemoveTrack }) {
     const organizedTrack = track.track
-    console.log('track:', organizedTrack)
-    console.log('img:', organizedTrack.artists[0].name)
     return (
         <article className='track-preview'>
-           
-                <img
-                    src={organizedTrack.album.images[0].url}
-                    alt=''
-                    style={{ width: 50, height: 50 }}
-                />
-            <span>{organizedTrack.name} </span>
-            <span>{organizedTrack.artists[0].name}</span>
+          <section className='basic-info-container'>
+             <span  className='track-num'>1</span>
+             <img
+                 className='track-img'
+                src={organizedTrack.album.images[0].url}
+                alt=''
+                style={{ width: 50, height: 50 }}
+            />
+                <b className='track-name'>{organizedTrack.name} </b>
+                <span  className='track-artist'>{organizedTrack.artists[0].name}</span>
+            </section>
             <span>{organizedTrack.album?.name} </span>
             <div className='track-actions'>
                 <button onClick={onRemoveTrack}>X</button>
