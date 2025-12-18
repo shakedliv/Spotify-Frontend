@@ -15,8 +15,10 @@
 @import "cmps/Chat";
 
 @import "cmps/AppHeader";
+@import "cmps/SearchBar";
+
 @import "cmps/AppFooter";
-@import "cmps/PlayerFooter.css";
+@import "cmps/PlayerFooter";
 @import "cmps/UserMsg";
 
 @import "cmps/station/StationIndex";

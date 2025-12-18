@@ -72,6 +72,7 @@ function getLoggedinUser() {
 function saveLoggedinUser(user) {
     user = {
         _id: user._id || makeId(),
+        _id: user._id || makeId(),
         fullname: user.fullname,
         imgUrl: user.imgUrl,
         isAdmin: user.isAdmin,
