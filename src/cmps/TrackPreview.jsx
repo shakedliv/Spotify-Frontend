@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { formatDate, formatDuration } from '../services/util.service.js'
 export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
-    const organizedTrack = track.track
+   const organizedTrack = track.track
     return (
         <article className='track-preview'>
             <section className='basic-info-container'>
@@ -22,7 +22,7 @@ export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
             <span>{formatDuration(organizedTrack.duration_ms)}</span>
             <div className='track-actions'>
                 <button onClick={() => onRemoveTrack(track.id)}>X</button>
-                <button onClick={() => onAddTrack(track)}>...</button>
+                <button onClick={() => onAddTrack(track)}>+</button>
             </div>
         </article>
     )

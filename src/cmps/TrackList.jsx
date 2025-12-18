@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { DndContext, closestCenter, DragOverlay } from '@dnd-kit/core'
 import {
     arrayMove,
@@ -11,60 +11,60 @@ import { TracksHeader } from './TracksHeader.jsx'
 import stationSample from '../assets/data/station.sample.raw.json'
 const demoData = stationSample.tracks.items
 
-function doNothing() {}
 export function TrackList({
     tracks = demoData,
-    onRemoveTrack = doNothing,
+    onRemoveTrack,
     onReorder,
-    onAddTrack = doNothing,
+    onAddTrack,
 }) {
-    const [trackNum, setTrackNum] = useState(0)
+   console.log('tracks:', tracks)
+   console.log('onRemoveTrack:',onRemoveTrack )
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
     const [currTracks, setCurrTracks] = useState(tracks)
-    //useState of tracks
+    useEffect(() => {
+        setCurrTracks(tracks)
+    }, [tracks])
     function handleDragStart(event) {
         setActiveId(event.active.id)
-   }
-   function onSort(sortBy) {
-      // sortBy = {sortField: name, sortDirection: -1}
-      const tracksToSort = [...currTracks]
+    }
+    function onSort(sortBy) {
+        // sortBy = {sortField: name, sortDirection: -1}
+        const tracksToSort = [...currTracks]
         const { sortField, sortDirection } = sortBy
 
-      //   if (sortField === 'name' || sortField === 'album') {
-      //       tracksToSort.sort(
-      //           (track1, track2) =>
-      //               track1[sortField].localeCompare(track2[sortField]) *
-      //               +sortDirection
-      //       )
-      if (sortField === 'name') {
-            tracksToSort.sort(
-               (track1, track2) => 
-                  track1.track.name.localeCompare(track2.track.name) *
-                     +sortDirection
-               
-            )
-      }
-      else if (sortField === 'album') {
-            tracksToSort.sort(
-               (track1, track2) =>  
-                  track1.track.album.name.localeCompare(track2.track.album.name) *
-                     +sortDirection
-               
-            )
-        } 
-      else if (sortField === 'duration') {
+        //   if (sortField === 'name' || sortField === 'album') {
+        //       tracksToSort.sort(
+        //           (track1, track2) =>
+        //               track1[sortField].localeCompare(track2[sortField]) *
+        //               +sortDirection
+        //       )
+        if (sortField === 'name') {
             tracksToSort.sort(
                 (track1, track2) =>
-                (track1.track.duration_ms - track2.track.duration_ms) * +sortDirection
+                    track1.track.name.localeCompare(track2.track.name) *
+                    +sortDirection
+            )
+        } else if (sortField === 'album') {
+            tracksToSort.sort(
+                (track1, track2) =>
+                    track1.track.album.name.localeCompare(
+                        track2.track.album.name
+                    ) * +sortDirection
+            )
+        } else if (sortField === 'duration') {
+            tracksToSort.sort(
+                (track1, track2) =>
+                    (track1.track.duration_ms - track2.track.duration_ms) *
+                    +sortDirection
             )
         }
-      // else if (sortField === 'date-added') {
-      //       tracksToSort.sort(
-      //           (track1, track2) =>
-      //           (track1.dateAdded - track2.dateAdded) * +sortDirection
-      //       )
-      //   }
+        // else if (sortField === 'date-added') {
+        //       tracksToSort.sort(
+        //           (track1, track2) =>
+        //           (track1.dateAdded - track2.dateAdded) * +sortDirection
+        //       )
+        //   }
         setCurrTracks(tracksToSort)
     }
     function handleDragEnd(event) {
