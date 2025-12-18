@@ -10,14 +10,16 @@ import { TrackPreview } from './TrackPreview.jsx'
 import { TracksHeader } from './TracksHeader.jsx'
 import stationSample from '../assets/data/station.sample.raw.json'
 const demoData = stationSample.tracks.items
+
 console.log('demoData:', demoData)
 function doNothing() {}
 export function TrackList({
     tracks = demoData,
     onRemoveTrack = doNothing,
-    onReorder = doNothing,
+    onReorder,
     onAddTrack = doNothing,
 }) {
+    const [trackNum, setTrackNum] = useState(0)
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
 
@@ -37,42 +39,45 @@ export function TrackList({
         setActiveId(null)
     }
 
-   return (
-      <>
-         <TracksHeader />
-        <DndContext
-            collisionDetection={closestCenter}
-            onDragStart={handleDragStart}
-            onDragEnd={handleDragEnd}
-        >
-            <SortableContext
-                items={tracks}
-                strategy={verticalListSortingStrategy}
+    return (
+        <>
+            <TracksHeader />
+            <DndContext
+                collisionDetection={closestCenter}
+                onDragStart={handleDragStart}
+                onDragEnd={handleDragEnd}
             >
-                <div className='track-list-container'>
-                    {tracks.map((track) => (
-                        <SortableTrack
-                            id={track.id}
-                            key={track.id}
-                            track={track}
-                        >
-                            <TrackPreview
+                <SortableContext
+                    items={tracks}
+                    strategy={verticalListSortingStrategy}
+                >
+                    <div className='track-list-container'>
+                        {tracks.map((track, index) => (
+                            <SortableTrack
+                                id={track.id}
                                 key={track.id}
                                 track={track}
-                                onRemoveTrack={() => onRemoveTrack(track.id)}
-                                onAddTrack={() => onAddTrack(track.id)}
-                            />
-                        </SortableTrack>
-                    ))}
-                </div>
-            </SortableContext>
+                            >
+                              <TrackPreview
+                                 trackNum={index + 1}
+                                    key={track.id}
+                                    track={track}
+                                    onRemoveTrack={() =>
+                                        onRemoveTrack(track.id)
+                                    }
+                                    onAddTrack={() => onAddTrack(track.id)}
+                                />
+                            </SortableTrack>
+                        ))}
+                    </div>
+                </SortableContext>
 
-            <DragOverlay>
-                {activeId ? (
-                    <TrackPreview track={activeTrack} isDragging />
-                ) : null}
-            </DragOverlay>
-         </DndContext>
-         </>
+                <DragOverlay>
+                    {activeId ? (
+                        <TrackPreview track={activeTrack} isDragging />
+                    ) : null}
+                </DragOverlay>
+            </DndContext>
+        </>
     )
 }
