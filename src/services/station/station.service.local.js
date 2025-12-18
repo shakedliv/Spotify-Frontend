@@ -3,6 +3,8 @@ import { storageService } from '../async-storage.service'
 import { makeId } from '../util.service'
 import { userService } from '../user'
 
+import demoPlaylist from '../../assets/styles/data/station.sample.raw.json'
+
 const STORAGE_KEY = 'station'
 
 export const stationService = {
@@ -15,20 +17,23 @@ window.cs = stationService
 
 
 async function query(filterBy = { txt: '' }) {
-    var stations = await storageService.query(STORAGE_KEY)
+    let stations = [_mapSpotifyPlaylistToStation(demoPlaylist)]
+    // var stations = await storageService.query(STORAGE_KEY)
     const { txt, sortField, sortDir } = filterBy
 
     if (txt) {
         const regex = new RegExp(filterBy.txt, 'i')
         stations = stations.filter(station => regex.test(station.name) || regex.test(station.description))
     }
-   
-    if(sortField === 'name'){
-        stations.sort((station1, station2) => 
+
+    if (sortField === 'name') {
+        stations.sort((station1, station2) =>
             station1[sortField].localeCompare(station2[sortField]) * +sortDir)
     }
- 
-    stations = stations.map(({ _id, name, owner }) => ({ _id, name, owner }))
+
+    // stations = stations.map(({ _id, name, owner }) => ({ _id, name, owner }))
+    console.log(stations)
+
     return stations
 }
 
@@ -53,7 +58,7 @@ async function save(station) {
             name: station.name,
             // Later, owner is set by the backend
             owner: userService.getLoggedinUser(),
-         
+
         }
         savedStation = await storageService.post(STORAGE_KEY, stationToSave)
     }
@@ -74,3 +79,30 @@ async function save(station) {
 
 //     return msg
 // }
+
+function _mapSpotifyPlaylistToStation(demoPlaylist) {
+    const playlist = demoPlaylist.playlist
+
+    const items = demoPlaylist.tracks?.items || []
+    const artistNamesSet = new Set()
+
+    items.forEach(item => {
+        const artists = item.track?.artists || []
+        artists.forEach(artist => {
+            if (artist.name) artistNamesSet.add(artist.name)
+        })
+    })
+
+    const artistNames = Array.from(artistNamesSet)
+    return {
+        _id: playlist.id,
+        name: playlist.name,
+        description: playlist.description,
+        imgUrl: playlist.images?.[0]?.url || '',
+        owner: {
+            _id: playlist.owner?.id,
+            fullname: playlist.owner?.display_name || playlist.owner?.id,
+        },
+        artists: artistNames,
+    }
+}

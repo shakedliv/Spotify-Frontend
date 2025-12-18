@@ -1,0 +1,28 @@
+.first-station-list {
+    display: grid;
+    grid-auto-flow: column;
+  
+
+
+
+
+
+    .station-preview {
+
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+
+
+        .station-img {
+            width: 64px;
+            height: 64px;
+            border-radius: 8px;
+        }
+
+    }
+
+
+
+}

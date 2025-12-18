@@ -16,5 +16,6 @@
         margin-inline-end: 0;
     } */
 
-  
+    color: white;
+    background-color: var(--clr5);
 }

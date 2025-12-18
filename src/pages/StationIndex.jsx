@@ -9,10 +9,12 @@ import { userService } from '../services/user'
 
 import { StationList } from '../cmps/StationList'
 import { StationFilter } from '../cmps/StationFilter'
+import { FirstStationList } from '../cmps/FirstStationList'
+
 
 export function StationIndex() {
 
-    const [ filterBy, setFilterBy ] = useState(stationService.getDefaultFilter())
+    const [filterBy, setFilterBy] = useState(stationService.getDefaultFilter())
     const stations = useSelector(storeState => storeState.stationModule.stations)
 
     useEffect(() => {
@@ -22,7 +24,7 @@ export function StationIndex() {
     async function onRemoveStation(stationId) {
         try {
             await removeStation(stationId)
-            showSuccessMsg('Station removed')            
+            showSuccessMsg('Station removed')
         } catch (err) {
             showErrorMsg('Cannot remove station')
         }
@@ -34,9 +36,21 @@ export function StationIndex() {
     return (
         <main className="station-index">
             {/* <StationFilter filterBy={filterBy} setFilterBy={setFilterBy} /> */}
-            <StationList 
-                onRemoveStation={onRemoveStation} 
-               />
+            <section className='first-station-list'>
+                <FirstStationList
+                    onRemoveStation={onRemoveStation}
+                   
+                />
+            </section>
+            <h2>Made For</h2>
+            <StationList
+                onRemoveStation={onRemoveStation}
+            />
+
+            <h2>Jump back in</h2>
+            <StationList
+                onRemoveStation={onRemoveStation}
+            />
         </main>
     )
 }

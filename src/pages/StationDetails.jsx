@@ -9,26 +9,27 @@ import { loadStation, addStationMsg } from '../store/actions/station.actions'
 
 export function StationDetails() {
 
-  const {stationId} = useParams()
+  const { stationId } = useParams()
   const station = useSelector(storeState => storeState.stationModule.station)
 
   useEffect(() => {
     loadStation(stationId)
   }, [stationId])
 
-  async function onAddStationMsg(stationId) {
-    try {
-        await addStationMsg(stationId, 'bla bla ' + parseInt(Math.random()*10))
-        showSuccessMsg(`Station msg added`)
-    } catch (err) {
-        showErrorMsg('Cannot add station msg')
-    }        
+  console.log(station)
 
-}
+
 
   return (
     <section className="station-details">
       <Link to="/station">Back to list</Link>
+
+      <header>
+        <img src={station.imgUrl} alt={station.name} />
+        <h1>{station.name}</h1>
+        <h4></h4>
+      </header>
+
       <h1>Station Details</h1>
       {station && <div>
         <h3>{station.name}</h3>
@@ -36,7 +37,7 @@ export function StationDetails() {
         <pre> {JSON.stringify(station, null, 2)} </pre>
       </div>
       }
-   
+
 
     </section>
   )

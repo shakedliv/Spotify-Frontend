@@ -3,20 +3,20 @@ import { useSelector } from 'react-redux'
 import { StationPreview } from './StationPreview'
 
 
-export function StationList({ onRemoveStation}) {
+export function FirstStationList({ onRemoveStation }) {
 
 
     const stations = useSelector(storeState => storeState.stationModule.stations)
 
 
     return (
-        <div className="station-list">
+        <div className="first-station-list">
             {stations.map(station => (
                 <StationPreview
                     key={station._id}
                     station={station}
                     onRemoveStation={onRemoveStation}
-                    type={'default'}
+                    type={'first'}
                 />
             ))}
         </div>

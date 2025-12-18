@@ -21,6 +21,7 @@
 
 @import "cmps/station/StationIndex";
 @import "cmps/station/StationList";
+@import "cmps/station/FirstStationList";
 @import "cmps/station/StationPreview";
 @import "cmps/station/StationFilter";
 @import "cmps/station/StationDetails";
