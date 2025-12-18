@@ -1,9 +1,10 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { loadStation } from '../store/actions/station.actions'
+import { StationEdit } from '../cmps/StationEdit'
 
 
 export function StationDetails() {
@@ -11,6 +12,7 @@ export function StationDetails() {
   const { stationId } = useParams()
   const station = useSelector(storeState => storeState.stationModule.station)
 
+  const [isEditOpen, setIsEditOpen] = useState(false)
 
   useEffect(() => {
     loadStation(stationId)
@@ -26,13 +28,18 @@ export function StationDetails() {
 
       <header>
         <img src={station.imgUrl || ''} alt={station.name} />
-        <h1>{station.name}</h1>
-        <h4 className='desc'>station description</h4>
+        <h1 onClick={() => setIsEditOpen(true)}>{station.name}</h1>
+        <h4 className='desc'>{station.description || ''}</h4>
         <h5>station creator</h5>
 
       </header>
 
-
+      {isEditOpen && (
+        <StationEdit
+          station={station}
+          onClose={() => setIsEditOpen(false)}
+        />
+      )}
 
     </section>
   )

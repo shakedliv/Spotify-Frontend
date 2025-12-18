@@ -14,11 +14,10 @@ export function Library() {
 
     async function onAddStation() {
         const station = stationService.getEmptyStation()
-        station.name = prompt('Name?', 'Some Name')
         try {
             const savedStation = await addStation(station)
             showSuccessMsg(`Station added (id: ${savedStation._id})`)
-            // navigate(`/${savedStation._id}`)
+            navigate(`/station/${savedStation._id}`)
         } catch (err) {
             showErrorMsg('Cannot add station')
         }
