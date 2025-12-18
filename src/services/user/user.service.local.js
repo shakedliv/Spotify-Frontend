@@ -1,6 +1,5 @@
-import { storageService } from '../async-storage.service'
-
-import { makeId } from '../util.service'
+import { storageService } from '../async-storage.service.js'
+import { makeId } from '../util.service.js'
 
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 

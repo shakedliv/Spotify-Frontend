@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 
 import { userService } from '../services/user'
 import { login } from '../store/actions/user.actions'

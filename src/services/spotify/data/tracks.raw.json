@@ -1,0 +1,812 @@
+[
+  {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1scVfBymTr3CeZ4imMj1QJ"
+          },
+          "href": "https://api.spotify.com/v1/artists/1scVfBymTr3CeZ4imMj1QJ",
+          "id": "1scVfBymTr3CeZ4imMj1QJ",
+          "name": "Forrest Frank",
+          "type": "artist",
+          "uri": "spotify:artist:1scVfBymTr3CeZ4imMj1QJ"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7nPBddK18ZCiNbilAnpOoP"
+          },
+          "href": "https://api.spotify.com/v1/artists/7nPBddK18ZCiNbilAnpOoP",
+          "id": "7nPBddK18ZCiNbilAnpOoP",
+          "name": "The Lofi Christian",
+          "type": "artist",
+          "uri": "spotify:artist:7nPBddK18ZCiNbilAnpOoP"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/41jpAglfqUyiLxZj9hnZYI"
+      },
+      "href": "https://api.spotify.com/v1/albums/41jpAglfqUyiLxZj9hnZYI",
+      "id": "41jpAglfqUyiLxZj9hnZYI",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2730a0205bbc54e902755131f17"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e020a0205bbc54e902755131f17"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048510a0205bbc54e902755131f17"
+        }
+      ],
+      "is_playable": true,
+      "name": "JESUS LOFI VOLUME ONE",
+      "release_date": "2025-10-10",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:41jpAglfqUyiLxZj9hnZYI"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1scVfBymTr3CeZ4imMj1QJ"
+        },
+        "href": "https://api.spotify.com/v1/artists/1scVfBymTr3CeZ4imMj1QJ",
+        "id": "1scVfBymTr3CeZ4imMj1QJ",
+        "name": "Forrest Frank",
+        "type": "artist",
+        "uri": "spotify:artist:1scVfBymTr3CeZ4imMj1QJ"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7nPBddK18ZCiNbilAnpOoP"
+        },
+        "href": "https://api.spotify.com/v1/artists/7nPBddK18ZCiNbilAnpOoP",
+        "id": "7nPBddK18ZCiNbilAnpOoP",
+        "name": "The Lofi Christian",
+        "type": "artist",
+        "uri": "spotify:artist:7nPBddK18ZCiNbilAnpOoP"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 147500,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "QT3FA2568781"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/243fOgJy3JBv10K4Ykp2RZ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/243fOgJy3JBv10K4Ykp2RZ",
+    "id": "243fOgJy3JBv10K4Ykp2RZ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "SELAH (LOFI)",
+    "popularity": 52,
+    "preview_url": null,
+    "track_number": 7,
+    "type": "track",
+    "uri": "spotify:track:243fOgJy3JBv10K4Ykp2RZ"
+  },
+  {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/27T030eWyCQRmDyuvr1kxY"
+          },
+          "href": "https://api.spotify.com/v1/artists/27T030eWyCQRmDyuvr1kxY",
+          "id": "27T030eWyCQRmDyuvr1kxY",
+          "name": "Scorpions",
+          "type": "artist",
+          "uri": "spotify:artist:27T030eWyCQRmDyuvr1kxY"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/71cfSO0iO1fjgQLEb3Wc6C"
+      },
+      "href": "https://api.spotify.com/v1/albums/71cfSO0iO1fjgQLEb3Wc6C",
+      "id": "71cfSO0iO1fjgQLEb3Wc6C",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273926764eed4da16a86b9ce33e"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02926764eed4da16a86b9ce33e"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851926764eed4da16a86b9ce33e"
+        }
+      ],
+      "is_playable": true,
+      "name": "Love At First Sting",
+      "release_date": "1984-03-27",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:71cfSO0iO1fjgQLEb3Wc6C"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/27T030eWyCQRmDyuvr1kxY"
+        },
+        "href": "https://api.spotify.com/v1/artists/27T030eWyCQRmDyuvr1kxY",
+        "id": "27T030eWyCQRmDyuvr1kxY",
+        "name": "Scorpions",
+        "type": "artist",
+        "uri": "spotify:artist:27T030eWyCQRmDyuvr1kxY"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 387000,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USMR18430334"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7kjsCbksOZotNNHOvKsJJh"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7kjsCbksOZotNNHOvKsJJh",
+    "id": "7kjsCbksOZotNNHOvKsJJh",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Still Loving You",
+    "popularity": 72,
+    "preview_url": null,
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:7kjsCbksOZotNNHOvKsJJh"
+  },
+  {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/17D8OdfcA9ktUb4gKp65eO"
+          },
+          "href": "https://api.spotify.com/v1/artists/17D8OdfcA9ktUb4gKp65eO",
+          "id": "17D8OdfcA9ktUb4gKp65eO",
+          "name": "LOFI BEATS",
+          "type": "artist",
+          "uri": "spotify:artist:17D8OdfcA9ktUb4gKp65eO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2ktEp7PBrRQvO50nn62pCy"
+      },
+      "href": "https://api.spotify.com/v1/albums/2ktEp7PBrRQvO50nn62pCy",
+      "id": "2ktEp7PBrRQvO50nn62pCy",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27380826ba469c97716526e7588"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0280826ba469c97716526e7588"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485180826ba469c97716526e7588"
+        }
+      ],
+      "is_playable": true,
+      "name": "LOFI BEATS 2025",
+      "release_date": "2025-01-29",
+      "release_date_precision": "day",
+      "total_tracks": 50,
+      "type": "album",
+      "uri": "spotify:album:2ktEp7PBrRQvO50nn62pCy"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/17D8OdfcA9ktUb4gKp65eO"
+        },
+        "href": "https://api.spotify.com/v1/artists/17D8OdfcA9ktUb4gKp65eO",
+        "id": "17D8OdfcA9ktUb4gKp65eO",
+        "name": "LOFI BEATS",
+        "type": "artist",
+        "uri": "spotify:artist:17D8OdfcA9ktUb4gKp65eO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 90352,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "CH7812528431"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1Gbf1RVCUZb5NuN8GEo5pV"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1Gbf1RVCUZb5NuN8GEo5pV",
+    "id": "1Gbf1RVCUZb5NuN8GEo5pV",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Lo-Fi Chill",
+    "popularity": 44,
+    "preview_url": null,
+    "track_number": 37,
+    "type": "track",
+    "uri": "spotify:track:1Gbf1RVCUZb5NuN8GEo5pV"
+  },
+  {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5CzlICF8GCY0pRC82MKrhX"
+          },
+          "href": "https://api.spotify.com/v1/artists/5CzlICF8GCY0pRC82MKrhX",
+          "id": "5CzlICF8GCY0pRC82MKrhX",
+          "name": "Labi Siffre",
+          "type": "artist",
+          "uri": "spotify:artist:5CzlICF8GCY0pRC82MKrhX"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3KJxMjUnBZu3jLeQTIe6aQ"
+      },
+      "href": "https://api.spotify.com/v1/albums/3KJxMjUnBZu3jLeQTIe6aQ",
+      "id": "3KJxMjUnBZu3jLeQTIe6aQ",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ea5cea785aab2932281b90a5"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ea5cea785aab2932281b90a5"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ea5cea785aab2932281b90a5"
+        }
+      ],
+      "is_playable": true,
+      "name": "Crying Laughing Loving Lying",
+      "release_date": "1972",
+      "release_date_precision": "year",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:3KJxMjUnBZu3jLeQTIe6aQ"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/5CzlICF8GCY0pRC82MKrhX"
+        },
+        "href": "https://api.spotify.com/v1/artists/5CzlICF8GCY0pRC82MKrhX",
+        "id": "5CzlICF8GCY0pRC82MKrhX",
+        "name": "Labi Siffre",
+        "type": "artist",
+        "uri": "spotify:artist:5CzlICF8GCY0pRC82MKrhX"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 183200,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GB01A0600031"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/28UWzdVYFe36w0GwDJlIwJ"
+    },
+    "href": "https://api.spotify.com/v1/tracks/28UWzdVYFe36w0GwDJlIwJ",
+    "id": "28UWzdVYFe36w0GwDJlIwJ",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Crying Laughing Loving Lying (From \"The Holdovers\")",
+    "popularity": 64,
+    "preview_url": null,
+    "track_number": 8,
+    "type": "track",
+    "uri": "spotify:track:28UWzdVYFe36w0GwDJlIwJ"
+  },
+  {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7gW0r5CkdEUMm42w9XpyZO"
+          },
+          "href": "https://api.spotify.com/v1/artists/7gW0r5CkdEUMm42w9XpyZO",
+          "id": "7gW0r5CkdEUMm42w9XpyZO",
+          "name": "Laufey",
+          "type": "artist",
+          "uri": "spotify:artist:7gW0r5CkdEUMm42w9XpyZO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5rMOCuiWWbEBcHaKM69Hmv"
+      },
+      "href": "https://api.spotify.com/v1/albums/5rMOCuiWWbEBcHaKM69Hmv",
+      "id": "5rMOCuiWWbEBcHaKM69Hmv",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738f68f6e65c1cfd36bb21561c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028f68f6e65c1cfd36bb21561c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518f68f6e65c1cfd36bb21561c"
+        }
+      ],
+      "is_playable": true,
+      "name": "A Matter of Time",
+      "release_date": "2025-08-22",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "type": "album",
+      "uri": "spotify:album:5rMOCuiWWbEBcHaKM69Hmv"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/7gW0r5CkdEUMm42w9XpyZO"
+        },
+        "href": "https://api.spotify.com/v1/artists/7gW0r5CkdEUMm42w9XpyZO",
+        "id": "7gW0r5CkdEUMm42w9XpyZO",
+        "name": "Laufey",
+        "type": "artist",
+        "uri": "spotify:artist:7gW0r5CkdEUMm42w9XpyZO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 214600,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "QM6N22553539"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/1fUp9sWmy3EiZzPGbJmR4W"
+    },
+    "href": "https://api.spotify.com/v1/tracks/1fUp9sWmy3EiZzPGbJmR4W",
+    "id": "1fUp9sWmy3EiZzPGbJmR4W",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Sabotage",
+    "popularity": 64,
+    "preview_url": null,
+    "track_number": 14,
+    "type": "track",
+    "uri": "spotify:track:1fUp9sWmy3EiZzPGbJmR4W"
+  },
+  {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0m5FakHKCQdA7UN0PIzMcL"
+          },
+          "href": "https://api.spotify.com/v1/artists/0m5FakHKCQdA7UN0PIzMcL",
+          "id": "0m5FakHKCQdA7UN0PIzMcL",
+          "name": "Current Joys",
+          "type": "artist",
+          "uri": "spotify:artist:0m5FakHKCQdA7UN0PIzMcL"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6vQngf6iEG8xC6ArsIurXq"
+      },
+      "href": "https://api.spotify.com/v1/albums/6vQngf6iEG8xC6ArsIurXq",
+      "id": "6vQngf6iEG8xC6ArsIurXq",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e341c520c154f89b77bd2aaf"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e341c520c154f89b77bd2aaf"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e341c520c154f89b77bd2aaf"
+        }
+      ],
+      "is_playable": true,
+      "name": "Wild Heart",
+      "release_date": "2013-01-02",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:6vQngf6iEG8xC6ArsIurXq"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0m5FakHKCQdA7UN0PIzMcL"
+        },
+        "href": "https://api.spotify.com/v1/artists/0m5FakHKCQdA7UN0PIzMcL",
+        "id": "0m5FakHKCQdA7UN0PIzMcL",
+        "name": "Current Joys",
+        "type": "artist",
+        "uri": "spotify:artist:0m5FakHKCQdA7UN0PIzMcL"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 192318,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "TCACS1661024"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6l8T96kpkx6RY9kFac7eMU"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6l8T96kpkx6RY9kFac7eMU",
+    "id": "6l8T96kpkx6RY9kFac7eMU",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Blondie",
+    "popularity": 76,
+    "preview_url": null,
+    "track_number": 6,
+    "type": "track",
+    "uri": "spotify:track:6l8T96kpkx6RY9kFac7eMU"
+  },
+  {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3rOpr2q5pTfpnhmM6SkfIC"
+          },
+          "href": "https://api.spotify.com/v1/artists/3rOpr2q5pTfpnhmM6SkfIC",
+          "id": "3rOpr2q5pTfpnhmM6SkfIC",
+          "name": "Domknowz",
+          "type": "artist",
+          "uri": "spotify:artist:3rOpr2q5pTfpnhmM6SkfIC"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5xyI319hP6SxCUp8KzafQU"
+      },
+      "href": "https://api.spotify.com/v1/albums/5xyI319hP6SxCUp8KzafQU",
+      "id": "5xyI319hP6SxCUp8KzafQU",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273833d5d7122936cb894bd1f9c"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02833d5d7122936cb894bd1f9c"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851833d5d7122936cb894bd1f9c"
+        }
+      ],
+      "is_playable": true,
+      "name": "Its a Lofi",
+      "release_date": "2020-02-28",
+      "release_date_precision": "day",
+      "total_tracks": 4,
+      "type": "album",
+      "uri": "spotify:album:5xyI319hP6SxCUp8KzafQU"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3rOpr2q5pTfpnhmM6SkfIC"
+        },
+        "href": "https://api.spotify.com/v1/artists/3rOpr2q5pTfpnhmM6SkfIC",
+        "id": "3rOpr2q5pTfpnhmM6SkfIC",
+        "name": "Domknowz",
+        "type": "artist",
+        "uri": "spotify:artist:3rOpr2q5pTfpnhmM6SkfIC"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 122434,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "QZFZ42089472"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6sAn8zDfv8nIq3gdce7QNI"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6sAn8zDfv8nIq3gdce7QNI",
+    "id": "6sAn8zDfv8nIq3gdce7QNI",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Lofi",
+    "popularity": 46,
+    "preview_url": null,
+    "track_number": 3,
+    "type": "track",
+    "uri": "spotify:track:6sAn8zDfv8nIq3gdce7QNI"
+  },
+  {
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/17D8OdfcA9ktUb4gKp65eO"
+          },
+          "href": "https://api.spotify.com/v1/artists/17D8OdfcA9ktUb4gKp65eO",
+          "id": "17D8OdfcA9ktUb4gKp65eO",
+          "name": "LOFI BEATS",
+          "type": "artist",
+          "uri": "spotify:artist:17D8OdfcA9ktUb4gKp65eO"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2ktEp7PBrRQvO50nn62pCy"
+      },
+      "href": "https://api.spotify.com/v1/albums/2ktEp7PBrRQvO50nn62pCy",
+      "id": "2ktEp7PBrRQvO50nn62pCy",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27380826ba469c97716526e7588"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0280826ba469c97716526e7588"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485180826ba469c97716526e7588"
+        }
+      ],
+      "is_playable": true,
+      "name": "LOFI BEATS 2025",
+      "release_date": "2025-01-29",
+      "release_date_precision": "day",
+      "total_tracks": 50,
+      "type": "album",
+      "uri": "spotify:album:2ktEp7PBrRQvO50nn62pCy"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/17D8OdfcA9ktUb4gKp65eO"
+        },
+        "href": "https://api.spotify.com/v1/artists/17D8OdfcA9ktUb4gKp65eO",
+        "id": "17D8OdfcA9ktUb4gKp65eO",
+        "name": "LOFI BEATS",
+        "type": "artist",
+        "uri": "spotify:artist:17D8OdfcA9ktUb4gKp65eO"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 84395,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "CH7812528395"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/23Vd1pgi6KTPRAusuMEtT9"
+    },
+    "href": "https://api.spotify.com/v1/tracks/23Vd1pgi6KTPRAusuMEtT9",
+    "id": "23Vd1pgi6KTPRAusuMEtT9",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Lofi",
+    "popularity": 37,
+    "preview_url": null,
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:23Vd1pgi6KTPRAusuMEtT9"
+  },
+  {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4Tf8LSk9Vw2ZeKzENi3mSe"
+          },
+          "href": "https://api.spotify.com/v1/artists/4Tf8LSk9Vw2ZeKzENi3mSe",
+          "id": "4Tf8LSk9Vw2ZeKzENi3mSe",
+          "name": "Skdadsong",
+          "type": "artist",
+          "uri": "spotify:artist:4Tf8LSk9Vw2ZeKzENi3mSe"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5lthre8xot9vwvdGMx2s6e"
+      },
+      "href": "https://api.spotify.com/v1/albums/5lthre8xot9vwvdGMx2s6e",
+      "id": "5lthre8xot9vwvdGMx2s6e",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273485610ae72d1d1d5f8045bed"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02485610ae72d1d1d5f8045bed"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851485610ae72d1d1d5f8045bed"
+        }
+      ],
+      "is_playable": true,
+      "name": "Lofi",
+      "release_date": "2024-04-11",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:5lthre8xot9vwvdGMx2s6e"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4Tf8LSk9Vw2ZeKzENi3mSe"
+        },
+        "href": "https://api.spotify.com/v1/artists/4Tf8LSk9Vw2ZeKzENi3mSe",
+        "id": "4Tf8LSk9Vw2ZeKzENi3mSe",
+        "name": "Skdadsong",
+        "type": "artist",
+        "uri": "spotify:artist:4Tf8LSk9Vw2ZeKzENi3mSe"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 142980,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GBWUL2478236"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0rpTipOn8DVlvL4RU8yHWU"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0rpTipOn8DVlvL4RU8yHWU",
+    "id": "0rpTipOn8DVlvL4RU8yHWU",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Lofi",
+    "popularity": 33,
+    "preview_url": null,
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:0rpTipOn8DVlvL4RU8yHWU"
+  },
+  {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0WZrXchGKwOH39DJHUPny3"
+          },
+          "href": "https://api.spotify.com/v1/artists/0WZrXchGKwOH39DJHUPny3",
+          "id": "0WZrXchGKwOH39DJHUPny3",
+          "name": "Wilmer Roberts",
+          "type": "artist",
+          "uri": "spotify:artist:0WZrXchGKwOH39DJHUPny3"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6lYSDSFhJyUV6CtNix2fBA"
+          },
+          "href": "https://api.spotify.com/v1/artists/6lYSDSFhJyUV6CtNix2fBA",
+          "id": "6lYSDSFhJyUV6CtNix2fBA",
+          "name": "Al2 El Aldeano",
+          "type": "artist",
+          "uri": "spotify:artist:6lYSDSFhJyUV6CtNix2fBA"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6YTeUk5ZAd9tQHhUDStTVF"
+      },
+      "href": "https://api.spotify.com/v1/albums/6YTeUk5ZAd9tQHhUDStTVF",
+      "id": "6YTeUk5ZAd9tQHhUDStTVF",
+      "images": [
+        {
+          "height": 640,
+          "width": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27318d190bbaab98ed2dbbe3d91"
+        },
+        {
+          "height": 300,
+          "width": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0218d190bbaab98ed2dbbe3d91"
+        },
+        {
+          "height": 64,
+          "width": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485118d190bbaab98ed2dbbe3d91"
+        }
+      ],
+      "is_playable": true,
+      "name": "Lofi",
+      "release_date": "2023-03-24",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:6YTeUk5ZAd9tQHhUDStTVF"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0WZrXchGKwOH39DJHUPny3"
+        },
+        "href": "https://api.spotify.com/v1/artists/0WZrXchGKwOH39DJHUPny3",
+        "id": "0WZrXchGKwOH39DJHUPny3",
+        "name": "Wilmer Roberts",
+        "type": "artist",
+        "uri": "spotify:artist:0WZrXchGKwOH39DJHUPny3"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6lYSDSFhJyUV6CtNix2fBA"
+        },
+        "href": "https://api.spotify.com/v1/artists/6lYSDSFhJyUV6CtNix2fBA",
+        "id": "6lYSDSFhJyUV6CtNix2fBA",
+        "name": "Al2 El Aldeano",
+        "type": "artist",
+        "uri": "spotify:artist:6lYSDSFhJyUV6CtNix2fBA"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 231263,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USLZJ2383621"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/0iE24szoaXoC3SRQ07181N"
+    },
+    "href": "https://api.spotify.com/v1/tracks/0iE24szoaXoC3SRQ07181N",
+    "id": "0iE24szoaXoC3SRQ07181N",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Lofi",
+    "popularity": 37,
+    "preview_url": null,
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:0iE24szoaXoC3SRQ07181N"
+  }
+]
