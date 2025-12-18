@@ -1,35 +1,54 @@
 import { storageService } from '../async-storage.service'
-import rawTracks from '../../assets/data/track.sample.raw.json'
+import { makeId, formatDate } from '../util.service'
+import { userService } from '../user'
 
-const STORAGE_KEY = 'track'
+const STORAGE_KEY = 'liked_songs'
 
 export const trackService = {
     query,
-    getById
+    getById,
+    add,
+    remove,
 }
+window.cs = trackService
 
-async function query(filterBy = { txt: '', sortField: '', sortDir: 1 }) {
-    await _ensureSeeded()
-    let tracks = await storageService.query(STORAGE_KEY)
+async function query(filterBy = { name: '' }) {
+    var tracks = await storageService.query(STORAGE_KEY)
+    const { name, sortField, sortDir } = filterBy
 
-    const { txt, sortField, sortDir } = filterBy
-
-    if (txt) {
-        const regex = new RegExp(txt, 'i')
-        tracks = tracks.filter(track =>
-            regex.test(track.title) ||
-            track.artists.some(artist => regex.test(artist))
+    // sorting and filtering is relevant just for playlists (not albums)
+    if (name) {
+        const regex = new RegExp(name, 'i')
+        tracks = tracks.filter(
+            (track) =>
+                regex.test(track.name) ||
+                track.artists.some((artist) => regex.test(artist.name))
+        )
+    }
+    if (sortField === 'name') {
+        tracks.sort(
+            (track1, track2) =>
+                track1[sortField].localeCompare(track2[sortField]) * +sortDir
+        )
+    }
+    if (sortField === 'artist') {
+        tracks.sort(
+            (track1, track2) =>
+                (track1[sortField] - track2[sortField]) * +sortDir
         )
     }
 
-    if (sortField === 'title') {
-        tracks.sort((a, b) => a.title.localeCompare(b.title) * sortDir)
-    }
-
-    if (sortField === 'duration') {
-        tracks.sort((a, b) => (a.durationMs - b.durationMs) * sortDir)
-    }
-
+    tracks = tracks.map(
+        ({ id, name, artists, img, duration_ms, date_added, owner }) => ({
+            id,
+            name,
+            artists,
+            img,
+            duration_ms,
+            date_added,
+            owner,
+        })
+    )
     return tracks
 }
 
@@ -37,26 +56,20 @@ function getById(trackId) {
     return storageService.get(STORAGE_KEY, trackId)
 }
 
-async function _ensureSeeded() {
-    const tracks = await storageService.query(STORAGE_KEY)
-    if (tracks.length) return
-
-    const rawList = Array.isArray(rawTracks) ? rawTracks : [rawTracks]
-
-    for (const rawTrack of rawList) {
-        const track = _normalizeTrack(rawTrack)
-        await storageService.post(STORAGE_KEY, track)
-    }
+async function remove(trackId) {
+    // throw new Error('Nope')
+    await storageService.remove(STORAGE_KEY, trackId)
 }
 
-function _normalizeTrack(rawTrack) {
-    return {
-        spotifyId: rawTrack.id,
-        title: rawTrack.name,
-        artists: rawTrack.artists.map(artist => artist.name),
-        durationMs: rawTrack.duration_ms,
-        album: rawTrack.album.name,
-        imgUrl: rawTrack.album.images[0]?.url || '',
-
+async function add(track) {
+    const trackToSave = {
+        id: track.id,
+        name: track.name,
+        artists: track.artists,
+        duration_ms: track.duration_ms,
+        date_added: formatDate(Date.now()),
+        img: track.img,
     }
+    const savedTrack = await storageService.post(STORAGE_KEY, trackToSave)
+    return savedTrack
 }
