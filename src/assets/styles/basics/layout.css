@@ -1,4 +1,4 @@
-
+/* 
 .main-container {
     display: grid;
     grid-template-columns: 1rem 1fr 1rem;
@@ -45,7 +45,7 @@
 
 .grid-container {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(4, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
 
@@ -58,4 +58,13 @@
         grid-template-rows: subgrid;
         grid-row: span 3;
     }
+} */
+
+
+.main-layout {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 280px 1fr;
+    background-color: #000;
+    gap: 0.7em;
 }

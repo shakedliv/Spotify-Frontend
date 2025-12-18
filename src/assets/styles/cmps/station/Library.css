@@ -1,0 +1,11 @@
+.Library {
+    color: whitesmoke;
+    background-color: var(--clr5);
+
+    .library-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+
+    }
+}

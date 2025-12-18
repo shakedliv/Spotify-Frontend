@@ -1,13 +1,36 @@
-.station-preview {
-    color: var(--gray2);
+.station-list .station-preview {
+    display: grid;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    color: #9d9d9d;
 
-    > header {
-        font-size: 1.2em;
-        color: var(--gray1);
+    &:hover {
+        background-color: #181818;
+
     }
 
-    & p {
-        margin-block: 0 0.2rem;
-        font-size: .9em;
+    .station-img {
+        width: 180px;
+        justify-self: center;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 4px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 1em;
+        }
+
+
     }
+    .station-desc {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
 }

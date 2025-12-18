@@ -6,18 +6,15 @@ import { stationService as local } from './station.service.local'
 import { stationService as remote } from './station.service.remote'
 
 function getEmptyStation() {
-	return {
+    return {
         _id: '',
-		name: makeId(),
-		speed: getRandomIntInclusive(80, 240),
-		msgs: [],
-	}
+        name: 'My Playlist',
+    }
 }
 
 function getDefaultFilter() {
     return {
         txt: '',
-        minSpeed: '',
         sortField: '',
         sortDir: '',
     }

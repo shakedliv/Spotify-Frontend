@@ -2,6 +2,8 @@
 import { storageService } from '../async-storage.service'
 import { makeId } from '../util.service'
 import { userService } from '../user'
+import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
+// import demoPlaylist from '../../assets/styles/data/station.sample.raw.json'
 
 const STORAGE_KEY = 'station'
 
@@ -10,32 +12,27 @@ export const stationService = {
     getById,
     save,
     remove,
-    addStationMsg
 }
 window.cs = stationService
 
 
-async function query(filterBy = { txt: '', minSpeed: 0 }) {
+async function query(filterBy = { txt: '' }) {
+    // let stations = [_mapSpotifyPlaylistToStation(demoPlaylist)]
     var stations = await storageService.query(STORAGE_KEY)
-    const { txt, minSpeed, sortField, sortDir } = filterBy
+    const { txt, sortField, sortDir } = filterBy
 
     if (txt) {
         const regex = new RegExp(filterBy.txt, 'i')
         stations = stations.filter(station => regex.test(station.name) || regex.test(station.description))
     }
-    if (minSpeed) {
-        stations = stations.filter(station => station.speed >= minSpeed)
-    }
-    if(sortField === 'name'){
-        stations.sort((station1, station2) => 
+
+    if (sortField === 'name') {
+        stations.sort((station1, station2) =>
             station1[sortField].localeCompare(station2[sortField]) * +sortDir)
     }
-    if(sortField === 'speed'){
-        stations.sort((station1, station2) => 
-            (station1[sortField] - station2[sortField]) * +sortDir)
-    }
-    
-    stations = stations.map(({ _id, name, speed, owner }) => ({ _id, name, speed, owner }))
+
+    console.log(stations)
+
     return stations
 }
 
@@ -51,35 +48,57 @@ async function remove(stationId) {
 async function save(station) {
     var savedStation
     if (station._id) {
-        const stationToSave = {
-            _id: station._id,
-            speed: station.speed
-        }
-        savedStation = await storageService.put(STORAGE_KEY, stationToSave)
+
+        savedStation = await storageService.put(STORAGE_KEY, station)
     } else {
         const stationToSave = {
             name: station.name,
-            speed: station.speed,
-            // Later, owner is set by the backend
+            imgUrl: station.imgUrl || defaultStationImg,
             owner: userService.getLoggedinUser(),
-            msgs: []
         }
         savedStation = await storageService.post(STORAGE_KEY, stationToSave)
     }
     return savedStation
 }
 
-async function addStationMsg(stationId, txt) {
-    // Later, this is all done by the backend
-    const station = await getById(stationId)
+// async function addStationMsg(stationId, txt) {
+//     // Later, this is all done by the backend
+//     const station = await getById(stationId)
 
-    const msg = {
-        id: makeId(),
-        by: userService.getLoggedinUser(),
-        txt
+//     const msg = {
+//         id: makeId(),
+//         by: userService.getLoggedinUser(),
+//         txt
+//     }
+//     station.msgs.push(msg)
+//     await storageService.put(STORAGE_KEY, station)
+
+//     return msg
+// }
+
+function _mapSpotifyPlaylistToStation(demoPlaylist) {
+    const playlist = demoPlaylist.playlist
+
+    const items = demoPlaylist.tracks?.items || []
+    const artistNamesSet = new Set()
+
+    items.forEach(item => {
+        const artists = item.track?.artists || []
+        artists.forEach(artist => {
+            if (artist.name) artistNamesSet.add(artist.name)
+        })
+    })
+
+    const artistNames = Array.from(artistNamesSet)
+    return {
+        _id: playlist.id,
+        name: playlist.name,
+        description: playlist.description,
+        imgUrl: playlist.images?.[0]?.url || '',
+        owner: {
+            _id: playlist.owner?.id,
+            fullname: playlist.owner?.display_name || playlist.owner?.id,
+        },
+        artists: artistNames,
     }
-    station.msgs.push(msg)
-    await storageService.put(STORAGE_KEY, station)
-
-    return msg
 }
