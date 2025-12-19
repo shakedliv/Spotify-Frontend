@@ -17,7 +17,7 @@ export function TrackList({
     onReorder,
     onAddTrack,
 }) {
-  
+  const [openedTrackId, setOpenedTrackId] = useState(null);
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
     const [currTracks, setCurrTracks] = useState(tracks)
@@ -81,7 +81,7 @@ export function TrackList({
     }
 
     return (
-        <>
+        <section className='track-list'>
           <TracksHeader onSort={onSort} />
        
             {/* <DndContext
@@ -105,7 +105,9 @@ export function TrackList({
                                     key={track.id}
                                     track={track}
                                     onRemoveTrack={onRemoveTrack}
-                                    onAddTrack={onAddTrack}
+                                 onAddTrack={onAddTrack}
+                                 isOperationsOpen={openedTrackId === track.id}
+                                 onToggleOptions={(id) => setOpenedTrackId(openedTrackId === id ? null : id)}
                                 />
                             </SortableTrack>
                         ))}
@@ -118,6 +120,6 @@ export function TrackList({
                     ) : null}
                 </DragOverlay>
             </DndContext> */}
-        </>
+        </section>
     )
 }

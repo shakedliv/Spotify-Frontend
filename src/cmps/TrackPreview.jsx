@@ -7,20 +7,17 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline'
 
-export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
+export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum, onToggleOptions, isOperationsOpen }) {
     const organizedTrack = track.track
     const user = useSelector((state) => state.userModule.user)
-    const [isOperationsOpen, setIsOperationsOpen] = useState(false)
     const isLiked = user?.likedSongs?.some((t) => t.id === track.id)
 
-   useEffect(() => {
-        if (!isOperationsOpen) return
-        
-        const closeMenu = () => setIsOperationsOpen(false)
-        window.addEventListener('click', closeMenu)
-        
-        return () => window.removeEventListener('click', closeMenu)
-   }, [isOperationsOpen])
+  useEffect(() => {
+        if (!isOperationsOpen) return;
+        const closeMenu = () => onToggleOptions(null);
+        window.addEventListener('click', closeMenu);
+        return () => window.removeEventListener('click', closeMenu);
+    }, [isOperationsOpen, onToggleOptions]);
    
 
     function onLikeClick(ev) {
@@ -30,7 +27,7 @@ export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
 
     function ToggleOptions(ev) {
         ev.stopPropagation()
-        setIsOperationsOpen(!isOperationsOpen)
+     onToggleOptions(track.id)
     }
     return (
         <article className='track-preview'>
@@ -65,9 +62,8 @@ export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
                 {isOperationsOpen && (
                         <div className="options-menu" onClick={(ev) => ev.stopPropagation()}>
                             <button>Add to playlist</button>
-                            <button>Remove from this playlist</button>
-                            <button>Save to your Liked Songs</button>
-                            <div className="separator"></div>
+                            <button onClick={() => onRemoveTrack(track)}>Remove from this playlist</button>
+                            <button onClick={onLikeClick}>Save to your Liked Songs</button>
                             <button>Add to queue</button>
                             <button>Exclude from your taste profile</button>
                             <div className="separator"></div>
@@ -75,7 +71,6 @@ export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
                             <button>Go to artist</button>
                             <button>Go to album</button>
                             <button>View credits</button>
-                            <div className="separator"></div>
                             <button>Share</button>
                             <div className="separator"></div>
                             <button>Open in Desktop app</button>
