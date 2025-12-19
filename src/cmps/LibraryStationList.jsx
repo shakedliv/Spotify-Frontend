@@ -1,0 +1,37 @@
+import { useSelector } from 'react-redux'
+import { StationPreview } from './StationPreview'
+import { Link } from 'react-router-dom'
+import likedSongsImg from '../assets/imgs/likedSongsImg.jpg'
+
+export function LibraryStationList({ onRemoveStation, stations }) {
+
+    const user = useSelector(storeState => storeState.userModule.user)
+
+
+
+    return (
+        <div className="library-station-list">
+
+            {user && (
+                <Link to="/liked" className="station-link">
+                    <article className="station-preview">
+                        <div className="station-img liked">
+                           <img src={likedSongsImg} alt="" />
+                        </div>
+                        <h3 className="station-name">Liked Songs</h3>
+                        <h4>{user.likedSongs?.length} songs</h4>
+                    </article>
+                </Link>
+            )}
+
+            {stations.map(station => (
+                <StationPreview
+                    key={station._id}
+                    station={station}
+                    onRemoveStation={onRemoveStation}
+                    type={'library'}
+                />
+            ))}
+        </div>
+    )
+}

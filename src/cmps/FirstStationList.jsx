@@ -5,8 +5,6 @@ import { StationPreview } from './StationPreview'
 
 export function FirstStationList({ onRemoveStation, stations }) {
 
-
-
     return (
         <div className="first-station-list">
             {stations.slice(0, 8).map(station => (

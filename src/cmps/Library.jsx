@@ -3,12 +3,15 @@ import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { stationService } from "../services/station"
 import { addStation } from "../store/actions/station.actions"
 import { StationList } from "./StationList"
+import { useSelector } from "react-redux"
+import { LibraryStationList } from "./LibraryStationList"
 
 
 
 
 export function Library() {
-
+    const stations = useSelector(storeState => storeState.stationModule.stations)
+  
     const navigate = useNavigate()
 
 
@@ -26,12 +29,16 @@ export function Library() {
 
 
     return (
-        <div className="Library"> 
+        <div className="library">
             <header className="library-header">
                 <h2>Your Library</h2>
                 {<button onClick={onAddStation}>+</button>}
             </header>
             <section className="library-list">
+                <LibraryStationList
+                    stations={stations}
+
+                />
 
             </section>
         </div>

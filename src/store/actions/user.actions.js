@@ -4,7 +4,7 @@ import { store } from '../store'
 
 import { showErrorMsg } from '../../services/event-bus.service'
 import { LOADING_DONE, LOADING_START } from '../reducers/system.reducer'
-import { REMOVE_USER, SET_USER, SET_USERS, SET_WATCHED_USER } from '../reducers/user.reducer'
+import { REMOVE_USER, SET_USER, SET_USERS, TOGGLE_LIKED_SONG } from '../reducers/user.reducer'
 
 export async function loadUsers() {
     try {
@@ -71,12 +71,23 @@ export async function logout() {
     }
 }
 
-export async function loadUser(userId) {
-    try {
-        const user = await userService.getById(userId)
-        store.dispatch({ type: SET_WATCHED_USER, user })
-    } catch (err) {
-        showErrorMsg('Cannot load user')
-        console.log('Cannot load user', err)
-    }
+export async function toggleLikedSong(track) {
+    store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+
+    const state = store.getState()
+    const user = state.userModule.user
+    const savedUser = await userService.save(user)
+    store.dispatch({ type: SET_USER, user: savedUser })
 }
+
+
+
+// export async function loadUser(userId) {
+//     try {
+//         const user = await userService.getById(userId)
+//         store.dispatch({ type: SET_WATCHED_USER, user })
+//     } catch (err) {
+//         showErrorMsg('Cannot load user')
+//         console.log('Cannot load user', err)
+//     }
+// }

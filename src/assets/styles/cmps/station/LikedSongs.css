@@ -1,34 +1,40 @@
-.station-details {
+.liked-station-details {
     color: var(--gray1);
     padding: 2em;
 
 
     header {
         display: grid;
-        grid-template-columns: 230px 1fr;
+        grid-template-columns: auto 1fr;
+
         column-gap: 24px;
         row-gap: 8px;
 
-
         grid-template-areas:
-            "img ."
-            "img h"
-            "img e"
-            "img c";
+            "i ."
+            "i n"
+            "i c";
+        align-items: end;
+        column-gap: 1em;
+        padding: 6px 8px;
+        border-radius: 4px;
+        transition: background-color 0.15s ease, transform 0.1s ease;
+
+        .station-img {
+
+            grid-area: i;
+        }
 
         h1 {
-            grid-area: h;
             font-size: 5em;
             font-weight: 800;
-            margin: 0;
+            grid-area: n;
+
         }
 
-        .desc {
-            grid-area: e;
-        }
-
-        h5 {
+        h4 {
             grid-area: c;
+
         }
 
         img {

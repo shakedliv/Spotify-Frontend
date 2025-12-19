@@ -8,6 +8,24 @@ export function StationPreview({ station, onRemoveStation, type }) {
 
 
 
+    if (type === 'library') {
+        return (
+            <Link to={`/station/${station._id}`} className="station-link">
+                <article className="station-preview">
+
+                    <div className="station-img">
+                        <img src={station.imgUrl} alt={station.name} />
+                    </div>
+                    <h3 className="station-name">{station.name}</h3>
+
+                </article >
+            </Link>
+        )
+
+    }
+
+
+
     if (type === 'first') {
         return (
             <Link to={`/station/${station._id}`} className="station-link">
@@ -17,7 +35,7 @@ export function StationPreview({ station, onRemoveStation, type }) {
                         <img src={station.imgUrl} alt={station.name} />
                     </div>
                     <h3 className="station-name">{station.name}</h3>
-           
+
                 </article >
             </Link>
         )

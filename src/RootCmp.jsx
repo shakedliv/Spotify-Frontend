@@ -12,16 +12,18 @@ import { StationDetails } from "./pages/StationDetails"
 import { UserDetails } from "./pages/UserDetails"
 
 
-import { AppHeader } from "./cmps/AppHeader";
-import { Search } from "./pages/Search";
-import { PlayerFooter } from "./cmps/PlayerFooter";
-import { AppFooter } from "./cmps/AppFooter";
-import { UserMsg } from "./cmps/UserMsg.jsx";
-import { LoginSignup } from "./pages/LoginSignup.jsx";
-import { Login } from "./pages/Login.jsx";
-import { Signup } from "./pages/Signup.jsx";
+import { AppHeader } from "./cmps/AppHeader"
+import { Search } from "./pages/Search"
+import { PlayerFooter } from "./cmps/PlayerFooter"
+import { AppFooter } from "./cmps/AppFooter"
+import { UserMsg } from "./cmps/UserMsg.jsx"
+import { LoginSignup } from "./pages/LoginSignup.jsx"
+import { Login } from "./pages/Login.jsx"
+import { Signup } from "./pages/Signup.jsx"
 import { Library } from './cmps/Library.jsx'
 import { loadStations } from './store/actions/station.actions.js'
+import { LikedSongs } from './pages/LikedSongs.jsx'
+
 export function RootCmp() {
 
   useEffect(() => {
@@ -45,7 +47,7 @@ export function RootCmp() {
           <Route path="station" element={<StationIndex />} />
           <Route path="station/:stationId" element={<StationDetails />} />
           <Route path="user/:id" element={<UserDetails />} />
-
+          <Route path="/liked" element={<LikedSongs/>} />
           <Route path="chat" element={<ChatApp />} />
           <Route path="admin" element={<AdminIndex />} />
           <Route path="login" element={<LoginSignup />}>

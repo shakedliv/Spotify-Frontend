@@ -1,11 +1,18 @@
-.Library {
-    color: whitesmoke;
-    background-color: var(--clr5);
+.library {
+    width: 100%;
 
-    .library-header {
+    background-color: var(--bg-elevated-base);
+    color: var(--text-primary);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    header {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        padding: 1em;
-
+        font-weight: 700;
     }
 }

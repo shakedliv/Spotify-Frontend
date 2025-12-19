@@ -1,5 +1,5 @@
-import { storageService } from '../async-storage.service.js'
-import { makeId } from '../util.service.js'
+import { storageService } from '../async-storage.service'
+import { makeId } from '../util.service'
 
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 
@@ -34,16 +34,13 @@ function remove(userId) {
     return storageService.remove('user', userId)
 }
 
-async function update({ _id, score }) {
-    const user = await storageService.get('user', _id)
-    user.score = score
-    await storageService.put('user', user)
+async function update(user) {
+    const savedUser = await storageService.put('user', user)
 
-    // When admin updates other user's details, do not update loggedinUser
     const loggedinUser = getLoggedinUser()
-    if (loggedinUser._id === user._id) saveLoggedinUser(user)
+    if (loggedinUser?._id === user._id) saveLoggedinUser(savedUser)
 
-    return user
+    return savedUser
 }
 
 async function login(userCred) {

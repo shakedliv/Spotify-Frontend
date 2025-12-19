@@ -3,5 +3,8 @@
     gap: 20px;
     overflow: hidden;
    
-    background-color: var(--clr5);
+     .station-preview:hover{
+        background-color: var(--bg-highlight);
+        
+    }
 }

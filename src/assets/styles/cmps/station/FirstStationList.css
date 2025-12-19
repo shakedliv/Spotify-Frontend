@@ -5,10 +5,14 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
 
     .station-preview {
+    
         display: flex;
         align-items: center;
         gap: 16px;
         width: 100%;
+
+
+      
 
         .station-img {
             width: 64px;
@@ -25,7 +29,10 @@
         }
 
     }
-
+    .station-preview:hover{
+        background-color: var(--bg-highlight);
+        
+    }
 
 }
 

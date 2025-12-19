@@ -1,8 +1,27 @@
 import { useState } from 'react'
 import { formatDate, formatDuration } from '../services/util.service.js'
+import { useSelector } from 'react-redux'
+import { toggleLikedSong } from '../store/actions/user.actions.js'
 export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
     const organizedTrack = track.track
-    console.log('organizedTrack:', organizedTrack)
+    // console.log('organizedTrack:', organizedTrack)
+
+   
+
+    const user = useSelector(state => state.userModule.user)
+
+
+    const isLiked = user?.likedSongs?.some(t => t.id === track.id)
+
+
+    function onLikeClick(ev) {
+        console.log('test')
+        ev.stopPropagation()
+        toggleLikedSong(track)
+    }
+
+
+
     return (
         <article className='track-preview'>
             <section className='basic-info-container'>
@@ -24,6 +43,9 @@ export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
             <div className='track-actions'>
                 <button onClick={() => onRemoveTrack(track.id)}>X</button>
                 <button onClick={() => onAddTrack(track)}>...</button>
+                <button className="like-btn" onClick={onLikeClick}>
+                    {isLiked ? '💚' : '🤍'}
+                </button>
             </div>
         </article>
     )

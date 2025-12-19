@@ -1,0 +1,44 @@
+.library-station-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .station-link {
+        display: block;
+        text-decoration: none;
+      
+    }
+
+    .station-preview {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "i n"
+            "i c";
+        align-items: center;
+        column-gap: 1em;
+        padding: 6px 8px;
+        border-radius: 4px;
+        transition: background-color 0.15s ease, transform 0.1s ease;
+
+        .station-img {
+            width: 60px;
+            grid-area: i;
+        }
+        h3 {
+            grid-area: n;
+            margin: 0;
+        }
+        h4 {
+            grid-area: c;
+            margin: 0;
+        }
+    }
+
+
+    .station-preview:hover {
+        background-color: var(--bg-highlight);
+    }
+
+
+}
