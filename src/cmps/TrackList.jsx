@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { DndContext, closestCenter, DragOverlay } from '@dnd-kit/core'
 import {
     arrayMove,
@@ -11,34 +11,71 @@ import { TracksHeader } from './TracksHeader.jsx'
 import stationSample from '../assets/data/station.sample.raw.json'
 const demoData = stationSample.tracks.items
 
-console.log('demoData:', demoData)
-function doNothing() {}
 export function TrackList({
     tracks = demoData,
-    onRemoveTrack = doNothing,
+    onRemoveTrack,
     onReorder,
-    onAddTrack = doNothing,
+    onAddTrack,
 }) {
-    const [trackNum, setTrackNum] = useState(0)
+   console.log('tracks:', tracks)
+   console.log('onRemoveTrack:',onRemoveTrack )
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
-   //useState of tracks
+    const [currTracks, setCurrTracks] = useState(tracks)
+    useEffect(() => {
+        setCurrTracks(tracks)
+    }, [tracks])
     function handleDragStart(event) {
         setActiveId(event.active.id)
     }
-   function onSort(sortType) {
-      // create trackstosort (new pointer)
-      // if else sorttype === name
-      // sort by name
-      // after sort reorder the tracks with use state of Tracks
-}
+    function onSort(sortBy) {
+        // sortBy = {sortField: name, sortDirection: -1}
+        const tracksToSort = [...currTracks]
+        const { sortField, sortDirection } = sortBy
+
+        //   if (sortField === 'name' || sortField === 'album') {
+        //       tracksToSort.sort(
+        //           (track1, track2) =>
+        //               track1[sortField].localeCompare(track2[sortField]) *
+        //               +sortDirection
+        //       )
+        if (sortField === 'name') {
+            tracksToSort.sort(
+                (track1, track2) =>
+                    track1.track.name.localeCompare(track2.track.name) *
+                    +sortDirection
+            )
+        } else if (sortField === 'album') {
+            tracksToSort.sort(
+                (track1, track2) =>
+                    track1.track.album.name.localeCompare(
+                        track2.track.album.name
+                    ) * +sortDirection
+            )
+        } else if (sortField === 'duration') {
+            tracksToSort.sort(
+                (track1, track2) =>
+                    (track1.track.duration_ms - track2.track.duration_ms) *
+                    +sortDirection
+            )
+        }
+        // else if (sortField === 'date-added') {
+        //       tracksToSort.sort(
+        //           (track1, track2) =>
+        //           (track1.dateAdded - track2.dateAdded) * +sortDirection
+        //       )
+        //   }
+        setCurrTracks(tracksToSort)
+    }
     function handleDragEnd(event) {
         const { active, over } = event
         if (active.id !== over.id) {
-            const oldIndex = tracks.findIndex((item) => item.id === active.id)
-            const newIndex = tracks.findIndex((item) => item.id === over.id)
+            const oldIndex = currTracks.findIndex(
+                (item) => item.id === active.id
+            )
+            const newIndex = currTracks.findIndex((item) => item.id === over.id)
 
-            const newOrder = arrayMove(tracks, oldIndex, newIndex)
+            const newOrder = arrayMove(currTracks, oldIndex, newIndex)
             onReorder(newOrder)
         }
         setActiveId(null)
@@ -46,25 +83,25 @@ export function TrackList({
 
     return (
         <>
-          <TracksHeader onSort={ onSort} />
+            <TracksHeader onSort={onSort} />
             <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
             >
                 <SortableContext
-                    items={tracks}
+                    items={currTracks}
                     strategy={verticalListSortingStrategy}
                 >
                     <div className='track-list-container'>
-                        {tracks.map((track, index) => (
+                        {currTracks.map((track, index) => (
                             <SortableTrack
                                 id={track.id}
                                 key={track.id}
                                 track={track}
                             >
-                              <TrackPreview
-                                 trackNum={index + 1}
+                                <TrackPreview
+                                    trackNum={index + 1}
                                     key={track.id}
                                     track={track}
                                     onRemoveTrack={onRemoveTrack}

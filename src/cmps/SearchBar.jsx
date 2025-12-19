@@ -26,7 +26,9 @@ export function SearchBar() {
   }
 
   return (
-    <section className="search-bar">
+    <section className={`search-bar ${isSearchPage ? "active" : ""}`}>
+      <span className="search-indicator">⌕</span>
+
       <input
         type="text"
         placeholder="What do you want to listen to?"

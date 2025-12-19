@@ -11,7 +11,9 @@ export function AboutUs() {
     }
     return (
         <section>
-            <h2>About Us</h2>
+          <h2>About Us</h2>
+        <TrackList />
+          
             <nav>
                 <NavLink to="team">Team</NavLink> |
                 <NavLink to="vision">Vision</NavLink>

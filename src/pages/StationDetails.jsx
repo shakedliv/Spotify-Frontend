@@ -21,16 +21,19 @@ export function StationDetails() {
 
   console.log(station)
 
-  async function onRemoveTrack(trackId) {
+   async function onRemoveTrack(trackId) {
+     console.log('hi')
     const updatedTracks = station.tracks.filter(track => track.id !== trackId)
     const updatedStation = { ...station, tracks: updatedTracks }
     await updateStation(updatedStation)
   }
+   console.log('onAddTrack:', onAddTrack)
 
-  async function onAddTrack(track) {
+   async function onAddTrack(track) {
+     console.log('hi')
     const updatedTracks = [...station.tracks, track]
-    const updatedStation = { ...station, tracks: updatedTracks }
-    await updateStation(updatedStation)
+     const updatedStation = { ...station, tracks: updatedTracks }
+     await updateStation(updatedStation)
   }
 
 
@@ -67,6 +70,6 @@ export function StationDetails() {
         />
       )}
 
-    </section>
+     </section>
   )
 }

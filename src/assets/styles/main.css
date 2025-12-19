@@ -17,6 +17,12 @@
 @import "cmps/AppHeader";
 @import "cmps/SearchBar";
 
+
+@import "cmps/ExplorerList";
+@import "cmps/ExplorerPreview";
+
+
+
 @import "cmps/AppFooter";
 @import "cmps/PlayerFooter";
 @import "cmps/UserMsg";

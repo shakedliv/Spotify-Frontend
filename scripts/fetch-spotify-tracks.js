@@ -2,8 +2,8 @@ import 'dotenv/config'
 import fs from 'fs'
 
 // ===== CONFIG =====
-const SEARCH_QUERY = 'lofi'
-const LIMIT = 10
+const SEARCH_QUERY = 'eminem'
+const LIMIT = 30
 
 const OUTPUT_PATH = 'src/services/spotify/data/tracks.raw.json'
 
