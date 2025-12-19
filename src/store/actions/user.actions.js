@@ -76,7 +76,7 @@ export async function toggleLikedSong(track) {
 
     const state = store.getState()
     const user = state.userModule.user
-    const savedUser = await userService.save(user)
+    const savedUser = await userService.update(user)
     store.dispatch({ type: SET_USER, user: savedUser })
 }
 

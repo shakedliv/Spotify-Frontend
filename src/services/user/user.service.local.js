@@ -68,7 +68,7 @@ function getLoggedinUser() {
 
 function saveLoggedinUser(user) {
     user = {
-        _id: user._id || makeId(),
+        _id: user._id ,
         fullname: user.fullname,
         imgUrl: user.imgUrl,
         isAdmin: user.isAdmin,
@@ -88,7 +88,8 @@ async function _createLoggedinUser() {
         fullname: 'Mustafa Adminsky',
         imgUrl: 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png',
         isAdmin: true
-
     }
-    saveLoggedinUser(user)
+
+    const savedUser = await storageService.post('user', user)
+    saveLoggedinUser(savedUser)
 }

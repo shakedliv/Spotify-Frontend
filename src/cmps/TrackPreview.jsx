@@ -12,7 +12,8 @@ export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
 
 
     const isLiked = user?.likedSongs?.some(t => t.id === track.id)
-
+    console.log(user);
+    
 
     function onLikeClick(ev) {
         console.log('test')

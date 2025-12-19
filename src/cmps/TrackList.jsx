@@ -84,11 +84,11 @@ export function TrackList({
     return (
         <>
             <TracksHeader onSort={onSort} />
-            <DndContext
+            {/* <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
-            >
+            > */}
                 <SortableContext
                     items={currTracks}
                     strategy={verticalListSortingStrategy}
@@ -112,12 +112,12 @@ export function TrackList({
                     </div>
                 </SortableContext>
 
-                <DragOverlay>
+                {/* <DragOverlay>
                     {activeId ? (
                         <TrackPreview track={activeTrack} isDragging />
                     ) : null}
                 </DragOverlay>
-            </DndContext>
+            </DndContext> */}
         </>
     )
 }
