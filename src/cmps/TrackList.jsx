@@ -17,8 +17,7 @@ export function TrackList({
     onReorder,
     onAddTrack,
 }) {
-   console.log('tracks:', tracks)
-   console.log('onRemoveTrack:',onRemoveTrack )
+  
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
     const [currTracks, setCurrTracks] = useState(tracks)
@@ -83,7 +82,8 @@ export function TrackList({
 
     return (
         <>
-            <TracksHeader onSort={onSort} />
+          <TracksHeader onSort={onSort} />
+       
             {/* <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
