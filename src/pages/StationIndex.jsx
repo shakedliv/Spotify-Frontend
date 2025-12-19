@@ -16,8 +16,8 @@ export function StationIndex() {
 
     const [filterBy, setFilterBy] = useState(stationService.getDefaultFilter())
     const stations = useSelector(storeState => storeState.stationModule.stations)
-   
-    
+
+
     useEffect(() => {
         loadStations(filterBy)
     }, [filterBy])
@@ -35,19 +35,19 @@ export function StationIndex() {
     return (
         <main className="station-index">
             {/* <StationFilter filterBy={filterBy} setFilterBy={setFilterBy} /> */}
-            <section >
-                <FirstStationList
-                    onRemoveStation={onRemoveStation}
-                    stations={stations}
-                />
-            </section>
-            <h2>Made For</h2>
+
+            <FirstStationList
+                onRemoveStation={onRemoveStation}
+                stations={stations}
+            />
+
+            <div className='index-header'>Made For</div>
             <StationList
                 onRemoveStation={onRemoveStation}
                 stations={stations}
             />
 
-            <h2>Jump back in</h2>
+            <div className='index-header'>Jump back in</div>
             <StationList
                 onRemoveStation={onRemoveStation}
                 stations={stations}

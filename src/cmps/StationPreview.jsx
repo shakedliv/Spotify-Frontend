@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
 
 
 export function StationPreview({ station, onRemoveStation, type }) {
@@ -35,6 +36,7 @@ export function StationPreview({ station, onRemoveStation, type }) {
                         <img src={station.imgUrl} alt={station.name} />
                     </div>
                     <h3 className="station-name">{station.name}</h3>
+                    <PlayCircleFilledIcon className="play-icon" sx={{}} />
 
                 </article >
             </Link>
@@ -48,20 +50,19 @@ export function StationPreview({ station, onRemoveStation, type }) {
 
                 <div className="station-img">
                     <img src={station.imgUrl} alt={station.name} />
+                    <PlayCircleFilledIcon className="play-icon" sx={{}} />
                 </div>
                 <p className="station-desc">{station.description}</p>
-                {/* <h4>
-                    {station.artists.slice(0, 3).join(', ')}
-                    {station.artists.length > 3 && ' and more'}
-                </h4> */}
-                {canEdit && (
-                    <button
+      
+                {/* {canEdit && ( */}
+                    {/* <button
                         type="button"
                         onClick={() => onRemoveStation(station._id)}
                     >
                         x
-                    </button>
-                )}
+                    </button> */}
+                {/* )} */}
+
             </article >
         </Link>
     )

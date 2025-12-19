@@ -2,18 +2,22 @@ import { useState } from 'react'
 import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector } from 'react-redux'
 import { toggleLikedSong } from '../store/actions/user.actions.js'
+
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline'
+
 export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
     const organizedTrack = track.track
     // console.log('organizedTrack:', organizedTrack)
 
-   
+
 
     const user = useSelector(state => state.userModule.user)
 
 
     const isLiked = user?.likedSongs?.some(t => t.id === track.id)
-    console.log(user);
-    
+    console.log(user)
+
 
     function onLikeClick(ev) {
         console.log('test')
@@ -45,7 +49,7 @@ export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
                 <button onClick={() => onRemoveTrack(track.id)}>X</button>
                 <button onClick={() => onAddTrack(track)}>...</button>
                 <button className="like-btn" onClick={onLikeClick}>
-                    {isLiked ? '💚' : '🤍'}
+                    {isLiked ? <CheckCircleIcon color='success' /> : <AddCircleOutlineIcon />}
                 </button>
             </div>
         </article>

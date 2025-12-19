@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 import { StationPreview } from './StationPreview'
 import { Link } from 'react-router-dom'
 import likedSongsImg from '../assets/imgs/likedSongsImg.jpg'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 
 export function LibraryStationList({ onRemoveStation, stations }) {
 
@@ -16,7 +17,10 @@ export function LibraryStationList({ onRemoveStation, stations }) {
                 <Link to="/liked" className="station-link">
                     <article className="station-preview">
                         <div className="station-img liked">
-                           <img src={likedSongsImg} alt="" />
+                            <img src={likedSongsImg} alt="" />
+                            <div className='icon-backdrop'>
+                                < PlayArrowIcon className='library-play-icon' />
+                            </div>
                         </div>
                         <h3 className="station-name">Liked Songs</h3>
                         <h4>{user.likedSongs?.length} songs</h4>

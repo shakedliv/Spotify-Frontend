@@ -3,16 +3,22 @@
     gap: 1em;
     padding: 2em;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    
+   
 
     .station-preview {
-    
-        display: flex;
+        display: grid;
+        grid-template-columns: 64px 1fr;
         align-items: center;
-        gap: 16px;
-        width: 100%;
+        column-gap: 1em;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        height: 64px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        position: relative;
 
-
-      
 
         .station-img {
             width: 64px;
@@ -28,11 +34,35 @@
             display: block;
         }
 
+        .play-icon {
+            color: var(--spotify-green);
+            position: absolute;
+
+            right: 5px;
+            font-size: 3em;
+            opacity: 0;
+            transform: translateY(0);
+            transition: opacity 0.5s ease;
+            transform: scale 0.5s ease;
+
+            :hover {
+                scale: 1.05;
+                color: var(--spotify-green-light)
+            }
+        }
+
+        &:hover .play-icon {
+            opacity: 1;
+
+        }
+
+
     }
-    .station-preview:hover{
+
+    .station-preview:hover {
         background-color: var(--bg-highlight);
-        
+
     }
+
 
 }
-

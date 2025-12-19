@@ -6,7 +6,7 @@
     .station-link {
         display: block;
         text-decoration: none;
-      
+
     }
 
     .station-preview {
@@ -24,11 +24,14 @@
         .station-img {
             width: 60px;
             grid-area: i;
+            position: relative
         }
+
         h3 {
             grid-area: n;
             margin: 0;
         }
+
         h4 {
             grid-area: c;
             margin: 0;
@@ -40,5 +43,26 @@
         background-color: var(--bg-highlight);
     }
 
+
+    .icon-backdrop {
+        position: absolute;
+        inset: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+
+        .library-play-icon {
+            position: absolute;
+            font-size: 2.5rem;
+        }
+    }
+
+    .station-preview:hover .icon-backdrop {
+        opacity: 1;
+    }
 
 }

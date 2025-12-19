@@ -1,34 +1,65 @@
-.station-list .station-preview {
-    display: grid;
-    border-radius: 8px;
-    padding: 16px;
-    
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    color: #9d9d9d;
+.station-list {
+    padding: 2em;
 
-  
 
-    .station-img {
-        width: 180px;
-        justify-self: center;
+    .station-preview {
+        display: grid;
+        border-radius: 8px;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+        color: #9d9d9d;
+        padding: 0.5rem ;
 
-        img {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            border-radius: 4px;
-            object-fit: cover;
-            display: block;
+
+
+
+        .station-img {
+            width: 180px;
+            justify-self: center;
+            position: relative;
             margin-bottom: 1em;
+
+            img {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                border-radius: 4px;
+                object-fit: cover;
+                display: block;
+
+            }
+        }
+
+        .station-desc {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+
         }
 
 
+
+        .play-icon {
+            color: var(--spotify-green);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 3em;
+            opacity: 0;
+            transform: translateY(0);
+            transition: opacity 0.5s ease;
+            transition: transform 0.5s ease;
+            transform: scale 0.5s ease;
+
+            :hover {
+                scale: 1.05;
+                color: var(--spotify-green-light)
+            }
+        }
+
+        &:hover .play-icon {
+            opacity: 1;
+            transform: translateY(-5px)
+        }
+
     }
-
-    .station-desc {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-    }
-
 }

@@ -1,5 +1,14 @@
 .station-index {
     color: white;
-    background-color: var( --bg-elevated-base);
+    background-color: var(--bg-elevated-base);
     border-radius: 8px;
+    max-width: 100%;
+    overflow-x: hidden;
+
+
+    .index-header {
+        margin-inline-start: 3rem;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
 }
