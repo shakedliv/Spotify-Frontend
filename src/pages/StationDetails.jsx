@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 import { loadStation, updateStation } from '../store/actions/station.actions'
 import { StationEdit } from '../cmps/StationEdit'
 import { TrackList } from '../cmps/TrackList'
-
+import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
+import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
 
 export function StationDetails() {
 
@@ -21,19 +22,19 @@ export function StationDetails() {
 
   console.log(station)
 
-   async function onRemoveTrack(trackId) {
-     console.log('hi')
+  async function onRemoveTrack(trackId) {
+    console.log('hi')
     const updatedTracks = station.tracks.filter(track => track.id !== trackId)
     const updatedStation = { ...station, tracks: updatedTracks }
     await updateStation(updatedStation)
   }
-   console.log('onAddTrack:', onAddTrack)
+  console.log('onAddTrack:', onAddTrack)
 
-   async function onAddTrack(track) {
-     console.log('hi')
+  async function onAddTrack(track) {
+    console.log('hi')
     const updatedTracks = [...station.tracks, track]
-     const updatedStation = { ...station, tracks: updatedTracks }
-     await updateStation(updatedStation)
+    const updatedStation = { ...station, tracks: updatedTracks }
+    await updateStation(updatedStation)
   }
 
 
@@ -41,7 +42,6 @@ export function StationDetails() {
 
   return (
     <section className="station-details">
-      <Link to="/station">Back to list</Link>
 
       <header>
         <img src={station.imgUrl || ''} alt={station.name} />
@@ -51,12 +51,13 @@ export function StationDetails() {
       </header>
 
       <section className='station-details-btns'>
-        <button className='play-btn'>Play</button>
-        <button className='shuffle-btn'>Shuffle</button>
-        <button>List</button>
+        <div className='play-btns'>
+          <PlayCircleFilledIcon className="play-icon" />
+          <button className='shuffle-btn'>Shuffle</button>
+        </div>
+        <div className='list-btn'>List<FormatListBulletedIcon className="list-icon" /></div>
       </section>
 
-      {/* onaddTrack/ onremoveTrack */}
       <TrackList
         tracks={station.tracks}
         onRemoveTrack={onRemoveTrack}
@@ -70,6 +71,6 @@ export function StationDetails() {
         />
       )}
 
-     </section>
+    </section>
   )
 }

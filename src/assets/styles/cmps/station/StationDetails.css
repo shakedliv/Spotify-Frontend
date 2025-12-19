@@ -38,4 +38,49 @@
             object-fit: cover;
         }
     }
+
+    .station-details-btns {
+        display: flex;
+        justify-content: space-between;
+
+        .play-btns {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .list-btn {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--text-subdued);
+
+
+            &:hover {
+                cursor: pointer;
+                color: var(--text-primary);
+            }
+        }
+
+
+
+        .play-icon {
+            color: var(--spotify-green);
+            font-size: 3em;
+            transform: scale 0.5s ease;
+
+            :hover {
+                scale: 1.05;
+                color: var(--spotify-green-light)
+            }
+        }
+
+        &:hover .play-icon {
+            cursor: pointer;
+        }
+
+
+    }
+
 }

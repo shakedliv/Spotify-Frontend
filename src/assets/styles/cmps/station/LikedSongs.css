@@ -1,23 +1,29 @@
 .liked-station-details {
     color: var(--gray1);
-    padding: 2em;
+
+    border-radius: 8px;
+    background-color: #121212;
 
 
     header {
         display: grid;
         grid-template-columns: auto 1fr;
-
         column-gap: 24px;
         row-gap: 8px;
+        margin-bottom: 1em;
+        background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, #181818 100%);
+        ;
 
         grid-template-areas:
             "i ."
             "i n"
-            "i c";
+            "i c"
+            "b b";
+
         align-items: end;
         column-gap: 1em;
-        padding: 6px 8px;
-        border-radius: 4px;
+        padding: 40px 20px 20px 20px;
+        border-radius: 8px;
         transition: background-color 0.15s ease, transform 0.1s ease;
 
         .station-img {
@@ -43,5 +49,58 @@
             border-radius: 8px;
             object-fit: cover;
         }
+
+        .station-details-btns {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em 0 1em;
+            grid-area: b;
+           
+
+
+            .play-btns {
+                display: grid;
+                grid-auto-flow: column;
+                align-items: center;
+                justify-content: start;
+            }
+
+            .list-btn {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                color: var(--text-subdued);
+
+
+                &:hover {
+                    cursor: pointer;
+                    color: var(--text-primary);
+                }
+            }
+
+
+
+            .play-icon {
+                color: var(--spotify-green);
+                font-size: 3em;
+                transform: scale 0.5s ease;
+
+                :hover {
+                    scale: 1.05;
+                    color: var(--spotify-green-light)
+                }
+            }
+
+            &:hover .play-icon {
+                cursor: pointer;
+            }
+
+
+        }
     }
+
+
+
+
+
 }
