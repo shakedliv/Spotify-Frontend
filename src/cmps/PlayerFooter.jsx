@@ -1,20 +1,17 @@
-import { useEffect, useState } from "react";
-import { trackService } from "../services/track";
+import { useSelector } from "react-redux";
 
 export function PlayerFooter() {
-  const [currentTrack, setCurrentTrack] = useState(null);
+  const currentTrack = useSelector((state) => state.systemModule.currentTrack);
 
-  useEffect(() => {
-    loadInitialTrack();
-  }, []);
-
-  async function loadInitialTrack() {
-    const tracks = await trackService.query();
-    if (!tracks.length) return;
-    setCurrentTrack(tracks[0]);
+  if (!currentTrack) {
+    return (
+      <footer className="player-footer player-footer--empty">
+        <div className="player-footer-center">
+          <span>Select a song to play</span>
+        </div>
+      </footer>
+    );
   }
-
-  if (!currentTrack) return null;
 
   return (
     <footer className="player-footer">
