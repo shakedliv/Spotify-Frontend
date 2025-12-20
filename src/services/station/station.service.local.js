@@ -4,6 +4,9 @@ import { makeId } from '../util.service'
 import { userService } from '../user'
 import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
 // import demoPlaylist from '../../assets/styles/data/station.sample.raw.json'
+// import stationSample from '../../assets/data/station.sample.raw.json'
+
+// const demoData = stationSample.tracks.items
 
 const STORAGE_KEY = 'station'
 
@@ -55,6 +58,7 @@ async function save(station) {
             name: station.name,
             imgUrl: station.imgUrl || defaultStationImg,
             owner: userService.getLoggedinUser(),
+            tracks: []
         }
         savedStation = await storageService.post(STORAGE_KEY, stationToSave)
     }
@@ -100,5 +104,6 @@ function _mapSpotifyPlaylistToStation(demoPlaylist) {
             fullname: playlist.owner?.display_name || playlist.owner?.id,
         },
         artists: artistNames,
+
     }
 }

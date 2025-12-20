@@ -1,6 +1,6 @@
 .station-list {
     display: flex;
-    gap: 20px;
+    
     overflow: hidden;
    
      .station-preview:hover{

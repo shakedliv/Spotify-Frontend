@@ -23,7 +23,7 @@ export function LibraryStationList({ onRemoveStation, stations }) {
                             </div>
                         </div>
                         <h3 className="station-name">Liked Songs</h3>
-                        <h4>{user.likedSongs?.length} songs</h4>
+                        <h5>{user.likedSongs?.length} songs</h5>
                     </article>
                 </Link>
             )}

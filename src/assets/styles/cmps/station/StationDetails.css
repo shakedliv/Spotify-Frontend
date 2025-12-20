@@ -1,26 +1,40 @@
 .station-details {
     color: var(--gray1);
-    padding: 2em;
+
+    background-color: #121212;
 
 
     header {
         display: grid;
-        grid-template-columns: 230px 1fr;
+        grid-template-columns: auto 1fr;
         column-gap: 24px;
         row-gap: 8px;
+        margin-bottom: 1em;
+        background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, #181818 100%);
 
+
+        align-items: end;
+        column-gap: 1em;
+        padding: 40px 20px 20px 20px;
+        border-radius: 8px;
+        transition: background-color 0.15s ease, transform 0.1s ease;
 
         grid-template-areas:
             "img ."
             "img h"
             "img e"
-            "img c";
+            "img c"
+            "b b";
 
         h1 {
             grid-area: h;
             font-size: 5em;
             font-weight: 800;
             margin: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .desc {
@@ -38,4 +52,80 @@
             object-fit: cover;
         }
     }
+
+    .station-details-btns {
+        display: flex;
+        justify-content: space-between;
+        grid-area: b;
+
+        .play-btns {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .list-btn {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--text-subdued);
+
+
+            &:hover {
+                cursor: pointer;
+                color: var(--text-primary);
+            }
+        }
+
+
+
+        .play-icon {
+            color: var(--spotify-green);
+            font-size: 3em;
+            transform: scale 0.5s ease;
+
+            :hover {
+                scale: 1.05;
+                color: var(--spotify-green-light)
+            }
+        }
+
+        &:hover .play-icon {
+            cursor: pointer;
+        }
+
+
+    }
+
+
+    .station-track-search {
+        display: grid;
+        margin-top: 24px;
+        padding: 20px;
+        border-top: 1px solid var(--bg-highlight);
+        row-gap: 20px;
+
+
+        .station-search-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.5em 1em;
+            background-color: #2d2c2d;
+            margin-bottom: 12px;
+            max-width: 400px;
+
+            input {
+                flex: 1;
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 1rem;
+                color: var(--text-primary);
+                padding: 0;
+            }
+        }
+    }
+
 }
