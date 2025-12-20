@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect, useRef, useMemo } from "react";
+import { useEffect, useRef, useMemo, useState } from "react";
 import { useYoutubePlayer } from "../customHooks/useYoutubePlayer";
 import { setIsPlaying } from "../store/actions/system.actions";
 import { adaptTrackForPlayer } from "../services/track/track.util";
@@ -14,8 +14,20 @@ export function PlayerFooter() {
   const stations = useSelector((state) => state.stationModule.stations);
 
   const playerContainerRef = useRef(null);
-  const { loadVideo, play, pause } = useYoutubePlayer(playerContainerRef);
 
+  const {
+    loadVideo,
+    play,
+    pause,
+    currentTime,
+    duration,
+    seekTo,
+    volume,
+    setVolume,
+  } = useYoutubePlayer(playerContainerRef);
+
+  const [isSeeking, setIsSeeking] = useState(false);
+  const [seekValue, setSeekValue] = useState(0);
 
   useEffect(() => {
     loadVideo(FALLBACK_VIDEO_ID);
@@ -23,6 +35,7 @@ export function PlayerFooter() {
 
   useEffect(() => {
     if (!currentTrack?.videoId) return;
+    setSeekValue(0);
     loadVideo(currentTrack.videoId);
   }, [currentTrack?.videoId, loadVideo]);
 
@@ -31,6 +44,9 @@ export function PlayerFooter() {
     else pause();
   }, [isPlaying, play, pause]);
 
+  useEffect(() => {
+    if (!isSeeking) setSeekValue(currentTime);
+  }, [currentTime, isSeeking]);
 
   const randomSpotifyTrack = useMemo(() => {
     if (!stations?.length) return null;
@@ -43,10 +59,7 @@ export function PlayerFooter() {
     const station =
       stationsWithTracks[Math.floor(Math.random() * stationsWithTracks.length)];
 
-    const trackWrapper =
-      station.tracks[Math.floor(Math.random() * station.tracks.length)];
-
-    return trackWrapper;
+    return station.tracks[Math.floor(Math.random() * station.tracks.length)];
   }, [stations]);
 
   const displayTrack = useMemo(() => {
@@ -55,6 +68,11 @@ export function PlayerFooter() {
     return adaptTrackForPlayer(randomSpotifyTrack);
   }, [currentTrack, randomSpotifyTrack]);
 
+  function formatTime(seconds = 0) {
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${String(secs).padStart(2, "0")}`;
+  }
 
   return (
     <footer className="player-footer">
@@ -86,21 +104,34 @@ export function PlayerFooter() {
         </div>
 
         <div className="player-progress">
-          <span>0:00</span>
-          <input type="range" min="0" max="100" />
-          <span>
-            {displayTrack
-              ? `${Math.floor(displayTrack.durationMs / 60000)}:${String(
-                  Math.floor((displayTrack.durationMs % 60000) / 1000)
-                ).padStart(2, "0")}`
-              : "0:00"}
-          </span>
+          <span>{formatTime(seekValue)}</span>
+
+          <input
+            type="range"
+            min="0"
+            max={duration || 0}
+            value={seekValue}
+            onMouseDown={() => setIsSeeking(true)}
+            onMouseUp={() => {
+              seekTo(seekValue);
+              setIsSeeking(false);
+            }}
+            onChange={(e) => setSeekValue(+e.target.value)}
+          />
+
+          <span>{formatTime(duration)}</span>
         </div>
       </div>
 
       <div className="player-footer-right">
         <button>🔊</button>
-        <input type="range" min="0" max="100" />
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value={volume}
+          onChange={(e) => setVolume(+e.target.value)}
+        />
       </div>
 
       <div ref={playerContainerRef} style={{ display: "none" }} />

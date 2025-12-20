@@ -35,6 +35,7 @@ export function useYoutubePlayer(containerRef) {
 
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
+    const [volume, setVolumeState] = useState(100)
 
     const stopTrackingTime = useCallback(() => {
         if (!intervalRef.current) return
@@ -71,6 +72,8 @@ export function useYoutubePlayer(containerRef) {
             const YT = await loadYoutubeIframeApi()
 
             if (playerRef.current) {
+                setCurrentTime(0)
+                setDuration(0)
                 playerRef.current.loadVideoById(videoId)
                 return
             }
@@ -85,11 +88,14 @@ export function useYoutubePlayer(containerRef) {
                 events: {
                     onReady: (e) => {
                         setDuration(e.target.getDuration())
+                        e.target.setVolume(volume)
                     },
                     onStateChange: (e) => {
                         const YTState = window.YT.PlayerState
 
                         if (e.data === YTState.PLAYING) {
+                            setDuration(e.target.getDuration())
+                            setCurrentTime(e.target.getCurrentTime())
                             dispatch(setIsPlaying(true))
                             startTrackingTime(e.target)
                         }
@@ -102,7 +108,7 @@ export function useYoutubePlayer(containerRef) {
                 },
             })
         },
-        [containerRef, dispatch, startTrackingTime, stopTrackingTime]
+        [containerRef, dispatch, startTrackingTime, stopTrackingTime, volume]
     )
 
     const play = useCallback(() => {
@@ -113,11 +119,24 @@ export function useYoutubePlayer(containerRef) {
         playerRef.current?.pauseVideo()
     }, [])
 
+    const seekTo = useCallback((seconds) => {
+        playerRef.current?.seekTo(seconds, true)
+        setCurrentTime(seconds)
+    }, [])
+
+    const setVolume = useCallback((value) => {
+        setVolumeState(value)
+        playerRef.current?.setVolume(value)
+    }, [])
+
     return {
         loadVideo,
         play,
         pause,
+        seekTo,
+        setVolume,
         currentTime,
         duration,
+        volume,
     }
 }
