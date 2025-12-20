@@ -106,7 +106,7 @@ export function TrackList({
                 sensors={sensors}
             >
                 <SortableContext
-                    items={currTracks}
+                    items={currTracks.map(track => track.id)}
                     strategy={verticalListSortingStrategy}
                 >
                     <div className='track-list-container'>

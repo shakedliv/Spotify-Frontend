@@ -52,7 +52,7 @@ export function StationPreview({ station, onRemoveStation, type }) {
             <article className="station-preview">
 
                 <div className="station-img">
-                    {/* <img src={station.tracks[0]?.track.album.images[0].url || station.imgUrl} alt={station.name} /> */}
+                    <img src={station.tracks[0]?.track.album.images[0].url || station.imgUrl} alt={station.name} />
                     <PlayCircleFilledIcon className="play-icon" sx={{}} />
                 </div>
                 <p className="station-desc">{station.description}</p>
