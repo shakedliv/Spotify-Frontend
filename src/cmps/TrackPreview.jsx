@@ -23,7 +23,7 @@ export function TrackPreview({
   const isLiked = user?.likedSongs?.some((t) => t.id === track.id)
   const dispatch = useDispatch()
 
-  useEffect(() => {
+   useEffect(() => {
     if (!isOperationsOpen) return
     const closeMenu = () => onToggleOptions(null)
     window.addEventListener("click", closeMenu)
@@ -93,7 +93,7 @@ export function TrackPreview({
               onClick={(ev) => ev.stopPropagation()}
             >
               <button onClick={() => onAddTrack(track)}>Add to playlist</button>
-              <button onClick={() => onRemoveTrack(track.id)}>
+              <button onClick={() => onRemoveTrack(track.id || organizedTrack.id)}>
                 Remove from this playlist
               </button>
               <button onClick={onLikeClick}>Save to your Liked Songs</button>

@@ -20,7 +20,9 @@ export function StationDetails() {
   const [isEditOpen, setIsEditOpen] = useState(false)
 
   useEffect(() => {
-    loadStation(stationId)
+     loadStation(stationId)
+     console.log('onRemoveTrack:',onRemoveTrack )
+     
   }, [stationId])
 
   console.log(station)
@@ -33,12 +35,18 @@ export function StationDetails() {
 
 
   async function onAddTrack(track) {
-    console.log('hi')
     const updatedTracks = [...station.tracks, track]
     const updatedStation = { ...station, tracks: updatedTracks }
     await updateStation(updatedStation)
   }
-
+async function onReorder(newTracks) {
+    const updatedStation = { ...station, tracks: newTracks }
+    try {
+        await updateStation(updatedStation)
+    } catch (err) {
+        console.error('Failed to update tracks order:', err)
+    }
+}
 
   if (!station) return <div>Loading...</div>
 
@@ -62,7 +70,8 @@ export function StationDetails() {
 
 
       <TrackList
-        tracks={station.tracks}
+           tracks={station.tracks}
+           onReorder={onReorder}
         onRemoveTrack={onRemoveTrack}
         onAddTrack={onAddTrack}
       />
