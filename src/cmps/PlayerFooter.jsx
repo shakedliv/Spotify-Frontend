@@ -1,20 +1,38 @@
-import { useEffect, useState } from "react";
-import { trackService } from "../services/track";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect, useRef } from "react";
+import { useYoutubePlayer } from "../customHooks/useYoutubePlayer";
+import { setIsPlaying } from "../store/actions/system.actions";
 
 export function PlayerFooter() {
-  const [currentTrack, setCurrentTrack] = useState(null);
+  const currentTrack = useSelector((state) => state.systemModule.currentTrack);
+  const isPlaying = useSelector((state) => state.systemModule.isPlaying);
+  const dispatch = useDispatch();
 
+  const playerContainerRef = useRef(null);
+  const { loadVideo, play, pause } = useYoutubePlayer(playerContainerRef);
+
+  // 🔹 Load video ONLY when a resolved videoId exists
   useEffect(() => {
-    loadInitialTrack();
-  }, []);
+    if (!currentTrack?.videoId) return;
+    loadVideo(currentTrack.videoId);
+  }, [currentTrack?.videoId, loadVideo]);
 
-  async function loadInitialTrack() {
-    const tracks = await trackService.query();
-    if (!tracks.length) return;
-    setCurrentTrack(tracks[0]);
+  // 🔹 Sync play / pause with Redux state
+  useEffect(() => {
+    if (!currentTrack?.videoId) return;
+    if (isPlaying) play();
+    else pause();
+  }, [isPlaying, currentTrack?.videoId, play, pause]);
+
+  if (!currentTrack) {
+    return (
+      <footer className="player-footer player-footer--empty">
+        <div className="player-footer-center">
+          <span>Select a song to play</span>
+        </div>
+      </footer>
+    );
   }
-
-  if (!currentTrack) return null;
 
   return (
     <footer className="player-footer">
@@ -31,9 +49,16 @@ export function PlayerFooter() {
       <div className="player-footer-center">
         <div className="player-controls">
           <button>⏮</button>
-          <button>▶</button>
+
+          {isPlaying ? (
+            <button onClick={() => dispatch(setIsPlaying(false))}>⏸</button>
+          ) : (
+            <button onClick={() => dispatch(setIsPlaying(true))}>▶</button>
+          )}
+
           <button>⏭</button>
         </div>
+
         <div className="player-progress">
           <span>0:00</span>
           <input type="range" min="0" max="100" />
@@ -50,6 +75,9 @@ export function PlayerFooter() {
         <button>🔊</button>
         <input type="range" min="0" max="100" />
       </div>
+
+      {/* Hidden YouTube iframe container */}
+      <div ref={playerContainerRef} style={{ display: "none" }} />
     </footer>
   );
 }
