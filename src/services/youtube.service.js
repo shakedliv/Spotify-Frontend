@@ -9,25 +9,34 @@ export const youtubeService = {
     resolveVideoId,
 }
 
+const FALLBACK_VIDEO_ID = "dQw4w9WgXcQ"
+
 async function resolveVideoId(track) {
-    if (!track) throw new Error('resolveVideoId: track is required')
+    if (!track) return FALLBACK_VIDEO_ID;
 
-    const trackId = track.id || track._id
-    if (!trackId) throw new Error('resolveVideoId: track id is missing')
-
+    const trackId = track.id || track._id || track.track?.id;
     if (trackIdCache.has(trackId)) {
-        console.log('[YT CACHE HIT]', trackId)
-        return trackIdCache.get(trackId)
+        return trackIdCache.get(trackId);
     }
-    console.log('[YT CACHE MISS]', trackId)
 
+    try {
+        if (!API_KEY) throw new Error("Missing API key");
 
-    const { videoId } = await searchVideo(track)
+        const { videoId } = await searchVideo(track);
+        trackIdCache.set(trackId, videoId);
+        return videoId;
+    } catch (err) {
+        console.warn(
+            "[YT fallback] Playing fallback audio for:",
+            track?.title || track?.track?.name,
+            err.message
+        );
 
-    trackIdCache.set(trackId, videoId)
-
-    return videoId
+        trackIdCache.set(trackId, FALLBACK_VIDEO_ID);
+        return FALLBACK_VIDEO_ID;
+    }
 }
+
 
 async function searchVideo(track) {
     if (!API_KEY) throw new Error('Missing VITE_YOUTUBE_API_KEY')
