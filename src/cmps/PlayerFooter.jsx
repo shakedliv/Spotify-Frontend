@@ -4,6 +4,12 @@ import { useYoutubePlayer } from "../customHooks/useYoutubePlayer";
 import { setIsPlaying } from "../store/actions/system.actions";
 import { adaptTrackForPlayer } from "../services/track/track.util";
 
+import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
+import SkipNextIcon from "@mui/icons-material/SkipNext";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import PauseIcon from "@mui/icons-material/Pause";
+import VolumeUpIcon from "@mui/icons-material/VolumeUp";
+
 const FALLBACK_VIDEO_ID = "dQw4w9WgXcQ";
 
 export function PlayerFooter() {
@@ -50,15 +56,12 @@ export function PlayerFooter() {
 
   const randomSpotifyTrack = useMemo(() => {
     if (!stations?.length) return null;
-
     const stationsWithTracks = stations.filter(
       (station) => Array.isArray(station.tracks) && station.tracks.length
     );
     if (!stationsWithTracks.length) return null;
-
     const station =
       stationsWithTracks[Math.floor(Math.random() * stationsWithTracks.length)];
-
     return station.tracks[Math.floor(Math.random() * station.tracks.length)];
   }, [stations]);
 
@@ -73,6 +76,11 @@ export function PlayerFooter() {
     const secs = Math.floor(seconds % 60);
     return `${mins}:${String(secs).padStart(2, "0")}`;
   }
+
+  const progressPercent =
+    duration > 0 ? `${(seekValue / duration) * 100}%` : "0%";
+
+  const volumePercent = `${volume}%`;
 
   return (
     <footer className="player-footer">
@@ -92,15 +100,29 @@ export function PlayerFooter() {
 
       <div className="player-footer-center">
         <div className="player-controls">
-          <button disabled={!currentTrack}>⏮</button>
+          <button disabled={!currentTrack}>
+            <SkipPreviousIcon />
+          </button>
 
           {isPlaying ? (
-            <button onClick={() => dispatch(setIsPlaying(false))}>⏸</button>
+            <button
+              className="play-btn is-playing"
+              onClick={() => dispatch(setIsPlaying(false))}
+            >
+              <PauseIcon />
+            </button>
           ) : (
-            <button onClick={() => dispatch(setIsPlaying(true))}>▶</button>
+            <button
+              className="play-btn"
+              onClick={() => dispatch(setIsPlaying(true))}
+            >
+              <PlayArrowIcon />
+            </button>
           )}
 
-          <button disabled={!currentTrack}>⏭</button>
+          <button disabled={!currentTrack}>
+            <SkipNextIcon />
+          </button>
         </div>
 
         <div className="player-progress">
@@ -111,6 +133,7 @@ export function PlayerFooter() {
             min="0"
             max={duration || 0}
             value={seekValue}
+            style={{ "--fill-percent": progressPercent }}
             onMouseDown={() => setIsSeeking(true)}
             onMouseUp={() => {
               seekTo(seekValue);
@@ -124,12 +147,13 @@ export function PlayerFooter() {
       </div>
 
       <div className="player-footer-right">
-        <button>🔊</button>
+        <VolumeUpIcon />
         <input
           type="range"
           min="0"
           max="100"
           value={volume}
+          style={{ "--fill-percent": volumePercent }}
           onChange={(e) => setVolume(+e.target.value)}
         />
       </div>
