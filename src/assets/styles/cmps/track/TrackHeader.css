@@ -1,4 +1,21 @@
 .tracks-header-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1.7fr 1fr 1fr 0.5fr;
     justify-content: space-between;
+    justify-items: start;
+    gap: 16px;
+    padding-inline: 16px;
+border-bottom: 1px solid #282828;
+margin-bottom: 10px;
+
+.duration-container{
+   justify-self: end;
+        display: flex;
+        align-items: center; 
+        gap: 10px;
+    
+}
+.demoBtn{
+   opacity: 0;
+}
 }

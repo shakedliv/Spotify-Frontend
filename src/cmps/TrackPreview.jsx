@@ -1,36 +1,38 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector } from 'react-redux'
 import { toggleLikedSong } from '../store/actions/user.actions.js'
 
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
+import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline'
 
-export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
+export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum, onToggleOptions, isOperationsOpen }) {
     const organizedTrack = track.track
-    // console.log('organizedTrack:', organizedTrack)
+    const user = useSelector((state) => state.userModule.user)
+    const isLiked = user?.likedSongs?.some((t) => t.id === track.id)
 
-
-
-    const user = useSelector(state => state.userModule.user)
-
-
-    const isLiked = user?.likedSongs?.some(t => t.id === track.id)
-    console.log(user)
-
+  useEffect(() => {
+        if (!isOperationsOpen) return;
+        const closeMenu = () => onToggleOptions(null);
+        window.addEventListener('click', closeMenu);
+        return () => window.removeEventListener('click', closeMenu);
+    }, [isOperationsOpen, onToggleOptions]);
+   
 
     function onLikeClick(ev) {
-        console.log('test')
         ev.stopPropagation()
         toggleLikedSong(track)
     }
 
-
-
+    function ToggleOptions(ev) {
+        ev.stopPropagation()
+     onToggleOptions(track.id)
+    }
     return (
         <article className='track-preview'>
+            <span className='track-num'>{trackNum}</span>
             <section className='basic-info-container'>
-                <span className='track-num'>{trackNum}</span>
                 <img
                     className='track-img'
                     src={organizedTrack.album.images[0].url}
@@ -44,14 +46,39 @@ export function TrackPreview({ track, onAddTrack, onRemoveTrack, trackNum }) {
             </section>
             <span>{organizedTrack.album?.name} </span>
             <span>Sep 24, 2024</span>
-            <span>{formatDuration(organizedTrack.duration_ms)}</span>
-            <div className='track-actions'>
-                <button onClick={() => onRemoveTrack(track.id)}>X</button>
-                <button onClick={() => onAddTrack(track)}>...</button>
-                <button className="like-btn" onClick={onLikeClick}>
-                    {isLiked ? <CheckCircleIcon color='success' /> : <AddCircleOutlineIcon />}
+            <section className={'track-actions'}>
+                <button className='like-btn' onClick={onLikeClick}>
+                    {isLiked ? (
+                        <CheckCircleIcon color='success' />
+                    ) : (
+                        <AddCircleOutlineIcon />
+                    )}
                 </button>
-            </div>
+                <div className='time-options'>
+                    <span className={'duration'}>{formatDuration(organizedTrack.duration_ms)}</span>
+                    <button className={'options'} onClick={ToggleOptions}>
+                        <MoreHorizIcon sx={{ display: 'block', margin: '0 auto' }} />
+                </button>
+                {isOperationsOpen && (
+                        <div className="options-menu" onClick={(ev) => ev.stopPropagation()}>
+                            <button>Add to playlist</button>
+                            <button onClick={() => onRemoveTrack(track)}>Remove from this playlist</button>
+                            <button onClick={onLikeClick}>Save to your Liked Songs</button>
+                            <button>Add to queue</button>
+                            <button>Exclude from your taste profile</button>
+                            <div className="separator"></div>
+                            <button>Go to song radio</button>
+                            <button>Go to artist</button>
+                            <button>Go to album</button>
+                            <button>View credits</button>
+                            <button>Share</button>
+                            <div className="separator"></div>
+                            <button>Open in Desktop app</button>
+                        </div>
+                    )}
+             </div>
+             
+            </section>
         </article>
     )
 }

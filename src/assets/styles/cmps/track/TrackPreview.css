@@ -1,35 +1,116 @@
+
 .track-preview {
-   /* background-color: ; */
-    display: flex;
+    /* background-color: ; */
+    display: grid;
+    grid-template-columns: auto 1.7fr 1fr 1fr 0.5fr;
     justify-content: space-between;
+    justify-items: start;
+    align-items: center;
+
+    gap: 16px;
+    padding-inline: 16px;
+    margin-bottom: 12px;
+    color: white;
+    &:hover {
+        background-color: var(--bg-highlight);
+        
+        .like-btn, 
+        .time-options .options {
+            opacity: 1;
+        }
+    }
 
     .basic-info-container {
         display: grid;
         align-items: center;
-        grid-template-columns:auto auto 1fr;
+        grid-template-columns: auto 1fr;
         grid-template-areas:
-            'num img name'
-            'num img artist';
+            'img name'
+            ' img artist';
     }
-    /* .track-num , .track-name, .track-img, .track-artist{
-      place-self: center;
-    } */
-
     .track-num {
-        grid-area: num;
-        justify-self: center;
+        place-self: center;
     }
     .track-name {
         grid-area: name;
+        font-size: 20px;
     }
     .track-img {
         grid-area: img;
-       
     }
     .track-artist {
         grid-area: artist;
+        font-size: 17.5px;
+    }
+    .track-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-width: 80px;
+        .time-options {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+
+            .duration {
+                align-self: start;
+            }
+
+            .options {
+                opacity: 0;
+            }
+
+            .options-menu {
+                position: absolute;
+                top: 100%;
+                right: 20px;
+                background-color: #282828;
+                box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3),
+                    0 6px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+                padding: 4px;
+                z-index: 1000;
+                min-width: 330px;
+                display: flex;
+                flex-direction: column;
+                button {
+                    background: none;
+                    border: none;
+                    color: #eaeaea;
+                    padding: 12px 12px;
+                    text-align: left;
+                    font-size: 18px;
+                    cursor: pointer;
+                    width: 100%;
+                    white-space: nowrap;
+                    border-radius: 2px;
+
+                    &:hover {
+                        background-color: hsla(0, 0%, 100%, 0.1);
+                        color: #fff;
+                    }
+                }
+                .separator {
+                    height: 1px;
+                    background-color: hsla(0, 0%, 100%, 0.1);
+                    margin: 4px;
+                }
+            }
+        }
+        .like-btn {
+            opacity: 0;
+        }
+    }
+
+    .track-preview:hover {
+        background-color: var(--bg-highlight);
+       
     }
 }
-.track-preview:hover{
-   background-color: var(--bg-highlight);
+
+.track-preview:hover .like-btn,
+.track-preview:hover .options {
+    opacity: 1 !important;
 }
