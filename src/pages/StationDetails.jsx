@@ -8,6 +8,8 @@ import { StationEdit } from '../cmps/StationEdit'
 import { TrackList } from '../cmps/TrackList'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
+import { SearchBar } from '../cmps/SearchBar'
+import { StationTrackSearch } from '../cmps/StationTrackSearch'
 
 export function StationDetails() {
 
@@ -43,7 +45,7 @@ export function StationDetails() {
     <section className="station-details">
 
       <header>
-        <img src={station.imgUrl || ''} alt={station.name} />
+        <img src={station.tracks[0]?.track.album.images[0].url || station.imgUrl} alt={station.name} />
         <h1 onClick={() => setIsEditOpen(true)}>{station.name}</h1>
         <h4 className='desc'>{station.description || ''}</h4>
         <h5>{station.owner.fullname}</h5>
@@ -63,6 +65,9 @@ export function StationDetails() {
         onRemoveTrack={onRemoveTrack}
         onAddTrack={onAddTrack}
       />
+
+
+      <StationTrackSearch onAddTrack={onAddTrack} />
 
       {isEditOpen && (
         <StationEdit

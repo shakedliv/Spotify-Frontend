@@ -1,14 +1,14 @@
-import { useEffect } from "react";
-import { formatDate, formatDuration } from "../services/util.service.js";
-import { useSelector, useDispatch } from "react-redux";
-import { toggleLikedSong } from "../store/actions/user.actions.js";
+import { useEffect } from "react"
+import { formatDate, formatDuration } from "../services/util.service.js"
+import { useSelector, useDispatch } from "react-redux"
+import { toggleLikedSong } from "../store/actions/user.actions.js"
 
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
-import { adaptTrackForPlayer } from "../services/track/track.util";
-import { setCurrentTrack } from "../store/actions/system.actions";
-import { youtubeService } from "../services/youtube.service";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz"
+import CheckCircleIcon from "@mui/icons-material/CheckCircle"
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline"
+import { adaptTrackForPlayer } from "../services/track/track.util"
+import { setCurrentTrack } from "../store/actions/system.actions"
+import { youtubeService } from "../services/youtube.service"
 
 export function TrackPreview({
   track,
@@ -18,42 +18,45 @@ export function TrackPreview({
   onToggleOptions,
   isOperationsOpen,
 }) {
-  const organizedTrack = track.track;
-  const user = useSelector((state) => state.userModule.user);
-  const isLiked = user?.likedSongs?.some((t) => t.id === track.id);
-  const dispatch = useDispatch();
+  const organizedTrack = track.track
+  const user = useSelector((state) => state.userModule.user)
+  const isLiked = user?.likedSongs?.some((t) => t.id === track.id)
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    if (!isOperationsOpen) return;
-    const closeMenu = () => onToggleOptions(null);
-    window.addEventListener("click", closeMenu);
-    return () => window.removeEventListener("click", closeMenu);
-  }, [isOperationsOpen, onToggleOptions]);
+    if (!isOperationsOpen) return
+    const closeMenu = () => onToggleOptions(null)
+    window.addEventListener("click", closeMenu)
+    return () => window.removeEventListener("click", closeMenu)
+  }, [isOperationsOpen, onToggleOptions])
 
   async function onPlayTrack() {
     try {
-      const videoId = await youtubeService.resolveVideoId(track);
+      const videoId = await youtubeService.resolveVideoId(track)
 
       const adaptedTrack = {
         ...adaptTrackForPlayer(track),
         videoId,
-      };
+      }
 
-      dispatch(setCurrentTrack(adaptedTrack));
+      dispatch(setCurrentTrack(adaptedTrack))
     } catch (err) {
-      console.error("Failed to resolve YouTube video", err);
+      console.error("Failed to resolve YouTube video", err)
     }
   }
 
   function onLikeClick(ev) {
-    ev.stopPropagation();
-    toggleLikedSong(track);
+    ev.stopPropagation()
+    toggleLikedSong(track)
   }
 
   function ToggleOptions(ev) {
-    ev.stopPropagation();
-    onToggleOptions(track.id);
+    ev.stopPropagation()
+    onToggleOptions(track.id)
   }
+
+
+
   return (
     <article className="track-preview" onClick={onPlayTrack}>
       <span className="track-num">{trackNum}</span>
@@ -89,8 +92,8 @@ export function TrackPreview({
               className="options-menu"
               onClick={(ev) => ev.stopPropagation()}
             >
-              <button>Add to playlist</button>
-              <button onClick={() => onRemoveTrack(track)}>
+              <button onClick={() => onAddTrack(track)}>Add to playlist</button>
+              <button onClick={() => onRemoveTrack(track.id)}>
                 Remove from this playlist
               </button>
               <button onClick={onLikeClick}>Save to your Liked Songs</button>
@@ -109,5 +112,5 @@ export function TrackPreview({
         </div>
       </section>
     </article>
-  );
+  )
 }
