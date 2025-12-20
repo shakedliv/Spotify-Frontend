@@ -20,6 +20,7 @@
         padding: 6px 8px;
         border-radius: 4px;
         transition: background-color 0.15s ease, transform 0.1s ease;
+        font-weight: normal;
 
         .station-img {
             width: 60px;
@@ -30,11 +31,19 @@
         h3 {
             grid-area: n;
             margin: 0;
+            font-weight: normal;
+
         }
 
         h4 {
             grid-area: c;
             margin: 0;
+        }
+
+
+        h5 {
+            color: var(--text-secondary);
+            font-weight: normal;
         }
     }
 

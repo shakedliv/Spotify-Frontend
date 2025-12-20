@@ -23,12 +23,11 @@ export function StationDetails() {
   console.log(station)
 
   async function onRemoveTrack(trackId) {
-    console.log('hi')
     const updatedTracks = station.tracks.filter(track => track.id !== trackId)
     const updatedStation = { ...station, tracks: updatedTracks }
     await updateStation(updatedStation)
   }
-  console.log('onAddTrack:', onAddTrack)
+
 
   async function onAddTrack(track) {
     console.log('hi')
@@ -47,7 +46,7 @@ export function StationDetails() {
         <img src={station.imgUrl || ''} alt={station.name} />
         <h1 onClick={() => setIsEditOpen(true)}>{station.name}</h1>
         <h4 className='desc'>{station.description || ''}</h4>
-        <h5>station creator</h5>
+        <h5>{station.owner.fullname}</h5>
 
         <section className='station-details-btns'>
           <div className='play-btns'>
