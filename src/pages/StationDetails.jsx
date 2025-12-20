@@ -48,15 +48,16 @@ export function StationDetails() {
         <h1 onClick={() => setIsEditOpen(true)}>{station.name}</h1>
         <h4 className='desc'>{station.description || ''}</h4>
         <h5>station creator</h5>
+
+        <section className='station-details-btns'>
+          <div className='play-btns'>
+            <PlayCircleFilledIcon className="play-icon" />
+            <button className='shuffle-btn'>Shuffle</button>
+          </div>
+          <div className='list-btn'>List<FormatListBulletedIcon className="list-icon" /></div>
+        </section>
       </header>
 
-      <section className='station-details-btns'>
-        <div className='play-btns'>
-          <PlayCircleFilledIcon className="play-icon" />
-          <button className='shuffle-btn'>Shuffle</button>
-        </div>
-        <div className='list-btn'>List<FormatListBulletedIcon className="list-icon" /></div>
-      </section>
 
       <TrackList
         tracks={station.tracks}
