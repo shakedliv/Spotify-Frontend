@@ -1,35 +1,37 @@
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate, useSearchParams } from "react-router-dom"
+import SearchIcon from '@mui/icons-material/Search'
 
 export function SearchBar() {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const location = useLocation()
+  const navigate = useNavigate()
+  const [searchParams, setSearchParams] = useSearchParams()
 
-  const isSearchPage = location.pathname === "/search";
-  const searchTerm = searchParams.get("q") || "";
+  const isSearchPage = location.pathname === "/search"
+  const searchTerm = searchParams.get("q") || ""
 
   function onFocus() {
     if (!isSearchPage) {
-      navigate("/search");
+      navigate("/search")
     }
   }
 
   function handleChange(ev) {
-    if (!isSearchPage) return;
+    if (!isSearchPage) return
 
-    const value = ev.target.value;
+    const value = ev.target.value
     if (!value) {
-      setSearchParams({});
+      setSearchParams({})
     } else {
-      setSearchParams({ q: value });
+      setSearchParams({ q: value })
     }
   }
 
   return (
     <section className={`search-bar ${isSearchPage ? "active" : ""}`}>
-      <span className="search-indicator">⌕</span>
+      <label htmlFor="main-search"><SearchIcon className="search-indicator" /></label>
 
       <input
+        id="main-search"
         type="text"
         placeholder="What do you want to listen to?"
         value={searchTerm}
@@ -38,5 +40,5 @@ export function SearchBar() {
         onChange={handleChange}
       />
     </section>
-  );
+  )
 }

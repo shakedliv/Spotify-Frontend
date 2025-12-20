@@ -6,12 +6,14 @@ import { StationList } from "./StationList"
 import { useSelector } from "react-redux"
 import { LibraryStationList } from "./LibraryStationList"
 import AddIcon from '@mui/icons-material/Add'
-
+import { useState } from "react"
+import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
+import SearchIcon from '@mui/icons-material/Search';
 
 
 export function Library() {
     const stations = useSelector(storeState => storeState.stationModule.stations)
-
+    const [activeTab, setActiveTab] = useState("playlists")
     const navigate = useNavigate()
 
 
@@ -34,6 +36,35 @@ export function Library() {
                 <h2>Your Library</h2>
                 <button className="add-station-btn" onClick={onAddStation}><AddIcon /> <span>Create</span> </button>
             </header>
+
+            <section className="filter-btns">
+                <button
+                    className={`library-btn ${activeTab === "playlists" ? "active" : ""}`}
+                    onClick={() => setActiveTab("playlists")}
+                >
+                    Playlists
+                </button>
+
+                <button
+                    className={`library-btn ${activeTab === "artists" ? "active" : ""}`}
+                    onClick={() => setActiveTab("artists")}
+                >
+                    Artists
+                </button>
+
+                <button
+                    className={`library-btn ${activeTab === "albums" ? "active" : ""}`}
+                    onClick={() => setActiveTab("albums")}
+                >
+                    Albums
+                </button>
+            </section>
+
+            <div className="search-sort">
+                <button className="search"><SearchIcon/></button>
+                <span className="sort-list">Recents <FormatListBulletedIcon /></span>
+            </div>
+
             <section className="library-list">
                 <LibraryStationList
                     stations={stations}
