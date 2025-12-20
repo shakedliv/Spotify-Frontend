@@ -8,6 +8,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import { adaptTrackForPlayer } from "../services/track/track.util";
 import { setCurrentTrack } from "../store/actions/system.actions";
+import { youtubeService } from "../services/youtube.service";
 
 export function TrackPreview({
   track,
@@ -29,8 +30,19 @@ export function TrackPreview({
     return () => window.removeEventListener("click", closeMenu);
   }, [isOperationsOpen, onToggleOptions]);
 
-  function onPlayTrack() {
-    dispatch(setCurrentTrack(adaptTrackForPlayer(track)));
+  async function onPlayTrack() {
+    try {
+      const videoId = await youtubeService.resolveVideoId(track);
+
+      const adaptedTrack = {
+        ...adaptTrackForPlayer(track),
+        videoId,
+      };
+
+      dispatch(setCurrentTrack(adaptedTrack));
+    } catch (err) {
+      console.error("Failed to resolve YouTube video", err);
+    }
   }
 
   function onLikeClick(ev) {

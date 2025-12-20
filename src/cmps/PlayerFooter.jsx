@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useRef } from "react";
-import { youtubeService } from "../services/youtube.service";
 import { useYoutubePlayer } from "../customHooks/useYoutubePlayer";
 import { setIsPlaying } from "../store/actions/system.actions";
 
@@ -12,30 +11,18 @@ export function PlayerFooter() {
   const playerContainerRef = useRef(null);
   const { loadVideo, play, pause } = useYoutubePlayer(playerContainerRef);
 
+  // 🔹 Load video ONLY when a resolved videoId exists
   useEffect(() => {
-    if (!currentTrack) return;
+    if (!currentTrack?.videoId) return;
+    loadVideo(currentTrack.videoId);
+  }, [currentTrack?.videoId, loadVideo]);
 
-    async function loadTrack() {
-      try {
-        const { videoId } = await youtubeService.searchVideo(currentTrack);
-        await loadVideo(videoId);
-      } catch (err) {
-        console.error("Failed to load YouTube video", err);
-      }
-    }
-
-    loadTrack();
-  }, [currentTrack, loadVideo]);
-
+  // 🔹 Sync play / pause with Redux state
   useEffect(() => {
-    if (!currentTrack) return;
-
-    if (isPlaying) {
-      play();
-    } else {
-      pause();
-    }
-  }, [isPlaying, currentTrack, play, pause]);
+    if (!currentTrack?.videoId) return;
+    if (isPlaying) play();
+    else pause();
+  }, [isPlaying, currentTrack?.videoId, play, pause]);
 
   if (!currentTrack) {
     return (

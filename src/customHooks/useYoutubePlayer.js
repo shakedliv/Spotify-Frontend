@@ -1,4 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
+import { useDispatch } from 'react-redux'
+import { setIsPlaying } from '../store/actions/system.actions'
 
 let youtubeApiPromise = null
 
@@ -16,105 +18,105 @@ function loadYoutubeIframeApi() {
         document.body.appendChild(tag)
 
         const prev = window.onYouTubeIframeAPIReady
-
         window.onYouTubeIframeAPIReady = () => {
             prev?.()
             resolve(window.YT)
         }
-
     })
 
     return youtubeApiPromise
 }
 
 export function useYoutubePlayer(containerRef) {
+    const dispatch = useDispatch()
+
     const playerRef = useRef(null)
     const intervalRef = useRef(null)
 
-    const [isPlaying, setIsPlaying] = useState(false)
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
 
-    useEffect(() => {
-        return () => {
-            if (intervalRef.current) {
-                clearInterval(intervalRef.current)
-            }
-            if (playerRef.current) {
-                playerRef.current.destroy()
-            }
-        }
-    }, [])
-
-    async function loadVideo(videoId) {
-        const YT = await loadYoutubeIframeApi()
-
-        if (playerRef.current) {
-            playerRef.current.loadVideoById(videoId)
-            return
-        }
-
-        playerRef.current = new YT.Player(containerRef.current, {
-            videoId,
-            playerVars: {
-                controls: 0,
-                rel: 0,
-                modestbranding: 1,
-            },
-            events: {
-                onReady: onPlayerReady,
-                onStateChange: onPlayerStateChange,
-            },
-        })
-    }
-
-    function onPlayerReady(event) {
-        const player = event.target
-        setDuration(player.getDuration())
-    }
-
-    function onPlayerStateChange(event) {
-        const player = event.target
-        const YTState = window.YT.PlayerState
-
-        if (event.data === YTState.PLAYING) {
-            setIsPlaying(true)
-            startTrackingTime(player)
-        }
-
-        if (event.data === YTState.PAUSED || event.data === YTState.ENDED) {
-            setIsPlaying(false)
-            stopTrackingTime()
-        }
-    }
-
-    function startTrackingTime(player) {
-        stopTrackingTime()
-
-        intervalRef.current = setInterval(() => {
-            setCurrentTime(player.getCurrentTime())
-        }, 500)
-    }
-
-    function stopTrackingTime() {
+    const stopTrackingTime = useCallback(() => {
         if (!intervalRef.current) return
         clearInterval(intervalRef.current)
         intervalRef.current = null
-    }
+    }, [])
 
-    function play() {
+    const startTrackingTime = useCallback(
+        (player) => {
+            stopTrackingTime()
+            intervalRef.current = setInterval(() => {
+                setCurrentTime(player.getCurrentTime())
+            }, 500)
+        },
+        [stopTrackingTime]
+    )
+
+    useEffect(() => {
+        return () => {
+            stopTrackingTime()
+            if (playerRef.current) {
+                playerRef.current.destroy()
+                playerRef.current = null
+            }
+        }
+    }, [stopTrackingTime])
+
+    const loadVideo = useCallback(
+        async (videoId) => {
+            if (!videoId) return
+            const el = containerRef?.current
+            if (!el) return
+
+            const YT = await loadYoutubeIframeApi()
+
+            if (playerRef.current) {
+                playerRef.current.loadVideoById(videoId)
+                return
+            }
+
+            playerRef.current = new YT.Player(el, {
+                videoId,
+                playerVars: {
+                    controls: 0,
+                    rel: 0,
+                    modestbranding: 1,
+                },
+                events: {
+                    onReady: (e) => {
+                        setDuration(e.target.getDuration())
+                    },
+                    onStateChange: (e) => {
+                        const YTState = window.YT.PlayerState
+
+                        if (e.data === YTState.PLAYING) {
+                            dispatch(setIsPlaying(true))
+                            startTrackingTime(e.target)
+                        }
+
+                        if (e.data === YTState.PAUSED || e.data === YTState.ENDED) {
+                            dispatch(setIsPlaying(false))
+                            stopTrackingTime()
+                        }
+                    },
+                },
+            })
+        },
+        [containerRef, dispatch, startTrackingTime, stopTrackingTime]
+    )
+
+    const play = useCallback(() => {
         playerRef.current?.playVideo()
-    }
+    }, [])
 
-    function pause() {
+    const pause = useCallback(() => {
         playerRef.current?.pauseVideo()
-    }
+    }, [])
 
     return {
         loadVideo,
         play,
         pause,
-        isPlaying,
         currentTime,
         duration,
     }
