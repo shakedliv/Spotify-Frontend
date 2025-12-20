@@ -1,7 +1,7 @@
 .library {
     width: 100%;
 
-    background-color: var(--bg-elevated-base);
+    background-color: var(--bg-base);
     color: var(--text-primary);
     border-radius: 12px;
     padding: 24px;
@@ -9,35 +9,101 @@
     flex-direction: column;
     gap: 12px;
 
+    button {
+        color: var(--text-primary);
+        background-color: #2a2a2a;
+    }
+
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-weight: 700;
         padding-bottom: 1em;
-        
+
 
         .add-station-btn {
             display: flex;
             align-items: center;
             justify-items: center;
             border-radius: 50vh;
-            background-color: #1f1f1f;
+
             gap: 0.5em;
-            padding: 8px 1.2em;
+            padding: 10px 1.2em;
             font-size: 1em;
-    
-    
-            &:hover{
+
+
+            &:hover {
                 background-color: var(--bg-highlight);
             }
         }
     }
 
 
-    header h2{
+    header h2 {
         font-size: 1em;
     }
 
-    
+
+    .filter-btns {
+        display: flex;
+        gap: 10px;
+
+        .library-btn {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            border-radius: 50vh;
+
+            padding: 10px 1.2em;
+            font-size: 1rem;
+
+
+            &:hover {
+                background-color: var(--bg-highlight);
+            }
+
+            &.active {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+
+
+    .search-sort {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--text-secondary);
+
+        span {
+            display: flex;
+            align-items: center;
+        }
+
+        .search {
+            padding: 0.5em;
+            background-color: transparent;
+            border-radius: 50%;
+            color: var(--text-secondary);
+
+            &:hover {
+                background-color: #2a2a2a;
+                color: #fff;
+            }
+        }
+
+        .sort-list {
+            display: flex;
+            gap: 5px;
+            transition: scale 0.25s ease;
+
+            &:hover {
+                cursor: pointer;
+                color: #fff;
+                scale: 1.05;
+            }
+        }
+    }
 }

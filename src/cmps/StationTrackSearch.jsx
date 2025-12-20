@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react"
 import { spotifyService } from "../services/spotify.service"
 import { TrackList } from "./TrackList"
-
+import SearchIcon from '@mui/icons-material/Search'
 
 export function StationTrackSearch({ onAddTrack }) {
     const [query, setQuery] = useState("")
@@ -27,7 +27,7 @@ export function StationTrackSearch({ onAddTrack }) {
             <h4>Let's find something for your playlist</h4>
 
             <div className="station-search-bar">
-                <span className="search-indicator">⌕</span>
+                <SearchIcon className="search-icon" />
                 <input
                     type="text"
                     placeholder="Search for songs"

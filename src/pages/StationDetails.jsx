@@ -8,7 +8,8 @@ import { StationEdit } from '../cmps/StationEdit'
 import { TrackList } from '../cmps/TrackList'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
-import { SearchBar } from '../cmps/SearchBar'
+
+
 import { StationTrackSearch } from '../cmps/StationTrackSearch'
 
 export function StationDetails() {

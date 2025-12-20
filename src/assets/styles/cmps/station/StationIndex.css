@@ -1,6 +1,6 @@
 .station-index {
     color: white;
-    background-color: var(--bg-elevated-base); 
+    background-color: var(--bg-base); 
     border-radius: 8px;
     max-width: 100%;
     overflow-x: hidden;

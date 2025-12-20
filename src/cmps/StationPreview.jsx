@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 
 
 export function StationPreview({ station, onRemoveStation, type }) {
@@ -14,9 +15,13 @@ export function StationPreview({ station, onRemoveStation, type }) {
 
                     <div className="station-img">
                         <img src={station.tracks[0]?.track.album.images[0].url || station.imgUrl} alt={station.name} />
+                        <div className='icon-backdrop'>
+                            < PlayArrowIcon className='library-play-icon' />
+                        </div>
                     </div>
                     <h3 className="station-name">{station.name}</h3>
                     <h5>{station.owner.fullname}</h5>
+
 
                 </article >
             </Link>
