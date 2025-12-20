@@ -2,7 +2,7 @@ import { storageService } from '../async-storage.service'
 import { makeId, formatDate } from '../util.service'
 import { userService } from '../user'
 
-const STORAGE_KEY = 'liked_songs'
+const STORAGE_KEY = 'station'
 
 export const trackService = {
     query,

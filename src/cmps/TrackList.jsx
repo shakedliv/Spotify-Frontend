@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { DndContext, closestCenter, DragOverlay } from '@dnd-kit/core'
+import {
+    DndContext,
+    closestCenter,
+    DragOverlay,
+    PointerSensor,
+    useSensor,
+    useSensors,
+} from '@dnd-kit/core'
 import {
     arrayMove,
     SortableContext,
@@ -13,14 +20,22 @@ const demoData = stationSample.tracks.items
 
 export function TrackList({
     tracks = demoData,
-    onRemoveTrack,
     onReorder,
+    onRemoveTrack,
     onAddTrack,
 }) {
-  const [openedTrackId, setOpenedTrackId] = useState(null);
+    console.log('onReorder:', onReorder)
+    const [openedTrackId, setOpenedTrackId] = useState(null)
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
     const [currTracks, setCurrTracks] = useState(tracks)
+    const sensors = useSensors(
+        useSensor(PointerSensor, {
+            activationConstraint: {
+                distance: 5,
+            },
+        })
+    )
     useEffect(() => {
         setCurrTracks(tracks)
     }, [tracks])
@@ -82,15 +97,16 @@ export function TrackList({
 
     return (
         <section className='track-list'>
-          <TracksHeader onSort={onSort} />
-       
-            {/* <DndContext
+            <TracksHeader onSort={onSort} />
+
+            <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
-            > */}
+                sensors={sensors}
+            >
                 <SortableContext
-                    items={currTracks}
+                    items={currTracks.map(track => track.id)}
                     strategy={verticalListSortingStrategy}
                 >
                     <div className='track-list-container'>
@@ -105,21 +121,27 @@ export function TrackList({
                                     key={track.id}
                                     track={track}
                                     onRemoveTrack={onRemoveTrack}
-                                 onAddTrack={onAddTrack}
-                                 isOperationsOpen={openedTrackId === track.id}
-                                 onToggleOptions={(id) => setOpenedTrackId(openedTrackId === id ? null : id)}
+                                    onAddTrack={onAddTrack}
+                                    isOperationsOpen={
+                                        openedTrackId === track.id
+                                    }
+                                    onToggleOptions={(id) =>
+                                        setOpenedTrackId(
+                                            openedTrackId === id ? null : id
+                                        )
+                                    }
                                 />
                             </SortableTrack>
                         ))}
                     </div>
                 </SortableContext>
 
-                {/* <DragOverlay>
+                <DragOverlay>
                     {activeId ? (
                         <TrackPreview track={activeTrack} isDragging />
                     ) : null}
                 </DragOverlay>
-            </DndContext> */}
+            </DndContext>
         </section>
     )
 }
