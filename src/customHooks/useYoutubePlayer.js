@@ -108,7 +108,7 @@ export function useYoutubePlayer(containerRef) {
                 },
             })
         },
-        [containerRef, dispatch, startTrackingTime, stopTrackingTime, volume]
+        [containerRef, dispatch, startTrackingTime, stopTrackingTime]
     )
 
     const play = useCallback(() => {
