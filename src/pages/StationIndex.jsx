@@ -34,7 +34,12 @@ export function StationIndex() {
 
     return (
         <main className="station-index">
-            {/* <StationFilter filterBy={filterBy} setFilterBy={setFilterBy} /> */}
+
+            <div className='filter-bar'>
+                <button className='index-filter-btn'>All</button>
+                <button className='index-filter-btn'>Music</button>
+                <button className='index-filter-btn'>Podcasts</button>
+            </div>
 
             <FirstStationList
                 onRemoveStation={onRemoveStation}

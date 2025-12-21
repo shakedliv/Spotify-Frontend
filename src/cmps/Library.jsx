@@ -8,7 +8,8 @@ import { LibraryStationList } from "./LibraryStationList"
 import AddIcon from '@mui/icons-material/Add'
 import { useState } from "react"
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from '@mui/icons-material/Search'
+import { LibraryOpenIcon, LibraryCloseIcon } from '../services/svg.service.js'
 
 
 export function Library() {
@@ -33,7 +34,10 @@ export function Library() {
     return (
         <div className="library">
             <header className="library-header">
-                <h2>Your Library</h2>
+                <div className="icon-title">
+                    <button className="library-toggle"> <LibraryOpenIcon /></button>
+                    <h2>Your Library</h2>
+                </div>
                 <button className="add-station-btn" onClick={onAddStation}><AddIcon /> <span>Create</span> </button>
             </header>
 
@@ -61,7 +65,7 @@ export function Library() {
             </section>
 
             <div className="search-sort">
-                <button className="search"><SearchIcon/></button>
+                <button className="search"><SearchIcon /></button>
                 <span className="sort-list">Recents <FormatListBulletedIcon /></span>
             </div>
 

@@ -5,11 +5,36 @@
     max-width: 100%;
     overflow-x: hidden;
 
-
-
     .index-header {
         margin-inline-start: 3rem;
         font-size: 1.5em;
         font-weight: bold;
+    }
+
+    .filter-bar {
+        display: flex;
+        gap: 1rem;
+        padding: 2em;
+
+        .index-filter-btn {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            border-radius: 50vh;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 1.2em;
+            font-size: 1rem;
+
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.15)
+            }
+
+            &.active {
+                background-color: #fff;
+                color: #000;
+            }
+
+        }
     }
 }
