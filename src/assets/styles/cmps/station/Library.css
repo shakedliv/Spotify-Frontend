@@ -13,12 +13,16 @@
 
     button {
         color: var(--text-primary);
-        background-color: #2a2a2a;
     }
 
     .icon-title {
         display: flex;
-        column-gap: 1em;
+    }
+
+    &:hover .LibraryOpenIcon {
+        opacity: 1;
+        transform: translateX(0);
+        margin-right: 1em;
     }
 
     header {
@@ -32,6 +36,9 @@
         .LibraryOpenIcon {
             width: 1.5em;
             fill: var(--text-secondary);
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
         .library-toggle:hover .LibraryOpenIcon {
@@ -43,7 +50,7 @@
             display: flex;
             align-items: center;
             gap: 0.5em;
-            
+
 
             .add-station-btn {
                 display: flex;
@@ -51,6 +58,7 @@
                 justify-items: center;
                 border-radius: 50vh;
                 color: var(--text-subdued);
+                background-color: #2a2a2a;
                 gap: 0.5em;
                 padding: 6px 12px;
                 font-size: 1em;
@@ -164,5 +172,3 @@
         }
     }
 }
-
-
