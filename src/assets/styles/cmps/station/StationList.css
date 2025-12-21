@@ -1,17 +1,18 @@
 .station-list {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
     scroll-behavior: smooth;
 
     .station-preview:hover {
         background-color: var(--bg-highlight);
-
     }
 }
 
 .station-row {
     position: relative;
-    
+
 
     .station-row-arrow {
         display: flex;
@@ -44,10 +45,6 @@
 }
 
 
-
 .station-list::-webkit-scrollbar {
     display: none;
-
 }
-
-

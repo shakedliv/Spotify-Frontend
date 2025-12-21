@@ -1,7 +1,18 @@
 .main-container {
     display: grid;
-    grid-template-rows: 56px 1fr 104px ;
+    grid-template-rows: 56px 1fr 104px;
 
+
+}
+
+html {
+    height: 100%;
+    overflow: hidden
+}
+
+#root,
+.main-container {
+    height: 100%;
 }
 
 .main-layout {
@@ -9,4 +20,6 @@
     grid-template-columns: minmax(auto, 420px) 1fr;
     background-color: #000;
     gap: 0.7em;
+    height: 100%;
+
 }

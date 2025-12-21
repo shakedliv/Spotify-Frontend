@@ -1,5 +1,7 @@
 .library {
     width: 100%;
+    height: 100%;
+    overflow-y: auto;
     background-color: var(--bg-base);
     color: var(--text-primary);
     border-radius: 12px;
@@ -156,4 +158,11 @@
             }
         }
     }
+}
+
+
+header .library header,
+.library .filter-btns,
+.library .search-sort {
+    flex: 0 0 auto
 }

@@ -35,3 +35,35 @@
 .is-dragging{
    cursor: grabbing;
 }
+
+
+/* לבטל גלילה אופקית על ה-index */
+.station-index {
+  overflow-y: auto;
+  overflow-x: hidden;   /* חשוב */
+}
+
+/* לעצב רק את האנכי – Chrome/Edge/Safari */
+.station-index::-webkit-scrollbar {
+  width: 8px;           /* רק אנכי, כי אין overflow-x */
+  height: 0;            /* לא לעצב אופקי */
+}
+
+/* track */
+.station-index::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* thumb */
+.station-index::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.station-index::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Firefox */
+.station-index {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
