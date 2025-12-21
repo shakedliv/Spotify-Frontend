@@ -10,24 +10,23 @@
 
     .station-preview {
         display: grid;
-        grid-template-columns: 64px 1fr;
+        grid-template-columns: auto 1fr;
         align-items: center;
-        column-gap: 1em;
+        column-gap: 6px;
+
         border-radius: 4px;
         background-color: rgba(255, 255, 255, 0.1);
 
         overflow: hidden;
-        height: 64px;
         transition: background-color 0.3s ease;
         cursor: pointer;
         position: relative;
 
 
         .station-img {
-            width: 64px;
-            height: 64px;
+            width: 48px;
+            height: 48px;
             border-radius: 8px;
-
         }
 
         img {
@@ -59,11 +58,13 @@
 
         }
 
-
+        h3 {
+            font-size: 1em;
+        }
     }
 
     .station-preview:hover {
-         background-color: rgba(255, 255, 255, 0.15);
+        background-color: rgba(255, 255, 255, 0.15);
 
     }
 

@@ -1,5 +1,5 @@
 .station-list {
-    padding: 2em;
+    padding: 1em;
 
 
     .station-preview {
@@ -7,10 +7,10 @@
         border-radius: 8px;
         transition: background-color 0.2s ease, transform 0.2s ease;
         color: #9d9d9d;
-        padding: 1rem ;
+        padding: 1rem;
 
         .station-img {
-            width: 180px;
+            width: 170px;
             justify-self: center;
             position: relative;
             margin-bottom: 1em;
@@ -26,11 +26,12 @@
         }
 
         .station-desc {
-            white-space: nowrap;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
             overflow: hidden;
             text-overflow: ellipsis;
-
-
         }
 
 

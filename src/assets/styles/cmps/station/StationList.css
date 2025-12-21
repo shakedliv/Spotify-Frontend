@@ -1,6 +1,5 @@
 .station-list {
     display: flex;
-    
     overflow: hidden;
    
      .station-preview:hover{

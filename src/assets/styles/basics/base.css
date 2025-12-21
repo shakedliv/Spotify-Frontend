@@ -26,6 +26,7 @@ body {
     margin: 0 auto;
 
     font-family: 'Montserrat','Figtree',system-ui, -apple-system;
+    font-size: 14px;
     color: var(--text-secondary);
     background-color: var(--bg-base);
 }
