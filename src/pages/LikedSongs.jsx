@@ -13,13 +13,15 @@ import { updateStation } from '../store/actions/station.actions.js'
 
 export function LikedSongs() {
     const user = useSelector((state) => state.userModule.user)
-  const station = null
+   const station = null
+   // change the user state
     async function onReorder(newTracks) {
         store.dispatch({ type: SAVE_LAST_ORDER, station: station })
         const updatedStation = { ...station, tracks: newTracks }
         store.dispatch({ type: UPDATE_STATION, station: updatedStation })
         try {
-            await updateStation(updatedStation)
+           await updateStation(updatedStation)
+           //update user
         } catch (err) {
             console.error('Failed to update tracks order:', err)
         }
