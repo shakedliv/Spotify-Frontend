@@ -34,8 +34,8 @@ export function Library() {
     return (
         <div className="library">
             <header className="library-header">
-                <div className="icon-title">
-                    <button className="library-toggle"> <LibraryOpenIcon /></button>
+                <div className="icon-title-div">
+                    <span className="library-toggle"> <LibraryOpenIcon /></span>
                     <h2>Your Library</h2>
                 </div>
                 <div className="library-header-btns">

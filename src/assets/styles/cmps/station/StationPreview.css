@@ -10,9 +10,10 @@
         transition: background-color 0.2s ease, transform 0.2s ease;
         color: #9d9d9d;
         padding: 1rem;
+        margin-bottom: 3em;
 
         .station-img {
-            width: 170px;
+            width: 153px; /* 170px on full size*/
             justify-self: center;
             position: relative;
             margin-bottom: 1em;

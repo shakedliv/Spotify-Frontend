@@ -1,12 +1,11 @@
 .library-station-list {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    /* gap: 4px; */
     height: 100%;
     flex: 1 1 auto;
     overflow-y: auto;
     overflow-x: hidden;
- 
 
     .station-link {
         display: block;
@@ -22,7 +21,7 @@
             "i c";
         align-items: center;
         column-gap: 1em;
-        padding: 6px 8px;
+        padding: 8px;
         border-radius: 4px;
         transition: background-color 0.15s ease, transform 0.1s ease;
         font-weight: normal;
@@ -30,7 +29,11 @@
         .station-img {
             width: 48px;
             grid-area: i;
-            position: relative
+            position: relative;
+
+            img {
+                border-radius: 6px;
+            }
         }
 
         h3 {
@@ -40,6 +43,8 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            /* font-family: 'FigTreeBold', sans-serif; */
+
 
         }
 
@@ -70,6 +75,7 @@
         align-items: center;
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
         opacity: 0;
         transition: opacity 0.2s ease;
 

@@ -53,14 +53,10 @@ export function StationIndex() {
             </div>
 
 
-
-
             <FirstStationList
                 onRemoveStation={onRemoveStation}
                 stations={stations}
             />
-
-
             <StationList
                 onRemoveStation={onRemoveStation}
                 stations={stations}
@@ -71,6 +67,16 @@ export function StationIndex() {
                 onRemoveStation={onRemoveStation}
                 stations={stations}
                 title={'Jump back in'}
+            />
+            <StationList
+                onRemoveStation={onRemoveStation}
+                stations={stations}
+                title={'Trending'}
+            />
+            <StationList
+                onRemoveStation={onRemoveStation}
+                stations={stations}
+                 title={'Recently Played'}
             />
             <StationList
                 onRemoveStation={onRemoveStation}
