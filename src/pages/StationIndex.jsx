@@ -13,7 +13,7 @@ import { FirstStationList } from '../cmps/FirstStationList'
 
 
 export function StationIndex() {
-
+    const [activeFilter, setActiveFilter] = useState("all")
     const [filterBy, setFilterBy] = useState(stationService.getDefaultFilter())
     const stations = useSelector(storeState => storeState.stationModule.stations)
 
@@ -34,12 +34,26 @@ export function StationIndex() {
 
     return (
         <main className="station-index">
-
             <div className='filter-bar'>
-                <button className='index-filter-btn'>All</button>
-                <button className='index-filter-btn'>Music</button>
-                <button className='index-filter-btn'>Podcasts</button>
+                <button
+                    className={`index-filter-btn ${activeFilter === "all" ? "active" : ""}`}
+                    onClick={() => setActiveFilter("all")}>
+                    All
+                </button>
+                <button
+                    className={`index-filter-btn ${activeFilter === "music" ? "active" : ""}`}
+                    onClick={() => setActiveFilter("music")}>
+                    Music
+                </button>
+                <button
+                    className={`index-filter-btn ${activeFilter === "podcast" ? "active" : ""}`}
+                    onClick={() => setActiveFilter("podcast")}>
+                    Podcast
+                </button>
             </div>
+
+
+
 
             <FirstStationList
                 onRemoveStation={onRemoveStation}

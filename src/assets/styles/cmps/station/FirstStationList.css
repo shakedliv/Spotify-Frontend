@@ -1,9 +1,8 @@
 .first-station-list {
     display: grid;
     gap: 1em;
-    padding: 2em;
+    padding: 0 2em 2em 2em;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, var(--bg-base) 100%);
     margin-bottom: 1rem;
 
 
