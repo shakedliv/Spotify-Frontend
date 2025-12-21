@@ -1,6 +1,5 @@
 .library {
     width: 100%;
-
     background-color: var(--bg-base);
     color: var(--text-primary);
     border-radius: 12px;
@@ -26,9 +25,6 @@
         font-weight: 700;
         padding-bottom: 1em;
 
-
-
-
         .LibraryOpenIcon {
             width: 1.5em;
             fill: var(--text-secondary);
@@ -38,26 +34,60 @@
             fill: var(--text-primary)
         }
 
-        .add-station-btn {
+
+
+        .library-header-btns {
             display: flex;
             align-items: center;
-            justify-items: center;
-            border-radius: 50vh;
-            color: var(--text-subdued);
-            gap: 0.5em;
-            padding: 6px 12px;
-            font-size: 1em;
-            font-weight: bold;
+            column-gap: 1em;
 
-            span {
-                color: var(--text-primary)
+            .add-station-btn {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                border-radius: 50vh;
+                color: var(--text-subdued);
+                gap: 0.5em;
+                padding: 6px 12px;
+                font-size: 1em;
+                font-weight: bold;
+
+                span {
+                    color: var(--text-primary)
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.15);
+                    color: var(--text-primary);
+                }
             }
 
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.15);
-                color: var(--text-primary);
+            .expand-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                border-radius: 50%;
+
+                :hover{
+                    background-color: var(--bg-elevated-base);
+                }
+
+
+
+                .ExpandIcon {
+                    width: 2em;
+                    height: 2em;
+                    fill: var(--text-subdued);
+                }
             }
+
+       
         }
+
+
     }
 
 

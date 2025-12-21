@@ -64,7 +64,7 @@
 .main-layout {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: minmax(auto, 400px) 1fr;
     background-color: #000;
     gap: 0.7em;
 

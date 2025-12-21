@@ -1,10 +1,9 @@
 .first-station-list {
     display: grid;
-    gap: 1em;
+    gap: 0.5em;
     padding: 0 2em 2em 2em;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     margin-bottom: 1rem;
-
 
 
 
