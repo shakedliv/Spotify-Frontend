@@ -1,11 +1,10 @@
-
-import { useState, useEffect } from "react"
-import { spotifyService } from "../services/spotify.service"
-import { TrackList } from "./TrackList"
+import { useState, useEffect } from 'react'
+import { spotifyService } from '../services/spotify.service'
+import { TrackList } from './TrackList'
 import SearchIcon from '@mui/icons-material/Search'
 
 export function StationTrackSearch({ onAddTrack }) {
-    const [query, setQuery] = useState("")
+    const [query, setQuery] = useState('')
     const [tracks, setTracks] = useState([])
 
     useEffect(() => {
@@ -23,14 +22,14 @@ export function StationTrackSearch({ onAddTrack }) {
     }
 
     return (
-        <section className="station-track-search">
+        <section className='station-track-search'>
             <h4>Let's find something for your playlist</h4>
 
-            <div className="station-search-bar">
-                <SearchIcon className="search-icon" />
+            <div className='station-search-bar'>
+                <SearchIcon className='search-icon' />
                 <input
-                    type="text"
-                    placeholder="Search for songs"
+                    type='text'
+                    placeholder='Search for songs'
                     value={query}
                     onChange={handleChange}
                 />
@@ -40,13 +39,10 @@ export function StationTrackSearch({ onAddTrack }) {
                 <TrackList
                     tracks={tracks}
                     onAddTrack={onAddTrack}
-                // no onRemoveTrack here – this list is only for adding
+                    isSearch={true}
+                    // no onRemoveTrack here – this list is only for adding
                 />
             )}
         </section>
     )
 }
-
-
-
-
