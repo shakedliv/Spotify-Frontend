@@ -35,11 +35,10 @@
         }
 
 
-
         .library-header-btns {
             display: flex;
             align-items: center;
-            column-gap: 1em;
+            gap: 0.5em;
 
             .add-station-btn {
                 display: flex;
@@ -51,6 +50,8 @@
                 padding: 6px 12px;
                 font-size: 1em;
                 font-weight: bold;
+                line-height: 1;
+
 
                 span {
                     color: var(--text-primary)
@@ -70,24 +71,23 @@
                 background: transparent;
                 cursor: pointer;
                 border-radius: 50%;
+                background-color: transparent;
+                width: 30px;
 
-                :hover{
-                    background-color: var(--bg-elevated-base);
+
+                &:hover {
+                    background-color: var(--bg-highlight);
                 }
 
-
+                &:hover .ExpandIcon {
+                    fill: var(--text-primary);
+                }
 
                 .ExpandIcon {
-                    width: 2em;
-                    height: 2em;
-                    fill: var(--text-subdued);
+                    fill: var(--text-secondary);
                 }
             }
-
-       
         }
-
-
     }
 
 

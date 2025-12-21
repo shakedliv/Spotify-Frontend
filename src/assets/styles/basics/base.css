@@ -1,31 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;900&display=swap');
 
-/* setup of spotify fonts */
-@font-face {
-    font-family: 'SpotifyMix';
-    src: url('./assets/fonts/SpotifyMix-Regular.woff2') format('woff2');
-    font-weight: 400; /* Regular */
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SpotifyMix';
-    src: url('./assets/fonts/SpotifyMix-Medium.woff2') format('woff2');
-    font-weight: 500; /* Medium */
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SpotifyMix';
-    src: url('./assets/fonts/SpotifyMix-Bold.woff2') format('woff2');
-    font-weight: 700; /* Bold */
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SpotifyMix';
-    src: url('./assets/fonts/SpotifyMix-Extrabold.woff2') format('woff2');
-    font-weight: 800; /* ExtraBold */
-    font-style: normal;
-}
+
 :root{
 --spotify-font: 'SpotifyMix', sans-serif;
 }
@@ -52,10 +28,11 @@ button:hover,
 
 body {
     margin: 0 auto;
-    font-family: 'Figtree','Montserrat',var(--spotify-font),system-ui, -apple-system;
+    font-family: 'FigTreeRegular','Montserrat',var(--spotify-font),system-ui, -apple-system;
     color: var(--text-secondary);
     background-color: var(--bg-base);
     -webkit-font-smoothing: antialiased;
+    font-size: 14px;
 }
 
 h1,

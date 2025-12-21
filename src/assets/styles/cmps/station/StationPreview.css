@@ -1,6 +1,8 @@
 .station-list {
-    padding: 1em;
-
+    position: relative;
+    
+   
+    
 
     .station-preview {
         display: grid;

@@ -71,6 +71,15 @@ export function StationIndex() {
                 onRemoveStation={onRemoveStation}
                 stations={stations}
             />
+            <StationList
+                onRemoveStation={onRemoveStation}
+                stations={stations}
+            />
+            <StationList
+                onRemoveStation={onRemoveStation}
+                stations={stations}
+            />
+  
         </main>
     )
 }

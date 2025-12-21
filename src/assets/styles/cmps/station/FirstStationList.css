@@ -1,21 +1,17 @@
 .first-station-list {
     display: grid;
     gap: 0.5em;
-    padding: 0 2em 2em 2em;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    margin-bottom: 1rem;
-
-
+    margin-bottom: 1.5rem;
+    padding: 0 16px;
 
     .station-preview {
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
         column-gap: 6px;
-
         border-radius: 4px;
         background-color: rgba(255, 255, 255, 0.1);
-
         overflow: hidden;
         transition: background-color 0.3s ease;
         cursor: pointer;
@@ -59,6 +55,8 @@
 
         h3 {
             font-size: 1em;
+            font-family: 'FigTreeRegular', system-ui, sans-serif
+              
         }
     }
 

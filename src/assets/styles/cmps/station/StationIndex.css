@@ -4,18 +4,21 @@
     border-radius: 8px;
     max-width: 100%;
     overflow-x: hidden;
-    padding:  0 1em;
+
+    padding: 1em 0 1em 24px;
 
     .index-header {
-        margin-inline-start: 2rem;
         font-size: 1.5em;
         font-weight: bold;
+        padding-left: 16px; 
     }
 
     .filter-bar {
         display: flex;
         gap: 1rem;
-        padding: 2em;
+        margin-bottom: 1em;
+        padding-left: 16px;
+
 
         .index-filter-btn {
             display: flex;
@@ -25,7 +28,7 @@
             background-color: rgba(255, 255, 255, 0.1);
             padding: 8px 12px;
             font-size: 1em;
-            
+
 
 
             &:hover {
