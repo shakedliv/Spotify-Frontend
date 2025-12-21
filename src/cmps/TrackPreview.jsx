@@ -3,12 +3,14 @@ import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleLikedSong } from '../store/actions/user.actions.js'
 
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline'
 import { adaptTrackForPlayer } from '../services/track/track.util'
 import { setCurrentTrack } from '../store/actions/system.actions'
 import { youtubeService } from '../services/youtube.service'
+import { Options } from '../assets/svg/Options.jsx'
+import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
+import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
 
 export function TrackPreview({
     track,
@@ -74,14 +76,14 @@ export function TrackPreview({
                     {organizedTrack.artists[0].name}
                 </span>
             </section>
-            <span>{organizedTrack.album?.name} </span>
+            <span className='track-album'>{organizedTrack.album?.name} </span>
             <span>Sep 24, 2024</span>
             <section className={'track-actions'}>
                 <button className='like-btn' onClick={onLikeClick}>
                     {isLiked ? (
-                        <CheckCircleIcon color='success' />
+                        <RemoveFromLikedSongs/>
                     ) : (
-                        <AddCircleOutlineIcon />
+                        <AddToLikedSongs />
                     )}
                 </button>
                 <div className='time-options'>
@@ -89,9 +91,7 @@ export function TrackPreview({
                         {formatDuration(organizedTrack.duration_ms)}
                     </span>
                     <button className={'options'} onClick={ToggleOptions}>
-                        <MoreHorizIcon
-                            sx={{ display: 'block', margin: '0 auto' }}
-                        />
+                   <Options/>
                     </button>
                     {isOperationsOpen && (
                         <div

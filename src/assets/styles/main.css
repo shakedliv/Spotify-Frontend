@@ -20,11 +20,10 @@
 @import "cmps/ExplorerList";
 @import "cmps/ExplorerPreview";
 
-
-
 @import "cmps/AppFooter";
 @import "cmps/PlayerFooter";
 @import "cmps/UserMsg";
+@import "cmps/SearchPage.css";
 
 @import "cmps/station/StationIndex";
 @import "cmps/station/StationList";
