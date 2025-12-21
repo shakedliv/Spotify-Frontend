@@ -3,6 +3,8 @@ import { TrackList } from "../cmps/TrackList"
 import likedSongsImg from '../assets/imgs/likedSongsImg.jpg'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
+import { ShuffleIcon } from '../services/svg.service.js'
+
 
 export function LikedSongs() {
     const user = useSelector(state => state.userModule.user)
@@ -25,7 +27,7 @@ export function LikedSongs() {
                 <section className='station-details-btns'>
                     <div className='play-btns'>
                         <PlayCircleFilledIcon className="play-icon" />
-                        <button className='shuffle-btn'>Shuffle</button>
+                        <button className='shuffle-btn'><ShuffleIcon /></button>
                     </div>
                     <div className='list-btn'>List<FormatListBulletedIcon className="list-icon" /></div>
                 </section>

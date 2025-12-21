@@ -12,7 +12,7 @@
         row-gap: 8px;
         margin-bottom: 1em;
         background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, #181818 100%);
-        
+
 
         grid-template-areas:
             "i ."
@@ -55,7 +55,7 @@
             justify-content: space-between;
             padding: 1em 0 1em;
             grid-area: b;
-           
+
 
 
             .play-btns {
@@ -63,6 +63,7 @@
                 grid-auto-flow: column;
                 align-items: center;
                 justify-content: start;
+                column-gap: 1em;
             }
 
             .list-btn {
@@ -80,9 +81,21 @@
 
 
 
+            .shuffle-icon {
+                width: 2em;
+                fill: var(--text-subdued);
+                transform: scale 0.5s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    fill: var(--text-primary);
+                    scale: 1.05;
+                }
+            }
+
             .play-icon {
                 color: var(--spotify-green);
-                font-size: 3em;
+                font-size: 4em;
                 transform: scale 0.5s ease;
 
                 :hover {

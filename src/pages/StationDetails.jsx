@@ -8,7 +8,7 @@ import { StationEdit } from '../cmps/StationEdit'
 import { TrackList } from '../cmps/TrackList'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
-
+import { ShuffleIcon } from '../services/svg.service.js'
 
 import { StationTrackSearch } from '../cmps/StationTrackSearch'
 import { SAVE_LAST_ORDER, UPDATE_STATION } from '../store/reducers/station.reducer.js'
@@ -67,7 +67,7 @@ export function StationDetails() {
         <section className='station-details-btns'>
           <div className='play-btns'>
             <PlayCircleFilledIcon className="play-icon" />
-            <button className='shuffle-btn'>Shuffle</button>
+            <button className='shuffle-btn'> <ShuffleIcon /></button>
           </div>
           <div className='list-btn'>List<FormatListBulletedIcon className="list-icon" /></div>
         </section>

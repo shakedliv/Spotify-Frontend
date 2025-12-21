@@ -1,0 +1,1 @@
+export { ShuffleIcon } from '../assets/svg/shuffle'

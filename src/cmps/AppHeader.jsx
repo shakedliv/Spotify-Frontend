@@ -1,26 +1,26 @@
-import { Link, NavLink, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service";
-import { logout } from "../store/actions/user.actions";
-import { SearchBar } from "./SearchBar";
+import { Link, NavLink, useNavigate } from "react-router-dom"
+import { useSelector } from "react-redux"
+import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
+import { logout } from "../store/actions/user.actions"
+import { SearchBar } from "./SearchBar"
 
-import HomeIcon from "@mui/icons-material/Home";
+import HomeIcon from "@mui/icons-material/Home"
 
 export function AppHeader() {
-  const user = useSelector((storeState) => storeState.userModule.user);
-  const navigate = useNavigate();
+  const user = useSelector((storeState) => storeState.userModule.user)
+  const navigate = useNavigate()
 
   async function onLogout() {
     try {
-      await logout();
-      navigate("/");
-      showSuccessMsg("Bye now");
+      await logout()
+      navigate("/")
+      showSuccessMsg("Bye now")
     } catch (err) {
-      showErrorMsg("Cannot logout");
+      showErrorMsg("Cannot logout")
     }
   }
 
-  const userInitial = user?.fullname?.charAt(0).toUpperCase();
+  const userInitial = user?.fullname?.charAt(0).toUpperCase()
 
   return (
     <header className="app-header full">
@@ -29,8 +29,7 @@ export function AppHeader() {
           {/* <NavLink to="/" className="logo">
             E2E Demo
           </NavLink> */}
-          <NavLink to="about">About</NavLink>
-          <NavLink to="station">Stations</NavLink>
+
 
           {/*
           <NavLink to="chat">Chat</NavLink>
@@ -41,7 +40,7 @@ export function AppHeader() {
 
         <div className="nav-center">
           <button className="home-btn" aria-label="Home">
-            <HomeIcon />
+            <HomeIcon onClick={() => navigate("/")} />
           </button>
           <SearchBar />
         </div>
@@ -70,5 +69,5 @@ export function AppHeader() {
         </div>
       </nav>
     </header>
-  );
+  )
 }
