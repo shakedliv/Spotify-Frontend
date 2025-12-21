@@ -26,7 +26,7 @@ export function Search() {
     <section className="search-page">
       {!query && <ExplorerList items={explorerItems} />}
 
-      {query && <TrackList tracks={tracks} />}
+      {query && <TrackList tracks={tracks} isSearch={true}/>}
     </section>
   );
 }

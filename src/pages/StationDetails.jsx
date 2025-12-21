@@ -26,7 +26,6 @@ export function StationDetails() {
 
   }, [stationId])
 
-  console.log(station)
 
   async function onRemoveTrack(trackId) {
     const updatedTracks = station.tracks.filter(track => track.id !== trackId)
@@ -51,7 +50,6 @@ export function StationDetails() {
       console.error('Failed to update tracks order:', err)
     }
   }
-  console.log(onReorder)
 
   if (!station) return <div>Loading...</div>
 
@@ -78,7 +76,8 @@ export function StationDetails() {
         tracks={station.tracks}
         onReorder={onReorder}
         onRemoveTrack={onRemoveTrack}
-        onAddTrack={onAddTrack}
+           onAddTrack={onAddTrack}
+               isSearch={false}
       />
 
 

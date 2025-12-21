@@ -24,3 +24,10 @@
 .debug * {
     outline: 1px solid gold
 }
+
+.draggable{
+   cursor:grab;
+}
+.is-dragging{
+   cursor: grabbing;
+}

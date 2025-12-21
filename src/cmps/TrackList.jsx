@@ -25,12 +25,12 @@ export function TrackList({
     onReorder,
     onRemoveTrack,
     onAddTrack,
+    isSearch,
 }) {
-    console.log('onReorder:', onReorder)
     const [openedTrackId, setOpenedTrackId] = useState(null)
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
-    const [currTracks, setCurrTracks] = useState(tracks)
+   const [currTracks, setCurrTracks] = useState(tracks)
     const sensors = useSensors(
         useSensor(PointerSensor, {
             activationConstraint: {
@@ -92,16 +92,15 @@ export function TrackList({
             const newIndex = currTracks.findIndex((item) => item.id === over.id)
 
             const newOrder = arrayMove(currTracks, oldIndex, newIndex)
-         
+
             onReorder(newOrder)
         }
         setActiveId(null)
     }
 
     return (
-        <section className='track-list'>
+        <section className={activeId? 'track-list is-dragging':'track-list'}>
             <TracksHeader onSort={onSort} />
-
             <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
@@ -109,16 +108,12 @@ export function TrackList({
                 sensors={sensors}
             >
                 <SortableContext
-                    items={currTracks.map(track => track.id)}
+                    items={currTracks.map((track) => track.id)}
                     strategy={verticalListSortingStrategy}
                 >
                     <div className='track-list-container'>
-                        {currTracks.map((track, index) => (
-                            <SortableTrack
-                                id={track.id}
-                                key={track.id}
-                                track={track}
-                            >
+                        {currTracks.map((track, index) =>
+                            isSearch ? (
                                 <TrackPreview
                                     trackNum={index + 1}
                                     key={track.id}
@@ -134,8 +129,31 @@ export function TrackList({
                                         )
                                     }
                                 />
-                            </SortableTrack>
-                        ))}
+                            ) : (
+                                <SortableTrack
+                                    id={track.id}
+                                    key={track.id}
+                                    track={track}
+                                >
+                                    <TrackPreview
+                                        isDraggable={true}
+                                        trackNum={index + 1}
+                                        key={track.id}
+                                        track={track}
+                                        onRemoveTrack={onRemoveTrack}
+                                        onAddTrack={onAddTrack}
+                                        isOperationsOpen={
+                                            openedTrackId === track.id
+                                        }
+                                        onToggleOptions={(id) =>
+                                            setOpenedTrackId(
+                                                openedTrackId === id ? null : id
+                                            )
+                                        }
+                                    />
+                                </SortableTrack>
+                            )
+                        )}
                     </div>
                 </SortableContext>
 
