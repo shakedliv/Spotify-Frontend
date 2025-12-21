@@ -4,10 +4,13 @@ export const REMOVE_STATION = 'REMOVE_STATION'
 export const ADD_STATION = 'ADD_STATION'
 export const UPDATE_STATION = 'UPDATE_STATION'
 export const ADD_STATION_MSG = 'ADD_STATION_MSG'
+export const UNDO_REORDER = 'UNDO_REORDER'
+export const SAVE_LAST_ORDER = 'SAVE_LAST_ORDER'
 
 const initialState = {
     stations: [],
-    station: null
+    station: null,
+    lastStationOrder: []
 }
 
 export function stationReducer(state = initialState, action) {
@@ -48,6 +51,12 @@ export function stationReducer(state = initialState, action) {
                 newState = { ...state, station: { ...state.station, msgs: [...state.station.msgs || [], action.msg] } }
                 break
             }
+        case UNDO_REORDER:
+            newState = { ...state, station: { ...lastStationOrder } }
+            break
+        case SAVE_LAST_ORDER:
+            newState = { ...state, lastStationOrder: { ...action.station } }
+            break
         default:
     }
     return newState

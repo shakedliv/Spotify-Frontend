@@ -1,6 +1,6 @@
 import { stationService } from '../../services/station'
 import { store } from '../store'
-import { ADD_STATION, REMOVE_STATION, SET_STATIONS, SET_STATION, UPDATE_STATION, ADD_STATION_MSG } from '../reducers/station.reducer'
+import { ADD_STATION, UNDO_REORDER, REMOVE_STATION, SET_STATIONS, SET_STATION, UPDATE_STATION, ADD_STATION_MSG } from '../reducers/station.reducer'
 
 export async function loadStations(filterBy) {
     try {
@@ -47,9 +47,9 @@ export async function addStation(station) {
 export async function updateStation(station) {
     try {
         const savedStation = await stationService.save(station)
-        store.dispatch(getCmdUpdateStation(savedStation))
         return savedStation
     } catch (err) {
+        store.dispatch(getCmdUndoReorder())
         console.log('Cannot save station', err)
         throw err
     }
@@ -112,6 +112,11 @@ function getCmdUpdateStation(station) {
     return {
         type: UPDATE_STATION,
         station
+    }
+}
+function getCmdUndoReorder() {
+    return {
+        type: UNDO_REORDER
     }
 }
 function getCmdAddStationMsg(msg) {

@@ -12,7 +12,7 @@
         row-gap: 8px;
         margin-bottom: 1em;
         background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, #181818 100%);
-        ;
+        
 
         grid-template-areas:
             "i ."

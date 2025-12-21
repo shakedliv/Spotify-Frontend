@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-
+import { store } from '../store/store'
 import { loadStation, updateStation } from '../store/actions/station.actions'
 import { StationEdit } from '../cmps/StationEdit'
 import { TrackList } from '../cmps/TrackList'
@@ -11,6 +11,7 @@ import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
 
 
 import { StationTrackSearch } from '../cmps/StationTrackSearch'
+import { SAVE_LAST_ORDER, UPDATE_STATION } from '../store/reducers/station.reducer.js'
 
 export function StationDetails() {
 
@@ -20,9 +21,9 @@ export function StationDetails() {
   const [isEditOpen, setIsEditOpen] = useState(false)
 
   useEffect(() => {
-     loadStation(stationId)
-     console.log('onRemoveTrack:',onRemoveTrack )
-     
+    loadStation(stationId)
+    console.log('onRemoveTrack:', onRemoveTrack)
+
   }, [stationId])
 
   console.log(station)
@@ -39,14 +40,18 @@ export function StationDetails() {
     const updatedStation = { ...station, tracks: updatedTracks }
     await updateStation(updatedStation)
   }
-async function onReorder(newTracks) {
+
+  async function onReorder(newTracks) {
+    store.dispatch({ type: SAVE_LAST_ORDER, station: station })
     const updatedStation = { ...station, tracks: newTracks }
+    store.dispatch({ type: UPDATE_STATION, station: updatedStation })
     try {
-        await updateStation(updatedStation)
+      await updateStation(updatedStation)
     } catch (err) {
-        console.error('Failed to update tracks order:', err)
+      console.error('Failed to update tracks order:', err)
     }
-}
+  }
+  console.log(onReorder)
 
   if (!station) return <div>Loading...</div>
 
@@ -70,8 +75,8 @@ async function onReorder(newTracks) {
 
 
       <TrackList
-           tracks={station.tracks}
-           onReorder={onReorder}
+        tracks={station.tracks}
+        onReorder={onReorder}
         onRemoveTrack={onRemoveTrack}
         onAddTrack={onAddTrack}
       />

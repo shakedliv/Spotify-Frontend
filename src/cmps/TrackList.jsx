@@ -16,6 +16,8 @@ import { SortableTrack } from './SortableTrack.jsx'
 import { TrackPreview } from './TrackPreview.jsx'
 import { TracksHeader } from './TracksHeader.jsx'
 import stationSample from '../assets/data/station.sample.raw.json'
+import { UPDATE_STATION } from '../store/reducers/station.reducer.js'
+import { store } from '../store/store.js'
 const demoData = stationSample.tracks.items
 
 export function TrackList({
@@ -90,6 +92,7 @@ export function TrackList({
             const newIndex = currTracks.findIndex((item) => item.id === over.id)
 
             const newOrder = arrayMove(currTracks, oldIndex, newIndex)
+         
             onReorder(newOrder)
         }
         setActiveId(null)

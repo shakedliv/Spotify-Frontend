@@ -14,7 +14,6 @@ export const userService = {
     getLoggedinUser,
     saveLoggedinUser,
 }
-
 _createLoggedinUser()
 
 
@@ -68,7 +67,7 @@ function getLoggedinUser() {
 
 function saveLoggedinUser(user) {
     user = {
-        _id: user._id ,
+        _id: user._id,
         fullname: user.fullname,
         imgUrl: user.imgUrl,
         isAdmin: user.isAdmin,
@@ -82,6 +81,7 @@ function saveLoggedinUser(user) {
 
 // To quickly create an admin user, uncomment the next line
 async function _createLoggedinUser() {
+    if (getLoggedinUser()) return
     const user = {
         username: 'admin',
         password: 'admin',
