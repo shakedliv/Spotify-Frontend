@@ -2,13 +2,14 @@ import { useNavigate } from "react-router"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { stationService } from "../services/station"
 import { addStation } from "../store/actions/station.actions"
-import { StationList } from "./StationList"
+
 import { useSelector } from "react-redux"
 import { LibraryStationList } from "./LibraryStationList"
 import AddIcon from '@mui/icons-material/Add'
 import { useState } from "react"
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from '@mui/icons-material/Search'
+import { LibraryOpenIcon, LibraryCloseIcon, ExpandIcon } from '../services/svg.service.js'
 
 
 export function Library() {
@@ -33,8 +34,14 @@ export function Library() {
     return (
         <div className="library">
             <header className="library-header">
-                <h2>Your Library</h2>
-                <button className="add-station-btn" onClick={onAddStation}><AddIcon /> <span>Create</span> </button>
+                <div className="icon-title">
+                    <button className="library-toggle"> <LibraryOpenIcon /></button>
+                    <h2>Your Library</h2>
+                </div>
+                <div className="library-header-btns">
+                    <button className="add-station-btn" onClick={onAddStation}><AddIcon /> <span>Create</span> </button>
+                    <button className="expand-btn" ><ExpandIcon /></button>
+                </div>
             </header>
 
             <section className="filter-btns">
@@ -61,11 +68,11 @@ export function Library() {
             </section>
 
             <div className="search-sort">
-                <button className="search"><SearchIcon/></button>
+                <button className="search"><SearchIcon /></button>
                 <span className="sort-list">Recents <FormatListBulletedIcon /></span>
             </div>
 
-            <section className="library-list">
+            <section className="library-station-list">
                 <LibraryStationList
                     stations={stations}
 

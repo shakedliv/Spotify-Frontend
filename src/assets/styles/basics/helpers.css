@@ -35,3 +35,43 @@
 .is-dragging{
    cursor: grabbing;
 }
+
+
+
+/*SCROLL BARS*/
+
+.station-index,
+.library-station-list {
+  overflow-y: auto;
+  overflow-x: hidden;  
+}
+
+.station-index::-webkit-scrollbar,
+.library-station-list::-webkit-scrollbar {
+  width: 6px;        
+}
+
+.station-index::-webkit-scrollbar-track,
+.library-station-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.station-index::-webkit-scrollbar-thumb,
+.library-station-list::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 999px;    
+  border: 2px solid transparent; 
+}
+
+.station-index::-webkit-scrollbar-thumb:hover,
+.library-station-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.station-index,
+.library-station-list {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.4) transparent;
+}
