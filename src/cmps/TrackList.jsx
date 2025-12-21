@@ -84,20 +84,17 @@ export function TrackList({
         //   }
         setCurrTracks(tracksToSort)
     }
-    function handleDragEnd(event) {
-        const { active, over } = event
-        if (active.id !== over.id) {
-            const oldIndex = currTracks.findIndex(
-                (item) => item.id === active.id
-            )
-            const newIndex = currTracks.findIndex((item) => item.id === over.id)
-
-            const newOrder = arrayMove(currTracks, oldIndex, newIndex)
-
-            onReorder(newOrder)
-        }
-        setActiveId(null)
+   function handleDragEnd(event) {
+    const { active, over } = event
+    if (active && over && active.id !== over.id) {
+        const oldIndex = currTracks.findIndex((item) => item.id === active.id)
+        const newIndex = currTracks.findIndex((item) => item.id === over.id)
+        const newOrder = arrayMove(currTracks, oldIndex, newIndex)
+        setCurrTracks(newOrder) 
+        onReorder(newOrder)
     }
+    setActiveId(null)
+}
 
     return (
         <section className={activeId ? 'track-list is-dragging' : 'track-list'}>

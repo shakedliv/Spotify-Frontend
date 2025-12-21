@@ -2,8 +2,23 @@
 
 
 @font-face {
+    font-family: 'FigTreeLight';
+    src: url('../../fonts/Figtree-Light.ttf');
+    font-style: normal;
+}
+@font-face {
     font-family: 'FigTreeRegular';
     src: url('../../fonts/Figtree-Regular.ttf') ;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FigTreeMedium';
+    src: url('../../fonts/Figtree-Medium.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FigTreeSemiBold';
+    src: url('../../fonts/Figtree-SemiBold.ttf');
     font-style: normal;
 }
 @font-face {
