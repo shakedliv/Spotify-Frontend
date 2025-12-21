@@ -26,11 +26,12 @@ export function TrackList({
     onRemoveTrack,
     onAddTrack,
     isSearch,
+    isDraggable = true,
 }) {
     const [openedTrackId, setOpenedTrackId] = useState(null)
     const [activeId, setActiveId] = useState(null)
     const activeTrack = tracks.find((t) => t.id === activeId)
-   const [currTracks, setCurrTracks] = useState(tracks)
+    const [currTracks, setCurrTracks] = useState(tracks)
     const sensors = useSensors(
         useSensor(PointerSensor, {
             activationConstraint: {
@@ -99,8 +100,8 @@ export function TrackList({
     }
 
     return (
-        <section className={activeId? 'track-list is-dragging':'track-list'}>
-          <TracksHeader onSort={onSort} isSearch={ isSearch } />
+        <section className={activeId ? 'track-list is-dragging' : 'track-list'}>
+            <TracksHeader onSort={onSort} isSearch={isSearch} />
             <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
@@ -112,15 +113,16 @@ export function TrackList({
                     strategy={verticalListSortingStrategy}
                 >
                     <div className='track-list-container'>
-                        {currTracks.map((track, index) =>
-                            isSearch ? (
+                        {currTracks.map((track, index) => {
+                            // 1. נכין את התוכן שיוצג בכל מקרה
+                            const trackPreview = (
                                 <TrackPreview
                                     trackNum={index + 1}
-                                    key={track.id}
                                     track={track}
+                                    isSearch={isSearch}
+                                    isDraggable={isDraggable && !isSearch}
                                     onRemoveTrack={onRemoveTrack}
-                                 onAddTrack={onAddTrack}
-                                  isSearch={ isSearch}
+                                    onAddTrack={onAddTrack}
                                     isOperationsOpen={
                                         openedTrackId === track.id
                                     }
@@ -130,32 +132,23 @@ export function TrackList({
                                         )
                                     }
                                 />
-                            ) : (
+                            )
+
+                            // 2. נחליט אם לעטוף אותו ב-SortableTrack או לא
+                            return isDraggable && !isSearch ? (
                                 <SortableTrack
-                                    id={track.id}
                                     key={track.id}
+                                    id={track.id}
                                     track={track}
                                 >
-                                    <TrackPreview
-                                        isSearch={ isSearch}
-                                        isDraggable={true}
-                                        trackNum={index + 1}
-                                        key={track.id}
-                                        track={track}
-                                        onRemoveTrack={onRemoveTrack}
-                                        onAddTrack={onAddTrack}
-                                        isOperationsOpen={
-                                            openedTrackId === track.id
-                                        }
-                                        onToggleOptions={(id) =>
-                                            setOpenedTrackId(
-                                                openedTrackId === id ? null : id
-                                            )
-                                        }
-                                    />
+                                    {trackPreview}
                                 </SortableTrack>
+                            ) : (
+                                <React.Fragment key={track.id}>
+                                    {trackPreview}
+                                </React.Fragment>
                             )
-                        )}
+                        })}
                     </div>
                 </SortableContext>
 
