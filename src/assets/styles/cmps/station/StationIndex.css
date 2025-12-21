@@ -1,6 +1,6 @@
 .station-index {
     color: white;
-    background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 5%, var(--bg-base) 30%);
+    background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 5%, var(--bg-base) 20%);
     border-radius: 8px;
     max-width: 100%;
     overflow-x: hidden;

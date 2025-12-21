@@ -11,8 +11,8 @@ export function LibraryStationList({ onRemoveStation, stations }) {
 
 
     return (
-        <div className="library-station-list">
 
+        <>
             {user && (
                 <Link to="/liked" className="station-link">
                     <article className="station-preview">
@@ -36,6 +36,6 @@ export function LibraryStationList({ onRemoveStation, stations }) {
                     type={'library'}
                 />
             ))}
-        </div>
+        </>
     )
 }

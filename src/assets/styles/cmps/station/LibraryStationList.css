@@ -3,7 +3,10 @@
     flex-direction: column;
     gap: 4px;
     height: 100%;
-   
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+ 
 
     .station-link {
         display: block;

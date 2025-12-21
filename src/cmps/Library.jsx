@@ -72,7 +72,7 @@ export function Library() {
                 <span className="sort-list">Recents <FormatListBulletedIcon /></span>
             </div>
 
-            <section className="library-list">
+            <section className="library-station-list">
                 <LibraryStationList
                     stations={stations}
 
