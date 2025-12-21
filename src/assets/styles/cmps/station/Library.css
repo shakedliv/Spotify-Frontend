@@ -1,7 +1,7 @@
 .library {
     width: 100%;
 
-    background-color: var(--bg-base);
+    background-color: var(--bg-elevated-base);
     color: var(--text-primary);
     border-radius: 12px;
     padding: 24px;

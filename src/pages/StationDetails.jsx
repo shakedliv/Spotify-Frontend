@@ -15,6 +15,7 @@ import {
     SAVE_LAST_ORDER,
     UPDATE_STATION,
 } from '../store/reducers/station.reducer.js'
+import { formatDate } from '../services/util.service.js'
 
 export function StationDetails() {
     const { stationId } = useParams()
@@ -38,7 +39,8 @@ export function StationDetails() {
         await updateStation(updatedStation)
     }
 
-    async function onAddTrack(track) {
+   async function onAddTrack(track) {
+        track.dateAdded = formatDate(Date.now())
         const updatedTracks = [...station.tracks, track]
         const updatedStation = { ...station, tracks: updatedTracks }
         store.dispatch({ type: UPDATE_STATION, station: updatedStation })
