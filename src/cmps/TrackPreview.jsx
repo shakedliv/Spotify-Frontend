@@ -20,15 +20,17 @@ export function TrackPreview({
     onToggleOptions,
     isOperationsOpen,
     isDraggable,
+    isSearch,
 }) {
     const organizedTrack = track.track
     const user = useSelector((state) => state.userModule.user)
     const isLiked = user?.likedSongs?.some((t) => t.id === track.id)
     const dispatch = useDispatch()
-    const classContainer = isDraggable
+   const classContainer = isDraggable
         ? 'track-preview draggable'
         : 'track-preview'
 
+   const wideClass = isSearch ? 'wide' : ''
     useEffect(() => {
         if (!isOperationsOpen) return
         const closeMenu = () => onToggleOptions(null)
@@ -60,11 +62,14 @@ export function TrackPreview({
         ev.stopPropagation()
         onToggleOptions(track.id)
     }
-
     return (
         <article className={classContainer} onClick={onPlayTrack}>
-            <span className='track-num'>{trackNum}</span>
-            <section className='basic-info-container'>
+            {isSearch ? (
+                <span className='hidden'></span>
+            ) : (
+                <span className='track-num'>{trackNum}</span>
+            )}
+          <section className={`${wideClass} basic-info-container`}>
                 <img
                     className='track-img'
                     src={organizedTrack.album.images[0].url}
@@ -76,22 +81,23 @@ export function TrackPreview({
                     {organizedTrack.artists[0].name}
                 </span>
             </section>
-            <span className='track-album'>{organizedTrack.album?.name} </span>
-            <span>Sep 24, 2024</span>
+            {!isSearch &&
+            <>
+                <span className='track-album'>
+                    {organizedTrack.album?.name}{' '}
+             </span>
+             <span>{track.dateAdded}</span></>
+            }
             <section className={'track-actions'}>
                 <button className='like-btn' onClick={onLikeClick}>
-                    {isLiked ? (
-                        <RemoveFromLikedSongs/>
-                    ) : (
-                        <AddToLikedSongs />
-                    )}
+                    {isLiked ? <RemoveFromLikedSongs /> : <AddToLikedSongs />}
                 </button>
                 <div className='time-options'>
                     <span className={'duration'}>
                         {formatDuration(organizedTrack.duration_ms)}
                     </span>
                     <button className={'options'} onClick={ToggleOptions}>
-                   <Options/>
+                        <Options />
                     </button>
                     {isOperationsOpen && (
                         <div

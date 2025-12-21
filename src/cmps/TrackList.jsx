@@ -100,7 +100,7 @@ export function TrackList({
 
     return (
         <section className={activeId? 'track-list is-dragging':'track-list'}>
-            <TracksHeader onSort={onSort} />
+          <TracksHeader onSort={onSort} isSearch={ isSearch } />
             <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
@@ -119,7 +119,8 @@ export function TrackList({
                                     key={track.id}
                                     track={track}
                                     onRemoveTrack={onRemoveTrack}
-                                    onAddTrack={onAddTrack}
+                                 onAddTrack={onAddTrack}
+                                  isSearch={ isSearch}
                                     isOperationsOpen={
                                         openedTrackId === track.id
                                     }
@@ -136,6 +137,7 @@ export function TrackList({
                                     track={track}
                                 >
                                     <TrackPreview
+                                        isSearch={ isSearch}
                                         isDraggable={true}
                                         trackNum={index + 1}
                                         key={track.id}

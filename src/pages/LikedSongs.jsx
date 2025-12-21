@@ -54,7 +54,7 @@ export function LikedSongs() {
 
             <TrackList
                 tracks={likedTracks}
-                isSearch={true}
+                isSearch={false}
              onReorder={onReorder}
             />
         </section>

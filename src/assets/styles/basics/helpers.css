@@ -25,6 +25,10 @@
     outline: 1px solid gold
 }
 
+.hidden{
+   display: none;
+}
+
 .draggable{
    cursor:grab;
 }
