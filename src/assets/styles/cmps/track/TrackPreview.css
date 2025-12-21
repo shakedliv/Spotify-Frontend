@@ -1,20 +1,22 @@
-
 .track-preview {
-    /* background-color: ; */
     display: grid;
-    grid-template-columns: auto 1.7fr 1fr 1fr 0.5fr;
+    grid-template-columns: auto 0.7fr 0.7fr 2fr 0.5fr;
     justify-content: space-between;
     justify-items: start;
     align-items: center;
-
     gap: 16px;
-    padding-inline: 16px;
-    margin-bottom: 12px;
-    color: white;
+    &:has(.wide) {
+        grid-template-columns: 1fr 120px;
+    }
+    border-radius: 6px;
+    padding: 0.3rem 1rem;
+    font-size: 17.5px;
+
+    color: var(--text-secondary);
     &:hover {
         background-color: var(--bg-highlight);
-        
-        .like-btn, 
+
+        .like-btn,
         .time-options .options {
             opacity: 1;
         }
@@ -24,23 +26,61 @@
         display: grid;
         align-items: center;
         grid-template-columns: auto 1fr;
+        max-width: 215px;
+        min-width: 140px;
+
         grid-template-areas:
             'img name'
             ' img artist';
+
+        &.wide {
+            max-width: none;
+            grid-column: 1 / 2;
+            .track-name,
+            .track-artist {
+                text-overflow: clip;
+            }
+        }
     }
     .track-num {
         place-self: center;
+        margin-left: 10px;
     }
     .track-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
         grid-area: name;
+        align-self: start;
         font-size: 20px;
+        font-weight: 600;
+        color: white;
     }
     .track-img {
         grid-area: img;
+        border-radius: 5px;
+        margin-inline: 10px;
+        max-width: 45px;
+        max-height: 45px;
     }
     .track-artist {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
         grid-area: artist;
+        align-self: end;
+
         font-size: 17.5px;
+        font-weight: 600;
+    }
+    .track-album {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 160px;
+        min-width: 100px;
     }
     .track-actions {
         display: flex;
@@ -48,6 +88,7 @@
         align-items: center;
         width: 100%;
         min-width: 80px;
+
         .time-options {
             display: flex;
             align-items: center;
@@ -60,6 +101,8 @@
 
             .options {
                 opacity: 0;
+                margin-left: 2px;
+                margin-top: 1px;
             }
 
             .options-menu {
@@ -106,11 +149,18 @@
 
     .track-preview:hover {
         background-color: var(--bg-highlight);
-       
     }
 }
 
 .track-preview:hover .like-btn,
 .track-preview:hover .options {
     opacity: 1 !important;
+}
+
+.track-preview:hover .track-artist,
+.track-preview:hover .track-album {
+    color: white;
+}
+.like-btn:hover {
+    transform: scale(1.05);
 }

@@ -3,12 +3,14 @@ import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleLikedSong } from '../store/actions/user.actions.js'
 
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline'
 import { adaptTrackForPlayer } from '../services/track/track.util'
 import { setCurrentTrack } from '../store/actions/system.actions'
 import { youtubeService } from '../services/youtube.service'
+import { Options } from '../assets/svg/Options.jsx'
+import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
+import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
 
 export function TrackPreview({
     track,
@@ -18,15 +20,17 @@ export function TrackPreview({
     onToggleOptions,
     isOperationsOpen,
     isDraggable,
+    isSearch,
 }) {
     const organizedTrack = track.track
     const user = useSelector((state) => state.userModule.user)
     const isLiked = user?.likedSongs?.some((t) => t.id === track.id)
     const dispatch = useDispatch()
-    const classContainer = isDraggable
+   const classContainer = isDraggable
         ? 'track-preview draggable'
         : 'track-preview'
 
+   const wideClass = isSearch ? 'wide' : ''
     useEffect(() => {
         if (!isOperationsOpen) return
         const closeMenu = () => onToggleOptions(null)
@@ -58,11 +62,14 @@ export function TrackPreview({
         ev.stopPropagation()
         onToggleOptions(track.id)
     }
-
     return (
         <article className={classContainer} onClick={onPlayTrack}>
-            <span className='track-num'>{trackNum}</span>
-            <section className='basic-info-container'>
+            {isSearch ? (
+                <span className='hidden'></span>
+            ) : (
+                <span className='track-num'>{trackNum}</span>
+            )}
+          <section className={`${wideClass} basic-info-container`}>
                 <img
                     className='track-img'
                     src={organizedTrack.album.images[0].url}
@@ -74,24 +81,23 @@ export function TrackPreview({
                     {organizedTrack.artists[0].name}
                 </span>
             </section>
-            <span>{organizedTrack.album?.name} </span>
-            <span>Sep 24, 2024</span>
+            {!isSearch &&
+            <>
+                <span className='track-album'>
+                    {organizedTrack.album?.name}{' '}
+             </span>
+             <span>{track.dateAdded}</span></>
+            }
             <section className={'track-actions'}>
                 <button className='like-btn' onClick={onLikeClick}>
-                    {isLiked ? (
-                        <CheckCircleIcon color='success' />
-                    ) : (
-                        <AddCircleOutlineIcon />
-                    )}
+                    {isLiked ? <RemoveFromLikedSongs /> : <AddToLikedSongs />}
                 </button>
                 <div className='time-options'>
                     <span className={'duration'}>
                         {formatDuration(organizedTrack.duration_ms)}
                     </span>
                     <button className={'options'} onClick={ToggleOptions}>
-                        <MoreHorizIcon
-                            sx={{ display: 'block', margin: '0 auto' }}
-                        />
+                        <Options />
                     </button>
                     {isOperationsOpen && (
                         <div
