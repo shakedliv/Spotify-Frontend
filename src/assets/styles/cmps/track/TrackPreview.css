@@ -1,6 +1,6 @@
 .track-preview {
     display: grid;
-    grid-template-columns: auto 0.7fr 0.7fr 2fr 0.5fr;
+    grid-template-columns: 40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr) 120px;
     justify-content: space-between;
     justify-items: start;
     align-items: center;
@@ -13,6 +13,7 @@
     font-size: 17.5px;
 
     color: var(--text-secondary);
+    
     &:hover {
         background-color: var(--bg-highlight);
 
@@ -20,14 +21,15 @@
         .time-options .options {
             opacity: 1;
         }
+        .track-num {
+            opacity: 0;
+        }
     }
-
     .basic-info-container {
         display: grid;
         align-items: center;
         grid-template-columns: auto 1fr;
-        max-width: 215px;
-        min-width: 140px;
+        min-width: 0;
 
         grid-template-areas:
             'img name'
@@ -54,13 +56,14 @@
         grid-area: name;
         align-self: start;
         font-size: 20px;
-        font-weight: 600;
+        font-family:'FigTreeBold';
+
         color: white;
     }
     .track-img {
         grid-area: img;
         border-radius: 5px;
-        margin-inline: 10px;
+        margin-inline-end: 10px;
         max-width: 45px;
         max-height: 45px;
     }
@@ -75,12 +78,14 @@
         font-size: 17.5px;
         font-weight: 600;
     }
-    .track-album {
+    .track-album,
+    .track-date {
+        display: block;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 160px;
-        min-width: 100px;
+        min-width: 0px;
+        width: 100%;
     }
     .track-actions {
         display: flex;
@@ -163,4 +168,33 @@
 }
 .like-btn:hover {
     transform: scale(1.05);
+}
+
+.index-col {
+    position: relative; /* קריטי! זה הופך את זה לנקודת הייחוס */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 100%;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    
+    opacity: 0;
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
+.track-preview:hover {
+    .track-num {
+        opacity: 0;
+    }
+    .play-icon {
+        opacity: 1;
+    }
 }

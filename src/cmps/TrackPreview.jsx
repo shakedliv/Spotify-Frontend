@@ -1,16 +1,16 @@
-import { useEffect } from 'react'
-import { formatDate, formatDuration } from '../services/util.service.js'
+import { useRef } from 'react'
+import { formatDuration } from '../services/util.service.js'
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleLikedSong } from '../store/actions/user.actions.js'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 
-import CheckCircleIcon from '@mui/icons-material/CheckCircle'
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline'
 import { adaptTrackForPlayer } from '../services/track/track.util'
 import { setCurrentTrack } from '../store/actions/system.actions'
 import { youtubeService } from '../services/youtube.service'
 import { Options } from '../assets/svg/Options.jsx'
 import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
 import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
+import { useCloseOnOutside } from '../hooks/useCloseOnOutside.js'
 
 export function TrackPreview({
     track,
@@ -25,18 +25,17 @@ export function TrackPreview({
     const organizedTrack = track.track
     const user = useSelector((state) => state.userModule.user)
     const isLiked = user?.likedSongs?.some((t) => t.id === track.id)
+    const menuRef = useRef(null)
     const dispatch = useDispatch()
-   const classContainer = isDraggable
+    const classContainer = isDraggable
         ? 'track-preview draggable'
         : 'track-preview'
 
-   const wideClass = isSearch ? 'wide' : ''
-    useEffect(() => {
-        if (!isOperationsOpen) return
-        const closeMenu = () => onToggleOptions(null)
-        window.addEventListener('click', closeMenu)
-        return () => window.removeEventListener('click', closeMenu)
-    }, [isOperationsOpen, onToggleOptions])
+    const wideClass = isSearch ? 'wide' : ''
+
+    useCloseOnOutside(menuRef, () => {
+        if (isOperationsOpen) onToggleOptions(null)
+    })
 
     async function onPlayTrack() {
         try {
@@ -51,6 +50,10 @@ export function TrackPreview({
         } catch (err) {
             console.error('Failed to resolve YouTube video', err)
         }
+    }
+    function handleAddTrack(track) {
+        onAddTrack(track)
+        onToggleOptions(null)
     }
 
     function onLikeClick(ev) {
@@ -67,9 +70,12 @@ export function TrackPreview({
             {isSearch ? (
                 <span className='hidden'></span>
             ) : (
-                <span className='track-num'>{trackNum}</span>
+                <div className='index-col'>
+                    <span className='track-num'>{trackNum}</span>
+                    <PlayArrowIcon className='play-icon' />
+                </div>
             )}
-          <section className={`${wideClass} basic-info-container`}>
+            <section className={`${wideClass} basic-info-container`}>
                 <img
                     className='track-img'
                     src={organizedTrack.album.images[0].url}
@@ -81,18 +87,19 @@ export function TrackPreview({
                     {organizedTrack.artists[0].name}
                 </span>
             </section>
-            {!isSearch &&
-            <>
-                <span className='track-album'>
-                    {organizedTrack.album?.name}{' '}
-             </span>
-             <span>{track.dateAdded}</span></>
-            }
+            {!isSearch && (
+                <>
+                    <span className='track-album'>
+                        {organizedTrack.album?.name}{' '}
+                    </span>
+                    <span className='track-date'>{track.dateAdded}</span>
+                </>
+            )}
             <section className={'track-actions'}>
                 <button className='like-btn' onClick={onLikeClick}>
                     {isLiked ? <RemoveFromLikedSongs /> : <AddToLikedSongs />}
                 </button>
-                <div className='time-options'>
+                <div className='time-options' ref={menuRef}>
                     <span className={'duration'}>
                         {formatDuration(organizedTrack.duration_ms)}
                     </span>
@@ -104,7 +111,7 @@ export function TrackPreview({
                             className='options-menu'
                             onClick={(ev) => ev.stopPropagation()}
                         >
-                            <button onClick={() => onAddTrack(track)}>
+                            <button onClick={() => handleAddTrack(track)}>
                                 Add to playlist
                             </button>
                             <button
