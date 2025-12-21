@@ -2,127 +2,102 @@
   position: sticky;
   top: 0;
   z-index: 200;
-
   background-color: var(--bg-elevated-base);
   border-bottom: 1px solid #2a2a2a;
-
   padding: 8px 16px;
   margin-bottom: 5px;
 }
-
 .app-header nav {
   display: flex;
   align-items: center;
   width: 100%;
   gap: 16px;
 }
-
 .app-header .nav-left {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-
 .app-header .nav-left a {
   font-size: 14px;
   color: var(--text-secondary);
 }
-
 .app-header .nav-left a.active {
   color: var(--text-primary);
 }
-
 .app-header .nav-center {
   flex: 1;
   display: flex;
   justify-content: center;
 }
-
 .header-center-group {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
 .home-btn {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
   background-color: #2a2a2a;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 0.5%;
-
   cursor: pointer;
 }
-
 .home-btn svg {
   font-size: 200%;
   color: var(--text-primary);
 }
-
 .search-bar {
   height: 44px;
   display: flex;
   align-items: center;
   gap: 12px;
   font-size: 30px;
-
   background-color: #2a2a2a;
   border-radius: 999px;
   padding: 0 18px;
-
   transition: background-color 0.2s ease;
 }
-
 .search-bar:hover,
 .search-bar.active {
   background-color: #3a3a3a;
 }
-
 .search-indicator {
   font-size: 20px;
   color: var(--text-secondary);
   display: flex;
   align-items: center;
 }
-
 .search-bar input {
   background: transparent;
   border: none;
   outline: none;
-
   height: 100%;
   color: var(--text-primary);
   font-size: 15px;
   line-height: 1;
-
   width: 320px;
 }
-
 .search-bar input::placeholder {
   color: var(--text-secondary);
 }
-
 .app-header .nav-right {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-
 .user-avatar-outer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--bg-highlight);
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .user-avatar-inner {
   width: 32px;
   height: 32px;
@@ -131,12 +106,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-weight: 700;
   font-size: 14px;
   color: #000;
 }
-
 .app-header .nav-right a,
 .app-header .nav-right button {
   font-size: 14px;
@@ -144,10 +117,81 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Arial; /*system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+  font-weight: bold;
 }
-
 .app-header .nav-right a:hover,
 .app-header .nav-right button:hover {
   color: var(--text-primary);
 }
+
+.app-header .nav-right .login-pill {
+  background: #fff !important;
+  color: #000 !important;
+  font-weight: 800 !important;
+  font-size: 14px;
+}
+
+.user-popover {
+  position: relative;
+}
+
+.logout-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+
+  background-color: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+
+  padding: 8px;
+  min-width: 140px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  z-index: 300;
+}
+
+.logout-popover button {
+  width: 100%;
+  padding: 6px 8px;
+  text-align: left;
+  border-radius: 4px;
+
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.logout-popover button:hover {
+  background-color: #3a3a3a;
+  color: var(--text-primary);
+}
+
+.login-pill {
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 20px;
+  border-radius: 999px;
+
+  background: #fff;
+  color: #000;
+
+  font-weight: 700;
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.login-pill:hover {
+  transform: scale(1.04);
+  background: #f2f2f2;
+}
+

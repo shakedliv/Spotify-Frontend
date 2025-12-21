@@ -38,7 +38,7 @@ export function SearchBar() {
       <input
         id="main-search"
         type="text"
-        placeholder="What do you want to listen to?"
+        placeholder="What do you want to play?"
         value={searchTerm}
         readOnly={!isSearchPage}
         onFocus={onFocus}
