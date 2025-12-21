@@ -3,12 +3,12 @@
 
 @font-face {
     font-family: 'FigTreeRegular';
-    src: url('./assets/fonts/FigTree-Regular.ttf') ;
+    src: url('../../fonts/Figtree-Regular.ttf') ;
     font-style: normal;
 }
 @font-face {
     font-family: 'FigTreeBold';
-    src: url('./assets/fonts/FigTree-Bold.ttf');
+    src: url('../../fonts/Figtree-Bold.ttf');
     font-style: normal;
 }
 

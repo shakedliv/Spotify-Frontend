@@ -60,26 +60,27 @@ export function StationIndex() {
                 stations={stations}
             />
 
-            <div className='index-header'>Made For</div>
+
+            <StationList
+                onRemoveStation={onRemoveStation}
+                stations={stations}
+                title={'Made For'}
+            />
+
+            <StationList
+                onRemoveStation={onRemoveStation}
+                stations={stations}
+                title={'Jump back in'}
+            />
+            <StationList
+                onRemoveStation={onRemoveStation}
+                stations={stations}
+            />
             <StationList
                 onRemoveStation={onRemoveStation}
                 stations={stations}
             />
 
-            <div className='index-header'>Jump back in</div>
-            <StationList
-                onRemoveStation={onRemoveStation}
-                stations={stations}
-            />
-            <StationList
-                onRemoveStation={onRemoveStation}
-                stations={stations}
-            />
-            <StationList
-                onRemoveStation={onRemoveStation}
-                stations={stations}
-            />
-  
         </main>
     )
 }
