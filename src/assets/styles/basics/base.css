@@ -54,7 +54,7 @@ body {
     margin: 0 auto;
     font-family: 'Figtree','Montserrat',var(--spotify-font),system-ui, -apple-system;
     color: var(--text-secondary);
-    background-color: var(--bg-base);
+    background-color: black ;
     -webkit-font-smoothing: antialiased;
 }
 

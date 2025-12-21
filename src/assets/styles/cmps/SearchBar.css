@@ -1,16 +1,17 @@
 .search-bar {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  color: var(--text-secondary);
+  width: 474px;
+  height: 48px;
 
-  width: 420px;
-  height: 44px;
-
-  background-color: #2a2a2a;
+  background-color: #202020;
   border-radius: 999px;
-  padding: 0 16px;
+  padding: 0px 11px;
+  padding-top: 3px;
 
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -29,7 +30,6 @@
   flex-shrink: 0;
 }
 
-
 .search-bar.active .search-indicator {
   color: var(--text-primary);
 }
@@ -40,20 +40,26 @@
   outline: none;
 
   height: 100%;
-  width: 320px;
+  width: 390px;
 
   font-size: 20px;
   font-weight: 500;
   color: var(--text-primary);
+  padding-left: 0px;
+  padding-bottom: 6px;
+  padding-right: 10px;
+
 
   line-height: 44px;
 }
 
-
 .search-bar input::placeholder {
   align-items: center;
   color: var(--text-secondary);
-  font-size: medium;
+  font-size: 16px;
+  padding-left: 1px;
+  padding-right: 8px;
+  word-spacing: 1%;
 }
 
 .search-bar input:read-only {
@@ -62,6 +68,8 @@
 
 .search-extra-icon {
   font-size: 20px;
+  margin-right: 4px;
+  margin-bottom: 3px;
   color: var(--text-secondary);
   flex-shrink: 0;
   cursor: pointer;
@@ -70,4 +78,12 @@
 
 .search-extra-icon:hover {
   color: var(--text-primary);
+}
+
+.search-divider {
+  width: 1px;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 1px;
+  flex-shrink: 0;
 }

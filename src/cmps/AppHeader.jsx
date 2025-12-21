@@ -3,8 +3,10 @@ import { useSelector } from "react-redux";
 import { useState, useRef, useEffect } from "react";
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service";
 import { logout } from "../store/actions/user.actions";
+import { SpotifyLogo } from "../assets/svg/SpotifyLogo.jsx";
+import { HomeIcon } from "../assets/svg/HomeIcon.jsx";
+
 import { SearchBar } from "./SearchBar";
-import HomeIcon from "@mui/icons-material/Home";
 export function AppHeader() {
   const user = useSelector((storeState) => storeState.userModule.user);
   const navigate = useNavigate();
@@ -32,20 +34,22 @@ export function AppHeader() {
   const userInitial = user?.fullname?.charAt(0).toUpperCase();
   return (
     <header className="app-header full">
-      {" "}
       <nav>
-        {" "}
-        <div className="nav-left" />{" "}
+        <div className="nav-left">
+          <SpotifyLogo />
+        </div>
+
         <div className="nav-center">
-          {" "}
-          <button className="home-btn" aria-label="Home">
-            {" "}
-            <HomeIcon onClick={() => navigate("/")} />{" "}
-          </button>{" "}
-          <SearchBar />{" "}
-        </div>{" "}
+          <button
+            className="home-btn"
+            aria-label="Home"
+            onClick={() => navigate("/")}
+          >
+            <HomeIcon />
+          </button>
+          <SearchBar />
+        </div>
         <div className="nav-right">
-          {" "}
           {user && (
             <div className="user-popover" ref={avatarRef}>
               <button
@@ -69,15 +73,14 @@ export function AppHeader() {
                 </div>
               )}
             </div>
-          )}{" "}
+          )}
           {!user && (
             <NavLink to="login" className="login-link login-pill">
-              {" "}
-              Log in{" "}
+              Log in
             </NavLink>
-          )}{" "}
-        </div>{" "}
-      </nav>{" "}
+          )}
+        </div>
+      </nav>
     </header>
   );
 }
