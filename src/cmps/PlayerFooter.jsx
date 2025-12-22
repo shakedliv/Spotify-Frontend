@@ -4,11 +4,19 @@ import { useYoutubePlayer } from "../customHooks/useYoutubePlayer";
 import { setIsPlaying } from "../store/actions/system.actions";
 import { adaptTrackForPlayer } from "../services/track/track.util";
 
-import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
-import SkipNextIcon from "@mui/icons-material/SkipNext";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import PauseIcon from "@mui/icons-material/Pause";
-import VolumeUpIcon from "@mui/icons-material/VolumeUp";
+import { PlayIcon } from "../assets/svg/PlayIcon.jsx";
+import { PauseIcon } from "../assets/svg/PauseIcon.jsx";
+import { PrevIcon } from "../assets/svg/PrevIcon.jsx";
+import { NextIcon } from "../assets/svg/NextIcon.jsx";
+import { VolumeIcon } from "../assets/svg/VolumeIcon.jsx";
+import { ShuffleIcon } from "../assets/svg/ShuffleIcon.jsx";
+import { RepeatIcon } from "../assets/svg/RepeatIcon.jsx";
+import { AddIcon } from "../assets/svg/AddIcon.jsx";
+import { LyricsIcon } from "../assets/svg/LyricsIcon.jsx";
+import { QueueIcon } from "../assets/svg/QueueIcon.jsx";
+import { ConnectIcon } from "../assets/svg/ConnectIcon.jsx";
+import { FullscreenIcon } from "../assets/svg/FullscreenIcon.jsx";
+import { PictureInPictureIcon } from "../assets/svg/PictureInPictureIcon.jsx";
 
 const FALLBACK_VIDEO_ID = "dQw4w9WgXcQ";
 
@@ -94,14 +102,21 @@ export function PlayerFooter() {
                 {displayTrack.artists.join(", ")}
               </span>
             </div>
+            <button className="add-btn">
+              <AddIcon />
+            </button>
           </>
         )}
       </div>
 
       <div className="player-footer-center">
         <div className="player-controls">
+          <button>
+            <ShuffleIcon />
+          </button>
+
           <button disabled={!currentTrack}>
-            <SkipPreviousIcon />
+            <PrevIcon />
           </button>
 
           {isPlaying ? (
@@ -116,12 +131,16 @@ export function PlayerFooter() {
               className="play-btn"
               onClick={() => dispatch(setIsPlaying(true))}
             >
-              <PlayArrowIcon />
+              <PlayIcon />
             </button>
           )}
 
           <button disabled={!currentTrack}>
-            <SkipNextIcon />
+            <NextIcon />
+          </button>
+
+          <button>
+            <RepeatIcon />
           </button>
         </div>
 
@@ -147,7 +166,17 @@ export function PlayerFooter() {
       </div>
 
       <div className="player-footer-right">
-        <VolumeUpIcon />
+        <button>
+          <LyricsIcon />
+        </button>
+        <button>
+          <QueueIcon />
+        </button>
+        <button>
+          <ConnectIcon />
+        </button>
+
+        <VolumeIcon />
         <input
           type="range"
           min="0"
@@ -156,6 +185,12 @@ export function PlayerFooter() {
           style={{ "--fill-percent": volumePercent }}
           onChange={(e) => setVolume(+e.target.value)}
         />
+        <button>
+          <PictureInPictureIcon />
+        </button>
+        <button>
+          <FullscreenIcon />
+        </button>
       </div>
 
       <div ref={playerContainerRef} style={{ display: "none" }} />

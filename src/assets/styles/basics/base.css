@@ -32,7 +32,7 @@ body {
     margin: 0 auto;
     font-family: 'FigTreeRegular', 'Montserrat', var(--spotify-font), system-ui, -apple-system;
     color: var(--text-secondary);
-    background-color: var(--bg-base);
+    background-color: black ;
     -webkit-font-smoothing: antialiased;
     font-size: 14px;
     height: 100%;
