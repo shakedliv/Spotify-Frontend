@@ -8,8 +8,8 @@ import { LibraryStationList } from "./LibraryStationList"
 import AddIcon from '@mui/icons-material/Add'
 import { useState } from "react"
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
-import SearchIcon from '@mui/icons-material/Search'
-import { LibraryOpenIcon, LibraryCloseIcon, ExpandIcon } from '../services/svg.service.js'
+
+import { LibraryOpenIcon, LibraryCloseIcon, ExpandIcon, SearchIcon } from '../services/svg.service.js'
 
 
 export function Library() {
