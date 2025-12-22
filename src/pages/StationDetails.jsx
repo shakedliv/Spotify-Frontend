@@ -102,7 +102,10 @@ export function StationDetails() {
                 isSearch={false}
             />
 
-            <StationTrackSearch onAddTrack={onAddTrack} />
+            <StationTrackSearch 
+            onAddTrack={onAddTrack}
+            stationId={stationId}
+             />
 
             {isEditOpen && (
                 <StationEdit

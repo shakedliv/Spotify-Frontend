@@ -3,7 +3,7 @@ import { spotifyService } from '../services/spotify.service'
 import { TrackList } from './TrackList'
 import SearchIcon from '@mui/icons-material/Search'
 
-export function StationTrackSearch({ onAddTrack }) {
+export function StationTrackSearch({ onAddTrack, stationId }) {
     const [query, setQuery] = useState('')
     const [tracks, setTracks] = useState([])
 
@@ -16,6 +16,11 @@ export function StationTrackSearch({ onAddTrack }) {
         const results = spotifyService.searchTracks(query)
         setTracks(results)
     }, [query])
+
+
+    useEffect(() => {
+        setQuery('')
+    }, [stationId])
 
     function handleChange(ev) {
         setQuery(ev.target.value)
@@ -40,7 +45,7 @@ export function StationTrackSearch({ onAddTrack }) {
                     tracks={tracks}
                     onAddTrack={onAddTrack}
                     isSearch={true}
-                    // no onRemoveTrack here – this list is only for adding
+                // no onRemoveTrack here – this list is only for adding
                 />
             )}
         </section>
