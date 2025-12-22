@@ -3,6 +3,8 @@ import { spotifyService } from '../services/spotify.service'
 import { TrackList } from './TrackList'
 import SearchIcon from '@mui/icons-material/Search'
 import { CloseIcon } from '../assets/svg/CloseIcon'
+import { Recommend } from '@mui/icons-material'
+import { RecommendedSongs } from './RecommendedSongs'
 
 export function StationTrackSearch({ onAddTrack, stationId, isFindMore, toggleFindMore }) {
     const [query, setQuery] = useState('')
@@ -25,7 +27,10 @@ export function StationTrackSearch({ onAddTrack, stationId, isFindMore, toggleFi
     function handleChange(ev) {
         setQuery(ev.target.value)
     }
-
+   function handleCloseFindMore() {
+   setQuery(null)
+    toggleFindMore()
+}
     return (
         <section className='station-track-search-container'>
             {isFindMore ? (
@@ -44,7 +49,7 @@ export function StationTrackSearch({ onAddTrack, stationId, isFindMore, toggleFi
                     </section>
                     <button
                         className='close-btn'
-                        onClick={() => toggleFindMore()}
+                        onClick={() => handleCloseFindMore()}
                     >
                         <CloseIcon className='close-icon' />
                     </button>
@@ -57,7 +62,8 @@ export function StationTrackSearch({ onAddTrack, stationId, isFindMore, toggleFi
                         <h5 className='recommended-subheader'>Based on what's in this playlist</h5>
                     ) : (
                         <h5 className='recommended-subheader'>Based on your listening</h5>
-                    )}
+                   )}
+                   <RecommendedSongs />
                 </section>
             )}
             {query && (

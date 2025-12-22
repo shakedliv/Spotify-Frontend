@@ -18,6 +18,7 @@ import { TracksHeader } from './TracksHeader.jsx'
 import stationSample from '../assets/data/station.sample.raw.json'
 import { UPDATE_STATION } from '../store/reducers/station.reducer.js'
 import { store } from '../store/store.js'
+import { TrackSearchPreview } from './TrackSearchPreview.jsx'
 const demoData = stationSample.tracks.items
 
 export function TrackList({
@@ -26,7 +27,7 @@ export function TrackList({
     onRemoveTrack,
     onAddTrack,
     isSearch,
-   isDraggable = true,
+    isDraggable = true,
     isTrackSearch = false,
 }) {
     const [openedTrackId, setOpenedTrackId] = useState(null)
@@ -39,7 +40,7 @@ export function TrackList({
                 distance: 5,
             },
         })
-   )
+    )
     useEffect(() => {
         setCurrTracks(tracks)
     }, [tracks])
@@ -71,7 +72,7 @@ export function TrackList({
                     +sortDirection
             )
         } else if (sortField === 'date-added') {
-           tracksToSort.sort(
+            tracksToSort.sort(
                 (track1, track2) =>
                     (track1.dateAdded - track2.dateAdded) * +sortDirection
             )
@@ -93,7 +94,7 @@ export function TrackList({
     }
     return (
         <section className={activeId ? 'track-list is-dragging' : 'track-list'}>
-            <TracksHeader onSort={onSort} isSearch={isSearch} />
+          <TracksHeader onSort={onSort} isSearch={isSearch} isTrackSearch={isTrackSearch } />
             <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
@@ -106,9 +107,13 @@ export function TrackList({
                 >
                     <div className='track-list-container'>
                         {currTracks.map((track, index) => {
-                            const trackPreview = (
-                               <TrackPreview
-                                    isTrackSearch={isTrackSearch}
+                            const content = isTrackSearch ? (
+                                <TrackSearchPreview
+                                    track={track}
+                                    onAddTrack={onAddTrack}
+                                />
+                            ) : (
+                                <TrackPreview
                                     trackNum={index + 1}
                                     track={track}
                                     isSearch={isSearch}
@@ -125,18 +130,19 @@ export function TrackList({
                                     }
                                 />
                             )
-
-                            return isDraggable && !isSearch ? (
+                            const canDrag =
+                                isDraggable && !isSearch && !isTrackSearch
+                            return canDrag ? (
                                 <SortableTrack
                                     key={track.id}
                                     id={track.id}
                                     track={track}
                                 >
-                                    {trackPreview}
+                                    {content}
                                 </SortableTrack>
                             ) : (
                                 <React.Fragment key={track.id}>
-                                    {trackPreview}
+                                    {content}
                                 </React.Fragment>
                             )
                         })}
