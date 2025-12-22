@@ -26,7 +26,8 @@ export function TrackList({
     onRemoveTrack,
     onAddTrack,
     isSearch,
-    isDraggable = true,
+   isDraggable = true,
+    isTrackSearch = false,
 }) {
     const [openedTrackId, setOpenedTrackId] = useState(null)
     const [activeId, setActiveId] = useState(null)
@@ -38,7 +39,7 @@ export function TrackList({
                 distance: 5,
             },
         })
-    )
+   )
     useEffect(() => {
         setCurrTracks(tracks)
     }, [tracks])
@@ -90,7 +91,6 @@ export function TrackList({
         }
         setActiveId(null)
     }
-
     return (
         <section className={activeId ? 'track-list is-dragging' : 'track-list'}>
             <TracksHeader onSort={onSort} isSearch={isSearch} />
@@ -106,9 +106,9 @@ export function TrackList({
                 >
                     <div className='track-list-container'>
                         {currTracks.map((track, index) => {
-                            // 1. נכין את התוכן שיוצג בכל מקרה
                             const trackPreview = (
-                                <TrackPreview
+                               <TrackPreview
+                                    isTrackSearch={isTrackSearch}
                                     trackNum={index + 1}
                                     track={track}
                                     isSearch={isSearch}
@@ -126,7 +126,6 @@ export function TrackList({
                                 />
                             )
 
-                            // 2. נחליט אם לעטוף אותו ב-SortableTrack או לא
                             return isDraggable && !isSearch ? (
                                 <SortableTrack
                                     key={track.id}

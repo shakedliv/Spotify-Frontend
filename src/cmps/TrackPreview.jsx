@@ -20,7 +20,8 @@ export function TrackPreview({
     onToggleOptions,
     isOperationsOpen,
     isDraggable,
-    isSearch,
+   isSearch,
+    isTrackSearch = false,
 }) {
     const organizedTrack = track.track
     const dispatch = useDispatch()
