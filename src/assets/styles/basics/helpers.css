@@ -48,7 +48,7 @@
 } */
 
 
-
+.liked-station-details,
 .search-page,
 .station-index,
 .station-details,
@@ -57,7 +57,7 @@
   scrollbar-color: transparent transparent;  
 }
 
-
+.liked-station-details::-webkit-scrollbar,
 .search-page::-webkit-scrollbar,
 .station-index::-webkit-scrollbar,
 .station-details::-webkit-scrollbar,
@@ -65,13 +65,14 @@
   width: 6px;
 }
 
+.liked-station-details::-webkit-scrollbar-track,
 .search-page::-webkit-scrollbar-track,
 .station-index::-webkit-scrollbar-track,
 .station-details::-webkit-scrollbar-track,
 .library-station-list::-webkit-scrollbar-track {
   background: transparent;
 }
-
+.liked-station-details::-webkit-scrollbar-thumb,
 .search-page::-webkit-scrollbar-thumb,
 .station-index::-webkit-scrollbar-thumb,
 .station-details::-webkit-scrollbar-thumb,
@@ -82,7 +83,7 @@
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-
+.liked-station-details::-webkit-scrollbar-thumb:hover,
 .search-page::-webkit-scrollbar-thumb:hover,
 .station-index::-webkit-scrollbar-thumb:hover,
 .station-details::-webkit-scrollbar-thumb:hover,
@@ -90,7 +91,7 @@
   background-color: rgba(255, 255, 255, 0.6);
   opacity: 1;
 }
-
+.liked-station-details:hover,
 .search-page:hover,
 .station-index:hover,
 .station-details:hover,

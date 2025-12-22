@@ -15,8 +15,7 @@
 
 
         align-items: end;
-        column-gap: 1em;
-        padding: 40px 20px 20px 20px;
+        padding: 80px 20px 20px 20px;
         border-radius: 8px;
         transition: background-color 0.15s ease, transform 0.1s ease;
 
@@ -29,8 +28,8 @@
 
         h1 {
             grid-area: h;
-            font-size: 5em;
-            font-weight: 800;
+            font-size: 6.85em;
+            font-family: FigTreeBold;
             margin: 0;
 
             &:hover {
@@ -40,16 +39,22 @@
 
         .desc {
             grid-area: e;
+            font-size: 14px;
+            color: var(--text-secondary)
         }
 
         h5 {
             grid-area: c;
+
+            span {
+                color: var(--text-secondary);
+            }
         }
 
         img {
             grid-area: img;
             width: 230px;
-            border-radius: 8px;
+            border-radius: 4px;
             object-fit: cover;
         }
     }

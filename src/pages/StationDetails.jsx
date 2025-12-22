@@ -77,7 +77,7 @@ export function StationDetails() {
                 />
                 <h1 onClick={() => setIsEditOpen(true)}>{station.name}</h1>
                 <h4 className='desc'>{station.description || ''}</h4>
-                <h5>{station.owner.fullname}</h5>
+                <h5>{station.owner.fullname} • <span>{station?.tracks?.length} songs</span></h5>
 
                 <section className='station-details-btns'>
                     <div className='play-btns'>
@@ -102,10 +102,10 @@ export function StationDetails() {
                 isSearch={false}
             />
 
-            <StationTrackSearch 
-            onAddTrack={onAddTrack}
-            stationId={stationId}
-             />
+            <StationTrackSearch
+                onAddTrack={onAddTrack}
+                stationId={stationId}
+            />
 
             {isEditOpen && (
                 <StationEdit
