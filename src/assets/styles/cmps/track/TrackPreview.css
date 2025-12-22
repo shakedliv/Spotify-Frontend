@@ -13,16 +13,18 @@
     font-size: 17.5px;
 
     color: var(--text-secondary);
-    
+
     &:hover {
         background-color: var(--bg-highlight);
-
         .like-btn,
         .time-options .options {
             opacity: 1;
         }
         .track-num {
             opacity: 0;
+        }
+        .play-icon {
+            opacity: 1;
         }
     }
     .basic-info-container {
@@ -56,7 +58,7 @@
         grid-area: name;
         align-self: start;
         font-size: 20px;
-        font-family:'FigTreeBold';
+        font-family: 'FigTreeBold';
 
         color: white;
     }
@@ -151,10 +153,6 @@
             opacity: 0;
         }
     }
-
-    .track-preview:hover {
-        background-color: var(--bg-highlight);
-    }
 }
 
 .track-preview:hover .like-btn,
@@ -171,11 +169,11 @@
 }
 
 .index-col {
-    position: relative; /* קריטי! זה הופך את זה לנקודת הייחוס */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; 
+    width: 40px;
     height: 100%;
 }
 
@@ -184,17 +182,8 @@
     top: 50%;
     left: 65%;
     transform: translate(-50%, -50%);
-    
+
     opacity: 0;
     color: white;
     transition: opacity 0.2s ease;
-}
-
-.track-preview:hover {
-    .track-num {
-        opacity: 0;
-    }
-    .play-icon {
-        opacity: 1;
-    }
 }
