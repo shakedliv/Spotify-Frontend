@@ -1,5 +1,3 @@
-
-
 // import { NavLink, useNavigate } from "react-router-dom";
 // import { useSelector } from "react-redux";
 // import { useState, useRef, useEffect } from "react";
@@ -90,15 +88,17 @@
 //   );
 // }
 
-
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { SpotifyLogo } from "../assets/svg/SpotifyLogo.jsx";
 import { HomeIcon } from "../assets/svg/HomeIcon.jsx";
+import { HomeIconActive } from "../assets/svg/HomeIconActive.jsx";
 import { SearchBar } from "./SearchBar";
 
 export function AppHeader() {
   const navigate = useNavigate();
-  const userInitial = "M";
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
 
   return (
     <header className="app-header full">
@@ -114,8 +114,9 @@ export function AppHeader() {
               aria-label="Home"
               onClick={() => navigate("/")}
             >
-              <HomeIcon />
+              {isHome ? <HomeIconActive /> : <HomeIcon />}
             </button>
+
             <SearchBar />
           </div>
         </div>
@@ -123,7 +124,7 @@ export function AppHeader() {
         <div className="nav-right">
           <div className="user-popover">
             <button className="user-avatar-outer">
-              <div className="user-avatar-inner">{userInitial}</div>
+              <div className="user-avatar-inner">M</div>
             </button>
           </div>
         </div>
@@ -131,8 +132,6 @@ export function AppHeader() {
     </header>
   );
 }
-
-
 
 // import { NavLink, useNavigate } from "react-router-dom";
 // import { useSelector } from "react-redux";

@@ -54,7 +54,7 @@
   margin-bottom: 1px;
   margin-left: 1px;
   margin-right: 112px;
-  width: 32px;
+  width: 50px;
   height: 32px;
   cursor: pointer;
   flex: 0 0 auto;
@@ -89,11 +89,16 @@
   cursor: pointer;
 }
 
-.home-btn svg {
+.home-btn.active svg {
   font-size: 200%;
   margin-top: 1px;
   color: var(--text-primary);
 }
+
+.home-btn.active :hover {
+  background-color: red;    
+}
+
 
 
 .search-bar {
