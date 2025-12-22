@@ -153,6 +153,22 @@
             opacity: 0;
         }
     }
+
+    .track-preview:hover {
+        background-color: var(--bg-highlight);
+    }
+
+    .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    
+    opacity: 0;
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
 }
 
 .track-preview:hover .like-btn,
@@ -177,13 +193,3 @@
     height: 100%;
 }
 
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-
-    opacity: 0;
-    color: white;
-    transition: opacity 0.2s ease;
-}

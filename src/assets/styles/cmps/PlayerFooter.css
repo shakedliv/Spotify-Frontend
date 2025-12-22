@@ -4,8 +4,7 @@
   left: 0;
   width: 100%;
   height: 90px;
-  background-color: var(--bg-elevated-base);
-  border-top: 1px solid #2a2a2a;
+  background-color: black ;
 
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -77,8 +76,8 @@
 }
 
 .play-btn {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 
   background-color: var(--spotify-white);
@@ -114,7 +113,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 100%;
+  width:72%;
 }
 
 .player-progress span {

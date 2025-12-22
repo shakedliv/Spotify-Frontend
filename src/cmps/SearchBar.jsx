@@ -1,6 +1,6 @@
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
-import SearchIcon from "@mui/icons-material/Search";
-import TuneIcon from "@mui/icons-material/Tune";
+import { SearchIcon } from "../assets/svg/SearchIcon.jsx";
+import { BrowseIcon } from "../assets/svg/BrowseIcon.jsx";
 
 export function SearchBar() {
   const location = useLocation();
@@ -32,7 +32,7 @@ export function SearchBar() {
       <label htmlFor="main-search">
         <div className="search-icon" aria-label="Search">
           <SearchIcon />
-        </div>{" "}
+        </div>
       </label>
 
       <input
@@ -45,7 +45,9 @@ export function SearchBar() {
         onChange={handleChange}
       />
 
-      <TuneIcon className="search-extra-icon" />
+      <span className="search-divider" />
+
+      <BrowseIcon className="search-extra-icon" />
     </section>
   );
 }
