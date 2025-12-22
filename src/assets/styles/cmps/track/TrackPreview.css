@@ -159,16 +159,15 @@
     }
 
     .play-icon {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    
-    opacity: 0;
-    color: white;
-    transition: opacity 0.2s ease;
-}
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
 
+        opacity: 0;
+        color: white;
+        transition: opacity 0.2s ease;
+    }
 }
 
 .track-preview:hover .like-btn,
@@ -192,4 +191,3 @@
     width: 40px;
     height: 100%;
 }
-
