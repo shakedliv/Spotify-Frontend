@@ -95,9 +95,6 @@
   color: var(--text-primary);
 }
 
-.home-btn.active :hover {
-  background-color: red;    
-}
 
 
 

@@ -49,7 +49,6 @@
   padding-bottom: 6px;
   padding-right: 20px;
 
-
   line-height: 44px;
 }
 
@@ -88,4 +87,37 @@
   margin: 0 2px;
   margin-right: 2px;
   flex-shrink: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  height: 48px;
+  padding: 0 12px;
+
+  background-color: #121212;
+  border-radius: 999px;
+
+  border: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.search-extra-icon {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.search-bar.active {
+  border-color: var(--text-primary);
+}
+
+.search-extra-icon.active {
+  color: var(--text-primary);
 }
