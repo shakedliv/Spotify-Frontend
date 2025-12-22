@@ -43,7 +43,7 @@
   width: 390px;
 
   font-size: 20px;
-  font-weight: 500;
+  font-family: "FigTreeRegular", sans-serif;
   color: var(--text-primary);
   padding-left: 0px;
   padding-bottom: 6px;
