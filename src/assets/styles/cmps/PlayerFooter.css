@@ -76,8 +76,8 @@
 }
 
 .play-btn {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 
   background-color: var(--spotify-white);
@@ -113,7 +113,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 100%;
+  width:72%;
 }
 
 .player-progress span {

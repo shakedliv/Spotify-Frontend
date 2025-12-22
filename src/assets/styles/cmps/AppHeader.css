@@ -2,153 +2,196 @@
   position: sticky;
   top: 0;
   z-index: 200;
-  background-color: black;
-  padding: 8px 15.5px;
-  margin-bottom: 7px;
+
+  background: #000;
+  padding: 4px 0 8px 2px;
+  margin-bottom: 0px;
+
+  width: 100%;
+  max-width: 100vw;
+
+  overflow-x: clip;
+
+  contain: layout paint;
 }
 
 .app-header nav {
-  display: flex;
-  align-items: center;
   width: 100%;
-  gap: 11px;
+  max-width: 100%;
+  height: 56px;
+
+  display: grid;
+  align-items: center;
+  column-gap: 12px;
+
+  --hdr-right-w: 180px;
+
+  grid-template-columns:
+    minmax(0, max-content)
+    minmax(0, 1fr)
+    minmax(0, var(--hdr-right-w));
 }
+
+.app-header .nav-left,
+.app-header .nav-center,
+.app-header .nav-right {
+  min-width: 0;
+}
+
+
 .app-header .nav-left {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 8px 11.1px;
+  padding: 8px 24px;
+
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .spotify-logo {
+  margin-bottom: 1px;
+  margin-left: 1px;
+  margin-right: 112px;
   width: 32px;
   height: 32px;
   cursor: pointer;
+  flex: 0 0 auto;
 }
 
-.app-header .nav-left a {
-  font-size: 14px;
-  color: var(--text-secondary);
-}
-.app-header .nav-left a.active {
-  color: var(--text-primary);
-}
+
 .app-header .nav-center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  gap: 0px;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  overflow: hidden;
 }
-.header-center-group {
+
+.app-header .nav-center-inner {
   display: flex;
   align-items: center;
-  gap: 1px;
+  gap: 8px;
+
+  width: max-content;
 }
+
 .home-btn {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   background-color: #202020;
+  padding-bottom: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 36px;
-  margin-top: -0.5px;
-  margin-right: 8px;
-  gap: 1;
-  cursor: pointer;  
+
+  cursor: pointer;
 }
+
 .home-btn svg {
   font-size: 200%;
   margin-top: 1px;
   color: var(--text-primary);
 }
+
+
 .search-bar {
   height: 44px;
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 30px;
+
   background-color: #2a2a2a;
   border-radius: 999px;
   padding: 1px 0px;
+
   transition: background-color 0.2s ease;
+
+  min-width: 0;
 }
+
 .search-bar:hover,
 .search-bar.active {
   background-color: #3a3a3a;
 }
+
 .search-indicator {
   font-size: 20px;
   color: var(--text-secondary);
   display: flex;
   align-items: center;
 }
+
 .search-bar input {
+  width: 100%;
+  max-width: 360px;
+  min-width: 0;
+  margin-right: 20px;
+
   background: transparent;
   border: none;
   outline: none;
+
   height: 100%;
   color: var(--text-primary);
   font-size: 15px;
   line-height: 1;
-  width: 360px;
 }
+
 .search-bar input::placeholder {
   color: var(--text-secondary);
 }
+
+
 .app-header .nav-right {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 1px;
+  margin-left: 20px;
+  padding-left: 50px;
+
+  justify-self: end;
+
+  overflow: hidden;
+  white-space: nowrap;
 }
+
+.user-popover {
+  position: relative;
+  flex: 0 0 auto;
+
+  overflow: visible;
+}
+
 .user-avatar-outer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--bg-highlight);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
 }
+
 .user-avatar-inner {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: var(--spotify-green);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-weight: 700;
   font-size: 14px;
   color: #000;
 }
-.app-header .nav-right a,
-.app-header .nav-right button {
-  font-size: 14px;
-  color: var(--text-secondary);
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: Arial; /*system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
-  font-weight: bold;
-  padding: 8px 14px;
-}
-.app-header .nav-right a:hover,
-.app-header .nav-right button:hover {
-  color: var(--text-primary);
-}
 
-.app-header .nav-right .login-pill {
-  background: #fff !important;
-  color: #000 !important;
-  font-weight: 800 !important;
-  font-size: 14px;
-}
-
-.user-popover {
-  position: relative;
-}
 
 .logout-popover {
   position: absolute;
@@ -158,8 +201,8 @@
   background-color: #2a2a2a;
   border: 1px solid #3a3a3a;
   border-radius: 8px;
-
   padding: 8px;
+
   min-width: 140px;
 
   display: flex;
@@ -167,6 +210,8 @@
   gap: 6px;
 
   z-index: 300;
+
+  will-change: transform;
 }
 
 .logout-popover button {
@@ -186,25 +231,27 @@
   color: var(--text-primary);
 }
 
-.login-pill {
+
+.app-header .nav-right .login-pill {
   height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  padding: 0 20px;
+  padding: 0 50px;
   border-radius: 999px;
+  margin-left: 20px;
 
-  background: #fff;
-  color: #000;
+  background: #fff !important;
+  color: #000 !important;
 
-  font-weight: 700;
-  font-size: 10px;
+  font-weight: 800 !important;
+  font-size: 14px;
 
   cursor: pointer;
 }
 
-.login-pill:hover {
+.app-header .nav-right .login-pill:hover {
   transform: scale(1.04);
   background: #f2f2f2;
 }

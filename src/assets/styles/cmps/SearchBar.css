@@ -47,7 +47,7 @@
   color: var(--text-primary);
   padding-left: 0px;
   padding-bottom: 6px;
-  padding-right: 10px;
+  padding-right: 20px;
 
 
   line-height: 44px;
@@ -58,8 +58,9 @@
   color: var(--text-secondary);
   font-size: 16px;
   padding-left: 1px;
-  padding-right: 8px;
+  padding-right: 10px;
   word-spacing: 1%;
+  margin-right: 10px;
 }
 
 .search-bar input:read-only {
@@ -81,9 +82,10 @@
 }
 
 .search-divider {
-  width: 1px;
-  height: 22px;
+  width: 0.5px;
+  height: 27px;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 1px;
+  margin: 0 2px;
+  margin-right: 2px;
   flex-shrink: 0;
 }
