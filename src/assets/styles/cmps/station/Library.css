@@ -41,6 +41,10 @@
             width: 2em;
             fill: var(--text-secondary);
             display: none;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .library-toggle {
@@ -160,7 +164,7 @@
         }
 
         .search {
-            
+
             background-color: transparent;
             border-radius: 50%;
             color: var(--text-subdued);

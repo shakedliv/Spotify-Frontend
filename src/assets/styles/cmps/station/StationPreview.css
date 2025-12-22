@@ -1,8 +1,8 @@
 .station-list {
     position: relative;
-    
-   
-    
+
+
+
 
     .station-preview {
         display: grid;
@@ -13,10 +13,12 @@
         margin-bottom: 3em;
 
         .station-img {
-            width: 153px; /* 170px on full size*/
+            width: 153px;
+            /* 170px on full size*/
             justify-self: center;
             position: relative;
             margin-bottom: 1em;
+
 
             img {
                 width: 100%;
@@ -26,6 +28,25 @@
                 display: block;
 
             }
+
+            .play-icon {
+                color: var(--spotify-green);
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-size: 3em;
+                opacity: 0;
+                transform: translateY(0);
+                transition: opacity 0.5s ease;
+                transition: transform 0.5s ease;
+                transform: scale 0.5s ease;
+
+                :hover {
+                    scale: 1.05;
+                    color: var(--spotify-green-light)
+                }
+            }
+
         }
 
         .station-desc {
@@ -39,23 +60,6 @@
 
 
 
-        .play-icon {
-            color: var(--spotify-green);
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            font-size: 3em;
-            opacity: 0;
-            transform: translateY(0);
-            transition: opacity 0.5s ease;
-            transition: transform 0.5s ease;
-            transform: scale 0.5s ease;
-
-            :hover {
-                scale: 1.05;
-                color: var(--spotify-green-light)
-            }
-        }
 
         &:hover .play-icon {
             opacity: 1;
