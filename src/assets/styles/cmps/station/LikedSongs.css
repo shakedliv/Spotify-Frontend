@@ -1,9 +1,9 @@
 .liked-station-details {
     color: var(--gray1);
-
     border-radius: 8px;
     background-color: #121212;
-
+    overflow-y: auto;
+    height: 100%;
 
     header {
         display: grid;
@@ -21,32 +21,32 @@
             "b b";
 
         align-items: end;
-        column-gap: 1em;
-        padding: 40px 20px 20px 20px;
+        padding: 80px 20px 20px 20px;
         border-radius: 8px;
         transition: background-color 0.15s ease, transform 0.1s ease;
 
         .station-img {
-
             grid-area: i;
         }
 
         h1 {
-            font-size: 5em;
-            font-weight: 800;
+            font-size: 6.85em;
+            font-family: FigTreeBold;
             grid-area: n;
-
         }
 
         h4 {
             grid-area: c;
 
+            span {
+                color: var(--text-secondary);
+            }
         }
 
         img {
             grid-area: img;
             width: 230px;
-            border-radius: 8px;
+            border-radius: 4px;
             object-fit: cover;
         }
 

@@ -13,7 +13,6 @@
 .station-row {
     position: relative;
 
-
     .station-row-arrow {
         display: flex;
         align-items: center;
@@ -22,7 +21,7 @@
         border-radius: 50%;
         background-color: var(--bg-highlight);
         position: absolute;
-        top: 40%;
+        top: 30%;
         z-index: 100;
         opacity: 0;
 

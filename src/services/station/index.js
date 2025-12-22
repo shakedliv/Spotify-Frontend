@@ -8,7 +8,7 @@ import { stationService as remote } from './station.service.remote'
 function getEmptyStation() {
     return {
         _id: '',
-        name: 'My Playlist',
+        name: '',
     }
 }
 

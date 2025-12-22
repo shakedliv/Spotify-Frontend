@@ -7,14 +7,24 @@
     padding: 1em 0 1em 24px;
     overflow-y: auto;
     height: 100%;
+    scrollbar-gutter: stable;
 
 
 
 
     .index-header {
-        font-size: 1.5em;
+        font-size: 24px;
         font-family: 'FigTreeBold', sans-serif;
         padding-left: 16px;
+        margin-bottom: 6px;
+    }
+
+    .username-station-header {
+        font-size: 12px;
+        font-weight: normal;
+        color: var(--text-subdued);
+        padding-left: 16px;
+        margin-bottom: 6px;
     }
 
     .filter-bar {

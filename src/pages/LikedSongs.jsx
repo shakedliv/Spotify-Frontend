@@ -13,15 +13,15 @@ import { updateStation } from '../store/actions/station.actions.js'
 
 export function LikedSongs() {
     const user = useSelector((state) => state.userModule.user)
-   const station = null
-   // change the user state
+    const station = null
+    // change the user state
     async function onReorder(newTracks) {
         store.dispatch({ type: SAVE_LAST_ORDER, station: station })
         const updatedStation = { ...station, tracks: newTracks }
         store.dispatch({ type: UPDATE_STATION, station: updatedStation })
         try {
-           await updateStation(updatedStation)
-           //update user
+            await updateStation(updatedStation)
+            //update user
         } catch (err) {
             console.error('Failed to update tracks order:', err)
         }
@@ -36,7 +36,7 @@ export function LikedSongs() {
                     <img src={likedSongsImg} alt='liked songs' />
                 </div>
                 <h1>Liked Songs</h1>
-                <h4 className='desc'>{likedTracks.length} songs</h4>
+                <h4 className='desc'> {user.fullname} <span>• {likedTracks.length} songs</span></h4>
 
                 <section className='station-details-btns'>
                     <div className='play-btns'>
@@ -54,9 +54,9 @@ export function LikedSongs() {
 
             <TrackList
                 tracks={likedTracks}
-             isSearch={false}
-             isDraggable={false}
-             onReorder={onReorder}
+                isSearch={false}
+                isDraggable={false}
+                onReorder={onReorder}
             />
         </section>
     )
