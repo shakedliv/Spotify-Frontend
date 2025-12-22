@@ -20,9 +20,7 @@ export function StationPreview({ station, onRemoveStation, type }) {
                         </div>
                     </div>
                     <h3 className="station-name">{station.name}</h3>
-                    <h5>{station.owner.fullname}</h5>
-
-
+                    <h5> Playlist • {station.owner.fullname}</h5>
                 </article >
             </Link>
         )

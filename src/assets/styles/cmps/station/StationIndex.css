@@ -1,15 +1,49 @@
 .station-index {
     color: white;
-    background-color: var(--bg-base);
+    background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 5%, var(--bg-base) 20%);
     border-radius: 8px;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1em 0 1em 24px;
+    height: 100%;
+
 
 
 
     .index-header {
-        margin-inline-start: 3rem;
         font-size: 1.5em;
-        font-weight: bold;
+        font-family: 'FigTreeBold', sans-serif;
+        padding-left: 16px;
+    }
+
+    .filter-bar {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 1.5em;
+        padding-left: 16px;
+
+
+        .index-filter-btn {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            border-radius: 50vh;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            font-size: 1em;
+
+
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.15)
+            }
+
+            &.active {
+                background-color: #fff;
+                color: #000;
+            }
+
+        }
     }
 }

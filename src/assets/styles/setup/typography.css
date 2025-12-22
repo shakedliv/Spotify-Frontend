@@ -1,8 +1,29 @@
+
+
+
 @font-face {
-    /* font-family: caveat; */
-    /* src: url(../../fonts/Caveat/Caveat-Regular.ttf); */
+    font-family: 'FigTreeLight';
+    src: url('../../fonts/Figtree-Light.ttf');
+    font-style: normal;
 }
 @font-face {
-    /* font-family: montserrat; */
-    /* src: url(../../fonts/Montserrat/Montserrat-Regular.ttf); */
+    font-family: 'FigTreeRegular';
+    src: url('../../fonts/Figtree-Regular.ttf') ;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'FigTreeMedium';
+    src: url('../../fonts/Figtree-Medium.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FigTreeSemiBold';
+    src: url('../../fonts/Figtree-SemiBold.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FigTreeBold';
+    src: url('../../fonts/Figtree-Bold.ttf');
+    font-style: normal;
+}
+

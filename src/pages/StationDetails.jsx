@@ -39,7 +39,12 @@ export function StationDetails() {
         await updateStation(updatedStation)
     }
 
-   async function onAddTrack(track) {
+    async function onAddTrack(track) {
+        const isTrackExists = station.tracks.some((t) => t.id === track.id)
+        if (isTrackExists) {
+            console.log('Track already exists in this station')
+            return
+        }
         track.dateAdded = formatDate(Date.now())
         const updatedTracks = [...station.tracks, track]
         const updatedStation = { ...station, tracks: updatedTracks }

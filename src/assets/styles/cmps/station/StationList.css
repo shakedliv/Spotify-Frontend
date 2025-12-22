@@ -1,10 +1,50 @@
 .station-list {
     display: flex;
-    
-    overflow: hidden;
-   
-     .station-preview:hover{
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    .station-preview:hover {
         background-color: var(--bg-highlight);
-        
     }
+}
+
+.station-row {
+    position: relative;
+
+
+    .station-row-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2em;
+        border-radius: 50%;
+        background-color: var(--bg-highlight);
+        position: absolute;
+        top: 40%;
+        z-index: 100;
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &:hover .station-row-arrow {
+        opacity: 1;
+    }
+
+    .station-row-arrow.left {
+        left: 8px;
+    }
+
+    .station-row-arrow.right {
+        right: 8px;
+    }
+}
+
+
+.station-list::-webkit-scrollbar {
+    display: none;
 }

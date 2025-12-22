@@ -1,7 +1,11 @@
 .library-station-list {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    /* gap: 4px; */
+    height: 100%;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     .station-link {
         display: block;
@@ -17,33 +21,44 @@
             "i c";
         align-items: center;
         column-gap: 1em;
-        padding: 6px 8px;
+        padding: 8px;
         border-radius: 4px;
         transition: background-color 0.15s ease, transform 0.1s ease;
         font-weight: normal;
 
         .station-img {
-            width: 60px;
+            width: 48px;
             grid-area: i;
-            position: relative
+            position: relative;
+
+            img {
+                border-radius: 6px;
+            }
         }
 
         h3 {
             grid-area: n;
             margin: 0;
             font-weight: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            /* font-family: 'FigTreeBold', sans-serif; */
+
 
         }
 
         h4 {
             grid-area: c;
             margin: 0;
+
         }
 
 
         h5 {
             color: var(--text-secondary);
             font-weight: normal;
+            font-size: 1em;
         }
     }
 
@@ -59,13 +74,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
         opacity: 0;
         transition: opacity 0.2s ease;
 
         .library-play-icon {
             position: absolute;
-            font-size: 2.5rem;
+            font-size: 2.2em;
         }
     }
 
