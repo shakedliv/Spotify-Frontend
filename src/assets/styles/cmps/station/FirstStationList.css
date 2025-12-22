@@ -2,7 +2,7 @@
     display: grid;
     gap: 0.5em;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    margin-bottom: 3.6rem;
+    margin-bottom: 32px;
     padding: 0 16px;
 
     .station-preview {
