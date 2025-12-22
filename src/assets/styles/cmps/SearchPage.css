@@ -1,3 +1,7 @@
-.search-page{
+.search-page {
    background-color: var(--bg-elevated-base);
+   border-radius: 12px;
+   overflow-y: auto;
+   height: 100%;
+
 }

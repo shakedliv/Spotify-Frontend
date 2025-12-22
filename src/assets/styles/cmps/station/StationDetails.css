@@ -1,7 +1,8 @@
 .station-details {
     color: var(--gray1);
-
     background-color: #121212;
+    overflow-y: auto;
+    height: 100%;
 
 
     header {
