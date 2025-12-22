@@ -8,18 +8,20 @@ import { LibraryStationList } from "./LibraryStationList"
 import AddIcon from '@mui/icons-material/Add'
 import { useState } from "react"
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
-import SearchIcon from '@mui/icons-material/Search'
-import { LibraryOpenIcon, LibraryCloseIcon, ExpandIcon } from '../services/svg.service.js'
+
+import { LibraryOpenIcon, LibraryCloseIcon, ExpandIcon, SearchIcon } from '../services/svg.service.js'
 
 
 export function Library() {
     const stations = useSelector(storeState => storeState.stationModule.stations)
     const [activeTab, setActiveTab] = useState("playlists")
     const navigate = useNavigate()
-
+   
 
     async function onAddStation() {
         const station = stationService.getEmptyStation()
+        station.name = `My Playlist #${stations.length}`
+
         try {
             const savedStation = await addStation(station)
             showSuccessMsg(`Station added (id: ${savedStation._id})`)
@@ -28,8 +30,6 @@ export function Library() {
             showErrorMsg('Cannot add station')
         }
     }
-
-
 
     return (
         <div className="library">
@@ -77,7 +77,6 @@ export function Library() {
                     stations={stations}
 
                 />
-
             </section>
         </div>
     )

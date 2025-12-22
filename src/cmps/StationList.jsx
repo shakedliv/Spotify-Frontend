@@ -2,11 +2,12 @@ import { useRef } from "react"
 import { StationPreview } from "./StationPreview"
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import { userService } from "../services/user"
 
 
 export function StationList({ onRemoveStation, stations, title }) {
     const scrollerRef = useRef(null)
-
+    const user = userService.getLoggedinUser()
     function scrollByOffset(offset) {
         if (!scrollerRef.current) return
         scrollerRef.current.scrollBy({
@@ -19,7 +20,19 @@ export function StationList({ onRemoveStation, stations, title }) {
 
     return (
         <>
-            {!!stations.length && <div className='index-header'>{title}</div>}
+            {!!stations.length &&
+
+                (title === 'Made For') ?
+                <div>
+                    <h3 className="username-station-header">{title}</h3>
+                    <h1 className='index-header' >{user.fullname}</h1>
+                </div>
+                :
+                <div className='index-header'>{title}</div>
+
+
+
+            }
             <section className="station-row">
 
                 <button
