@@ -4,7 +4,13 @@ import { store } from '../store'
 
 import { showErrorMsg } from '../../services/event-bus.service'
 import { LOADING_DONE, LOADING_START } from '../reducers/system.reducer'
-import { REMOVE_USER, SET_USER, SET_USERS, TOGGLE_LIKED_SONG } from '../reducers/user.reducer'
+import {
+    REMOVE_USER,
+    SET_USER,
+    SET_USERS,
+    TOGGLE_LIKED_SONG,
+} from '../reducers/user.reducer'
+import { formatDate } from '../../services/util.service'
 
 export async function loadUsers() {
     try {
@@ -32,7 +38,7 @@ export async function login(credentials) {
         const user = await userService.login(credentials)
         store.dispatch({
             type: SET_USER,
-            user
+            user,
         })
         socketService.login(user._id)
         return user
@@ -47,7 +53,7 @@ export async function signup(credentials) {
         const user = await userService.signup(credentials)
         store.dispatch({
             type: SET_USER,
-            user
+            user,
         })
         socketService.login(user._id)
         return user
@@ -62,7 +68,7 @@ export async function logout() {
         await userService.logout()
         store.dispatch({
             type: SET_USER,
-            user: null
+            user: null,
         })
         socketService.logout()
     } catch (err) {
@@ -72,15 +78,13 @@ export async function logout() {
 }
 
 export async function toggleLikedSong(track) {
+    track.dateAdded = Date.now()
     store.dispatch({ type: TOGGLE_LIKED_SONG, track })
-
     const state = store.getState()
     const user = state.userModule.user
     const savedUser = await userService.update(user)
     store.dispatch({ type: SET_USER, user: savedUser })
 }
-
-
 
 // export async function loadUser(userId) {
 //     try {
