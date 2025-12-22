@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 100vw;
 
-  padding: 6px 6px 4px 9px;
+  padding: 3px 7px 0 0px;
   margin-bottom: 0;
 
   overflow-x: clip;
@@ -42,8 +42,9 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 8px 24px;
-
+  padding-top: 2px;
+  padding-left: 17px;
+  padding-bottom: 0px;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -53,7 +54,7 @@
   height: 32px;
   cursor: pointer;
   flex: 0 0 auto;
-  margin: 0 112px 1px 1px;
+  margin: 0 112px 0px 1px;
 }
 
 .app-header .nav-center {
@@ -71,8 +72,8 @@
 }
 
 .home-btn {
-  width: 48px;
-  height: 48px;
+  width: 47px;
+  height: 47px;
   border-radius: 50%;
   background-color: #202020;
 
@@ -81,8 +82,11 @@
   justify-content: center;
 
   cursor: pointer;
-
-  /* padding-bottom: 1px; */
+  margin-top: 0.2%;
+  margin-left: 8px;
+  padding-top: 1px;
+  /* padding-bottom: 0px; */
+  /* padding-right: 1px; */
 }
 
 /* .home-btn.active svg {
@@ -162,14 +166,15 @@
 }
 
 .user-avatar-outer {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background-color: var(--bg-highlight);
 
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2px;
 
   cursor: pointer;
 }
@@ -178,7 +183,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--spotify-green);
+  background-color: rgba(53, 255, 144, 0.888);
 
   display: flex;
   align-items: center;
