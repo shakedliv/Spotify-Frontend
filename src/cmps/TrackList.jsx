@@ -50,12 +50,6 @@ export function TrackList({
         const tracksToSort = [...currTracks]
         const { sortField, sortDirection } = sortBy
 
-        //   if (sortField === 'name' || sortField === 'album') {
-        //       tracksToSort.sort(
-        //           (track1, track2) =>
-        //               track1[sortField].localeCompare(track2[sortField]) *
-        //               +sortDirection
-        //       )
         if (sortField === 'name') {
             tracksToSort.sort(
                 (track1, track2) =>
@@ -75,26 +69,27 @@ export function TrackList({
                     (track1.track.duration_ms - track2.track.duration_ms) *
                     +sortDirection
             )
+        } else if (sortField === 'date-added') {
+           tracksToSort.sort(
+                (track1, track2) =>
+                    (track1.dateAdded - track2.dateAdded) * +sortDirection
+            )
         }
-        // else if (sortField === 'date-added') {
-        //       tracksToSort.sort(
-        //           (track1, track2) =>
-        //           (track1.dateAdded - track2.dateAdded) * +sortDirection
-        //       )
-        //   }
         setCurrTracks(tracksToSort)
     }
-   function handleDragEnd(event) {
-    const { active, over } = event
-    if (active && over && active.id !== over.id) {
-        const oldIndex = currTracks.findIndex((item) => item.id === active.id)
-        const newIndex = currTracks.findIndex((item) => item.id === over.id)
-        const newOrder = arrayMove(currTracks, oldIndex, newIndex)
-        setCurrTracks(newOrder) 
-        onReorder(newOrder)
+    function handleDragEnd(event) {
+        const { active, over } = event
+        if (active && over && active.id !== over.id) {
+            const oldIndex = currTracks.findIndex(
+                (item) => item.id === active.id
+            )
+            const newIndex = currTracks.findIndex((item) => item.id === over.id)
+            const newOrder = arrayMove(currTracks, oldIndex, newIndex)
+            setCurrTracks(newOrder)
+            onReorder(newOrder)
+        }
+        setActiveId(null)
     }
-    setActiveId(null)
-}
 
     return (
         <section className={activeId ? 'track-list is-dragging' : 'track-list'}>

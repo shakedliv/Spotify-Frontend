@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { formatDuration } from '../services/util.service.js'
+import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleLikedSong } from '../store/actions/user.actions.js'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
@@ -92,7 +92,7 @@ export function TrackPreview({
                     <span className='track-album'>
                         {organizedTrack.album?.name}{' '}
                     </span>
-                    <span className='track-date'>{track.dateAdded}</span>
+                    <span className='track-date'>{formatDate(track.dateAdded)}</span>
                 </>
             )}
             <section className={'track-actions'}>

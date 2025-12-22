@@ -45,7 +45,7 @@ export function StationDetails() {
             console.log('Track already exists in this station')
             return
         }
-        track.dateAdded = formatDate(Date.now())
+        track.dateAdded = Date.now()
         const updatedTracks = [...station.tracks, track]
         const updatedStation = { ...station, tracks: updatedTracks }
         store.dispatch({ type: UPDATE_STATION, station: updatedStation })
