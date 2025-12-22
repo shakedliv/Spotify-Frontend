@@ -19,7 +19,7 @@
     }
     .number {
         place-self: center;
-        margin-left: 10px;
+        margin-left: 16px;
           font-family:'FigTreeMedium';
           font-size: 20px;
           color: var(--text-secondary);

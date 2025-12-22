@@ -4,15 +4,18 @@
     overflow-y: auto;
     height: 100%;
 
-
     header {
         display: grid;
         grid-template-columns: auto 1fr;
         column-gap: 24px;
         row-gap: 8px;
         margin-bottom: 1em;
-        background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, #181818 100%);
-
+        background: linear-gradient(
+            180deg,
+            #5b44ff 0%,
+            #4a2c99 40%,
+            #181818 100%
+        );
 
         align-items: end;
         column-gap: 1em;
@@ -21,11 +24,11 @@
         transition: background-color 0.15s ease, transform 0.1s ease;
 
         grid-template-areas:
-            "img ."
-            "img h"
-            "img e"
-            "img c"
-            "b b";
+            'img .'
+            'img h'
+            'img e'
+            'img c'
+            'b b';
 
         h1 {
             grid-area: h;
@@ -74,7 +77,6 @@
             gap: 4px;
             color: var(--text-subdued);
 
-
             &:hover {
                 cursor: pointer;
                 color: var(--text-primary);
@@ -100,17 +102,14 @@
 
             :hover {
                 scale: 1.05;
-                color: var(--spotify-green-light)
+                color: var(--spotify-green-light);
             }
         }
 
         &:hover .play-icon {
             cursor: pointer;
         }
-
-
     }
-
 
     .station-track-search {
         display: grid;
@@ -119,7 +118,9 @@
         border-top: 1px solid var(--bg-highlight);
         row-gap: 20px;
 
-
+        h4 {
+            font-size: 30px;
+        }
         .station-search-bar {
             display: flex;
             align-items: center;
@@ -141,5 +142,4 @@
             }
         }
     }
-
 }
