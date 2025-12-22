@@ -38,56 +38,5 @@
 
 
 
-/*SCROLL BARS*/
-/* .search-page,
-.station-index,
-.station-details,
-.library-station-list {
-  overflow-y: auto;
-  overflow-x: hidden;
-} */
 
-.liked-station-details,
-.search-page,
-.station-index,
-.station-details,
-.library-station-list {
-  overflow-y: scroll;  /* Always reserve space */
-}
 
-.liked-station-details::-webkit-scrollbar,
-.search-page::-webkit-scrollbar,
-.station-index::-webkit-scrollbar,
-.station-details::-webkit-scrollbar,
-.library-station-list::-webkit-scrollbar {
-  width: 6px;
-}
-
-.liked-station-details::-webkit-scrollbar-track,
-.search-page::-webkit-scrollbar-track,
-.station-index::-webkit-scrollbar-track,
-.station-details::-webkit-scrollbar-track,
-.library-station-list::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.liked-station-details::-webkit-scrollbar-thumb,
-.search-page::-webkit-scrollbar-thumb,
-.station-index::-webkit-scrollbar-thumb,
-.station-details::-webkit-scrollbar-thumb,
-.library-station-list::-webkit-scrollbar-thumb {
-  border-radius: 50vh;
-  border: 2px solid transparent;
-  background-color: rgba(255, 255, 255, 0.4);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-/* ONLY this hover rule */
-.liked-station-details:hover::-webkit-scrollbar-thumb,
-.search-page:hover::-webkit-scrollbar-thumb,
-.station-index:hover::-webkit-scrollbar-thumb,
-.station-details:hover::-webkit-scrollbar-thumb,
-.library-station-list:hover::-webkit-scrollbar-thumb {
-  opacity: 1;
-}
