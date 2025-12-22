@@ -1,6 +1,23 @@
-.explorer-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 24px;
-  padding: 24px 0;
+.explorer-list-container {
+  padding: 24px 16px;
+  margin-top: 40px;
+  
+  
+
+  .explorer-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(254px, 1fr));
+    gap: 24px;
+
+  }
+
+
+  .explorer-h1 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+
+
+
+
 }

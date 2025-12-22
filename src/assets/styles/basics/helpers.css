@@ -39,38 +39,44 @@
 
 
 /*SCROLL BARS*/
-
+.search-page,
 .station-index,
+.station-details,
 .library-station-list {
   overflow-y: auto;
   overflow-x: hidden;  
 }
-
+.search-page::-webkit-scrollbar,
 .station-index::-webkit-scrollbar,
+.station-details::-webkit-scrollbar,
 .library-station-list::-webkit-scrollbar {
   width: 6px;        
 }
-
+.search-page::-webkit-scrollbar-track,
 .station-index::-webkit-scrollbar-track,
+.station-details::-webkit-scrollbar-track,
 .library-station-list::-webkit-scrollbar-track {
   background: transparent;
 }
 
-
+.search-page::-webkit-scrollbar-thumb,
 .station-index::-webkit-scrollbar-thumb,
+.station-details::-webkit-scrollbar-thumb,
 .library-station-list::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.35);
   border-radius: 999px;    
   border: 2px solid transparent; 
 }
-
+.search-page::-webkit-scrollbar-thumb:hover,
 .station-index::-webkit-scrollbar-thumb:hover,
+.station-details::-webkit-scrollbar-thumb:hover,
 .library-station-list::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-
+.search-page,
 .station-index,
+.station-details,
 .library-station-list {
   scrollbar-width: thin;
   scrollbar-color: rgba(255,255,255,0.4) transparent;
