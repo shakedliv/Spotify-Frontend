@@ -25,7 +25,7 @@ export function StationList({ onRemoveStation, stations, title }) {
                 (title === 'Made For') ?
                 <div>
                     <h3 className="username-station-header">{title}</h3>
-                    <h1 className='index-header' >{user.fullname}</h1>
+                    <h1 className='index-header' >{user?.fullname}</h1>
                 </div>
                 :
                 <div className='index-header'>{title}</div>

@@ -6,6 +6,7 @@
     overflow-y: scroll;
 }
 
+
 .liked-station-details::-webkit-scrollbar,
 .search-page::-webkit-scrollbar,
 .station-index::-webkit-scrollbar,
@@ -41,3 +42,4 @@
 .library-station-list:hover::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.4);
 }
+

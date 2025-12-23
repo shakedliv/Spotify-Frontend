@@ -11,17 +11,16 @@ import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
 import { ShuffleIcon } from '../services/svg.service.js'
 import { FastAverageColor } from 'fast-average-color'
 import { StationTrackSearch } from '../cmps/StationTrackSearch'
-import {
-    SAVE_LAST_ORDER,
-    UPDATE_STATION,
-} from '../store/reducers/station.reducer.js'
+import { SAVE_LAST_ORDER, UPDATE_STATION } from '../store/reducers/station.reducer.js'
+
+
 import { formatDate } from '../services/util.service.js'
 
 export function StationDetails() {
     const { stationId } = useParams()
 
     const [bgGradient, setBgGradient] = useState(
-        'linear-gradient(180deg, #333 0%, #000 70%)'
+        'linear-gradient(180deg, #666666ff 0%, #181818 40%)'
     )
     const station = useSelector(
         (storeState) => storeState.stationModule.station
@@ -37,7 +36,7 @@ export function StationDetails() {
         const img = station?.tracks[0]?.track.album.images[0].url
 
         if (!img) {
-            setBgGradient('linear-gradient(180deg, #333 0%, #000 60%)')
+            setBgGradient('linear-gradient(180deg, #666666ff 0%, #181818 40%)')
             return
         }
         const fac = new FastAverageColor()
@@ -46,14 +45,14 @@ export function StationDetails() {
         async function calcColor() {
             try {
                 const color = await fac.getColorAsync(img)
-              
+
                 const [r, g, b] = color.value
                 const main = `rgb(${r}, ${g}, ${b})`
                 const dark = `rgb(${Math.max(r - 40, 0)}, 
                 ${Math.max(g - 40, 0)}, ${Math.max(b - 40, 0)})`
 
                 setBgGradient(
-                    `linear-gradient(180deg, ${main} 0%, ${dark} 15%, #000 45%)`
+                    `linear-gradient(180deg, ${main} 0%, ${dark} 15%, #181818 45%)`
                 )
             } catch (err) {
                 console.error('error getting color:', err)
@@ -103,7 +102,7 @@ export function StationDetails() {
 
     return (
         <section className='station-details' style={{ backgroundImage: bgGradient }}>
-            <header>
+            <header className='station-details-header' >
                 <img
                     src={
                         station.tracks[0]?.track.album.images[0].url ||
