@@ -22,22 +22,22 @@ export function StationTrackSearch({
       return;
     }
 
-    const localResults = spotifyService.searchTracks(query);
-    setTracks(localResults);
-
     let isActive = true;
-
-    spotifyService
-      .searchTracksRemote(query)
-      .then((remoteResults) => {
-        if (!isActive) return;
-        if (!remoteResults.length) return;
-        setTracks(remoteResults);
-      })
-      .catch(() => {});
+    const timeoutId = setTimeout(() => {
+      spotifyService
+        .searchTracksRemote(query)
+        .then((results) => {
+          if (!isActive) return;
+          setTracks(results);
+        })
+        .catch((err) => {
+          console.error("Spotify search failed:", err);
+        });
+    }, 400);
 
     return () => {
       isActive = false;
+      clearTimeout(timeoutId);
     };
   }, [query]);
 
