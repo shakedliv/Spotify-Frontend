@@ -27,7 +27,7 @@ button:hover,
     color: white;
 }
 
-
+ 
 body {
     margin: 0 auto;
     font-family: var(--spotify-font), 'FigTreeRegular', 'Montserrat', system-ui, -apple-system;
@@ -38,7 +38,7 @@ body {
     height: 100%;
     overflow: hidden
 }
-
+   
 h1,
 h2,
 h3,

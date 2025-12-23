@@ -1,0 +1,66 @@
+.station-track-search-container {
+    .station-track-search {
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+    }
+    .station-track-search-header {
+        display: grid;
+        padding: 20px;
+        border-top: 1px solid var(--bg-highlight);
+        row-gap: 20px;
+
+        h4 {
+            font-size: 30px;
+        }
+        .station-search-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.5em;
+            background-color: #2d2c2d;
+            margin-bottom: 12px;
+            max-width: 400px;
+
+            input {
+                flex: 1;
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 1.1em;
+                font-weight: bold;
+                color: var(--text-primary);
+                padding: 0;
+            }
+        }
+    }
+
+    .close-btn {
+        margin-right: 18px;
+        align-self: stretch;
+        &:hover {
+            color: var(--text-subdued);
+            transition: none;
+        }
+    }
+    .find-more {
+        color: var(--text-primary);
+        font-size: 20px;
+        font-family: 'FigTreeBold', sans-serif;
+        margin-block: 40px;
+        cursor: pointer;
+        text-align: end;
+        margin-inline-end: 60px;
+    }
+    .recommended-header {
+        font-size: 35px;
+        margin-bottom: 4px;
+    }
+    .recommended-subheader {
+        font-size: 20px;
+        color: var(--text-secondary);
+        margin-bottom: 16px;
+    }
+}

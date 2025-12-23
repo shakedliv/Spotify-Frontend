@@ -1,0 +1,75 @@
+.track-search-preview {
+    display: grid;
+    grid-template-columns: 48px 1fr 1fr 100px; /* תמונה | מידע | אלבום | כפתור */
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #b3b3b3;
+}
+
+.track-search-preview:hover {
+    background-color: hsla(0,0%,100%,.1);
+}
+
+.track-search-preview .img-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.track-search-preview img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.track-search-preview .name {
+    color: white;
+    font-weight: 500;
+}
+
+.track-search-preview .add-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #727272;
+    border-radius: 500px;
+    padding: 4px 16px;
+    cursor: pointer;
+}
+
+.track-search-preview .add-btn:hover {
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.track-search-preview .play-icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+    color: white;
+    font-size: 1.8rem; 
+    
+    opacity: 0; 
+    transition: opacity 0.2s ease;
+    pointer-events: none; 
+}
+
+.track-search-preview .img-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.track-search-preview:hover .play-icon-overlay,
+.track-search-preview:hover .img-container::after {
+    opacity: 1;
+}

@@ -61,7 +61,7 @@
 
   font-family: "FigTreeRegular", sans-serif;
   font-size: 16px;
-  color: var(--text-subdued);
+  color: var(--text-primary);
 
   padding-left: calc(0px + var(--sb-input-x));
   padding-top: var(--sb-input-y);

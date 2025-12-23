@@ -11,7 +11,6 @@ export function Search() {
     const [explorerItems, setExplorerItems] = useState([])
 
     const query = searchParams.get('q') || ''
-
     useEffect(() => {
         if (!query) {
             setTracks([])

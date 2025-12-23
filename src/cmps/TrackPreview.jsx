@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleLikedSong } from '../store/actions/user.actions.js'
@@ -20,17 +20,19 @@ export function TrackPreview({
     onToggleOptions,
     isOperationsOpen,
     isDraggable,
-    isSearch,
+   isSearch,
+    isTrackSearch = false,
 }) {
     const organizedTrack = track.track
+    const dispatch = useDispatch()
     const user = useSelector((state) => state.userModule.user)
     const isLiked = user?.likedSongs?.some((t) => t.id === track.id)
     const menuRef = useRef(null)
-    const dispatch = useDispatch()
+    const btnRef = useRef(null)
+    const [menuStyle, setMenuStyle] = useState({})
     const classContainer = isDraggable
         ? 'track-preview draggable'
         : 'track-preview'
-
     const wideClass = isSearch ? 'wide' : ''
 
     useCloseOnOutside(menuRef, () => {
@@ -63,6 +65,17 @@ export function TrackPreview({
 
     function ToggleOptions(ev) {
         ev.stopPropagation()
+        const rect = ev.currentTarget.getBoundingClientRect()
+        const screenHeight = window.innerHeight
+        const menuHeight = 450
+        let style = {}
+
+        if (rect.bottom + menuHeight > screenHeight) {
+            style = { bottom: '100%', top: 'auto' }
+        } else {
+            style = { top: '100%', bottom: 'auto' }
+        }
+        setMenuStyle(style)
         onToggleOptions(track.id)
     }
     return (
@@ -92,7 +105,9 @@ export function TrackPreview({
                     <span className='track-album'>
                         {organizedTrack.album?.name}{' '}
                     </span>
-                    <span className='track-date'>{formatDate(track.dateAdded)}</span>
+                    <span className='track-date'>
+                        {formatDate(track.dateAdded)}
+                    </span>
                 </>
             )}
             <section className={'track-actions'}>
@@ -108,7 +123,9 @@ export function TrackPreview({
                     </button>
                     {isOperationsOpen && (
                         <div
-                            className='options-menu'
+                      className='options-menu'
+                      ref={menuRef}
+                      style={menuStyle}
                             onClick={(ev) => ev.stopPropagation()}
                         >
                             <button onClick={() => handleAddTrack(track)}>

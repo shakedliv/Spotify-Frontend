@@ -3,7 +3,8 @@ import rawExplorerItems from '../services/spotify/data/genres.raw.json'
 
 export const spotifyService = {
     searchTracks,
-    getExplorerItems,
+   getExplorerItems,
+    adaptTrackForList,
 }
 
 function searchTracks(query) {
