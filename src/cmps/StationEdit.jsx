@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react'
 import { updateStation } from '../store/actions/station.actions'
 import { useDropzone } from 'react-dropzone'
-import { CloseIconX, EditPenIcon,LockIcon } from '../services/svg.service'
+import { CloseIconX, EditPenIcon, LockIcon } from '../services/svg.service'
 
 export function StationEdit({ station, onClose }) {
 
@@ -44,7 +44,7 @@ export function StationEdit({ station, onClose }) {
 
         <header className='modal-header'>
           <h2>Edit details</h2>
-          <button className="close-modal-btn" type="button" onClick={onClose}><CloseIconX /></button>
+          <button className="close-modal-btn" type="button" onClick={onClose} ><CloseIconX /></button>
         </header>
 
         <form onSubmit={onSave} className="station-edit-form">
@@ -74,6 +74,7 @@ export function StationEdit({ station, onClose }) {
                 <div className='image-backdrop'>
                   <button
                     className="remove-image"
+                    type="button"
                     onClick={() => {
                       setImagePreview('')
                       setStationToEdit(prev => ({ ...prev, imgUrl: '' }))

@@ -47,6 +47,7 @@ export async function addStation(station) {
 export async function updateStation(station) {
     try {
         const savedStation = await stationService.save(station)
+        store.dispatch({ type: UPDATE_STATION, station: savedStation })
         return savedStation
     } catch (err) {
         store.dispatch(getCmdUndoReorder())
