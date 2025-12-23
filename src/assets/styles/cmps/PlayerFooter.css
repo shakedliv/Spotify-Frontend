@@ -57,7 +57,7 @@
   gap: 18px;
 }
 
-.player-controls .btn-shuffle {
+/* .player-controls .btn-shuffle {
   transform: translateX(-11px);
 }
 
@@ -71,7 +71,7 @@
 
 .player-controls .btn-repeat {
   transform: translateX(12px);
-}
+} */
 
 .player-controls button:not(.play-btn) {
   background: none;

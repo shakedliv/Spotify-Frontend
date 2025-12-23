@@ -21,6 +21,7 @@ html {
     background-color: #000;
     gap: 0.7em;
     height: 100%;
+    padding: 0 0.7em;
 }
 
 .main-layout.library-closed {
