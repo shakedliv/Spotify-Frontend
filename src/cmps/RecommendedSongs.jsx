@@ -3,7 +3,6 @@ import { spotifyService } from '../services/spotify.service.js'
 import { TrackList } from './TrackList.jsx'
 import { useEffect, useState } from 'react'
 export function RecommendedSongs({ onAddTrack, stationTracks }) {
-   console.log('stationTracks:',stationTracks )
     const [tracks, setTracks] = useState([])
    useEffect(() => {
       const adaptedTracks = rawTracks.map(spotifyService.adaptTrackForList)

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { stationService } from "../services/station"
-import { addStation } from "../store/actions/station.actions"
+import { addStation, removeStation } from "../store/actions/station.actions"
 
 import { useSelector } from "react-redux"
 import { LibraryStationList } from "./LibraryStationList"
@@ -17,7 +17,16 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
     const [activeTab, setActiveTab] = useState('')
 
     const navigate = useNavigate()
+  async function onRemoveStation(stationId) {
+        try {
+            await removeStation(stationId)
+            showSuccessMsg('Station removed')
+        } catch (err) {
+            showErrorMsg('Cannot remove station')
+        }
+    }
 
+   
     async function onAddStation() {
         const station = stationService.getEmptyStation()
         station.name = `My Playlist #${stations.length}`
@@ -73,7 +82,8 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
             </div>
 
             <section className={`library-station-list ${className}`}>
-                <LibraryStationList
+             <LibraryStationList
+                     onRemoveStation={(stationId) => {onRemoveStation(stationId)}}
                     stations={stations}
                 />
             </section>
