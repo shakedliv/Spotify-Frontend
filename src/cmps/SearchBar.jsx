@@ -1,5 +1,5 @@
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { SearchIcon } from "../assets/svg/SearchIcon.jsx";
 import { BrowseIcon } from "../assets/svg/BrowseIcon.jsx";
 import { BrowseIconNotActive } from "../assets/svg/BrowseNotActive.jsx";
@@ -9,9 +9,13 @@ export function SearchBar() {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const isSearchPage = location.pathname === "/search";
   const searchTerm = searchParams.get("q") || "";
+  // const isSearchPage = location.pathname === "/search"; ----
+  const hasSearchQuery = !!searchTerm;
+  const isSearchPage = location.pathname === "/search" && !hasSearchQuery;
+
   const [isFocused, setIsFocused] = useState(false);
+  const didRedirectFromHomeRef = useRef(false);
 
   function handleInputFocus() {
     setIsFocused(true);
@@ -32,6 +36,18 @@ export function SearchBar() {
 
     if (!value) {
       setSearchParams({});
+
+      if (didRedirectFromHomeRef.current) {
+        navigate("/", { replace: true });
+        didRedirectFromHomeRef.current = false;
+      }
+
+      return;
+    }
+
+    if (!isSearchPage) {
+      didRedirectFromHomeRef.current = true;
+      navigate(`/search?q=${value}`, { replace: true });
     } else {
       setSearchParams({ q: value });
     }

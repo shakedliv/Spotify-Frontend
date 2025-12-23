@@ -15,7 +15,10 @@ export function AppHeader() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const isHome = location.pathname === "/";
+  // const isHome = location.pathname === "/"; ---
+  const searchParams = new URLSearchParams(location.search);
+  const hasSearchQuery = !!searchParams.get("q");
+  const isHome = location.pathname === "/" && !hasSearchQuery;
 
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const avatarRef = useRef(null);
