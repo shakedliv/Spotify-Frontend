@@ -3,7 +3,6 @@
     background-color: #121212;
     overflow-y: auto;
     height: 100%;
-    padding-inline: 24px;
     scrollbar-gutter: stable;
     header {
         display: grid;

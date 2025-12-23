@@ -114,7 +114,8 @@ export function StationDetails() {
                 onAddTrack={onAddTrack}
                 stationId={stationId}
                 isFindMore={isFindMore}
-                toggleFindMore={toggleFindMore}
+             toggleFindMore={toggleFindMore}
+             stationTracks={station.tracks}
             />
 
             {isEditOpen && (

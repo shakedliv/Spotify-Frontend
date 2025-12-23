@@ -6,7 +6,7 @@ import { CloseIcon } from '../assets/svg/CloseIcon'
 import { Recommend } from '@mui/icons-material'
 import { RecommendedSongs } from './RecommendedSongs'
 
-export function StationTrackSearch({ onAddTrack, stationId, isFindMore, toggleFindMore }) {
+export function StationTrackSearch({ onAddTrack, stationId, isFindMore, toggleFindMore,stationTracks }) {
     const [query, setQuery] = useState('')
     const [tracks, setTracks] = useState([])
 
@@ -28,7 +28,7 @@ export function StationTrackSearch({ onAddTrack, stationId, isFindMore, toggleFi
         setQuery(ev.target.value)
     }
    function handleCloseFindMore() {
-   setQuery(null)
+   setQuery('')
     toggleFindMore()
 }
     return (
@@ -63,7 +63,7 @@ export function StationTrackSearch({ onAddTrack, stationId, isFindMore, toggleFi
                     ) : (
                         <h5 className='recommended-subheader'>Based on your listening</h5>
                    )}
-                   <RecommendedSongs />
+                   <RecommendedSongs onAddTrack={onAddTrack} stationTracks={stationTracks} />
                 </section>
             )}
             {query && (
