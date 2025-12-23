@@ -21,5 +21,9 @@ html {
     background-color: #000;
     gap: 0.7em;
     height: 100%;
-
 }
+
+.main-layout.library-closed {
+  grid-template-columns: 72px 1fr;
+}
+

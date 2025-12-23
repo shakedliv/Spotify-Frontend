@@ -2,14 +2,14 @@ import { useState } from 'react'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 import { ClockIcon } from '../assets/svg/ClockIcon.jsx'
 
-export function TracksHeader({ onSort, isSearch }) {
+export function TracksHeader({ onSort, isSearch, isTrackSearch }) {
     const [sortDir, setSortDir] = useState(1)
     function handleSort(sortField) {
         const sortBy = { sortField: sortField, sortDirection: sortDir }
         setSortDir(sortDir * -1)
         onSort(sortBy)
     }
-
+if(isTrackSearch) return <></>
     if (isSearch) return <h1 className='songs-header'>Songs</h1>
     return (
         <section className='tracks-header-container'>

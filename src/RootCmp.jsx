@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Routes, Route } from "react-router"
 
 
@@ -20,26 +20,30 @@ import { loadStations } from './store/actions/station.actions.js'
 import { LikedSongs } from './pages/LikedSongs.jsx'
 
 export function RootCmp() {
+  const [isLibraryOpen, setIsLibraryOpen] = useState(true)
+
 
   useEffect(() => {
     loadStations()
   }, [])
+
+  const layoutClass = isLibraryOpen ? 'main-layout' : 'main-layout library-closed'
 
   return (
     <div className="main-container">
       <AppHeader />
       <UserMsg />
 
-      <main className='main-layout'>
-        <Library />
+      <main className={layoutClass}>
+        <Library isLibraryOpen={isLibraryOpen} onToggleLibrary={() => setIsLibraryOpen(!isLibraryOpen)} />
         <Routes>
           <Route path="" element={<StationIndex />} />
           <Route path="search" element={<Search />} />
           <Route path="station/:stationId" element={<StationDetails />} />
 
-          <Route path="/liked" element={<LikedSongs/>} />
-        
-  
+          <Route path="/liked" element={<LikedSongs />} />
+
+
           <Route path="login" element={<LoginSignup />}>
             <Route index element={<Login />} />
             <Route path="signup" element={<Signup />} />

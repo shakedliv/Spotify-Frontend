@@ -18,6 +18,7 @@ import { TracksHeader } from './TracksHeader.jsx'
 import stationSample from '../assets/data/station.sample.raw.json'
 import { UPDATE_STATION } from '../store/reducers/station.reducer.js'
 import { store } from '../store/store.js'
+import { TrackSearchPreview } from './TrackSearchPreview.jsx'
 const demoData = stationSample.tracks.items
 
 export function TrackList({
@@ -27,6 +28,7 @@ export function TrackList({
     onAddTrack,
     isSearch,
     isDraggable = true,
+    isTrackSearch = false,
 }) {
     const [openedTrackId, setOpenedTrackId] = useState(null)
     const [activeId, setActiveId] = useState(null)
@@ -70,7 +72,7 @@ export function TrackList({
                     +sortDirection
             )
         } else if (sortField === 'date-added') {
-           tracksToSort.sort(
+            tracksToSort.sort(
                 (track1, track2) =>
                     (track1.dateAdded - track2.dateAdded) * +sortDirection
             )
@@ -90,10 +92,9 @@ export function TrackList({
         }
         setActiveId(null)
     }
-
     return (
         <section className={activeId ? 'track-list is-dragging' : 'track-list'}>
-            <TracksHeader onSort={onSort} isSearch={isSearch} />
+          <TracksHeader onSort={onSort} isSearch={isSearch} isTrackSearch={isTrackSearch } />
             <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
@@ -106,8 +107,12 @@ export function TrackList({
                 >
                     <div className='track-list-container'>
                         {currTracks.map((track, index) => {
-                            // 1. נכין את התוכן שיוצג בכל מקרה
-                            const trackPreview = (
+                            const content = isTrackSearch ? (
+                                <TrackSearchPreview
+                                    track={track}
+                                    onAddTrack={onAddTrack}
+                                />
+                            ) : (
                                 <TrackPreview
                                     trackNum={index + 1}
                                     track={track}
@@ -125,19 +130,19 @@ export function TrackList({
                                     }
                                 />
                             )
-
-                            // 2. נחליט אם לעטוף אותו ב-SortableTrack או לא
-                            return isDraggable && !isSearch ? (
+                            const canDrag =
+                                isDraggable && !isSearch && !isTrackSearch
+                            return canDrag ? (
                                 <SortableTrack
                                     key={track.id}
                                     id={track.id}
                                     track={track}
                                 >
-                                    {trackPreview}
+                                    {content}
                                 </SortableTrack>
                             ) : (
                                 <React.Fragment key={track.id}>
-                                    {trackPreview}
+                                    {content}
                                 </React.Fragment>
                             )
                         })}

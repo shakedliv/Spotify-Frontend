@@ -1,4 +1,4 @@
-.library {
+.library.open {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -17,7 +17,6 @@
     .icon-title-div {
         display: flex;
     }
-
 
     &:hover .library-toggle {
         opacity: 1;
@@ -58,13 +57,10 @@
             fill: var(--text-primary)
         }
 
-
         .library-header-btns {
             display: flex;
             align-items: center;
-
             gap: 6px;
-
 
             .add-station-btn {
                 display: flex;
@@ -116,11 +112,9 @@
         }
     }
 
-
     header h2 {
         font-size: 1em;
     }
-
 
     .filter-btns {
         display: flex;
@@ -149,7 +143,6 @@
         }
     }
 
-
     .search-sort {
         display: flex;
         padding: 8px 8px 0;
@@ -174,7 +167,7 @@
                 color: #fff;
             }
 
-            .search-icon{
+            .search-icon {
                 width: 16px;
             }
         }
@@ -190,5 +183,82 @@
                 scale: 1.05;
             }
         }
+    }
+}
+
+
+
+/* TOGGLING LIBRARY */
+
+.library.closed {
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    border-radius: 12px;
+
+    header {
+        padding: 16px 16px 8px;
+        display: grid;
+        justify-content: center;
+        row-gap: 8px;
+
+        .LibraryOpenIcon {
+            width: 2em;
+            fill: var(--text-secondary);
+
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .LibraryCloseIcon {
+            display: grid;
+            justify-self: center;
+            margin-top: 8px;
+            width: 24px;
+            fill: var(--text-secondary);
+
+            &:hover {
+                cursor: pointer;
+                fill: var(--text-primary)
+            }
+        }
+
+        .library-toggle:hover .LibraryOpenIcon {
+            fill: var(--text-primary)
+        }
+
+        .add-station-btn {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            border-radius: 50vh;
+            color: var(--text-subdued);
+            background-color: #1f1f1f;
+            gap: 6px;
+            padding: 6px;
+            margin: 8px 0;
+            font-size: 14px;
+            font-family: 'FigTreeBold', sans-serif;
+            span {
+                display: none
+            }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.15);
+                color: var(--text-primary);
+            }
+        }
+    }
+
+    h2,
+    .search-sort,
+    .filter-btns,
+    .expand-btn {
+        display: none;
     }
 }

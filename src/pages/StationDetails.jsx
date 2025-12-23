@@ -16,6 +16,7 @@ import {
     UPDATE_STATION,
 } from '../store/reducers/station.reducer.js'
 import { formatDate } from '../services/util.service.js'
+import { CloseIcon } from '../assets/svg/CloseIcon.jsx'
 
 export function StationDetails() {
     const { stationId } = useParams()
@@ -26,8 +27,9 @@ export function StationDetails() {
     const station = useSelector(
         (storeState) => storeState.stationModule.station
     )
-
+    const tracks = station?.tracks || []
     const [isEditOpen, setIsEditOpen] = useState(false)
+    const [isFindMore, setIsFindMore] = useState(false)
 
     useEffect(() => {
         loadStation(stationId)
@@ -99,6 +101,9 @@ export function StationDetails() {
         }
     }
 
+    function toggleFindMore() {
+        setIsFindMore(!isFindMore)
+    }
     if (!station) return <div>Loading...</div>
 
     return (
@@ -113,7 +118,10 @@ export function StationDetails() {
                 />
                 <h1 onClick={() => setIsEditOpen(true)}>{station.name}</h1>
                 <h4 className='desc'>{station.description || ''}</h4>
-                <h5>{station.owner.fullname} • <span>{station?.tracks?.length} songs</span></h5>
+                <h5>
+                    {station.owner.fullname} •{' '}
+                    <span>{station?.tracks?.length} songs</span>
+                </h5>
 
                 <section className='station-details-btns'>
                     <div className='play-btns'>
@@ -141,6 +149,9 @@ export function StationDetails() {
             <StationTrackSearch
                 onAddTrack={onAddTrack}
                 stationId={stationId}
+                isFindMore={isFindMore}
+             toggleFindMore={toggleFindMore}
+             stationTracks={station.tracks}
             />
 
             {isEditOpen && (

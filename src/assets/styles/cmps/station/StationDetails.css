@@ -3,7 +3,8 @@
     background-color: #121212;
     overflow-y: auto;
     height: 100%;
-
+    border-radius: 12px;
+    scrollbar-gutter: stable;
 
     header {
         display: grid;
@@ -13,18 +14,17 @@
         margin-bottom: 1em;
         /* background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, #181818 100%); */
 
-
         align-items: end;
         padding: 80px 20px 20px 20px;
         border-radius: 8px;
         transition: background-color 0.15s ease, transform 0.1s ease;
 
         grid-template-areas:
-            "img ."
-            "img h"
-            "img e"
-            "img c"
-            "b b";
+            'img .'
+            'img h'
+            'img e'
+            'img c'
+            'b b';
 
         h1 {
             grid-area: h;
@@ -40,7 +40,7 @@
         .desc {
             grid-area: e;
             font-size: 14px;
-            color: var(--text-secondary)
+            color: var(--text-secondary);
         }
 
         h5 {
@@ -79,7 +79,6 @@
             gap: 4px;
             color: var(--text-subdued);
 
-
             &:hover {
                 cursor: pointer;
                 color: var(--text-primary);
@@ -105,46 +104,12 @@
 
             :hover {
                 scale: 1.05;
-                color: var(--spotify-green-light)
+                color: var(--spotify-green-light);
             }
         }
 
         &:hover .play-icon {
             cursor: pointer;
         }
-
-
     }
-
-
-    .station-track-search {
-        display: grid;
-        margin-top: 24px;
-        padding: 20px;
-        border-top: 1px solid var(--bg-highlight);
-        row-gap: 20px;
-
-
-        .station-search-bar {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 0.5em;
-            background-color: #2d2c2d;
-            margin-bottom: 12px;
-            max-width: 400px;
-
-            input {
-                flex: 1;
-                background: transparent;
-                border: none;
-                outline: none;
-                font-size: 1.1em;
-                font-weight: bold;
-                color: var(--text-primary);
-                padding: 0;
-            }
-        }
-    }
-
 }
