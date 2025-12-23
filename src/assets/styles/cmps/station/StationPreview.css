@@ -2,6 +2,7 @@
     position: relative;
 
     .station-preview {
+       position: relative;
         display: grid;
         border-radius: 8px;
         transition: background-color 0.2s ease, transform 0.2s ease;
@@ -43,6 +44,7 @@
                     color: var(--spotify-green-light)
                 }
             }
+            
 
         }
 
@@ -63,3 +65,43 @@
 
     }
 }
+
+ .station-options-menu {
+                background-color: #282828;
+                box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3),
+                    0 6px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+               font-size: 17.5px;
+               font-family: 'FigTreeRegular', sans-serif;
+               padding: 4px;
+               min-width: 325px;
+               max-width: 70vh;
+               overflow-y: auto;
+                display: flex;
+                flex-direction: column;
+                z-index: 1000;
+                animation: menuFadeIn 0.1s ease-out;
+                button {
+                   font-family: 'figtreeRegular', sans-serif;
+                    background: none;
+                    border: none;
+                    color: #eaeaea;
+                    padding: 10px 12px;
+                    text-align: left;
+                    font-size: 18px;
+                    cursor: pointer;
+                    width: 100%;
+                    white-space: nowrap;
+                    border-radius: 2px;
+
+                    &:hover {
+                        background-color: hsla(0, 0%, 100%, 0.1);
+                        color: #fff;
+                    }
+                }
+                .separator {
+                    height: 1px;
+                    background-color: hsla(0, 0%, 100%, 0.1);
+                    margin: 4px;
+                }
+            }

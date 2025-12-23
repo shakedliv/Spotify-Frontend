@@ -1,16 +1,30 @@
 import { useRef, useState } from 'react'
 import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector, useDispatch } from 'react-redux'
-import { toggleLikedSong } from '../store/actions/user.actions.js'
-import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 
 import { adaptTrackForPlayer } from '../services/track/track.util'
 import { setCurrentTrack } from '../store/actions/system.actions'
 import { youtubeService } from '../services/youtube.service'
-import { Options } from '../assets/svg/Options.jsx'
 import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
 import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
 import { useCloseOnOutside } from '../hooks/useCloseOnOutside.js'
+
+//SVG Icons
+import { PlusIcon } from '../assets/svg/PlusIcon.jsx'
+import { ArrowAsideIcon } from '../assets/svg/ArrowAsideIcon.jsx'
+import { AddIcon } from '../assets/svg/AddIcon.jsx'
+import { TrashIcon } from '../assets/svg/TrashIcon.jsx'
+import { Options } from '../assets/svg/Options.jsx'
+import { AddToQueueIcon } from '../assets/svg/AddToQueueIcon.jsx'
+import { SpotifyIcon } from '../assets/svg/SpotifyIcon.jsx'
+import { toggleLikedSong } from '../store/actions/user.actions.js'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
+import { SongRadioIcon } from '../assets/svg/SongRadioIcon.jsx'
+import { ExcludeIcon } from '../assets/svg/ExcludeIcon.jsx'
+import { ArtistIcon } from '../assets/svg/ArtistIcon.jsx'
+import { AlbumIcon } from '../assets/svg/AlbumIcon.jsx'
+import { ViewCreditsIcon } from '../assets/svg/ViewCreditsIcon.jsx'
+import { ShareIcon } from '../assets/svg/ShareIcon.jsx'
 
 export function TrackPreview({
     track,
@@ -20,8 +34,7 @@ export function TrackPreview({
     onToggleOptions,
     isOperationsOpen,
     isDraggable,
-   isSearch,
-    isTrackSearch = false,
+    isSearch,
 }) {
     const organizedTrack = track.track
     const dispatch = useDispatch()
@@ -123,34 +136,119 @@ export function TrackPreview({
                     </button>
                     {isOperationsOpen && (
                         <div
-                      className='options-menu'
-                      ref={menuRef}
-                      style={menuStyle}
+                            className='options-menu'
+                            ref={menuRef}
+                            style={menuStyle}
                             onClick={(ev) => ev.stopPropagation()}
                         >
-                            <button onClick={() => handleAddTrack(track)}>
-                                Add to playlist
-                            </button>
                             <button
+                                className='flex align-center space-between'
+                                onClick={() => handleAddTrack(track)}
+                            >
+                                <div
+                                    className='flex align-center'
+                                    style={{ gap: '12px' }}
+                                >
+                                    <PlusIcon />
+                                    <span>Add to playlist</span>
+                                </div>
+                                <ArrowAsideIcon />
+                            </button>
+
+                            <button
+                                className='flex align-center'
+                                style={{ gap: '12px' }}
                                 onClick={() =>
                                     onRemoveTrack(track.id || organizedTrack.id)
                                 }
                             >
-                                Remove from this playlist
+                                <TrashIcon />
+                                <span>Remove from this playlist</span>
                             </button>
-                            <button onClick={onLikeClick}>
-                                Save to your Liked Songs
+
+                            <button
+                                className='flex align-center'
+                                style={{ gap: '12px' }}
+                                onClick={onLikeClick}
+                            >
+                                <AddIcon />
+                                <span>Save to your Liked Songs</span>
                             </button>
-                            <button>Add to queue</button>
-                            <button>Exclude from your taste profile</button>
+
+                            <button
+                                className='flex align-center'
+                                style={{ gap: '12px' }}
+                            >
+                                <AddToQueueIcon />
+                                <span>Add to queue</span>
+                            </button>
+
+                            <button
+                                className='flex align-center'
+                                style={{ gap: '12px' }}
+                            >
+                                <ExcludeIcon />
+                                <span>Exclude from your taste profile</span>
+                            </button>
+
                             <div className='separator'></div>
-                            <button>Go to song radio</button>
-                            <button>Go to artist</button>
-                            <button>Go to album</button>
-                            <button>View credits</button>
-                            <button>Share</button>
+
+                            <button
+                                className='flex align-center'
+                                style={{ gap: '12px' }}
+                            >
+                                <SongRadioIcon />
+                                <span>Go to song radio</span>
+                            </button>
+
+                            <button className='flex align-center space-between'>
+                                <div
+                                    className='flex align-center'
+                                    style={{ gap: '12px' }}
+                                >
+                                    <ArtistIcon />
+                                    <span>Go to artist</span>
+                                </div>
+                                <ArrowAsideIcon />
+                            </button>
+
+                            <button
+                                className='flex align-center'
+                                style={{ gap: '12px' }}
+                            >
+                                <AlbumIcon />
+                                <span>Go to album</span>
+                            </button>
+
+                            <button
+                                className='flex align-center'
+                                style={{ gap: '12px' }}
+                            >
+                                <ViewCreditsIcon />
+                                <span>View credits</span>
+                            </button>
+
+                            <button className='flex align-center space-between'>
+                                <div
+                                    className='flex align-center'
+                                    style={{ gap: '12px' }}
+                                >
+                                    <ShareIcon />
+                                    <span>Share</span>
+                                </div>
+                                <ArrowAsideIcon />
+                            </button>
+
                             <div className='separator'></div>
-                            <button>Open in Desktop app</button>
+
+                            <button
+                                className='flex align-center'
+                                style={{ gap: '12px' }}
+                            >
+                                <SpotifyIcon />
+                                <span>Open in Desktop app</span>
+                            </button>
+                          
                         </div>
                     )}
                 </div>

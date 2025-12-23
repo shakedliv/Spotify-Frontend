@@ -17,6 +17,9 @@
   &.align-center {
     align-items: center;
   }
+  &.space-between {
+    justify-content: space-between;
+  }
 }
 
 /* Simple and useful CSS Debugging Technique */

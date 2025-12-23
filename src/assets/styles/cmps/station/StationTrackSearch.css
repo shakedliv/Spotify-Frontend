@@ -1,4 +1,6 @@
 .station-track-search-container {
+            padding: 0.5em;
+
     .station-track-search {
         display: flex;
         /* flex-direction: row; */
@@ -19,7 +21,6 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            padding: 0.5em;
             background-color: #2d2c2d;
             margin-bottom: 12px;
             max-width: 400px;
