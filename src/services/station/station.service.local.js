@@ -56,7 +56,7 @@ async function save(station) {
     } else {
         const stationToSave = {
             name: station.name,
-            imgUrl: station.imgUrl || defaultStationImg,
+            imgUrl: defaultStationImg,
             owner: userService.getLoggedinUser(),
             tracks: []
         }

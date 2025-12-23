@@ -2,18 +2,19 @@ import { useCallback, useState } from 'react'
 import { updateStation } from '../store/actions/station.actions'
 import { useDropzone } from 'react-dropzone'
 import { CloseIconX, EditPenIcon, LockIcon } from '../services/svg.service'
+import defaultStationImg from '../assets/imgs/defaultStationImg.png'
 
 export function StationEdit({ station, onClose }) {
 
   const imgUrl = station?.tracks[0]?.track.album.images[0].url
-  const defaultImg = station.imgUrl
+  const stationImg = station.imgUrl
   const [stationToEdit, setStationToEdit] = useState(station)
-  const [imagePreview, setImagePreview] = useState(imgUrl || defaultImg)
+  const [imagePreview, setImagePreview] = useState(stationImg || imgUrl)
 
-  console.log(defaultImg);
-  console.log(station.imgUrl);
-  console.log(station);
+  console.log(stationImg)
+  console.log(station.imgUrl)
   
+
 
 
   const onDrop = useCallback((acceptedFiles) => {
@@ -25,6 +26,8 @@ export function StationEdit({ station, onClose }) {
 
       const reader = new FileReader()
       reader.onloadend = () => {
+        console.log(reader.result);
+        
         setStationToEdit(prev => ({ ...prev, imgUrl: reader.result }))
       }
       reader.readAsDataURL(file)
@@ -83,8 +86,8 @@ export function StationEdit({ station, onClose }) {
                   className="remove-image"
                   type="button"
                   onClick={() => {
-                    setImagePreview('')
-                    setStationToEdit(prev => ({ ...prev, imgUrl: '' }))
+                    setImagePreview(defaultStationImg)
+                    setStationToEdit(prev => ({ ...prev, imgUrl: defaultStationImg }))
                   }}> <CloseIconX /> </button>
 
                 <div

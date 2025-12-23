@@ -12,6 +12,7 @@ import { ShuffleIcon } from '../services/svg.service.js'
 import { FastAverageColor } from 'fast-average-color'
 import { StationTrackSearch } from '../cmps/StationTrackSearch'
 import { SAVE_LAST_ORDER, UPDATE_STATION } from '../store/reducers/station.reducer.js'
+import defaultStationImg from '../assets/imgs/defaultStationImg.png'
 
 
 import { formatDate } from '../services/util.service.js'
@@ -110,8 +111,7 @@ export function StationDetails() {
             <header className='station-details-header' >
                 <img
                     src={
-                        station.tracks[0]?.track.album.images[0].url ||
-                        station.imgUrl
+                        station.imgUrl !== defaultStationImg ? station.imgUrl : station.tracks[0]?.track.album.images[0].url || defaultStationImg
                     }
                     alt={station.name}
                 />
@@ -149,8 +149,8 @@ export function StationDetails() {
                 onAddTrack={onAddTrack}
                 stationId={stationId}
                 isFindMore={isFindMore}
-             toggleFindMore={toggleFindMore}
-             stationTracks={station.tracks}
+                toggleFindMore={toggleFindMore}
+                stationTracks={station.tracks}
             />
 
             {isEditOpen && (

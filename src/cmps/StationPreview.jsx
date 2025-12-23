@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
-
+import defaultStationImg from '../assets/imgs/defaultStationImg.png'
 
 export function StationPreview({ station, onRemoveStation, type }) {
 
@@ -14,7 +14,7 @@ export function StationPreview({ station, onRemoveStation, type }) {
                 <article className="station-preview">
 
                     <div className="station-img">
-                        <img src={station.tracks[0]?.track.album.images[0].url || station.imgUrl} alt={station.name} />
+                        <img src={station.imgUrl !== defaultStationImg ? station.imgUrl : station.tracks[0]?.track.album.images[0].url || defaultStationImg} alt={station.name} />
                         <div className='icon-backdrop'>
                             < PlayArrowIcon className='library-play-icon' />
                         </div>
@@ -34,7 +34,7 @@ export function StationPreview({ station, onRemoveStation, type }) {
                 <article className="station-preview">
 
                     <div className="station-img">
-                        <img src={station.tracks[0]?.track.album.images[0].url || station.imgUrl} alt={station.name} />
+                        <img src={station.imgUrl !== defaultStationImg ? station.imgUrl : station.tracks[0]?.track.album.images[0].url || defaultStationImg} alt={station.name} />
                     </div>
                     <h3 className="station-name">{station.name}</h3>
                     <PlayCircleFilledIcon className="play-icon" sx={{}} />
@@ -50,7 +50,7 @@ export function StationPreview({ station, onRemoveStation, type }) {
             <article className="station-preview">
 
                 <div className="station-img">
-                    <img src={station.tracks[0]?.track.album.images[0].url || station.imgUrl} alt={station.name} />
+                    <img src={station.imgUrl !== defaultStationImg ? station.imgUrl : station.tracks[0]?.track.album.images[0].url || defaultStationImg} alt={station.name} />
                     <PlayCircleFilledIcon className="play-icon" sx={{}} />
                 </div>
                 <p className="station-desc">{station.description}</p>
