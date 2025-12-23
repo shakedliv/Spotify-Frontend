@@ -1,7 +1,7 @@
 .station-track-search-container {
-            padding: 0.5em;
-
     .station-track-search {
+        border-top: 1px solid var(--bg-highlight);
+        margin: 20px;
         display: flex;
         /* flex-direction: row; */
         justify-content: space-between;
@@ -11,7 +11,6 @@
     .station-track-search-header {
         display: grid;
         padding: 20px;
-        border-top: 1px solid var(--bg-highlight);
         row-gap: 20px;
 
         h4 {
@@ -50,10 +49,13 @@
         color: var(--text-primary);
         font-size: 20px;
         font-family: 'FigTreeBold', sans-serif;
-        margin-block: 40px;
+        margin-block: 20px;
         cursor: pointer;
         text-align: end;
         margin-inline-end: 60px;
+    }
+    .recommended-container {
+        padding: 10px 20px;
     }
     .recommended-header {
         font-size: 35px;

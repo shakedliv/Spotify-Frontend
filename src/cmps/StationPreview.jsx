@@ -20,7 +20,7 @@ export function StationPreview({ station, onRemoveStation, type }) {
       if(type !== 'library') return
 
         const menuWidth = 325
-        const menuHeight = 530
+        const menuHeight = 490
         const screenWidth = window.innerWidth
         const screenHeight = window.innerHeight
 
@@ -104,25 +104,6 @@ export function StationPreview({ station, onRemoveStation, type }) {
                     </div>
                     <h3 className='station-name'>{station.name}</h3>
                     <PlayCircleFilledIcon className='play-icon' />
-
-                    {isModalOpen && (
-                        <div
-                            className='station-options-menu'
-                            ref={menuRef}
-                            style={{
-                                ...menuStyle,
-                                position: 'absolute',
-                                zIndex: 100,
-                            }}
-                            onClick={(ev) => ev.stopPropagation()}
-                        >
-                            <LibraryOptionsModal
-                                RemoveStation={() =>
-                                    onRemoveStation(station._id)
-                                }
-                            />
-                        </div>
-                    )}
                 </article>
             </Link>
         )
@@ -146,22 +127,6 @@ export function StationPreview({ station, onRemoveStation, type }) {
                 </div>
                 <p className='station-desc'>{station.description}</p>
 
-                {isModalOpen && (
-                    <div
-                        className='station-options-menu'
-                        ref={menuRef}
-                        style={{
-                            ...menuStyle,
-                            position: 'absolute',
-                            zIndex: 100,
-                        }}
-                        onClick={(ev) => ev.stopPropagation()}
-                    >
-                        <LibraryOptionsModal
-                            RemoveStation={() => onRemoveStation(station._id)}
-                        />
-                    </div>
-                )}
             </article>
         </Link>
     )
