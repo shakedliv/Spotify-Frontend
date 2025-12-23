@@ -24,8 +24,8 @@ export function TrackSearchPreview({ track, onAddTrack }) {
         }
     }
     return (
-        <article className="track-search-preview">
-            <div className="img-container" onClick={() => onPlayTrack()}>
+        <article className="track-search-preview" onClick={() => onPlayTrack()}>
+            <div className="img-container" >
                 <img src={info.album.images[0].url} alt="" />
                 <PlayArrowIcon className="play-icon-overlay" />
             </div>
