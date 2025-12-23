@@ -6,14 +6,14 @@ import defaultStationImg from '../assets/imgs/defaultStationImg.png'
 
 export function StationEdit({ station, onClose }) {
 
-  const imgUrl = station?.tracks[0]?.track.album.images[0].url
+  const trackImgUrl = station?.tracks[0]?.track.album.images[0].url
   const stationImg = station.imgUrl
   const [stationToEdit, setStationToEdit] = useState(station)
-  const [imagePreview, setImagePreview] = useState(stationImg || imgUrl)
+  const [imagePreview, setImagePreview] = useState(stationImg !== defaultStationImg ? stationImg : trackImgUrl || defaultStationImg)
 
   console.log(stationImg)
   console.log(station.imgUrl)
-  
+
 
 
 
@@ -26,8 +26,8 @@ export function StationEdit({ station, onClose }) {
 
       const reader = new FileReader()
       reader.onloadend = () => {
-        console.log(reader.result);
-        
+        console.log(reader.result)
+
         setStationToEdit(prev => ({ ...prev, imgUrl: reader.result }))
       }
       reader.readAsDataURL(file)
