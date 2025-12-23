@@ -7,10 +7,7 @@
     padding: 1em 0 1em 24px;
     overflow-y: auto;
     height: 100%;
-    scrollbar-gutter: stable;
-
-
-
+    /* scrollbar-gutter: stable; */
 
     .index-header {
         font-size: 24px;
@@ -33,7 +30,6 @@
         margin-bottom: 1.5em;
         padding-left: 16px;
 
-
         .index-filter-btn {
             display: flex;
             align-items: center;
@@ -42,8 +38,6 @@
             background-color: rgba(255, 255, 255, 0.1);
             padding: 8px 12px;
             font-size: 1em;
-
-
 
             &:hover {
                 background-color: rgba(255, 255, 255, 0.15)

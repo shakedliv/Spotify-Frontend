@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 90px;
-  background-color: black ;
+  background-color: black;
 
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -35,7 +35,7 @@
 
 .track-title {
   font-size: 14px;
-  font-weight: 500;
+  font-family: "FigTreeRegular", sans-serif;
   color: var(--text-primary);
 }
 
@@ -48,13 +48,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 
 .player-controls {
   display: flex;
   align-items: center;
   gap: 18px;
+}
+
+.player-controls .btn-shuffle {
+  transform: translateX(-11px);
+}
+
+.player-controls .btn-prev {
+  transform: translateX(-5px);
+}
+
+.player-controls .btn-next {
+  transform: translateX(6px);
+}
+
+.player-controls .btn-repeat {
+  transform: translateX(12px);
 }
 
 .player-controls button:not(.play-btn) {
@@ -76,8 +92,8 @@
 }
 
 .play-btn {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 
   background-color: var(--spotify-white);
@@ -91,7 +107,7 @@
 }
 
 .play-btn svg {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 .play-btn.is-playing {
@@ -112,14 +128,19 @@
 .player-progress {
   display: flex;
   align-items: center;
-  gap: 8px;
-  width:72%;
+  gap: 0px;
+
+  width: 76%;
+
+  margin-top: 4px;
 }
 
 .player-progress span {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--text-secondary);
-  min-width: 32px;
+
+  min-width: 38px;
+
   text-align: center;
 }
 
@@ -128,7 +149,7 @@
   -webkit-appearance: none;
   appearance: none;
 
-  height: 4px;
+  height: 3.5px;
   border-radius: 999px;
   cursor: pointer;
 
@@ -186,6 +207,42 @@
   color: var(--text-primary);
 }
 
+.player-footer-right .btn-lyrics {
+  transform: translateX(-23px);
+  margin-top: 3px;
+  margin-right: 0px;
+}
+
+.player-footer-right .btn-queue {
+  transform: translateX(-17px);
+  margin-top: 3px;
+}
+
+.player-footer-right .btn-connection {
+  transform: translateX(-13px);
+  margin-top: 5px;
+}
+
+.player-footer-right .btn-volume {
+  transform: translateX(-6px);
+  margin-top: 5px;
+}
+
+.player-footer-right .volume-range {
+  transform: translateX(-11px);
+  margin-bottom: 6px;
+}
+
+.player-footer-right .btn-pip {
+  transform: translateX(-5px);
+  margin-bottom: -4px;
+}
+
+.player-footer-right .btn-fulls {
+  transform: translateX(0px);
+  margin-bottom: -4px;
+}
+
 .player-footer-right input[type="range"] {
-  width: 100px;
+  width: 93px;
 }

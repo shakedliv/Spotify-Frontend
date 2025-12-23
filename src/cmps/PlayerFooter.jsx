@@ -111,11 +111,11 @@ export function PlayerFooter() {
 
       <div className="player-footer-center">
         <div className="player-controls">
-          <button>
+          <button className="btn-shuffle">
             <ShuffleIcon />
           </button>
 
-          <button disabled={!currentTrack}>
+          <button className="btn-prev" disabled={!currentTrack}>
             <PrevIcon />
           </button>
 
@@ -135,11 +135,11 @@ export function PlayerFooter() {
             </button>
           )}
 
-          <button disabled={!currentTrack}>
+          <button className="btn-next" disabled={!currentTrack}>
             <NextIcon />
           </button>
 
-          <button>
+          <button className="btn-repeat">
             <RepeatIcon />
           </button>
         </div>
@@ -166,29 +166,33 @@ export function PlayerFooter() {
       </div>
 
       <div className="player-footer-right">
-        <button>
+        <button className="btn-lyrics">
           <LyricsIcon />
         </button>
-        <button>
+        <button className="btn-queue">
           <QueueIcon />
         </button>
-        <button>
+        <button className="btn-connection">
           <ConnectIcon />
         </button>
+        <button className="btn-volume">
+          <VolumeIcon />
+        </button>
 
-        <VolumeIcon />
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value={volume}
-          style={{ "--fill-percent": volumePercent }}
-          onChange={(e) => setVolume(+e.target.value)}
-        />
-        <button>
+        <div className="volume-range">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={volume}
+            style={{ "--fill-percent": volumePercent }}
+            onChange={(e) => setVolume(+e.target.value)}
+          />
+        </div>
+        <button className="btn-pip">
           <PictureInPictureIcon />
         </button>
-        <button>
+        <button className="btn-fulls">
           <FullscreenIcon />
         </button>
       </div>

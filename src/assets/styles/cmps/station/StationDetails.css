@@ -3,19 +3,17 @@
     background-color: #121212;
     overflow-y: auto;
     height: 100%;
-    scrollbar-gutter: stable;
+    border-radius: 12px;
+ scrollbar-gutter: stable;
+
     header {
         display: grid;
         grid-template-columns: auto 1fr;
         column-gap: 24px;
         row-gap: 8px;
         margin-bottom: 1em;
-        background: linear-gradient(
-            180deg,
-            #5b44ff 0%,
-            #4a2c99 40%,
-            #181818 100%
-        );
+        /* background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, #181818 100%); */
+
 
         align-items: end;
         padding: 80px 20px 20px 20px;

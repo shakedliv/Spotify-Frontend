@@ -12,11 +12,11 @@ import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
 import { LibraryOpenIcon, LibraryCloseIcon, ExpandIcon, SearchIcon } from '../services/svg.service.js'
 
 
-export function Library() {
+export function Library({ isLibraryOpen, onToggleLibrary }) {
     const stations = useSelector(storeState => storeState.stationModule.stations)
-    const [activeTab, setActiveTab] = useState("playlists")
+    const [activeTab, setActiveTab] = useState('')
+
     const navigate = useNavigate()
-   
 
     async function onAddStation() {
         const station = stationService.getEmptyStation()
@@ -31,11 +31,12 @@ export function Library() {
         }
     }
 
+    const className = isLibraryOpen ? 'open' : 'closed'
     return (
-        <div className="library">
+        <div className={`library ${className}`}>
             <header className="library-header">
                 <div className="icon-title-div">
-                    <span className="library-toggle"> <LibraryOpenIcon /></span>
+                    <span onClick={onToggleLibrary} className="library-toggle"> {isLibraryOpen ? <LibraryOpenIcon /> : <LibraryCloseIcon />}</span>
                     <h2>Your Library</h2>
                 </div>
                 <div className="library-header-btns">
@@ -72,10 +73,9 @@ export function Library() {
                 <span className="sort-list">Recents <FormatListBulletedIcon /></span>
             </div>
 
-            <section className="library-station-list">
+            <section className={`library-station-list ${className}`}>
                 <LibraryStationList
                     stations={stations}
-
                 />
             </section>
         </div>
