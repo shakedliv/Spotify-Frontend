@@ -6,8 +6,14 @@ import { CloseIconX, EditPenIcon, LockIcon } from '../services/svg.service'
 export function StationEdit({ station, onClose }) {
 
   const imgUrl = station?.tracks[0]?.track.album.images[0].url
+  const defaultImg = station.imgUrl
   const [stationToEdit, setStationToEdit] = useState(station)
-  const [imagePreview, setImagePreview] = useState(imgUrl || station.imgUrl)
+  const [imagePreview, setImagePreview] = useState(imgUrl || defaultImg)
+
+  console.log(defaultImg);
+  console.log(station.imgUrl);
+  console.log(station);
+  
 
 
   const onDrop = useCallback((acceptedFiles) => {
@@ -25,7 +31,7 @@ export function StationEdit({ station, onClose }) {
     }
   }, [])
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop, accept: { 'image/*': [] } })
+  const { getRootProps, getInputProps } = useDropzone({ onDrop, accept: { 'image/*': [] } })
 
   function handleChange({ target }) {
     const { name, value } = target
@@ -68,27 +74,28 @@ export function StationEdit({ station, onClose }) {
           {/* </div> */}
 
           <label className="image-upload">
-            {imagePreview && (
-              <div className="image-preview">
+            <div className="image-preview">
+              {imagePreview && (
                 <img src={imagePreview} alt="" />
-                <div className='image-backdrop'>
-                  <button
-                    className="remove-image"
-                    type="button"
-                    onClick={() => {
-                      setImagePreview('')
-                      setStationToEdit(prev => ({ ...prev, imgUrl: '' }))
-                    }}> <CloseIconX /> </button>
+              )}
+              <div className='image-backdrop'>
+                <button
+                  className="remove-image"
+                  type="button"
+                  onClick={() => {
+                    setImagePreview('')
+                    setStationToEdit(prev => ({ ...prev, imgUrl: '' }))
+                  }}> <CloseIconX /> </button>
 
-                  <div
-                    {...getRootProps()}
-                    className="upload-area"
-                  >
-                    <input {...getInputProps()} /> <span> <EditPenIcon /> Choose Photo</span>
-                  </div>
+                <div
+                  {...getRootProps()}
+                  className="upload-area"
+                >
+                  <input {...getInputProps()} /> <span> <EditPenIcon /> Choose Photo</span>
                 </div>
               </div>
-            )}
+            </div>
+
 
           </label>
 

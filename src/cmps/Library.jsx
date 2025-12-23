@@ -21,7 +21,6 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
     async function onAddStation() {
         const station = stationService.getEmptyStation()
         station.name = `My Playlist #${stations.length}`
-
         try {
             const savedStation = await addStation(station)
             showSuccessMsg(`Station added (id: ${savedStation._id})`)
