@@ -11,8 +11,6 @@ export function StationEdit({ station, onClose }) {
   const [stationToEdit, setStationToEdit] = useState(station)
   const [imagePreview, setImagePreview] = useState(stationImg !== defaultStationImg ? stationImg : trackImgUrl || defaultStationImg)
 
-  console.log(stationImg)
-  console.log(station.imgUrl)
 
 
   const onDrop = useCallback((acceptedFiles) => {

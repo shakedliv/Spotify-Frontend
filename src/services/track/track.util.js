@@ -1,7 +1,6 @@
 export function adaptTrackForPlayer(track) {
    
    const organizedTrack = track.track
-   console.log('track:', track)
 
     return {
        id: track.id,
