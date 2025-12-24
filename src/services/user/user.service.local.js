@@ -1,5 +1,6 @@
 import { storageService } from '../async-storage.service'
 import { makeId } from '../util.service'
+import { demoLikedSongs } from '../../assets/data/demo-likedSongs.js'
 
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 
@@ -55,8 +56,8 @@ async function signup(userCred) {
         fullname: userCred.fullname,
         username: userCred.username,
         password: userCred.password,
-        likedSongs: [],
-        stationsId: []
+       likedSongs: userCred.likedSongs || [], 
+        stationsId: userCred.stationsId || []
     }
     const newUser = await storageService.post('user', user)
     return saveLoggedinUser(newUser)
@@ -95,7 +96,8 @@ async function _createLoggedinUser() {
         const user = {
             username: 'admin',
             password: 'admin',
-            fullname: 'Adminsky',
+           fullname: 'Adminsky',
+            likedSongs: demoLikedSongs || []
         }
 
         signup(user)

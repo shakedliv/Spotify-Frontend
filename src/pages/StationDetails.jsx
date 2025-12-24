@@ -67,7 +67,7 @@ export function StationDetails() {
 
     }, [station])
 
-
+console.log('station:', station)
     async function onRemoveTrack(trackId) {
         const updatedTracks = station.tracks.filter(
             (track) => track.id !== trackId
