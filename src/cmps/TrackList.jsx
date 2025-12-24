@@ -28,7 +28,8 @@ export function TrackList({
     onAddTrack,
     isSearch,
     isDraggable = true,
-    isTrackSearch = false,
+   isTrackSearch = false,
+    isLikedSongsPage = false,
 }) {
     const [openedTrackId, setOpenedTrackId] = useState(null)
     const [activeId, setActiveId] = useState(null)
@@ -116,6 +117,7 @@ export function TrackList({
                                   <TrackPreview
                                      tracks={tracks}
                                      trackIndex={index}
+                                     isLikedSongsPage={isLikedSongsPage}
                                     trackNum={index + 1}
                                     track={track}
                                     isSearch={isSearch}

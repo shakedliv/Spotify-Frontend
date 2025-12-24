@@ -78,7 +78,7 @@ export async function logout() {
 }
 
 export async function toggleLikedSong(track) {
-    track.dateAdded = Date.now()
+    track.dateAddedToLikedSongs = Date.now()
     store.dispatch({ type: TOGGLE_LIKED_SONG, track })
     const state = store.getState()
     const user = state.userModule.user

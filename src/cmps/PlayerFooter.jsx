@@ -25,6 +25,9 @@ import { PictureInPictureIcon } from '../assets/svg/PictureInPictureIcon.jsx'
 import { youtubeService } from '../services/youtube.service.js'
 import { ActiveIndicator } from '../assets/svg/ActiveIndicator.jsx'
 import { getRandomIntInclusive } from '../services/util.service.js'
+import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
+import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
+import { toggleLikedSong } from '../store/actions/user.actions.js'
 
 const FALLBACK_VIDEO_ID = 'dQw4w9WgXcQ'
 
@@ -35,6 +38,8 @@ export function PlayerFooter() {
     const currentTrack = useSelector((state) => state.systemModule.currentTrack)
     const isPlaying = useSelector((state) => state.systemModule.isPlaying)
     const tracks = useSelector((state) => state.systemModule.tracks)
+   const user = useSelector((state) => state.userModule.user)
+    const isLiked = !!user?.likedSongs?.some((t) => t.id === currentTrack?.id)
     const currentTrackIndex = useSelector(
         (state) => state.systemModule.currentTrackIndex
     )
@@ -142,6 +147,12 @@ export function PlayerFooter() {
         const secs = Math.floor(seconds % 60)
         return `${mins}:${String(secs).padStart(2, '0')}`
     }
+    function handleLike() {
+       console.log('displayTrack:', displayTrack)
+       console.log('currentTrack:', currentTrack)
+        if (!displayTrack) return
+        toggleLikedSong(displayTrack)
+    }
 
     const progressPercent =
         duration > 0 ? `${(seekValue / duration) * 100}%` : '0%'
@@ -162,8 +173,12 @@ export function PlayerFooter() {
                                 {displayTrack.artists.join(', ')}
                             </span>
                         </div>
-                        <button className='add-btn'>
-                            <AddIcon />
+                        <button className='like-btn' onClick={handleLike}>
+                            {isLiked ? (
+                                <RemoveFromLikedSongs />
+                            ) : (
+                                <AddToLikedSongs />
+                            )}
                         </button>
                     </>
                 )}
