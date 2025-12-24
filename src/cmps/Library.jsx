@@ -29,7 +29,7 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
    
     async function onAddStation() {
         const station = stationService.getEmptyStation()
-        station.name = `My Playlist #${stations.length}`
+        station.name = `My Playlist #${stations.length+1}`
         try {
             const savedStation = await addStation(station)
             showSuccessMsg(`Station added (id: ${savedStation._id})`)

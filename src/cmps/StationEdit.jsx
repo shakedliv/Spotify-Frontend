@@ -15,8 +15,6 @@ export function StationEdit({ station, onClose }) {
   console.log(station.imgUrl)
 
 
-
-
   const onDrop = useCallback((acceptedFiles) => {
 
     const file = acceptedFiles[0]

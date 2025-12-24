@@ -8,7 +8,7 @@ export const stationService = {
     addStationMsg
 }
 
-async function query(filterBy = { txt: '', minSpeed: 0 }) {
+async function query(filterBy = { txt: '' }) {
     return httpService.get(`station`, filterBy)
 }
 

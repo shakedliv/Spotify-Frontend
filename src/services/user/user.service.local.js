@@ -47,14 +47,19 @@ async function login(userCred) {
     const user = users.find(user => user.username === userCred.username)
 
     if (user) return saveLoggedinUser(user)
+    else return false
 }
 
 async function signup(userCred) {
-    if (!userCred.imgUrl) userCred.imgUrl = 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png'
-    userCred.score = 10000
-
-    const user = await storageService.post('user', userCred)
-    return saveLoggedinUser(user)
+    const user = {
+        fullname: userCred.fullname,
+        username: userCred.username,
+        password: userCred.password,
+        likedSongs: [],
+        stationsId: []
+    }
+    const newUser = await storageService.post('user', user)
+    return saveLoggedinUser(newUser)
 }
 
 async function logout() {
@@ -69,11 +74,10 @@ function saveLoggedinUser(user) {
     user = {
         _id: user._id,
         fullname: user.fullname,
-        imgUrl: user.imgUrl,
-        isAdmin: user.isAdmin,
         username: user.username,
         password: user.password,
         likedSongs: user.likedSongs || [],
+        stationsId: user.stationsId || []
     }
     sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
     return user
@@ -81,15 +85,23 @@ function saveLoggedinUser(user) {
 
 // To quickly create an admin user, uncomment the next line
 async function _createLoggedinUser() {
-    if (getLoggedinUser()) return
-    const user = {
-        username: 'admin',
-        password: 'admin',
-        fullname: 'Mustafa Adminsky',
-        imgUrl: 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png',
-        isAdmin: true
-    }
+    const users = localStorage.getItem('user')
+    console.log(users)
 
-    const savedUser = await storageService.post('user', user)
-    saveLoggedinUser(savedUser)
+    // const user = users.find(user => user.username === 'admin')
+    // console.log(user)
+
+    if (!users) {
+        const user = {
+            username: 'admin',
+            password: 'admin',
+            fullname: 'Adminsky',
+        }
+
+        signup(user)
+    } else login({
+        username: 'admin',
+        password: 'admin'
+    })
+
 }

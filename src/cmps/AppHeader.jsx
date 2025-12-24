@@ -96,9 +96,15 @@ export function AppHeader() {
           )}
 
           {!user && (
-            <NavLink to="/login" className="login-link login-pill">
-              Log in
-            </NavLink>
+            <>
+              <NavLink to="/login/signup" className="signup-link">
+                Sign up
+              </NavLink>
+
+              <NavLink to="/login" className="login-link login-pill">
+                Log in
+              </NavLink>
+            </>
           )}
         </div>
       </nav>
