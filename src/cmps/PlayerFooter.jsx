@@ -207,7 +207,7 @@ export function PlayerFooter() {
 
                     {isPlaying ? (
                         <button
-                            className='play-btn is-playing'
+                            className='play-btn'
                             onClick={() => dispatch(setIsPlaying(false))}
                         >
                             <PauseIcon />

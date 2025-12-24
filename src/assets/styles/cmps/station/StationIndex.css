@@ -1,6 +1,11 @@
 .station-index {
     color: white;
-    background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 5%, var(--bg-base) 20%);
+    background: linear-gradient(
+        180deg,
+        #5b44ff 0%,
+        #4a2c99 5%,
+        var(--bg-base) 20%
+    );
     border-radius: 8px;
     max-width: 100%;
     overflow-x: hidden;
@@ -10,18 +15,22 @@
     /* scrollbar-gutter: stable; */
 
     .index-header {
-        font-size: 24px;
+        font-size: 30px;
         font-family: 'FigTreeBold', sans-serif;
         padding-left: 16px;
         margin-bottom: 6px;
     }
 
     .username-station-header {
-        font-size: 12px;
+        font-size: 15px;
         font-weight: normal;
         color: var(--text-subdued);
         padding-left: 16px;
         margin-bottom: 6px;
+    }
+    .station-desc {
+        font-size: 20px;
+        width: 153px;
     }
 
     .filter-bar {
@@ -36,18 +45,23 @@
             justify-items: center;
             border-radius: 50vh;
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 8px 12px;
-            font-size: 1em;
+            padding: 4px 12px;
+            font-size: 17.5px;
+            color: white;
 
             &:hover {
-                background-color: rgba(255, 255, 255, 0.15)
+                background-color: rgba(255, 255, 255, 0.15);
             }
 
             &.active {
                 background-color: #fff;
                 color: #000;
             }
-
+        }
+    }
+    .first-station-list {
+        .station-name {
+            font-size: 17px;
         }
     }
 }
