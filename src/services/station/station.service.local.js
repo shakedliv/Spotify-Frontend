@@ -5,6 +5,7 @@ import { userService } from '../user'
 import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
 // import demoPlaylist from '../../assets/styles/data/station.sample.raw.json'
 // import stationSample from '../../assets/data/station.sample.raw.json'
+import { demoStations } from '../../assets/data/demo.stations.js'
 
 // const demoData = stationSample.tracks.items
 
@@ -14,16 +15,17 @@ export const stationService = {
     query,
     getById,
     save,
-    remove,
+   remove,
 }
 window.cs = stationService
 
-
-async function query(filterBy = { txt: '' }) {
-    // let stations = [_mapSpotifyPlaylistToStation(demoPlaylist)]
-    var stations = await storageService.query(STORAGE_KEY)
-    const { txt, sortField, sortDir } = filterBy
-
+   async function query(filterBy = { txt: '' }) {
+      var stations = await storageService.query(STORAGE_KEY)
+      if (!stations || !stations.length) {
+          await storageService.postMany(STORAGE_KEY, demoStations)
+      }
+   const { txt, sortField, sortDir } = filterBy
+   
     if (txt) {
         const regex = new RegExp(filterBy.txt, 'i')
         stations = stations.filter(station => regex.test(station.name) || regex.test(station.description))
@@ -33,8 +35,6 @@ async function query(filterBy = { txt: '' }) {
         stations.sort((station1, station2) =>
             station1[sortField].localeCompare(station2[sortField]) * +sortDir)
     }
-
-    console.log(stations)
 
     return stations
 }

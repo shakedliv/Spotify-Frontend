@@ -1,0 +1,10318 @@
+export const demoStations = [
+   {
+    "name": "Israeli remixs",
+    "imgUrl": "/src/assets/imgs/defaultStationImg.png",
+    "owner": {
+        "_id": "aLdcQ",
+        "fullname": "Adminsky",
+        "username": "admin",
+        "password": "admin",
+        "likedSongs": [
+            {
+                "id": "7lQ8MOhq6IN2w8EYcFNSUk",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Without Me",
+                "artists": [
+                    "Eminem"
+                ],
+                "durationMs": 290320,
+                "dateAddedToLikedSongs": 1766589199029
+            },
+            {
+                "id": "5In8B6Om5OKrhwBMB4tXSi",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731633c43b5695735f7de36487",
+                "title": "Fuel",
+                "artists": [
+                    "Eminem",
+                    "JID"
+                ],
+                "durationMs": 213646,
+                "videoId": "t5H_CewqpKA",
+                "dateAddedToLikedSongs": 1766589223988
+            },
+            {
+                "id": "4xkOaSrkexMciUUogZKVTS",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Till I Collapse",
+                "artists": [
+                    "Eminem",
+                    "Nate Dogg"
+                ],
+                "durationMs": 297786,
+                "videoId": "Pi3_Zs-oRUo",
+                "dateAddedToLikedSongs": 1766589471974
+            }
+        ],
+        "stationsId": []
+    },
+    "tracks": [
+        {
+            "id": "57KxWRDVc974sG0KTDW7lg",
+            "track": {
+                "name": "הופה - Remix",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    },
+                    {
+                        "name": "Gilad Markovich"
+                    }
+                ],
+                "album": {
+                    "name": "נמס ממך",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731580475dd7b80962a649d0c1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021580475dd7b80962a649d0c1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511580475dd7b80962a649d0c1"
+                        }
+                    ]
+                },
+                "duration_ms": 232506
+            },
+            "dateAdded": 1766590007598
+        },
+        {
+            "id": "1QgwYUs5A2fp95PK97AX9l",
+            "track": {
+                "name": "רק שלך - רמיקס",
+                "artists": [
+                    {
+                        "name": "Shlomi Shanti"
+                    }
+                ],
+                "album": {
+                    "name": "רק שלך (רמיקס)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a4d547417519e1eb00b13d68"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a4d547417519e1eb00b13d68"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a4d547417519e1eb00b13d68"
+                        }
+                    ]
+                },
+                "duration_ms": 256002
+            },
+            "dateAdded": 1766590008725
+        },
+        {
+            "id": "7de4HYDV9tiAjnTlmpSKHt",
+            "track": {
+                "name": "ככה השם רצה - רמיקס",
+                "artists": [
+                    {
+                        "name": "ישראל אס"
+                    },
+                    {
+                        "name": "דיג'יי ניסו סלוב"
+                    }
+                ],
+                "album": {
+                    "name": "ככה השם רצה - רמיקס",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2735c28388f1a27afa84ba65002"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e025c28388f1a27afa84ba65002"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048515c28388f1a27afa84ba65002"
+                        }
+                    ]
+                },
+                "duration_ms": 231044
+            },
+            "dateAdded": 1766590010142
+        },
+        {
+            "id": "4sjTWNe5q6UMnM2t6VkzzH",
+            "track": {
+                "name": "רמיקס חגיגה",
+                "artists": [
+                    {
+                        "name": "Sarit Hadad"
+                    }
+                ],
+                "album": {
+                    "name": "חגיגה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736d0dad4eee5e695271573431"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026d0dad4eee5e695271573431"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516d0dad4eee5e695271573431"
+                        }
+                    ]
+                },
+                "duration_ms": 441680
+            },
+            "dateAdded": 1766590011526
+        },
+        {
+            "id": "3HLpI8TVkHp8ZWq8Non6YJ",
+            "track": {
+                "name": "אבא תודה- גירסת רמיקס",
+                "artists": [
+                    {
+                        "name": "Akiva"
+                    },
+                    {
+                        "name": "רזיאל קשתי"
+                    },
+                    {
+                        "name": "איתמר לדין"
+                    }
+                ],
+                "album": {
+                    "name": "אבא תודה- גירסת רמיקס",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2737cd068eca6bf9446cca5a61e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e027cd068eca6bf9446cca5a61e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048517cd068eca6bf9446cca5a61e"
+                        }
+                    ]
+                },
+                "duration_ms": 154285
+            },
+            "dateAdded": 1766590012647
+        },
+        {
+            "id": "06T3252QMTZnVOuAZ0eaG1",
+            "track": {
+                "name": "באנו חושך לגרש",
+                "artists": [
+                    {
+                        "name": "Subliminal"
+                    },
+                    {
+                        "name": "The Shadow"
+                    }
+                ],
+                "album": {
+                    "name": "האור והצל",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2735fc5b157cc2f78a4cd66b402"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e025fc5b157cc2f78a4cd66b402"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048515fc5b157cc2f78a4cd66b402"
+                        }
+                    ]
+                },
+                "duration_ms": 258706
+            },
+            "dateAdded": 1766590013743
+        },
+        {
+            "id": "6nUcTTEgixjwgFRyBx7blf",
+            "track": {
+                "name": "באנדו רמיקס",
+                "artists": [
+                    {
+                        "name": "Balishag"
+                    },
+                    {
+                        "name": "אל סיי איי"
+                    }
+                ],
+                "album": {
+                    "name": "שפעת",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27328ce8c738adb2e4997051daa"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0228ce8c738adb2e4997051daa"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485128ce8c738adb2e4997051daa"
+                        }
+                    ]
+                },
+                "duration_ms": 177427
+            },
+            "dateAdded": 1766590014719
+        },
+        {
+            "id": "2OomZwwpxVSG877ntmDjDG",
+            "track": {
+                "name": "מחשבות טובות רמיקס",
+                "artists": [
+                    {
+                        "name": "יהודה מור"
+                    },
+                    {
+                        "name": "Moti Weiss"
+                    }
+                ],
+                "album": {
+                    "name": "מחשבות טובות רמיקס",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2735c7cd73da8a76fb22877f2c7"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e025c7cd73da8a76fb22877f2c7"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048515c7cd73da8a76fb22877f2c7"
+                        }
+                    ]
+                },
+                "duration_ms": 210004
+            },
+            "dateAdded": 1766590015409
+        },
+        {
+            "id": "0GAiXnxduXhIrbkHHz6jv4",
+            "track": {
+                "name": "תמיד אוהב אותי רמיקס",
+                "artists": [
+                    {
+                        "name": "יהודה מור"
+                    },
+                    {
+                        "name": "יאיר אלייצור"
+                    }
+                ],
+                "album": {
+                    "name": "תמיד אוהב אותי רמיקס",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2735fa8ec7162352813469d442c"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e025fa8ec7162352813469d442c"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048515fa8ec7162352813469d442c"
+                        }
+                    ]
+                },
+                "duration_ms": 206080
+            },
+            "dateAdded": 1766590017271
+        },
+        {
+            "id": "1Ov9Sb7Be0uhj3ICFqKtUo",
+            "track": {
+                "name": "ואם תבואי אליי רמיקס",
+                "artists": [
+                    {
+                        "name": "Lior Miara"
+                    },
+                    {
+                        "name": "דיג'יי ניסו סלוב"
+                    }
+                ],
+                "album": {
+                    "name": "ואם תבואי אליי רמיקס",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732b8633b730fc57b9c3feb13e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022b8633b730fc57b9c3feb13e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512b8633b730fc57b9c3feb13e"
+                        }
+                    ]
+                },
+                "duration_ms": 212568
+            },
+            "dateAdded": 1766590037267
+        },
+        {
+            "id": "3Qodjv2Kmx4KY1j34HpKJp",
+            "track": {
+                "name": "מחרוזת חפלה - רמיקס",
+                "artists": [
+                    {
+                        "name": "Maor Edri"
+                    }
+                ],
+                "album": {
+                    "name": "הגבר שכבש",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2737c7182b6a0711466aac7e630"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e027c7182b6a0711466aac7e630"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048517c7182b6a0711466aac7e630"
+                        }
+                    ]
+                },
+                "duration_ms": 245603
+            },
+            "dateAdded": 1766590038178
+        },
+        {
+            "id": "1Q0Hlmfaw5c3ml4uTX3NJk",
+            "track": {
+                "name": "תמיד אוהב אותי רמיקס",
+                "artists": [
+                    {
+                        "name": "DJ Shmiles"
+                    },
+                    {
+                        "name": "ששון איפרם שאולוב"
+                    }
+                ],
+                "album": {
+                    "name": "תמיד אוהב אותי רמיקס",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273c5eafb075dcaba9434b58f52"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02c5eafb075dcaba9434b58f52"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851c5eafb075dcaba9434b58f52"
+                        }
+                    ]
+                },
+                "duration_ms": 283637
+            },
+            "dateAdded": 1766590039866
+        },
+        {
+            "id": "3jtXHIznBsnK5qPLVAdXbv",
+            "track": {
+                "name": "יומולדת - Infected Mushroom Remix",
+                "artists": [
+                    {
+                        "name": "Berry Sakharof"
+                    },
+                    {
+                        "name": "Infected Mushroom"
+                    }
+                ],
+                "album": {
+                    "name": "Birthday",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739533304e22957c0c4d396912"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029533304e22957c0c4d396912"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519533304e22957c0c4d396912"
+                        }
+                    ]
+                },
+                "duration_ms": 288586
+            },
+            "dateAdded": 1766590041242
+        },
+        {
+            "id": "5aSK9kKW40ycGHTSckBQEy",
+            "track": {
+                "name": "מי לא יבוא - Mikel Mermelstein Remix",
+                "artists": [
+                    {
+                        "name": "Avraham Tal"
+                    },
+                    {
+                        "name": "Benaia Barabi"
+                    },
+                    {
+                        "name": "Mikel Mermelstein"
+                    }
+                ],
+                "album": {
+                    "name": "מי לא יבוא (Mikel Mermelstein Remix)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734747275b4cebb5e9c97ebf15"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024747275b4cebb5e9c97ebf15"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514747275b4cebb5e9c97ebf15"
+                        }
+                    ]
+                },
+                "duration_ms": 217675
+            },
+            "dateAdded": 1766590042172
+        },
+        {
+            "id": "1ry67TtjdAkBC7z09Ks1gs",
+            "track": {
+                "name": "חנוכה Mix",
+                "artists": [
+                    {
+                        "name": "Amiran Dvir"
+                    }
+                ],
+                "album": {
+                    "name": "חנוכה Mix",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273046efec88584b3de8667b834"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02046efec88584b3de8667b834"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851046efec88584b3de8667b834"
+                        }
+                    ]
+                },
+                "duration_ms": 1492761
+            },
+            "dateAdded": 1766590174472
+        },
+        {
+            "id": "1O9v1QsLrzIhirZgMIW78N",
+            "track": {
+                "name": "Cute Boy - Dalit Rechester & Michal Serr Remix",
+                "artists": [
+                    {
+                        "name": "Nunu"
+                    },
+                    {
+                        "name": "Sagi Kariv"
+                    },
+                    {
+                        "name": "Forever Tel Aviv"
+                    },
+                    {
+                        "name": "Dalit Rechester"
+                    },
+                    {
+                        "name": "Michal Serr"
+                    }
+                ],
+                "album": {
+                    "name": "Cute Boy (Remixes)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273381e345fbc912d5276f1a981"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02381e345fbc912d5276f1a981"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851381e345fbc912d5276f1a981"
+                        }
+                    ]
+                },
+                "duration_ms": 226666
+            },
+            "dateAdded": 1766590205771
+        },
+        {
+            "id": "4Tx01rdT8CTavgxkWKFIvV",
+            "track": {
+                "name": "בריידזילה - Itay Galo Remix",
+                "artists": [
+                    {
+                        "name": "Noa Kirel"
+                    },
+                    {
+                        "name": "Itay Galo"
+                    }
+                ],
+                "album": {
+                    "name": "בריידזילה (Itay Galo Remix)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27392e119904ab34418cbe908b9"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0292e119904ab34418cbe908b9"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485192e119904ab34418cbe908b9"
+                        }
+                    ]
+                },
+                "duration_ms": 206880
+            },
+            "dateAdded": 1766590206219
+        },
+        {
+            "id": "7FlaAFKCmBkTAXZpqpkAC0",
+            "track": {
+                "name": "מסע - Sharon Yosefov Official Remix",
+                "artists": [
+                    {
+                        "name": "Eliad"
+                    },
+                    {
+                        "name": "Sharon Yosefov"
+                    }
+                ],
+                "album": {
+                    "name": "מסע (Sharon Yosefov Official Remix)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d0eda342d2d43b711333ac37"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d0eda342d2d43b711333ac37"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d0eda342d2d43b711333ac37"
+                        }
+                    ]
+                },
+                "duration_ms": 258750
+            },
+            "dateAdded": 1766590207307
+        },
+        {
+            "id": "76dC9RfvSifI1IkiZJ9JW6",
+            "track": {
+                "name": "BO'EE - Asher Swissa & Anorre Remix",
+                "artists": [
+                    {
+                        "name": "Idan Raichel"
+                    },
+                    {
+                        "name": "ASHER SWISSA"
+                    },
+                    {
+                        "name": "Anorre"
+                    }
+                ],
+                "album": {
+                    "name": "BO'EE (Asher Swissa & Anorre Remix)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739358172db9eb2d0d1041b998"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029358172db9eb2d0d1041b998"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519358172db9eb2d0d1041b998"
+                        }
+                    ]
+                },
+                "duration_ms": 186393
+            },
+            "dateAdded": 1766590209860
+        },
+        {
+            "id": "1O9NQCKLPZy4aHU30VoYNU",
+            "track": {
+                "name": "כל כך מוכר - בבא גוזמבא - רמיקס",
+                "artists": [
+                    {
+                        "name": "Margalit Tzan'ani"
+                    }
+                ],
+                "album": {
+                    "name": "כל כך מוכר - בבא גוזמבא - רמיקס",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273c9aa3f93f206187f57f00541"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02c9aa3f93f206187f57f00541"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851c9aa3f93f206187f57f00541"
+                        }
+                    ]
+                },
+                "duration_ms": 313388
+            },
+            "dateAdded": 1766590210443
+        },
+        {
+            "id": "0NUa1EDN3tGWpSzikKSrXg",
+            "track": {
+                "name": "פאוץ' - Remix",
+                "artists": [
+                    {
+                        "name": "Noa Kirel"
+                    },
+                    {
+                        "name": "Dalit Rechester"
+                    },
+                    {
+                        "name": "Ran Ziv"
+                    }
+                ],
+                "album": {
+                    "name": "פאוץ' (Remix)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273216fa03d22aa2ff09b559617"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02216fa03d22aa2ff09b559617"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851216fa03d22aa2ff09b559617"
+                        }
+                    ]
+                },
+                "duration_ms": 310781
+            },
+            "dateAdded": 1766590219021
+        },
+        {
+            "id": "11SQ5UJECpHwJVbmen2kXZ",
+            "track": {
+                "name": "Hakol Beseder - Omri Smadar Remix",
+                "artists": [
+                    {
+                        "name": "Yehudit Ravitz"
+                    },
+                    {
+                        "name": "Omri Smadar"
+                    }
+                ],
+                "album": {
+                    "name": "Hakol Beseder (Omri Smadar Remix)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273b10eb3fc92b7de565209ed9e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02b10eb3fc92b7de565209ed9e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851b10eb3fc92b7de565209ed9e"
+                        }
+                    ]
+                },
+                "duration_ms": 261131
+            },
+            "dateAdded": 1766590222142
+        },
+        {
+            "id": "2UWJfFMFxs7OljYraLHLfi",
+            "track": {
+                "name": "אם תרצי / חנן בן ארי - Remix",
+                "artists": [
+                    {
+                        "name": "Israel Kimchi"
+                    },
+                    {
+                        "name": "ASYA"
+                    }
+                ],
+                "album": {
+                    "name": "אם תרצי / חנן בן ארי (Remix)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27313f7fdb9809225ccf16964c8"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0213f7fdb9809225ccf16964c8"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485113f7fdb9809225ccf16964c8"
+                        }
+                    ]
+                },
+                "duration_ms": 277655
+            },
+            "dateAdded": 1766590237384
+        }
+    ],
+      "_id": "zqciy",
+      "description": "A high-energy playlist to keep you motivated during your workouts, featuring powerful beats and inspiring lyrics from top artists."
+    
+},{
+    "name": "GYM workout ",
+    "imgUrl": "/src/assets/imgs/defaultStationImg.png",
+    "owner": {
+        "_id": "aLdcQ",
+        "fullname": "Adminsky",
+        "username": "admin",
+        "password": "admin",
+        "likedSongs": [],
+        "stationsId": []
+    },
+    "tracks": [
+        {
+            "id": "4xkOaSrkexMciUUogZKVTS",
+            "track": {
+                "name": "Till I Collapse",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    },
+                    {
+                        "name": "Nate Dogg"
+                    }
+                ],
+                "album": {
+                    "name": "The Eminem Show",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026ca5c90113b30c3c43ffb8f4"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516ca5c90113b30c3c43ffb8f4"
+                        }
+                    ]
+                },
+                "duration_ms": 297786
+            },
+            "dateAdded": 1766589153931
+        },
+        {
+            "id": "5In8B6Om5OKrhwBMB4tXSi",
+            "track": {
+                "name": "Fuel",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    },
+                    {
+                        "name": "JID"
+                    }
+                ],
+                "album": {
+                    "name": "The Death of Slim Shady (Coup De Grâce)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731633c43b5695735f7de36487"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021633c43b5695735f7de36487"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511633c43b5695735f7de36487"
+                        }
+                    ]
+                },
+                "duration_ms": 213646
+            },
+            "dateAdded": 1766589156387
+        },
+        {
+            "id": "0fGh0trRN1xz3s41r7V5ce",
+            "track": {
+                "name": "Shake That",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    },
+                    {
+                        "name": "Nate Dogg"
+                    }
+                ],
+                "album": {
+                    "name": "Curtain Call: The Hits (Deluxe Edition)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273eab40fc794b88b9d1e012578"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02eab40fc794b88b9d1e012578"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851eab40fc794b88b9d1e012578"
+                        }
+                    ]
+                },
+                "duration_ms": 274440
+            },
+            "dateAdded": 1766589157643
+        },
+        {
+            "id": "0a4MMyCrzT0En247IhqZbD",
+            "track": {
+                "name": "Hype Boy",
+                "artists": [
+                    {
+                        "name": "NewJeans"
+                    }
+                ],
+                "album": {
+                    "name": "NewJeans 1st EP 'New Jeans'",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739d28fd01859073a3ae6ea209"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029d28fd01859073a3ae6ea209"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519d28fd01859073a3ae6ea209"
+                        }
+                    ]
+                },
+                "duration_ms": 179026
+            },
+            "dateAdded": 1766589922242
+        },
+        {
+            "id": "44mZhyNniIIpPBcWH2LKz8",
+            "track": {
+                "name": "Hyperventilation",
+                "artists": [
+                    {
+                        "name": "RADWIMPS"
+                    }
+                ],
+                "album": {
+                    "name": "Keitaidenwa",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2737a22db6ed567ca3b2cd9114a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e027a22db6ed567ca3b2cd9114a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048517a22db6ed567ca3b2cd9114a"
+                        }
+                    ]
+                },
+                "duration_ms": 263586
+            },
+            "dateAdded": 1766589924721
+        },
+        {
+            "id": "3U1voPJN8NBSR96Ry0WJiF",
+            "track": {
+                "name": "מלכת הדור",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "תסמינים של פרידה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27312d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0212d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485112d961970aa13291d9720f8b"
+                        }
+                    ]
+                },
+                "duration_ms": 183031
+            },
+            "dateAdded": 1766589933036
+        },
+        {
+            "id": "5Iu5Arli8isXulPfAQjbYI",
+            "track": {
+                "name": "נמס ממך",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "נמס ממך",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731580475dd7b80962a649d0c1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021580475dd7b80962a649d0c1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511580475dd7b80962a649d0c1"
+                        }
+                    ]
+                },
+                "duration_ms": 233053
+            },
+            "dateAdded": 1766589937164
+        },
+        {
+            "id": "5ppuL7dOIhd7td0YCJJuwf",
+            "track": {
+                "name": "טקילה",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "לחנים שבורים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851635571e4dbe218b57bf5c1ff"
+                        }
+                    ]
+                },
+                "duration_ms": 160642
+            },
+            "dateAdded": 1766589939661
+        },
+        {
+            "id": "6f8Kb2g1y1jIbXo07nLOql",
+            "track": {
+                "name": "Hit 'N' Run",
+                "artists": [
+                    {
+                        "name": "Skazi"
+                    }
+                ],
+                "album": {
+                    "name": "Total Anarchy",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27329d54a21f2169fddeeeeb650"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0229d54a21f2169fddeeeeb650"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485129d54a21f2169fddeeeeb650"
+                        }
+                    ]
+                },
+                "duration_ms": 458386
+            },
+            "dateAdded": 1766589946412
+        },
+        {
+            "id": "2GFJDl7kEuDgckSfExlHOa",
+            "track": {
+                "name": "I Wish - Brutal Remix By Skazi",
+                "artists": [
+                    {
+                        "name": "Skazi"
+                    }
+                ],
+                "album": {
+                    "name": "The Zoo Ep",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2738e216b4d9a4ad0eaffea4241"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e028e216b4d9a4ad0eaffea4241"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048518e216b4d9a4ad0eaffea4241"
+                        }
+                    ]
+                },
+                "duration_ms": 480000
+            },
+            "dateAdded": 1766589949414
+        },
+        {
+            "id": "5uEYRdEIh9Bo4fpjDd4Na9",
+            "track": {
+                "name": "Goosebumps - Remix",
+                "artists": [
+                    {
+                        "name": "Travis Scott"
+                    },
+                    {
+                        "name": "HVME"
+                    }
+                ],
+                "album": {
+                    "name": "Goosebumps (Remix)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273261927ea4874e8f375ad27ce"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02261927ea4874e8f375ad27ce"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851261927ea4874e8f375ad27ce"
+                        }
+                    ]
+                },
+                "duration_ms": 162802
+            },
+            "dateAdded": 1766589955255
+        },
+        {
+            "id": "6JjPBQfI2Y8nIjnm65X6Pw",
+            "track": {
+                "name": "X (feat. Maluma & Ozuna) - Remix",
+                "artists": [
+                    {
+                        "name": "Nicky Jam"
+                    },
+                    {
+                        "name": "J Balvin"
+                    },
+                    {
+                        "name": "Maluma"
+                    },
+                    {
+                        "name": "Ozuna"
+                    }
+                ],
+                "album": {
+                    "name": "X (feat. Maluma & Ozuna) [Remix]",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734b1734e4d48786063992ce04"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024b1734e4d48786063992ce04"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514b1734e4d48786063992ce04"
+                        }
+                    ]
+                },
+                "duration_ms": 236000
+            },
+            "dateAdded": 1766589956334
+        },
+        {
+            "id": "4IlqQhaxrGPxmg35YcXXuS",
+            "track": {
+                "name": "Dancin - Krono Remix",
+                "artists": [
+                    {
+                        "name": "Aaron Smith"
+                    },
+                    {
+                        "name": "Luvli"
+                    },
+                    {
+                        "name": "Krono"
+                    }
+                ],
+                "album": {
+                    "name": "Ibiza 2019",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2738e434692f8d330ad8f5d933a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e028e434692f8d330ad8f5d933a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048518e434692f8d330ad8f5d933a"
+                        }
+                    ]
+                },
+                "duration_ms": 256000
+            },
+            "dateAdded": 1766589957230
+        },
+        {
+            "id": "5W1J3pWAvbSELyAfAhDhuz",
+            "track": {
+                "name": "נמס ממך - Remix",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    },
+                    {
+                        "name": "Gilad Markovich"
+                    }
+                ],
+                "album": {
+                    "name": "נמס ממך",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731580475dd7b80962a649d0c1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021580475dd7b80962a649d0c1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511580475dd7b80962a649d0c1"
+                        }
+                    ]
+                },
+                "duration_ms": 243440
+            },
+            "dateAdded": 1766589958598
+        },
+        {
+            "id": "5eALoO9RRACvoxvLKF9zt4",
+            "track": {
+                "name": "Riot",
+                "artists": [
+                    {
+                        "name": "Three Days Grace"
+                    }
+                ],
+                "album": {
+                    "name": "One-X",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fa4c18fdbd1bf1a39b7b794f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fa4c18fdbd1bf1a39b7b794f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fa4c18fdbd1bf1a39b7b794f"
+                        }
+                    ]
+                },
+                "duration_ms": 207586
+            },
+            "dateAdded": 1766590264269
+        },
+        {
+            "id": "4aOOExMBUyxKnEYb39SrTg",
+            "track": {
+                "name": "Riot",
+                "artists": [
+                    {
+                        "name": "XXXTENTACION"
+                    }
+                ],
+                "album": {
+                    "name": "Riot",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27309cbfc5027baa866af38c06f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0209cbfc5027baa866af38c06f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485109cbfc5027baa866af38c06f"
+                        }
+                    ]
+                },
+                "duration_ms": 78680
+            },
+            "dateAdded": 1766590265412
+        },
+        {
+            "id": "4wMR4fRKMTyUJG6VAsmccv",
+            "track": {
+                "name": "Riot Van",
+                "artists": [
+                    {
+                        "name": "Arctic Monkeys"
+                    }
+                ],
+                "album": {
+                    "name": "Whatever People Say I Am, That's What I'm Not",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736b3fa88bdd4af566fbbf2bbf"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026b3fa88bdd4af566fbbf2bbf"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516b3fa88bdd4af566fbbf2bbf"
+                        }
+                    ]
+                },
+                "duration_ms": 134933
+            },
+            "dateAdded": 1766590266389
+        },
+        {
+            "id": "0qbob15D35qeEJEMONpDrS",
+            "track": {
+                "name": "בלאגן",
+                "artists": [
+                    {
+                        "name": "רון חיון"
+                    },
+                    {
+                        "name": "DUDA"
+                    }
+                ],
+                "album": {
+                    "name": "16",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273014b427ad9c4a484872864ac"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02014b427ad9c4a484872864ac"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851014b427ad9c4a484872864ac"
+                        }
+                    ]
+                },
+                "duration_ms": 153777
+            },
+            "dateAdded": 1766590273086
+        },
+        {
+            "id": "2gxoP5GgbMJUyvfjoUnbfx",
+            "track": {
+                "name": "בלאגן",
+                "artists": [
+                    {
+                        "name": "Itay Levi"
+                    }
+                ],
+                "album": {
+                    "name": "11",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27305863e872af2695137501697"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0205863e872af2695137501697"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485105863e872af2695137501697"
+                        }
+                    ]
+                },
+                "duration_ms": 168421
+            },
+            "dateAdded": 1766590275214
+        },
+        {
+            "id": "7kbMlbfDBhQGfd0AnbYqnC",
+            "track": {
+                "name": "עושה לי בלאגן",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    },
+                    {
+                        "name": "Nadav Navi Aharoni"
+                    }
+                ],
+                "album": {
+                    "name": "עושה לי בלאגן",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273cfbb5009a968d65bc0abc2ad"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02cfbb5009a968d65bc0abc2ad"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851cfbb5009a968d65bc0abc2ad"
+                        }
+                    ]
+                },
+                "duration_ms": 203520
+            },
+            "dateAdded": 1766590279127
+        },
+        {
+            "id": "43dcPAf3mzSsl8dRWXjZgF",
+            "track": {
+                "name": "אהבה בקרטונים",
+                "artists": [
+                    {
+                        "name": "Eyal Golan"
+                    }
+                ],
+                "album": {
+                    "name": "אהבה מנצחת הכל",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27361614bb00d6ae0c4d7a8214a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0261614bb00d6ae0c4d7a8214a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485161614bb00d6ae0c4d7a8214a"
+                        }
+                    ]
+                },
+                "duration_ms": 214907
+            },
+            "dateAdded": 1766590284383
+        },
+        {
+            "id": "34aKXUhVdHGTzWOt85RjGq",
+            "track": {
+                "name": "אהבה",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "Part II",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d3a7fd4d957030f16d2b557f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d3a7fd4d957030f16d2b557f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d3a7fd4d957030f16d2b557f"
+                        }
+                    ]
+                },
+                "duration_ms": 205205
+            },
+            "dateAdded": 1766590285334
+        },
+        {
+            "id": "4RyMByXc5HfKc3b8wqwOso",
+            "track": {
+                "name": "אהבה חולה",
+                "artists": [
+                    {
+                        "name": "Peer Tasi"
+                    }
+                ],
+                "album": {
+                    "name": "רדיו שטח",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733c0628146c49c2201a097930"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e023c0628146c49c2201a097930"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048513c0628146c49c2201a097930"
+                        }
+                    ]
+                },
+                "duration_ms": 182700
+            },
+            "dateAdded": 1766590286471
+        },
+        {
+            "id": "5fKgzl3NkOSBwVdsYRqxdd",
+            "track": {
+                "name": "אהבה חולה",
+                "artists": [
+                    {
+                        "name": "הכוכב הבא"
+                    },
+                    {
+                        "name": "Noam Bettan"
+                    }
+                ],
+                "album": {
+                    "name": "הכוכב הבא לאירוויזיון 2026 - פרק 17",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27368b83002ca39562d4195ec00"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0268b83002ca39562d4195ec00"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485168b83002ca39562d4195ec00"
+                        }
+                    ]
+                },
+                "duration_ms": 197333
+            },
+            "dateAdded": 1766590287841
+        },
+        {
+            "id": "0KQx6HOpJueiSkztcS0r7D",
+            "track": {
+                "name": "Fallin'",
+                "artists": [
+                    {
+                        "name": "Alicia Keys"
+                    }
+                ],
+                "album": {
+                    "name": "Songs In A Minor",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736d684b553a40e4a11e1db96d"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026d684b553a40e4a11e1db96d"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516d684b553a40e4a11e1db96d"
+                        }
+                    ]
+                },
+                "duration_ms": 210200
+            },
+            "dateAdded": 1766590296656
+        },
+        {
+            "id": "26XaOsDMbl0e1cVKYfkz6w",
+            "track": {
+                "name": "Falling",
+                "artists": [
+                    {
+                        "name": "Trevor Daniel"
+                    }
+                ],
+                "album": {
+                    "name": "Falling",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273f3508855e1fd44d447a3413b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02f3508855e1fd44d447a3413b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851f3508855e1fd44d447a3413b"
+                        }
+                    ]
+                },
+                "duration_ms": 159381
+            },
+            "dateAdded": 1766590297665
+        },
+        {
+            "id": "1ZMiCix7XSAbfAJlEZWMCp",
+            "track": {
+                "name": "Falling",
+                "artists": [
+                    {
+                        "name": "Harry Styles"
+                    }
+                ],
+                "album": {
+                    "name": "Fine Line",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27325180571abce9472f61bd722"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0225180571abce9472f61bd722"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485125180571abce9472f61bd722"
+                        }
+                    ]
+                },
+                "duration_ms": 240139
+            },
+            "dateAdded": 1766590298777
+        },
+        {
+            "id": "03jdl5GTBhKsgB1Yw8mVPh",
+            "track": {
+                "name": "In Between",
+                "artists": [
+                    {
+                        "name": "Beartooth"
+                    }
+                ],
+                "album": {
+                    "name": "Disgusting",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736b70e7bed9a831b79c28327f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026b70e7bed9a831b79c28327f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516b70e7bed9a831b79c28327f"
+                        }
+                    ]
+                },
+                "duration_ms": 213576
+            },
+            "dateAdded": 1766590308706
+        },
+        {
+            "id": "2NRa4W3rH4e5GKQMN5Qwyr",
+            "track": {
+                "name": "Hated",
+                "artists": [
+                    {
+                        "name": "Beartooth"
+                    }
+                ],
+                "album": {
+                    "name": "Aggressive",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736caec4aa85cec703b2ab6f5a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026caec4aa85cec703b2ab6f5a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516caec4aa85cec703b2ab6f5a"
+                        }
+                    ]
+                },
+                "duration_ms": 211430
+            },
+            "dateAdded": 1766590310907
+        },
+        {
+            "id": "1hkm127hnTSa2xjGNw8IAE",
+            "track": {
+                "name": "Disease",
+                "artists": [
+                    {
+                        "name": "Beartooth"
+                    }
+                ],
+                "album": {
+                    "name": "Disease",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a898bedf301bdc19d6d39042"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a898bedf301bdc19d6d39042"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a898bedf301bdc19d6d39042"
+                        }
+                    ]
+                },
+                "duration_ms": 228372
+            },
+            "dateAdded": 1766590312883
+        },
+        {
+            "id": "60a0Rd6pjrkxjPbaKzXjfq",
+            "track": {
+                "name": "In the End",
+                "artists": [
+                    {
+                        "name": "Linkin Park"
+                    }
+                ],
+                "album": {
+                    "name": "Hybrid Theory (Bonus Edition)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e2f039481babe23658fc719a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e2f039481babe23658fc719a"
+                        }
+                    ]
+                },
+                "duration_ms": 216880
+            },
+            "dateAdded": 1766590329901
+        },
+        {
+            "id": "3fjmSxt0PskST13CSdBUFx",
+            "track": {
+                "name": "Somewhere I Belong",
+                "artists": [
+                    {
+                        "name": "Linkin Park"
+                    }
+                ],
+                "album": {
+                    "name": "Meteora (Bonus Edition)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2738b5b6fa1326d996181e71dd7"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e028b5b6fa1326d996181e71dd7"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048518b5b6fa1326d996181e71dd7"
+                        }
+                    ]
+                },
+                "duration_ms": 213933
+            },
+            "dateAdded": 1766590331678
+        },
+        {
+            "id": "18lR4BzEs7e3qzc0KVkTpU",
+            "track": {
+                "name": "What I've Done",
+                "artists": [
+                    {
+                        "name": "Linkin Park"
+                    }
+                ],
+                "album": {
+                    "name": "Minutes to Midnight",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736e996745f2c7b8036abef213"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026e996745f2c7b8036abef213"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516e996745f2c7b8036abef213"
+                        }
+                    ]
+                },
+                "duration_ms": 205226
+            },
+            "dateAdded": 1766590336615
+        },
+        {
+            "id": "4Yf5bqU3NK4kNOypcrLYwU",
+            "track": {
+                "name": "Faint",
+                "artists": [
+                    {
+                        "name": "Linkin Park"
+                    }
+                ],
+                "album": {
+                    "name": "Meteora",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2735f1f51d14e8bea89484ecd1b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e025f1f51d14e8bea89484ecd1b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048515f1f51d14e8bea89484ecd1b"
+                        }
+                    ]
+                },
+                "duration_ms": 162106
+            },
+            "dateAdded": 1766590339579
+        }
+    ],
+    "_id": "WHdKm",
+    "description": "Push your limits. High-energy anthems to fuel your strongest session yet. tracks to boost your energy"
+},{
+    "name": "Mizrahit",
+    "imgUrl": "/src/assets/imgs/defaultStationImg.png",
+    "owner": {
+        "_id": "aLdcQ",
+        "fullname": "Adminsky",
+        "username": "admin",
+        "password": "admin",
+        "likedSongs": [
+            {
+                "id": "7lQ8MOhq6IN2w8EYcFNSUk",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Without Me",
+                "artists": [
+                    "Eminem"
+                ],
+                "durationMs": 290320,
+                "dateAddedToLikedSongs": 1766589199029
+            },
+            {
+                "id": "5In8B6Om5OKrhwBMB4tXSi",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731633c43b5695735f7de36487",
+                "title": "Fuel",
+                "artists": [
+                    "Eminem",
+                    "JID"
+                ],
+                "durationMs": 213646,
+                "videoId": "t5H_CewqpKA",
+                "dateAddedToLikedSongs": 1766589223988
+            },
+            {
+                "id": "4xkOaSrkexMciUUogZKVTS",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Till I Collapse",
+                "artists": [
+                    "Eminem",
+                    "Nate Dogg"
+                ],
+                "durationMs": 297786,
+                "videoId": "Pi3_Zs-oRUo",
+                "dateAddedToLikedSongs": 1766589471974
+            }
+        ],
+        "stationsId": []
+    },
+    "tracks": [
+        {
+            "id": "74kYHwU43s49Y5AukKArWQ",
+            "track": {
+                "name": "משהו אמיתי בעיניים",
+                "artists": [
+                    {
+                        "name": "ששון איפרם שאולוב"
+                    }
+                ],
+                "album": {
+                    "name": "משהו אמיתי בעיניים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e294ceac8bf2ee0abfbbb863"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e294ceac8bf2ee0abfbbb863"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e294ceac8bf2ee0abfbbb863"
+                        }
+                    ]
+                },
+                "duration_ms": 171280
+            },
+            "dateAdded": 1766590066598
+        },
+        {
+            "id": "3BZ0PszZqTIZ59IOnOANDp",
+            "track": {
+                "name": "אלייך",
+                "artists": [
+                    {
+                        "name": "Moshe Peretz"
+                    }
+                ],
+                "album": {
+                    "name": "אלייך",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d453789cdf042593cef25835"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d453789cdf042593cef25835"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d453789cdf042593cef25835"
+                        }
+                    ]
+                },
+                "duration_ms": 229146
+            },
+            "dateAdded": 1766590069207
+        },
+        {
+            "id": "42hiq4Rb6MCa3Ix3F64fKe",
+            "track": {
+                "name": "סימני הזמן",
+                "artists": [
+                    {
+                        "name": "Moshe Peretz"
+                    }
+                ],
+                "album": {
+                    "name": "סימני הזמן",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a7488df6f70bed10712fa44c"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a7488df6f70bed10712fa44c"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a7488df6f70bed10712fa44c"
+                        }
+                    ]
+                },
+                "duration_ms": 206391
+            },
+            "dateAdded": 1766590074512
+        },
+        {
+            "id": "4ACUaaKpqtwL2a7fVPVsdH",
+            "track": {
+                "name": "כל הכח",
+                "artists": [
+                    {
+                        "name": "Kobi Peretz"
+                    }
+                ],
+                "album": {
+                    "name": "כל מה שיש בי",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733671e620ef453ee2d39777b5"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e023671e620ef453ee2d39777b5"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048513671e620ef453ee2d39777b5"
+                        }
+                    ]
+                },
+                "duration_ms": 200000
+            },
+            "dateAdded": 1766590084505
+        },
+        {
+            "id": "5f0Zv5UQhxrvIh9bFZjOvr",
+            "track": {
+                "name": "בלבלי אותו",
+                "artists": [
+                    {
+                        "name": "Kobi Peretz"
+                    }
+                ],
+                "album": {
+                    "name": "בלבלי אותו",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273bac63734ac3d235825d664a6"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02bac63734ac3d235825d664a6"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851bac63734ac3d235825d664a6"
+                        }
+                    ]
+                },
+                "duration_ms": 263426
+            },
+            "dateAdded": 1766590085754
+        },
+        {
+            "id": "1cUfJtqUREUr1wBfKWI9GV",
+            "track": {
+                "name": "האחת של חיי",
+                "artists": [
+                    {
+                        "name": "Kobi Peretz"
+                    }
+                ],
+                "album": {
+                    "name": "כתוב בשמיים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739f4c586b537f88d29abfb34f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029f4c586b537f88d29abfb34f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519f4c586b537f88d29abfb34f"
+                        }
+                    ]
+                },
+                "duration_ms": 224574
+            },
+            "dateAdded": 1766590086401
+        },
+        {
+            "id": "3TCr0iEohddlP9upR5chbZ",
+            "track": {
+                "name": "אני לא בן של מלך",
+                "artists": [
+                    {
+                        "name": "Kobi Peretz"
+                    }
+                ],
+                "album": {
+                    "name": "כמה אהבה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fdd072271cf78a7aa84afc14"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fdd072271cf78a7aa84afc14"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fdd072271cf78a7aa84afc14"
+                        }
+                    ]
+                },
+                "duration_ms": 189825
+            },
+            "dateAdded": 1766590087721
+        },
+        {
+            "id": "3veMnJcqmNtvxBGxJWzqQc",
+            "track": {
+                "name": "כמה אהבה",
+                "artists": [
+                    {
+                        "name": "Kobi Peretz"
+                    }
+                ],
+                "album": {
+                    "name": "כמה אהבה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fdd072271cf78a7aa84afc14"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fdd072271cf78a7aa84afc14"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fdd072271cf78a7aa84afc14"
+                        }
+                    ]
+                },
+                "duration_ms": 233372
+            },
+            "dateAdded": 1766590088372
+        },
+        {
+            "id": "3pTsE064ZTJ1n8bP3VAm2c",
+            "track": {
+                "name": "תהום",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "לחנים שבורים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851635571e4dbe218b57bf5c1ff"
+                        }
+                    ]
+                },
+                "duration_ms": 185625
+            },
+            "dateAdded": 1766590095291
+        },
+        {
+            "id": "4dELL8S6XVMibwBkjJACF1",
+            "track": {
+                "name": "לילות וקללות",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "חמישה לילות",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e14295d1a6eebd53fd6223dd"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e14295d1a6eebd53fd6223dd"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e14295d1a6eebd53fd6223dd"
+                        }
+                    ]
+                },
+                "duration_ms": 204446
+            },
+            "dateAdded": 1766590096179
+        },
+        {
+            "id": "4cD66ZifK0A1taOJIoHBin",
+            "track": {
+                "name": "שני משוגעים",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "שני משוגעים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e3b28bf1ee8514246ea8da7a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e3b28bf1ee8514246ea8da7a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e3b28bf1ee8514246ea8da7a"
+                        }
+                    ]
+                },
+                "duration_ms": 170773
+            },
+            "dateAdded": 1766590096898
+        },
+        {
+            "id": "5Sn3aXG5AWFmd1ij2PTisj",
+            "track": {
+                "name": "השיר שאת אהבת",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "תסמינים של פרידה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27312d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0212d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485112d961970aa13291d9720f8b"
+                        }
+                    ]
+                },
+                "duration_ms": 218100
+            },
+            "dateAdded": 1766590097851
+        },
+        {
+            "id": "3U1voPJN8NBSR96Ry0WJiF",
+            "track": {
+                "name": "מלכת הדור",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "תסמינים של פרידה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27312d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0212d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485112d961970aa13291d9720f8b"
+                        }
+                    ]
+                },
+                "duration_ms": 183031
+            },
+            "dateAdded": 1766590098715
+        },
+        {
+            "id": "2QkVXq7dLpefWAiETsvIOs",
+            "track": {
+                "name": "אהובתי כבר לא רואה אותי",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "לחנים שבורים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851635571e4dbe218b57bf5c1ff"
+                        }
+                    ]
+                },
+                "duration_ms": 190500
+            },
+            "dateAdded": 1766590100011
+        },
+        {
+            "id": "5omHkj4qY0A8f6mE4T3fAH",
+            "track": {
+                "name": "היה טוב",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "תסמינים של פרידה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27312d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0212d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485112d961970aa13291d9720f8b"
+                        }
+                    ]
+                },
+                "duration_ms": 213879
+            },
+            "dateAdded": 1766590100485
+        },
+        {
+            "id": "5Iu5Arli8isXulPfAQjbYI",
+            "track": {
+                "name": "נמס ממך",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "נמס ממך",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731580475dd7b80962a649d0c1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021580475dd7b80962a649d0c1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511580475dd7b80962a649d0c1"
+                        }
+                    ]
+                },
+                "duration_ms": 233053
+            },
+            "dateAdded": 1766590107548
+        },
+        {
+            "id": "5ppuL7dOIhd7td0YCJJuwf",
+            "track": {
+                "name": "טקילה",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "לחנים שבורים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851635571e4dbe218b57bf5c1ff"
+                        }
+                    ]
+                },
+                "duration_ms": 160642
+            },
+            "dateAdded": 1766590114182
+        },
+        {
+            "id": "2PZ8BlakFfw8T8InWlkVLg",
+            "track": {
+                "name": "איפה שתגידי",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "תסמינים של פרידה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27312d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0212d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485112d961970aa13291d9720f8b"
+                        }
+                    ]
+                },
+                "duration_ms": 175961
+            },
+            "dateAdded": 1766590121622
+        },
+        {
+            "id": "4abB8WdkswrxWxcV2e56x9",
+            "track": {
+                "name": "גדל לי קצת זקן",
+                "artists": [
+                    {
+                        "name": "Eden Hason"
+                    }
+                ],
+                "album": {
+                    "name": "אלבום 2",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d912fce8c107beb44927d0a7"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d912fce8c107beb44927d0a7"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d912fce8c107beb44927d0a7"
+                        }
+                    ]
+                },
+                "duration_ms": 197499
+            },
+            "dateAdded": 1766590129291
+        },
+        {
+            "id": "0QDGzInNYjTlYI28Xq7slK",
+            "track": {
+                "name": "לאהוב אותך כל יום",
+                "artists": [
+                    {
+                        "name": "Doli & Penn"
+                    },
+                    {
+                        "name": "Eden Hason"
+                    }
+                ],
+                "album": {
+                    "name": "לאהוב אותך כל יום",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273eb8ec116a25766796e0a45f3"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02eb8ec116a25766796e0a45f3"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851eb8ec116a25766796e0a45f3"
+                        }
+                    ]
+                },
+                "duration_ms": 212451
+            },
+            "dateAdded": 1766590129984
+        },
+        {
+            "id": "4I9NVCnjIRVriXfNE7VhE0",
+            "track": {
+                "name": "עושה לי צרות",
+                "artists": [
+                    {
+                        "name": "Eden Hason"
+                    }
+                ],
+                "album": {
+                    "name": "עושה לי צרות",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27347e6c8b41b5546781d84b5e7"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0247e6c8b41b5546781d84b5e7"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485147e6c8b41b5546781d84b5e7"
+                        }
+                    ]
+                },
+                "duration_ms": 158000
+            },
+            "dateAdded": 1766590130416
+        },
+        {
+            "id": "1Rh5r9vUOumJ1sbPuv3dkO",
+            "track": {
+                "name": "עד שתבואי עד אליי",
+                "artists": [
+                    {
+                        "name": "Eden Hason"
+                    }
+                ],
+                "album": {
+                    "name": "עד שתבואי עד אליי",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273cb9d66d14c93aad13b5b3477"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02cb9d66d14c93aad13b5b3477"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851cb9d66d14c93aad13b5b3477"
+                        }
+                    ]
+                },
+                "duration_ms": 199354
+            },
+            "dateAdded": 1766590131186
+        },
+        {
+            "id": "68kVzJf0STAv91tuLutuDr",
+            "track": {
+                "name": "שקיעות אדומות",
+                "artists": [
+                    {
+                        "name": "Eden Hason"
+                    }
+                ],
+                "album": {
+                    "name": "אלבום 2",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d912fce8c107beb44927d0a7"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d912fce8c107beb44927d0a7"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d912fce8c107beb44927d0a7"
+                        }
+                    ]
+                },
+                "duration_ms": 212963
+            },
+            "dateAdded": 1766590131873
+        },
+        {
+            "id": "7ea31KGrIuCRvHF31ir6GD",
+            "track": {
+                "name": "לזאת שניצחה",
+                "artists": [
+                    {
+                        "name": "Eden Ben Zaken"
+                    }
+                ],
+                "album": {
+                    "name": "לזאת שניצחה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e48daaa6f7df7c1dcf399d18"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e48daaa6f7df7c1dcf399d18"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e48daaa6f7df7c1dcf399d18"
+                        }
+                    ]
+                },
+                "duration_ms": 239680
+            },
+            "dateAdded": 1766590132241
+        },
+        {
+            "id": "7n6elf6gl4POlFO2LlyIMy",
+            "track": {
+                "name": "בסיבוב הבא",
+                "artists": [
+                    {
+                        "name": "Eden Ben Zaken"
+                    }
+                ],
+                "album": {
+                    "name": "בסיבוב הבא",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2737531ffde17ed27d8ce75a5b2"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e027531ffde17ed27d8ce75a5b2"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048517531ffde17ed27d8ce75a5b2"
+                        }
+                    ]
+                },
+                "duration_ms": 203060
+            },
+            "dateAdded": 1766590132923
+        },
+        {
+            "id": "74pfNNxGlwSyokwtqxHcDa",
+            "track": {
+                "name": "שקיעות אדומות",
+                "artists": [
+                    {
+                        "name": "Eden Hason"
+                    }
+                ],
+                "album": {
+                    "name": "שקיעות אדומות",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27353895757246ae400e946774f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0253895757246ae400e946774f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485153895757246ae400e946774f"
+                        }
+                    ]
+                },
+                "duration_ms": 212963
+            },
+            "dateAdded": 1766590134274
+        },
+        {
+            "id": "3Dx920qUWdBswFizsT1PxR",
+            "track": {
+                "name": "באמת של האמת",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "אוגוסט דאמפ",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2730202dab8650665de78debfa3"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e020202dab8650665de78debfa3"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048510202dab8650665de78debfa3"
+                        }
+                    ]
+                },
+                "duration_ms": 183750
+            },
+            "dateAdded": 1766590142354
+        },
+        {
+            "id": "2yPnlfwQ1AmhHauqQWDlWZ",
+            "track": {
+                "name": "מנגן ושר",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "THE LAST EPISODE",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d3f6921c5c47cb7871521494"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d3f6921c5c47cb7871521494"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d3f6921c5c47cb7871521494"
+                        }
+                    ]
+                },
+                "duration_ms": 201080
+            },
+            "dateAdded": 1766590142994
+        },
+        {
+            "id": "1946N277M0tygagJZxCP1f",
+            "track": {
+                "name": "ה' יברך אותך",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "גיטרה ולנשום",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739e7e75cc4b3333d1f6f03d56"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029e7e75cc4b3333d1f6f03d56"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519e7e75cc4b3333d1f6f03d56"
+                        }
+                    ]
+                },
+                "duration_ms": 225267
+            },
+            "dateAdded": 1766590143818
+        },
+        {
+            "id": "0P8jIXqWvT6iNCeAzyinxt",
+            "track": {
+                "name": "אל תעשי לו צרות",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "אל תעשי לו צרות",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d2aa4dc7852d8a4f7b12d7a5"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d2aa4dc7852d8a4f7b12d7a5"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d2aa4dc7852d8a4f7b12d7a5"
+                        }
+                    ]
+                },
+                "duration_ms": 171304
+            },
+            "dateAdded": 1766590144337
+        },
+        {
+            "id": "0ckd54NpB6QU3NIBdbkddf",
+            "track": {
+                "name": "גשם",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "אושר כהן",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27333767a59b65460dc0d7f2b21"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0233767a59b65460dc0d7f2b21"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485133767a59b65460dc0d7f2b21"
+                        }
+                    ]
+                },
+                "duration_ms": 184188
+            },
+            "dateAdded": 1766590145107
+        },
+        {
+            "id": "6uCZdJ3p3hrfi6mRKVtt7k",
+            "track": {
+                "name": "תראי אהובתי",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "אושר",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734770375370f849c25a09fa7e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024770375370f849c25a09fa7e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514770375370f849c25a09fa7e"
+                        }
+                    ]
+                },
+                "duration_ms": 196235
+            },
+            "dateAdded": 1766590145682
+        },
+        {
+            "id": "2TlbpPgFuDkTqYNv01Amcv",
+            "track": {
+                "name": "מקום לשנינו & השם יברך אותך - מתוך חזרות לפסטיבל התמר 2025",
+                "artists": [
+                    {
+                        "name": "Idan Amedi"
+                    },
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "מקום לשנינו & השם יברך אותך (מתוך חזרות לפסטיבל התמר 2025)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273abf80297bd95246cea6d669f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02abf80297bd95246cea6d669f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851abf80297bd95246cea6d669f"
+                        }
+                    ]
+                },
+                "duration_ms": 279910
+            },
+            "dateAdded": 1766590146298
+        },
+        {
+            "id": "6Ws8sIVNmLncHqUXa3enow",
+            "track": {
+                "name": "קצת משוגעת",
+                "artists": [
+                    {
+                        "name": "Sarit Hadad"
+                    }
+                ],
+                "album": {
+                    "name": "רק אהבה תביא אהבה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273330e88ef9aa1f378433a73c4"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02330e88ef9aa1f378433a73c4"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851330e88ef9aa1f378433a73c4"
+                        }
+                    ]
+                },
+                "duration_ms": 234440
+            },
+            "dateAdded": 1766590152131
+        },
+        {
+            "id": "14uCYjc3tEJmK61fWQl3KK",
+            "track": {
+                "name": "בחורות טובות",
+                "artists": [
+                    {
+                        "name": "Sarit Hadad"
+                    },
+                    {
+                        "name": "Odeya"
+                    }
+                ],
+                "album": {
+                    "name": "בחורות טובות",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27310c63318f75fd1516f04cee6"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0210c63318f75fd1516f04cee6"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485110c63318f75fd1516f04cee6"
+                        }
+                    ]
+                },
+                "duration_ms": 168960
+            },
+            "dateAdded": 1766590152964
+        },
+        {
+            "id": "6hWXe5KsRygkMO5MOvk7W4",
+            "track": {
+                "name": "בחום של תל אביב",
+                "artists": [
+                    {
+                        "name": "Sarit Hadad"
+                    }
+                ],
+                "album": {
+                    "name": "חגיגה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736d0dad4eee5e695271573431"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026d0dad4eee5e695271573431"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516d0dad4eee5e695271573431"
+                        }
+                    ]
+                },
+                "duration_ms": 208693
+            },
+            "dateAdded": 1766590153668
+        },
+        {
+            "id": "55el92LhFqH8Z8xDSO7caw",
+            "track": {
+                "name": "תלך כפרה עלי",
+                "artists": [
+                    {
+                        "name": "Sarit Hadad"
+                    }
+                ],
+                "album": {
+                    "name": "אשליות מתוקות",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731bbc84bb8dd47d76d357e01c"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021bbc84bb8dd47d76d357e01c"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511bbc84bb8dd47d76d357e01c"
+                        }
+                    ]
+                },
+                "duration_ms": 197440
+            },
+            "dateAdded": 1766590154596
+        },
+        {
+            "id": "2Bz8AklH1Xjmq4kzUDo0TT",
+            "track": {
+                "name": "חיכיתי לו",
+                "artists": [
+                    {
+                        "name": "Sarit Hadad"
+                    }
+                ],
+                "album": {
+                    "name": "שרית חדד",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27313571206b41848c365a3f11d"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0213571206b41848c365a3f11d"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485113571206b41848c365a3f11d"
+                        }
+                    ]
+                },
+                "duration_ms": 218880
+            },
+            "dateAdded": 1766590155133
+        },
+        {
+            "id": "1Ai1FfRefEJr2GTbDaJmnb",
+            "track": {
+                "name": "חגיגה",
+                "artists": [
+                    {
+                        "name": "Sarit Hadad"
+                    }
+                ],
+                "album": {
+                    "name": "חגיגה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736d0dad4eee5e695271573431"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026d0dad4eee5e695271573431"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516d0dad4eee5e695271573431"
+                        }
+                    ]
+                },
+                "duration_ms": 253013
+            },
+            "dateAdded": 1766590155813
+        },
+        {
+            "id": "0CgEkkLbd3OUIdARM5OiCX",
+            "track": {
+                "name": "חופשייה",
+                "artists": [
+                    {
+                        "name": "Sarit Hadad"
+                    }
+                ],
+                "album": {
+                    "name": "זה ששומר עלי",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273753eadd685d7d370e450d57c"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02753eadd685d7d370e450d57c"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851753eadd685d7d370e450d57c"
+                        }
+                    ]
+                },
+                "duration_ms": 272826
+            },
+            "dateAdded": 1766590156268
+        },
+        {
+            "id": "28GwdkNJ5t0hMuVBPyUy2h",
+            "track": {
+                "name": "הסוד",
+                "artists": [
+                    {
+                        "name": "Sarit Hadad"
+                    },
+                    {
+                        "name": "Subliminal"
+                    },
+                    {
+                        "name": "The Shadow"
+                    }
+                ],
+                "album": {
+                    "name": "חגיגה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736d0dad4eee5e695271573431"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026d0dad4eee5e695271573431"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516d0dad4eee5e695271573431"
+                        }
+                    ]
+                },
+                "duration_ms": 280333
+            },
+            "dateAdded": 1766590156823
+        }
+    ],
+      "_id": "kbJLe",
+    "description": 'The heart of Mizrahit music—soulful melodies and authentic Eastern rhythms. enjoy the rich tapestry of Mizrahi sounds that tell stories of love, life, and tradition.',
+},{
+    "name": "Chill songs",
+    "imgUrl": "/src/assets/imgs/defaultStationImg.png",
+    "owner": {
+        "_id": "aLdcQ",
+        "fullname": "Adminsky",
+        "username": "admin",
+        "password": "admin",
+        "likedSongs": [
+            {
+                "id": "7lQ8MOhq6IN2w8EYcFNSUk",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Without Me",
+                "artists": [
+                    "Eminem"
+                ],
+                "durationMs": 290320,
+                "dateAddedToLikedSongs": 1766589199029
+            },
+            {
+                "id": "5In8B6Om5OKrhwBMB4tXSi",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731633c43b5695735f7de36487",
+                "title": "Fuel",
+                "artists": [
+                    "Eminem",
+                    "JID"
+                ],
+                "durationMs": 213646,
+                "videoId": "t5H_CewqpKA",
+                "dateAddedToLikedSongs": 1766589223988
+            },
+            {
+                "id": "4xkOaSrkexMciUUogZKVTS",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Till I Collapse",
+                "artists": [
+                    "Eminem",
+                    "Nate Dogg"
+                ],
+                "durationMs": 297786,
+                "videoId": "Pi3_Zs-oRUo",
+                "dateAddedToLikedSongs": 1766589471974
+            }
+        ],
+        "stationsId": []
+    },
+    "tracks": [
+        {
+            "id": "3Am0IbOxmvlSXro7N5iSfZ",
+            "track": {
+                "name": "Strawberry Fields Forever - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Magical Mystery Tour (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273692d9189b2bd75525893f0c1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02692d9189b2bd75525893f0c1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851692d9189b2bd75525893f0c1"
+                        }
+                    ]
+                },
+                "duration_ms": 247320
+            },
+            "dateAdded": 1766590366196
+        },
+        {
+            "id": "5jgFfDIR6FR0gvlA56Nakr",
+            "track": {
+                "name": "Blackbird - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "The Beatles (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024ce8b4e42588bf18182a1ad2"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514ce8b4e42588bf18182a1ad2"
+                        }
+                    ]
+                },
+                "duration_ms": 138386
+            },
+            "dateAdded": 1766590371708
+        },
+        {
+            "id": "65vdMBskhx3akkG9vQlSH1",
+            "track": {
+                "name": "And I Love Her - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "A Hard Day's Night (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e230f303815e82a86713eedd"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e230f303815e82a86713eedd"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e230f303815e82a86713eedd"
+                        }
+                    ]
+                },
+                "duration_ms": 149693
+            },
+            "dateAdded": 1766590372300
+        },
+        {
+            "id": "389QX9Q1eUOEZ19vtzzI9O",
+            "track": {
+                "name": "While My Guitar Gently Weeps - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "The Beatles (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024ce8b4e42588bf18182a1ad2"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514ce8b4e42588bf18182a1ad2"
+                        }
+                    ]
+                },
+                "duration_ms": 285000
+            },
+            "dateAdded": 1766590372740
+        },
+        {
+            "id": "6dGnYIeXmHdcikdzNNDMm2",
+            "track": {
+                "name": "Here Comes The Sun - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Abbey Road (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273dc30583ba717007b00cceb25"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02dc30583ba717007b00cceb25"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851dc30583ba717007b00cceb25"
+                        }
+                    ]
+                },
+                "duration_ms": 185733
+            },
+            "dateAdded": 1766590373629
+        },
+        {
+            "id": "3KfbEIOC7YIv90FIfNSZpo",
+            "track": {
+                "name": "In My Life - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Rubber Soul (Remastered 2009)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ed801e58a9ababdea6ac7ce4"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ed801e58a9ababdea6ac7ce4"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ed801e58a9ababdea6ac7ce4"
+                        }
+                    ]
+                },
+                "duration_ms": 146333
+            },
+            "dateAdded": 1766590374143
+        },
+        {
+            "id": "7iN1s7xHE4ifF5povM6A48",
+            "track": {
+                "name": "Let It Be - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Let It Be (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27384243a01af3c77b56fe01ab1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0284243a01af3c77b56fe01ab1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485184243a01af3c77b56fe01ab1"
+                        }
+                    ]
+                },
+                "duration_ms": 243026
+            },
+            "dateAdded": 1766590374708
+        },
+        {
+            "id": "3BQHpFgAp4l80e1XslIjNI",
+            "track": {
+                "name": "Yesterday - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Help! (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e3e3b64cea45265469d4cafa"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e3e3b64cea45265469d4cafa"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e3e3b64cea45265469d4cafa"
+                        }
+                    ]
+                },
+                "duration_ms": 125666
+            },
+            "dateAdded": 1766590375124
+        },
+        {
+            "id": "0pNeVovbiZHkulpGeOx1Gj",
+            "track": {
+                "name": "Something - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Abbey Road (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273dc30583ba717007b00cceb25"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02dc30583ba717007b00cceb25"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851dc30583ba717007b00cceb25"
+                        }
+                    ]
+                },
+                "duration_ms": 182293
+            },
+            "dateAdded": 1766590376317
+        },
+        {
+            "id": "4nZi6XNe36Ut4Nij3IQ1yC",
+            "track": {
+                "name": "Silver Springs - 2004 Remaster",
+                "artists": [
+                    {
+                        "name": "Fleetwood Mac"
+                    }
+                ],
+                "album": {
+                    "name": "Rumours (Super Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e52a59a28efa4773dd2bfe1b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e52a59a28efa4773dd2bfe1b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e52a59a28efa4773dd2bfe1b"
+                        }
+                    ]
+                },
+                "duration_ms": 288786
+            },
+            "dateAdded": 1766592904905
+        },
+        {
+            "id": "7BHPGtpuuWWsvE7cCaMuEU",
+            "track": {
+                "name": "Naive",
+                "artists": [
+                    {
+                        "name": "The Kooks"
+                    }
+                ],
+                "album": {
+                    "name": "Inside In / Inside Out",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27363a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0263a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485163a28c5ecb7b13e9b329fe47"
+                        }
+                    ]
+                },
+                "duration_ms": 203506
+            },
+            "dateAdded": 1766595578966
+        },
+        {
+            "id": "5xoUgPXbMNUmoHU0Enwtwq",
+            "track": {
+                "name": "She Moves In Her Own Way",
+                "artists": [
+                    {
+                        "name": "The Kooks"
+                    }
+                ],
+                "album": {
+                    "name": "Inside In / Inside Out",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27363a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0263a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485163a28c5ecb7b13e9b329fe47"
+                        }
+                    ]
+                },
+                "duration_ms": 169306
+            },
+            "dateAdded": 1766595580244
+        },
+        {
+            "id": "6ZygaqgtPkiahkiYJhYWhn",
+            "track": {
+                "name": "Seaside",
+                "artists": [
+                    {
+                        "name": "The Kooks"
+                    }
+                ],
+                "album": {
+                    "name": "Inside In / Inside Out",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27363a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0263a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485163a28c5ecb7b13e9b329fe47"
+                        }
+                    ]
+                },
+                "duration_ms": 99226
+            },
+            "dateAdded": 1766595581845
+        },
+        {
+            "id": "003vvx7Niy0yvhvHt4a68B",
+            "track": {
+                "name": "Mr. Brightside",
+                "artists": [
+                    {
+                        "name": "The Killers"
+                    }
+                ],
+                "album": {
+                    "name": "Hot Fuss",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ccdddd46119a4ff53eaf1f5d"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ccdddd46119a4ff53eaf1f5d"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ccdddd46119a4ff53eaf1f5d"
+                        }
+                    ]
+                },
+                "duration_ms": 222973
+            },
+            "dateAdded": 1766595584950
+        },
+        {
+            "id": "0hIGUS1PQbv5NIrHIf6Fza",
+            "track": {
+                "name": "Sweet Emotion",
+                "artists": [
+                    {
+                        "name": "The Kooks"
+                    }
+                ],
+                "album": {
+                    "name": "Listen",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732bc58e4de7c41e84aeacee40"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022bc58e4de7c41e84aeacee40"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512bc58e4de7c41e84aeacee40"
+                        }
+                    ]
+                },
+                "duration_ms": 308569
+            },
+            "dateAdded": 1766595586366
+        },
+        {
+            "id": "1ttOlVyZvmnozD2muIxulw",
+            "track": {
+                "name": "עד מחר",
+                "artists": [
+                    {
+                        "name": "Eviatar Banai"
+                    }
+                ],
+                "album": {
+                    "name": "לילה כיום יאיר",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273f1b11c198066ac42a8ad6760"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02f1b11c198066ac42a8ad6760"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851f1b11c198066ac42a8ad6760"
+                        }
+                    ]
+                },
+                "duration_ms": 267466
+            },
+            "dateAdded": 1766595596726
+        },
+        {
+            "id": "5ogS9Gv62PA9a8h3nL2bEX",
+            "track": {
+                "name": "אבל את",
+                "artists": [
+                    {
+                        "name": "Meir Banai"
+                    },
+                    {
+                        "name": "Eviatar Banai"
+                    }
+                ],
+                "album": {
+                    "name": "אבל את",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273695ac649e236098b4ddb88dc"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02695ac649e236098b4ddb88dc"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851695ac649e236098b4ddb88dc"
+                        }
+                    ]
+                },
+                "duration_ms": 229411
+            },
+            "dateAdded": 1766595599903
+        },
+        {
+            "id": "0f9vK5r3z8jgTX2PK4ZxPF",
+            "track": {
+                "name": "יפה כלבנה",
+                "artists": [
+                    {
+                        "name": "Eviatar Banai"
+                    }
+                ],
+                "album": {
+                    "name": "יפה כלבנה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2730aa18e80cce01cc9b7c72ed5"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e020aa18e80cce01cc9b7c72ed5"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048510aa18e80cce01cc9b7c72ed5"
+                        }
+                    ]
+                },
+                "duration_ms": 195933
+            },
+            "dateAdded": 1766595602327
+        },
+        {
+            "id": "2xqMifKIz1qVTElCZPkyRH",
+            "track": {
+                "name": "לילה כיום יאיר",
+                "artists": [
+                    {
+                        "name": "Eviatar Banai"
+                    }
+                ],
+                "album": {
+                    "name": "לילה כיום יאיר",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273f1b11c198066ac42a8ad6760"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02f1b11c198066ac42a8ad6760"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851f1b11c198066ac42a8ad6760"
+                        }
+                    ]
+                },
+                "duration_ms": 204440
+            },
+            "dateAdded": 1766595603999
+        },
+        {
+            "id": "7JoXEwDsbey37yMghVbIub",
+            "track": {
+                "name": "הריני",
+                "artists": [
+                    {
+                        "name": "Ravid Plotnik"
+                    },
+                    {
+                        "name": "Eviatar Banai"
+                    }
+                ],
+                "album": {
+                    "name": "הריני",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273727f7ac643986e2625d6d912"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02727f7ac643986e2625d6d912"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851727f7ac643986e2625d6d912"
+                        }
+                    ]
+                },
+                "duration_ms": 239000
+            },
+            "dateAdded": 1766595606557
+        },
+        {
+            "id": "2L2vg2n4bU1CVLlpKbQhef",
+            "track": {
+                "name": "שיר ללא שם",
+                "artists": [
+                    {
+                        "name": "Eviatar Banai"
+                    }
+                ],
+                "album": {
+                    "name": "עוגן במים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a77178c8eea4900a58b743fa"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a77178c8eea4900a58b743fa"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a77178c8eea4900a58b743fa"
+                        }
+                    ]
+                },
+                "duration_ms": 218692
+            },
+            "dateAdded": 1766595607703
+        },
+        {
+            "id": "3AJwUDP919kvQ9QcozQPxg",
+            "track": {
+                "name": "Yellow",
+                "artists": [
+                    {
+                        "name": "Coldplay"
+                    }
+                ],
+                "album": {
+                    "name": "Parachutes",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739164bafe9aaa168d93f4816a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029164bafe9aaa168d93f4816a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519164bafe9aaa168d93f4816a"
+                        }
+                    ]
+                },
+                "duration_ms": 266773
+            },
+            "dateAdded": 1766595620623
+        },
+        {
+            "id": "1mea3bSkSGXuIRvnydlB5b",
+            "track": {
+                "name": "Viva La Vida",
+                "artists": [
+                    {
+                        "name": "Coldplay"
+                    }
+                ],
+                "album": {
+                    "name": "Viva La Vida or Death and All His Friends",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e21cc1db05580b6f2d2a3b6e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e21cc1db05580b6f2d2a3b6e"
+                        }
+                    ]
+                },
+                "duration_ms": 242373
+            },
+            "dateAdded": 1766595621681
+        },
+        {
+            "id": "7LVHVU3tWfcxj5aiPFEW4Q",
+            "track": {
+                "name": "Fix You",
+                "artists": [
+                    {
+                        "name": "Coldplay"
+                    }
+                ],
+                "album": {
+                    "name": "X&Y",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514e0362c225863f6ae2432651"
+                        }
+                    ]
+                },
+                "duration_ms": 295533
+            },
+            "dateAdded": 1766595623169
+        },
+        {
+            "id": "6nek1Nin9q48AVZcWs9e9D",
+            "track": {
+                "name": "Paradise",
+                "artists": [
+                    {
+                        "name": "Coldplay"
+                    }
+                ],
+                "album": {
+                    "name": "Mylo Xyloto",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851de0cd11d7b31c3bd1fd5983d"
+                        }
+                    ]
+                },
+                "duration_ms": 278719
+            },
+            "dateAdded": 1766595624545
+        },
+        {
+            "id": "75JFxkI2RXiU7L9VXzMkle",
+            "track": {
+                "name": "The Scientist",
+                "artists": [
+                    {
+                        "name": "Coldplay"
+                    }
+                ],
+                "album": {
+                    "name": "A Rush of Blood to the Head",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273de09e02aa7febf30b7c02d82"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02de09e02aa7febf30b7c02d82"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851de09e02aa7febf30b7c02d82"
+                        }
+                    ]
+                },
+                "duration_ms": 309600
+            },
+            "dateAdded": 1766595625761
+        },
+        {
+            "id": "0BCPKOYdS2jbQ8iyB56Zns",
+            "track": {
+                "name": "Clocks",
+                "artists": [
+                    {
+                        "name": "Coldplay"
+                    }
+                ],
+                "album": {
+                    "name": "A Rush of Blood to the Head",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273de09e02aa7febf30b7c02d82"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02de09e02aa7febf30b7c02d82"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851de09e02aa7febf30b7c02d82"
+                        }
+                    ]
+                },
+                "duration_ms": 307879
+            },
+            "dateAdded": 1766595627673
+        },
+        {
+            "id": "0FDzzruyVECATHXKHFs9eJ",
+            "track": {
+                "name": "A Sky Full of Stars",
+                "artists": [
+                    {
+                        "name": "Coldplay"
+                    }
+                ],
+                "album": {
+                    "name": "Ghost Stories",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e5a95573f1b91234630fd2cf"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e5a95573f1b91234630fd2cf"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e5a95573f1b91234630fd2cf"
+                        }
+                    ]
+                },
+                "duration_ms": 267866
+            },
+            "dateAdded": 1766595628953
+        },
+        {
+            "id": "3RiPr603aXAoi4GHyXx0uy",
+            "track": {
+                "name": "Hymn for the Weekend",
+                "artists": [
+                    {
+                        "name": "Coldplay"
+                    }
+                ],
+                "album": {
+                    "name": "A Head Full of Dreams",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048518ff7c3580d429c8212b9a3b6"
+                        }
+                    ]
+                },
+                "duration_ms": 258266
+            },
+            "dateAdded": 1766595630162
+        },
+        {
+            "id": "69uxyAqqPIsUyTO8txoP2M",
+            "track": {
+                "name": "Adventure of a Lifetime",
+                "artists": [
+                    {
+                        "name": "Coldplay"
+                    }
+                ],
+                "album": {
+                    "name": "A Head Full of Dreams",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048518ff7c3580d429c8212b9a3b6"
+                        }
+                    ]
+                },
+                "duration_ms": 263786
+            },
+            "dateAdded": 1766595632322
+        }
+    ],
+      "_id": "2qU2C",
+      "description": 'Sit back, relax, and unwind with this collection of low-tempo essentials. Perfect for those moments when you need to slow down and recharge.',
+    
+},{
+    "name": "Car Hype",
+    "imgUrl": "/src/assets/imgs/defaultStationImg.png",
+    "owner": {
+        "_id": "aLdcQ",
+        "fullname": "Adminsky",
+        "username": "admin",
+        "password": "admin",
+        "likedSongs": [
+            {
+                "id": "7lQ8MOhq6IN2w8EYcFNSUk",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Without Me",
+                "artists": [
+                    "Eminem"
+                ],
+                "durationMs": 290320,
+                "dateAddedToLikedSongs": 1766589199029
+            },
+            {
+                "id": "5In8B6Om5OKrhwBMB4tXSi",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731633c43b5695735f7de36487",
+                "title": "Fuel",
+                "artists": [
+                    "Eminem",
+                    "JID"
+                ],
+                "durationMs": 213646,
+                "videoId": "t5H_CewqpKA",
+                "dateAddedToLikedSongs": 1766589223988
+            },
+            {
+                "id": "4xkOaSrkexMciUUogZKVTS",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Till I Collapse",
+                "artists": [
+                    "Eminem",
+                    "Nate Dogg"
+                ],
+                "durationMs": 297786,
+                "videoId": "Pi3_Zs-oRUo",
+                "dateAddedToLikedSongs": 1766589471974
+            }
+        ],
+        "stationsId": []
+    },
+    "tracks": [
+        {
+            "id": "7nnWIPM5hwE3DaUBkvOIpy",
+            "track": {
+                "name": "Drive",
+                "artists": [
+                    {
+                        "name": "Incubus"
+                    }
+                ],
+                "album": {
+                    "name": "Make Yourself",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27374fad40214d982351347e46e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0274fad40214d982351347e46e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485174fad40214d982351347e46e"
+                        }
+                    ]
+                },
+                "duration_ms": 232453
+            },
+            "dateAdded": 1766595816770
+        },
+        {
+            "id": "5wANPM4fQCJwkGd4rN57mH",
+            "track": {
+                "name": "drivers license",
+                "artists": [
+                    {
+                        "name": "Olivia Rodrigo"
+                    }
+                ],
+                "album": {
+                    "name": "SOUR",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a91c10fe9472d9bd89802e5a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a91c10fe9472d9bd89802e5a"
+                        }
+                    ]
+                },
+                "duration_ms": 242013
+            },
+            "dateAdded": 1766595818041
+        },
+        {
+            "id": "5CZ40GBx1sQ9agT82CLQCT",
+            "track": {
+                "name": "traitor",
+                "artists": [
+                    {
+                        "name": "Olivia Rodrigo"
+                    }
+                ],
+                "album": {
+                    "name": "SOUR",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a91c10fe9472d9bd89802e5a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a91c10fe9472d9bd89802e5a"
+                        }
+                    ]
+                },
+                "duration_ms": 229226
+            },
+            "dateAdded": 1766595828133
+        },
+        {
+            "id": "6HU7h9RYOaPRFeh0R3UeAr",
+            "track": {
+                "name": "deja vu",
+                "artists": [
+                    {
+                        "name": "Olivia Rodrigo"
+                    }
+                ],
+                "album": {
+                    "name": "SOUR",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a91c10fe9472d9bd89802e5a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a91c10fe9472d9bd89802e5a"
+                        }
+                    ]
+                },
+                "duration_ms": 215506
+            },
+            "dateAdded": 1766595829396
+        },
+        {
+            "id": "6VYbnnpUYShqFn22MERtmP",
+            "track": {
+                "name": "המבט בעיניך",
+                "artists": [
+                    {
+                        "name": "Agam Buhbut"
+                    }
+                ],
+                "album": {
+                    "name": "21",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273759a0f224bec949bf7218a2d"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02759a0f224bec949bf7218a2d"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851759a0f224bec949bf7218a2d"
+                        }
+                    ]
+                },
+                "duration_ms": 188591
+            },
+            "dateAdded": 1766595850535
+        },
+        {
+            "id": "7jrNJv7Nt7ewrXP1V8Dtoc",
+            "track": {
+                "name": "זהב",
+                "artists": [
+                    {
+                        "name": "Static & Ben El"
+                    },
+                    {
+                        "name": "Static"
+                    },
+                    {
+                        "name": "Ben El Tavori"
+                    }
+                ],
+                "album": {
+                    "name": "זהב",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739ded4c7a6f74a492a9928c4f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029ded4c7a6f74a492a9928c4f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519ded4c7a6f74a492a9928c4f"
+                        }
+                    ]
+                },
+                "duration_ms": 193904
+            },
+            "dateAdded": 1766595859391
+        },
+        {
+            "id": "1fGMTdilaUFQ0RUxlxrkOd",
+            "track": {
+                "name": "סלסולים",
+                "artists": [
+                    {
+                        "name": "Static & Ben El"
+                    },
+                    {
+                        "name": "Static"
+                    },
+                    {
+                        "name": "Ben El Tavori"
+                    }
+                ],
+                "album": {
+                    "name": "סלסולים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ef2753f8721927e6b37230ad"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ef2753f8721927e6b37230ad"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ef2753f8721927e6b37230ad"
+                        }
+                    ]
+                },
+                "duration_ms": 220464
+            },
+            "dateAdded": 1766595860263
+        },
+        {
+            "id": "4cPWvSUIgZv6I2FfWEwCgj",
+            "track": {
+                "name": "טודו בום",
+                "artists": [
+                    {
+                        "name": "Static & Ben El"
+                    },
+                    {
+                        "name": "Static"
+                    },
+                    {
+                        "name": "Ben El Tavori"
+                    }
+                ],
+                "album": {
+                    "name": "טודו בום",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273918086b69a1bb7bdd8e51ede"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02918086b69a1bb7bdd8e51ede"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851918086b69a1bb7bdd8e51ede"
+                        }
+                    ]
+                },
+                "duration_ms": 189276
+            },
+            "dateAdded": 1766595861343
+        },
+        {
+            "id": "5kU5ufhzVL94w8crvzOGdi",
+            "track": {
+                "name": "כביש החוף",
+                "artists": [
+                    {
+                        "name": "Static & Ben El"
+                    },
+                    {
+                        "name": "Static"
+                    },
+                    {
+                        "name": "Ben El Tavori"
+                    }
+                ],
+                "album": {
+                    "name": "כביש החוף",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e717a0c50f96b7d097e111d9"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e717a0c50f96b7d097e111d9"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e717a0c50f96b7d097e111d9"
+                        }
+                    ]
+                },
+                "duration_ms": 193856
+            },
+            "dateAdded": 1766595862872
+        },
+        {
+            "id": "78FrkrO3KgizjXDObyFvzW",
+            "track": {
+                "name": "צ'יק צ'ק",
+                "artists": [
+                    {
+                        "name": "Static"
+                    }
+                ],
+                "album": {
+                    "name": "צ'יק צ'ק",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27381f82acb241a5b10f03b9741"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0281f82acb241a5b10f03b9741"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485181f82acb241a5b10f03b9741"
+                        }
+                    ]
+                },
+                "duration_ms": 132380
+            },
+            "dateAdded": 1766595863999
+        },
+        {
+            "id": "1g0IBPZTRP7VYkctJ4Qafg",
+            "track": {
+                "name": "Silsulim",
+                "artists": [
+                    {
+                        "name": "Static & Ben El"
+                    }
+                ],
+                "album": {
+                    "name": "Silsulim",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273f5a73d0dfabcd7edc59d8836"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02f5a73d0dfabcd7edc59d8836"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851f5a73d0dfabcd7edc59d8836"
+                        }
+                    ]
+                },
+                "duration_ms": 220464
+            },
+            "dateAdded": 1766595865753
+        },
+        {
+            "id": "3FihyZ7YA7vrNiSUfWww10",
+            "track": {
+                "name": "באמפרים",
+                "artists": [
+                    {
+                        "name": "STILLA"
+                    },
+                    {
+                        "name": "Ness"
+                    }
+                ],
+                "album": {
+                    "name": "באמפרים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273cef99adb7e9fc45697d1ca88"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02cef99adb7e9fc45697d1ca88"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851cef99adb7e9fc45697d1ca88"
+                        }
+                    ]
+                },
+                "duration_ms": 147000
+            },
+            "dateAdded": 1766595882675
+        },
+        {
+            "id": "5AjrNeUIzRkWzMz5hgujD2",
+            "track": {
+                "name": "רשימת קניות",
+                "artists": [
+                    {
+                        "name": "STILLA"
+                    },
+                    {
+                        "name": "Ness"
+                    },
+                    {
+                        "name": "Odeya"
+                    }
+                ],
+                "album": {
+                    "name": "רשימת קניות",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273442df3fedce56042a4140361"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02442df3fedce56042a4140361"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851442df3fedce56042a4140361"
+                        }
+                    ]
+                },
+                "duration_ms": 154687
+            },
+            "dateAdded": 1766595889906
+        },
+        {
+            "id": "4woTEX1wYOTGDqNXuavlRC",
+            "track": {
+                "name": "Superman",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    },
+                    {
+                        "name": "Dina Rae"
+                    }
+                ],
+                "album": {
+                    "name": "The Eminem Show",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026ca5c90113b30c3c43ffb8f4"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516ca5c90113b30c3c43ffb8f4"
+                        }
+                    ]
+                },
+                "duration_ms": 350320
+            },
+            "dateAdded": 1766595898836
+        },
+        {
+            "id": "561jH07mF1jHuk7KlaeF0s",
+            "track": {
+                "name": "Mockingbird",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    }
+                ],
+                "album": {
+                    "name": "Encore (Deluxe Version)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731bec21e57fff76db49e15a70"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021bec21e57fff76db49e15a70"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511bec21e57fff76db49e15a70"
+                        }
+                    ]
+                },
+                "duration_ms": 250760
+            },
+            "dateAdded": 1766595900285
+        },
+        {
+            "id": "7MJQ9Nfxzh8LPZ9e9u68Fq",
+            "track": {
+                "name": "Lose Yourself",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    }
+                ],
+                "album": {
+                    "name": "SHADYXV",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733f66b5b49ccea004a5ef0db2"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e023f66b5b49ccea004a5ef0db2"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048513f66b5b49ccea004a5ef0db2"
+                        }
+                    ]
+                },
+                "duration_ms": 320626
+            },
+            "dateAdded": 1766595902277
+        },
+        {
+            "id": "3yfqSUWxFvZELEM4PmlwIR",
+            "track": {
+                "name": "The Real Slim Shady",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    }
+                ],
+                "album": {
+                    "name": "The Marshall Mathers LP",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273dbb3dd82da45b7d7f31b1b42"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02dbb3dd82da45b7d7f31b1b42"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851dbb3dd82da45b7d7f31b1b42"
+                        }
+                    ]
+                },
+                "duration_ms": 284200
+            },
+            "dateAdded": 1766595904845
+        },
+        {
+            "id": "3UmaczJpikHgJFyBTAJVoz",
+            "track": {
+                "name": "Stan",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    },
+                    {
+                        "name": "Dido"
+                    }
+                ],
+                "album": {
+                    "name": "The Marshall Mathers LP",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273dbb3dd82da45b7d7f31b1b42"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02dbb3dd82da45b7d7f31b1b42"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851dbb3dd82da45b7d7f31b1b42"
+                        }
+                    ]
+                },
+                "duration_ms": 404106
+            },
+            "dateAdded": 1766595905694
+        },
+        {
+            "id": "7lQ8MOhq6IN2w8EYcFNSUk",
+            "track": {
+                "name": "Without Me",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    }
+                ],
+                "album": {
+                    "name": "The Eminem Show",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026ca5c90113b30c3c43ffb8f4"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516ca5c90113b30c3c43ffb8f4"
+                        }
+                    ]
+                },
+                "duration_ms": 290320
+            },
+            "dateAdded": 1766595906861
+        },
+        {
+            "id": "6or1bKJiZ06IlK0vFvY75k",
+            "track": {
+                "name": "Rap God",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    }
+                ],
+                "album": {
+                    "name": "The Marshall Mathers LP2 (Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273c6338d684995af10c2bf0533"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02c6338d684995af10c2bf0533"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851c6338d684995af10c2bf0533"
+                        }
+                    ]
+                },
+                "duration_ms": 363521
+            },
+            "dateAdded": 1766595908918
+        },
+        {
+            "id": "7FIWs0pqAYbP91WWM0vlTQ",
+            "track": {
+                "name": "Godzilla (feat. Juice WRLD)",
+                "artists": [
+                    {
+                        "name": "Eminem"
+                    },
+                    {
+                        "name": "Juice WRLD"
+                    }
+                ],
+                "album": {
+                    "name": "Music To Be Murdered By",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732f44aec83b20e40f3baef73c"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022f44aec83b20e40f3baef73c"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512f44aec83b20e40f3baef73c"
+                        }
+                    ]
+                },
+                "duration_ms": 210800
+            },
+            "dateAdded": 1766595910614
+        },
+        {
+            "id": "6Tsu3OsuMz4KEGKbOYd6A0",
+            "track": {
+                "name": "Hypnotize - 2007 Remaster",
+                "artists": [
+                    {
+                        "name": "The Notorious B.I.G."
+                    }
+                ],
+                "album": {
+                    "name": "Greatest Hits",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273639fea4197e676cfe9512e04"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02639fea4197e676cfe9512e04"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851639fea4197e676cfe9512e04"
+                        }
+                    ]
+                },
+                "duration_ms": 230000
+            },
+            "dateAdded": 1766595919398
+        },
+        {
+            "id": "0Z2J91b2iTGLVTZC4fKgxf",
+            "track": {
+                "name": "Hit 'Em Up - Single Version",
+                "artists": [
+                    {
+                        "name": "2Pac"
+                    },
+                    {
+                        "name": "Outlawz"
+                    }
+                ],
+                "album": {
+                    "name": "Greatest Hits",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d81a092eb373ded457d94eec"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d81a092eb373ded457d94eec"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d81a092eb373ded457d94eec"
+                        }
+                    ]
+                },
+                "duration_ms": 312626
+            },
+            "dateAdded": 1766595920261
+        },
+        {
+            "id": "63BcfK6YAzJYeISaTPr6IO",
+            "track": {
+                "name": "Big Poppa - 2007 Remaster",
+                "artists": [
+                    {
+                        "name": "The Notorious B.I.G."
+                    }
+                ],
+                "album": {
+                    "name": "Greatest Hits",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273639fea4197e676cfe9512e04"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02639fea4197e676cfe9512e04"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851639fea4197e676cfe9512e04"
+                        }
+                    ]
+                },
+                "duration_ms": 249866
+            },
+            "dateAdded": 1766595921143
+        },
+        {
+            "id": "0GzPOZsK5stxsEDYj6ZIvG",
+            "track": {
+                "name": "El mundo de los dos",
+                "artists": [
+                    {
+                        "name": "Grupo Topacio"
+                    }
+                ],
+                "album": {
+                    "name": "La Joya De La Cumbia",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732b585622d505ded2d628c9a3"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022b585622d505ded2d628c9a3"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512b585622d505ded2d628c9a3"
+                        }
+                    ]
+                },
+                "duration_ms": 276973
+            },
+            "dateAdded": 1766595923991
+        },
+        {
+            "id": "2iMYdO9dYvBCcbRL6TNHbV",
+            "track": {
+                "name": "Topacio",
+                "artists": [
+                    {
+                        "name": "Kory bri"
+                    }
+                ],
+                "album": {
+                    "name": "Zafiro",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ef26abf17e14a56ffd210f07"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ef26abf17e14a56ffd210f07"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ef26abf17e14a56ffd210f07"
+                        }
+                    ]
+                },
+                "duration_ms": 86616
+            },
+            "dateAdded": 1766595924838
+        },
+        {
+            "id": "6epn3r7S14KUqlReYr77hA",
+            "track": {
+                "name": "Baby",
+                "artists": [
+                    {
+                        "name": "Justin Bieber"
+                    },
+                    {
+                        "name": "Ludacris"
+                    }
+                ],
+                "album": {
+                    "name": "My World 2.0",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273629dc9e2e3bc20bbd7d92e4a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02629dc9e2e3bc20bbd7d92e4a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851629dc9e2e3bc20bbd7d92e4a"
+                        }
+                    ]
+                },
+                "duration_ms": 214240
+            },
+            "dateAdded": 1766595934688
+        },
+        {
+            "id": "47BBI51FKFwOMlIiX6m8ya",
+            "track": {
+                "name": "I Want It That Way",
+                "artists": [
+                    {
+                        "name": "Backstreet Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Millennium",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732160c02bc56f192df0f4986b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022160c02bc56f192df0f4986b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512160c02bc56f192df0f4986b"
+                        }
+                    ]
+                },
+                "duration_ms": 213306
+            },
+            "dateAdded": 1766595943785
+        },
+        {
+            "id": "4r8lRYnoOGdEi6YyI5OC1o",
+            "track": {
+                "name": "Bye Bye Bye",
+                "artists": [
+                    {
+                        "name": "*NSYNC"
+                    }
+                ],
+                "album": {
+                    "name": "No Strings Attached",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fceb9d92981970dbeea23257"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fceb9d92981970dbeea23257"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fceb9d92981970dbeea23257"
+                        }
+                    ]
+                },
+                "duration_ms": 200560
+            },
+            "dateAdded": 1766595945333
+        },
+        {
+            "id": "1mxTCArq9EhSg4QPGqhjhT",
+            "track": {
+                "name": "The Call",
+                "artists": [
+                    {
+                        "name": "Backstreet Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Black & Blue",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273cf871e6326e334bfa92cff20"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02cf871e6326e334bfa92cff20"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851cf871e6326e334bfa92cff20"
+                        }
+                    ]
+                },
+                "duration_ms": 204800
+            },
+            "dateAdded": 1766595945977
+        },
+        {
+            "id": "3UpS7kBnkVQYG13pDDFTC4",
+            "track": {
+                "name": "As Long as You Love Me",
+                "artists": [
+                    {
+                        "name": "Backstreet Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Backstreet's Back",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273530cec85d4543693bd726167"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02530cec85d4543693bd726167"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851530cec85d4543693bd726167"
+                        }
+                    ]
+                },
+                "duration_ms": 221106
+            },
+            "dateAdded": 1766595946505
+        },
+        {
+            "id": "3BsaRV5QIulYz2lV9WWa8T",
+            "track": {
+                "name": "Show Me the Meaning of Being Lonely",
+                "artists": [
+                    {
+                        "name": "Backstreet Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Millennium",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732160c02bc56f192df0f4986b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022160c02bc56f192df0f4986b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512160c02bc56f192df0f4986b"
+                        }
+                    ]
+                },
+                "duration_ms": 234960
+            },
+            "dateAdded": 1766595946956
+        },
+        {
+            "id": "0CnD7Hiw6pae6rLsZw5q5W",
+            "track": {
+                "name": "Incomplete",
+                "artists": [
+                    {
+                        "name": "Backstreet Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Never Gone",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fd2f4308f22fcae9f5c1fa8c"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fd2f4308f22fcae9f5c1fa8c"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fd2f4308f22fcae9f5c1fa8c"
+                        }
+                    ]
+                },
+                "duration_ms": 239586
+            },
+            "dateAdded": 1766595947794
+        },
+        {
+            "id": "62bOmKYxYg7dhrC6gH9vFn",
+            "track": {
+                "name": "Bye Bye Bye",
+                "artists": [
+                    {
+                        "name": "*NSYNC"
+                    }
+                ],
+                "album": {
+                    "name": "No Strings Attached",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a6cb8fab778e1efc406a5909"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a6cb8fab778e1efc406a5909"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a6cb8fab778e1efc406a5909"
+                        }
+                    ]
+                },
+                "duration_ms": 200400
+            },
+            "dateAdded": 1766595948658
+        },
+        {
+            "id": "1di1BEgJYzPvXUuinsYJGP",
+            "track": {
+                "name": "Everybody (Backstreet's Back) - Radio Edit",
+                "artists": [
+                    {
+                        "name": "Backstreet Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Backstreet's Back",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273530cec85d4543693bd726167"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02530cec85d4543693bd726167"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851530cec85d4543693bd726167"
+                        }
+                    ]
+                },
+                "duration_ms": 225360
+            },
+            "dateAdded": 1766595949530
+        },
+        {
+            "id": "1qyw5wSUkEvH8DtaCdx7Lg",
+            "track": {
+                "name": "Go Go Juice",
+                "artists": [
+                    {
+                        "name": "Sabrina Carpenter"
+                    }
+                ],
+                "album": {
+                    "name": "Man’s Best Friend",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273b1863bf95557ea7f357c4947"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02b1863bf95557ea7f357c4947"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851b1863bf95557ea7f357c4947"
+                        }
+                    ]
+                },
+                "duration_ms": 193315
+            },
+            "dateAdded": 1766595962019
+        },
+        {
+            "id": "53iuhJlwXhSER5J2IYYv1W",
+            "track": {
+                "name": "The Fate of Ophelia",
+                "artists": [
+                    {
+                        "name": "Taylor Swift"
+                    }
+                ],
+                "album": {
+                    "name": "The Life of a Showgirl",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d7812467811a7da6e6a44902"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d7812467811a7da6e6a44902"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d7812467811a7da6e6a44902"
+                        }
+                    ]
+                },
+                "duration_ms": 226073
+            },
+            "dateAdded": 1766595980573
+        },
+        {
+            "id": "0cqRj7pUJDkTCEsJkx8snD",
+            "track": {
+                "name": "Shake It Off",
+                "artists": [
+                    {
+                        "name": "Taylor Swift"
+                    }
+                ],
+                "album": {
+                    "name": "1989 (Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27352b2a3824413eefe9e33817a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0252b2a3824413eefe9e33817a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485152b2a3824413eefe9e33817a"
+                        }
+                    ]
+                },
+                "duration_ms": 219200
+            },
+            "dateAdded": 1766595982190
+        },
+        {
+            "id": "1u8c2t2Cy7UBoG4ArRcF5g",
+            "track": {
+                "name": "Blank Space",
+                "artists": [
+                    {
+                        "name": "Taylor Swift"
+                    }
+                ],
+                "album": {
+                    "name": "1989 (Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27352b2a3824413eefe9e33817a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0252b2a3824413eefe9e33817a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485152b2a3824413eefe9e33817a"
+                        }
+                    ]
+                },
+                "duration_ms": 231826
+            },
+            "dateAdded": 1766595983429
+        },
+        {
+            "id": "1jgTiNob5cVyXeJ3WgX5bL",
+            "track": {
+                "name": "Elizabeth Taylor",
+                "artists": [
+                    {
+                        "name": "Taylor Swift"
+                    }
+                ],
+                "album": {
+                    "name": "The Life of a Showgirl",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d7812467811a7da6e6a44902"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d7812467811a7da6e6a44902"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d7812467811a7da6e6a44902"
+                        }
+                    ]
+                },
+                "duration_ms": 208291
+            },
+            "dateAdded": 1766595985333
+        }
+    ],
+    "_id": "69MJb",
+    "description": "Windows down, volume up. High-octane tracks for the perfect drive. Scream in your car!"
+},{
+    "name": "2000's Hits",
+    "imgUrl": "/src/assets/imgs/defaultStationImg.png",
+    "owner": {
+        "_id": "aLdcQ",
+        "fullname": "Adminsky",
+        "username": "admin",
+        "password": "admin",
+        "likedSongs": [
+            {
+                "id": "7lQ8MOhq6IN2w8EYcFNSUk",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Without Me",
+                "artists": [
+                    "Eminem"
+                ],
+                "durationMs": 290320,
+                "dateAddedToLikedSongs": 1766589199029
+            },
+            {
+                "id": "5In8B6Om5OKrhwBMB4tXSi",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731633c43b5695735f7de36487",
+                "title": "Fuel",
+                "artists": [
+                    "Eminem",
+                    "JID"
+                ],
+                "durationMs": 213646,
+                "videoId": "t5H_CewqpKA",
+                "dateAddedToLikedSongs": 1766589223988
+            },
+            {
+                "id": "4xkOaSrkexMciUUogZKVTS",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Till I Collapse",
+                "artists": [
+                    "Eminem",
+                    "Nate Dogg"
+                ],
+                "durationMs": 297786,
+                "videoId": "Pi3_Zs-oRUo",
+                "dateAddedToLikedSongs": 1766589471974
+            }
+        ],
+        "stationsId": []
+    },
+    "tracks": [
+        {
+            "id": "3MjUtNVVq3C8Fn0MP3zhXa",
+            "track": {
+                "name": "...Baby One More Time",
+                "artists": [
+                    {
+                        "name": "Britney Spears"
+                    }
+                ],
+                "album": {
+                    "name": "...Baby One More Time (Digital Deluxe Version)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27336cf58e3e7cf36a145b1da18"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0236cf58e3e7cf36a145b1da18"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485136cf58e3e7cf36a145b1da18"
+                        }
+                    ]
+                },
+                "duration_ms": 211066
+            },
+            "dateAdded": 1766596078905
+        },
+        {
+            "id": "5p0KCAuu5nrHpTuAIhHdLw",
+            "track": {
+                "name": "Overprotected - Radio Edit",
+                "artists": [
+                    {
+                        "name": "Britney Spears"
+                    }
+                ],
+                "album": {
+                    "name": "Britney (Digital Deluxe Version)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273801ce9753a4f30a71fedb0fd"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02801ce9753a4f30a71fedb0fd"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851801ce9753a4f30a71fedb0fd"
+                        }
+                    ]
+                },
+                "duration_ms": 198600
+            },
+            "dateAdded": 1766596079873
+        },
+        {
+            "id": "4fixebDZAVToLbUCuEloa2",
+            "track": {
+                "name": "Womanizer",
+                "artists": [
+                    {
+                        "name": "Britney Spears"
+                    }
+                ],
+                "album": {
+                    "name": "Circus (Deluxe Version)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731abb421ac1fbbe52c127015e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021abb421ac1fbbe52c127015e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511abb421ac1fbbe52c127015e"
+                        }
+                    ]
+                },
+                "duration_ms": 224034
+            },
+            "dateAdded": 1766596080769
+        },
+        {
+            "id": "6I9VzXrHxO9rA9A5euc8Ak",
+            "track": {
+                "name": "Toxic",
+                "artists": [
+                    {
+                        "name": "Britney Spears"
+                    }
+                ],
+                "album": {
+                    "name": "In The Zone",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273efc6988972cb04105f002cd4"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02efc6988972cb04105f002cd4"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851efc6988972cb04105f002cd4"
+                        }
+                    ]
+                },
+                "duration_ms": 198800
+            },
+            "dateAdded": 1766596082136
+        },
+        {
+            "id": "7jk7gqyEonmVVYahZN5zhW",
+            "track": {
+                "name": "Circus",
+                "artists": [
+                    {
+                        "name": "Britney Spears"
+                    }
+                ],
+                "album": {
+                    "name": "Circus (Deluxe Version)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731abb421ac1fbbe52c127015e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021abb421ac1fbbe52c127015e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511abb421ac1fbbe52c127015e"
+                        }
+                    ]
+                },
+                "duration_ms": 192359
+            },
+            "dateAdded": 1766596083353
+        },
+        {
+            "id": "2TTYIwTM2iLC1YOyHuhRMt",
+            "track": {
+                "name": "Lucky",
+                "artists": [
+                    {
+                        "name": "Britney Spears"
+                    }
+                ],
+                "album": {
+                    "name": "Oops!... I Did It Again",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273c50b7d96737041f4bfd844d6"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02c50b7d96737041f4bfd844d6"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851c50b7d96737041f4bfd844d6"
+                        }
+                    ]
+                },
+                "duration_ms": 206226
+            },
+            "dateAdded": 1766596084449
+        },
+        {
+            "id": "6naxalmIoLFWR0siv8dnQQ",
+            "track": {
+                "name": "Oops!...I Did It Again",
+                "artists": [
+                    {
+                        "name": "Britney Spears"
+                    }
+                ],
+                "album": {
+                    "name": "Oops!... I Did It Again",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273c50b7d96737041f4bfd844d6"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02c50b7d96737041f4bfd844d6"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851c50b7d96737041f4bfd844d6"
+                        }
+                    ]
+                },
+                "duration_ms": 211160
+            },
+            "dateAdded": 1766596085410
+        },
+        {
+            "id": "6ic8OlLUNEATToEFU3xmaH",
+            "track": {
+                "name": "Gimme More",
+                "artists": [
+                    {
+                        "name": "Britney Spears"
+                    }
+                ],
+                "album": {
+                    "name": "Blackout",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d0a8bfe18f25429d76886b1e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d0a8bfe18f25429d76886b1e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d0a8bfe18f25429d76886b1e"
+                        }
+                    ]
+                },
+                "duration_ms": 251244
+            },
+            "dateAdded": 1766596086145
+        },
+        {
+            "id": "6ldwfK0yWgTAlmIfuQkTYN",
+            "track": {
+                "name": "I'm a Slave 4 U",
+                "artists": [
+                    {
+                        "name": "Britney Spears"
+                    }
+                ],
+                "album": {
+                    "name": "Britney (Digital Deluxe Version)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273801ce9753a4f30a71fedb0fd"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02801ce9753a4f30a71fedb0fd"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851801ce9753a4f30a71fedb0fd"
+                        }
+                    ]
+                },
+                "duration_ms": 203600
+            },
+            "dateAdded": 1766596086930
+        },
+        {
+            "id": "455AfCsOhhLPRc68sE01D8",
+            "track": {
+                "name": "Last Friday Night (T.G.I.F.)",
+                "artists": [
+                    {
+                        "name": "Katy Perry"
+                    }
+                ],
+                "album": {
+                    "name": "Teenage Dream: The Complete Confection",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273937af329667311f4b2831616"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02937af329667311f4b2831616"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851937af329667311f4b2831616"
+                        }
+                    ]
+                },
+                "duration_ms": 230746
+            },
+            "dateAdded": 1766596097761
+        },
+        {
+            "id": "5jrdCoLpJSvHHorevXBATy",
+            "track": {
+                "name": "Dark Horse",
+                "artists": [
+                    {
+                        "name": "Katy Perry"
+                    },
+                    {
+                        "name": "Juicy J"
+                    }
+                ],
+                "album": {
+                    "name": "PRISM (Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27347f930accd8ac01686401fa2"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0247f930accd8ac01686401fa2"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485147f930accd8ac01686401fa2"
+                        }
+                    ]
+                },
+                "duration_ms": 215672
+            },
+            "dateAdded": 1766596098345
+        },
+        {
+            "id": "2dkUsfpsB0c394cmFe18Ih",
+            "track": {
+                "name": "Push The Tempo",
+                "artists": [
+                    {
+                        "name": "Sub Focus"
+                    },
+                    {
+                        "name": "Katy B"
+                    }
+                ],
+                "album": {
+                    "name": "Push The Tempo",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27331381dd82998702bbcfe30d9"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0231381dd82998702bbcfe30d9"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485131381dd82998702bbcfe30d9"
+                        }
+                    ]
+                },
+                "duration_ms": 161829
+            },
+            "dateAdded": 1766596098810
+        },
+        {
+            "id": "14iN3o8ptQ8cFVZTEmyQRV",
+            "track": {
+                "name": "I Kissed A Girl",
+                "artists": [
+                    {
+                        "name": "Katy Perry"
+                    }
+                ],
+                "album": {
+                    "name": "One Of The Boys",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733f97d4244eff5852477d9ee0"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e023f97d4244eff5852477d9ee0"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048513f97d4244eff5852477d9ee0"
+                        }
+                    ]
+                },
+                "duration_ms": 179640
+            },
+            "dateAdded": 1766596100209
+        },
+        {
+            "id": "4zYotqFDcjdXxDdqWUnOl4",
+            "track": {
+                "name": "Cutty",
+                "artists": [
+                    {
+                        "name": "North Americans"
+                    }
+                ],
+                "album": {
+                    "name": "Going Steady",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a74e2cc992a4ad40e2a90d91"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a74e2cc992a4ad40e2a90d91"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a74e2cc992a4ad40e2a90d91"
+                        }
+                    ]
+                },
+                "duration_ms": 140832
+            },
+            "dateAdded": 1766596101001
+        },
+        {
+            "id": "4z8ssgZfs5TzKiO8HaGWXO",
+            "track": {
+                "name": "E.T.",
+                "artists": [
+                    {
+                        "name": "Katy Perry"
+                    }
+                ],
+                "album": {
+                    "name": "Teenage Dream: The Complete Confection",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273937af329667311f4b2831616"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02937af329667311f4b2831616"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851937af329667311f4b2831616"
+                        }
+                    ]
+                },
+                "duration_ms": 206373
+            },
+            "dateAdded": 1766596101633
+        },
+        {
+            "id": "0iGckQFyv6svOfAbAY9aWJ",
+            "track": {
+                "name": "Hot N Cold",
+                "artists": [
+                    {
+                        "name": "Katy Perry"
+                    }
+                ],
+                "album": {
+                    "name": "One Of The Boys",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733f97d4244eff5852477d9ee0"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e023f97d4244eff5852477d9ee0"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048513f97d4244eff5852477d9ee0"
+                        }
+                    ]
+                },
+                "duration_ms": 220226
+            },
+            "dateAdded": 1766596102353
+        },
+        {
+            "id": "07u02f6biDHx5VexfAs41b",
+            "track": {
+                "name": "Some Cut (feat. Cutty)",
+                "artists": [
+                    {
+                        "name": "Trillville"
+                    },
+                    {
+                        "name": "Cutty"
+                    }
+                ],
+                "album": {
+                    "name": "The King Of Crunk & BME Recordings Present: Welcome to Trillville USA",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ddcb7932e94f43e098a906f4"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ddcb7932e94f43e098a906f4"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ddcb7932e94f43e098a906f4"
+                        }
+                    ]
+                },
+                "duration_ms": 283386
+            },
+            "dateAdded": 1766596104016
+        },
+        {
+            "id": "6epn3r7S14KUqlReYr77hA",
+            "track": {
+                "name": "Baby",
+                "artists": [
+                    {
+                        "name": "Justin Bieber"
+                    },
+                    {
+                        "name": "Ludacris"
+                    }
+                ],
+                "album": {
+                    "name": "My World 2.0",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273629dc9e2e3bc20bbd7d92e4a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02629dc9e2e3bc20bbd7d92e4a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851629dc9e2e3bc20bbd7d92e4a"
+                        }
+                    ]
+                },
+                "duration_ms": 214240
+            },
+            "dateAdded": 1766596117963
+        },
+        {
+            "id": "4B0JvthVoAAuygILe3n4Bs",
+            "track": {
+                "name": "What Do You Mean?",
+                "artists": [
+                    {
+                        "name": "Justin Bieber"
+                    }
+                ],
+                "album": {
+                    "name": "Purpose (Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273f46b9d202509a8f7384b90de"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02f46b9d202509a8f7384b90de"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851f46b9d202509a8f7384b90de"
+                        }
+                    ]
+                },
+                "duration_ms": 205680
+            },
+            "dateAdded": 1766596119091
+        },
+        {
+            "id": "50kpGaPAhYJ3sGmk6vplg0",
+            "track": {
+                "name": "Love Yourself",
+                "artists": [
+                    {
+                        "name": "Justin Bieber"
+                    }
+                ],
+                "album": {
+                    "name": "Purpose (Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273f46b9d202509a8f7384b90de"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02f46b9d202509a8f7384b90de"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851f46b9d202509a8f7384b90de"
+                        }
+                    ]
+                },
+                "duration_ms": 233720
+            },
+            "dateAdded": 1766596120148
+        },
+        {
+            "id": "3JsydWaf2Ev4ehaLUjj3SY",
+            "track": {
+                "name": "Confident",
+                "artists": [
+                    {
+                        "name": "Justin Bieber"
+                    },
+                    {
+                        "name": "Chance the Rapper"
+                    }
+                ],
+                "album": {
+                    "name": "Journals",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27358ae8fddecbd2630005409c9"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0258ae8fddecbd2630005409c9"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485158ae8fddecbd2630005409c9"
+                        }
+                    ]
+                },
+                "duration_ms": 248133
+            },
+            "dateAdded": 1766596121163
+        },
+        {
+            "id": "190jyVPHYjAqEaOGmMzdyk",
+            "track": {
+                "name": "Beauty And A Beat",
+                "artists": [
+                    {
+                        "name": "Justin Bieber"
+                    },
+                    {
+                        "name": "Nicki Minaj"
+                    }
+                ],
+                "album": {
+                    "name": "Believe (Deluxe Edition)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736c20c4638a558132ba95bc39"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026c20c4638a558132ba95bc39"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516c20c4638a558132ba95bc39"
+                        }
+                    ]
+                },
+                "duration_ms": 227986
+            },
+            "dateAdded": 1766596121932
+        },
+        {
+            "id": "4rHZZAmHpZrA3iH5zx8frV",
+            "track": {
+                "name": "Mirrors",
+                "artists": [
+                    {
+                        "name": "Justin Timberlake"
+                    }
+                ],
+                "album": {
+                    "name": "The 20/20 Experience (Deluxe Version)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27356d5fb0cc9cec001d8ae0c8c"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0256d5fb0cc9cec001d8ae0c8c"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485156d5fb0cc9cec001d8ae0c8c"
+                        }
+                    ]
+                },
+                "duration_ms": 485598
+            },
+            "dateAdded": 1766596138665
+        },
+        {
+            "id": "6JV2JOEocMgcZxYSZelKcc",
+            "track": {
+                "name": "CAN'T STOP THE FEELING! (from DreamWorks Animation's \"TROLLS\")",
+                "artists": [
+                    {
+                        "name": "Justin Timberlake"
+                    }
+                ],
+                "album": {
+                    "name": "CAN'T STOP THE FEELING! (from DreamWorks Animation's \"TROLLS\")",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ef37416970812293c08e8a78"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ef37416970812293c08e8a78"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ef37416970812293c08e8a78"
+                        }
+                    ]
+                },
+                "duration_ms": 236001
+            },
+            "dateAdded": 1766596139858
+        },
+        {
+            "id": "0O45fw2L5vsWpdsOdXwNAR",
+            "track": {
+                "name": "SexyBack (feat. Timbaland)",
+                "artists": [
+                    {
+                        "name": "Justin Timberlake"
+                    },
+                    {
+                        "name": "Timbaland"
+                    }
+                ],
+                "album": {
+                    "name": "FutureSex/LoveSounds",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273c6ba98fd3f3b396a6c6f7091"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02c6ba98fd3f3b396a6c6f7091"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851c6ba98fd3f3b396a6c6f7091"
+                        }
+                    ]
+                },
+                "duration_ms": 242733
+            },
+            "dateAdded": 1766596141778
+        },
+        {
+            "id": "3pD0f7hSJg2XdQ6udw5Tey",
+            "track": {
+                "name": "What Goes Around.../...Comes Around (Interlude)",
+                "artists": [
+                    {
+                        "name": "Justin Timberlake"
+                    }
+                ],
+                "album": {
+                    "name": "FutureSex/LoveSounds",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273c6ba98fd3f3b396a6c6f7091"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02c6ba98fd3f3b396a6c6f7091"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851c6ba98fd3f3b396a6c6f7091"
+                        }
+                    ]
+                },
+                "duration_ms": 448573
+            },
+            "dateAdded": 1766596142385
+        },
+        {
+            "id": "0aj2QKJvz6CePykmlTApiD",
+            "track": {
+                "name": "Señorita",
+                "artists": [
+                    {
+                        "name": "Justin Timberlake"
+                    }
+                ],
+                "album": {
+                    "name": "Justified",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273346a5742374ab4cf9ed32dee"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02346a5742374ab4cf9ed32dee"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851346a5742374ab4cf9ed32dee"
+                        }
+                    ]
+                },
+                "duration_ms": 294866
+            },
+            "dateAdded": 1766596143578
+        },
+        {
+            "id": "1AWQoqb9bSvzTjaLralEkT",
+            "track": {
+                "name": "Rock Your Body",
+                "artists": [
+                    {
+                        "name": "Justin Timberlake"
+                    }
+                ],
+                "album": {
+                    "name": "Justified",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273346a5742374ab4cf9ed32dee"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02346a5742374ab4cf9ed32dee"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851346a5742374ab4cf9ed32dee"
+                        }
+                    ]
+                },
+                "duration_ms": 267266
+            },
+            "dateAdded": 1766596144745
+        },
+        {
+            "id": "7Lf7oSEVdzZqTA0kEDSlS5",
+            "track": {
+                "name": "Cry Me a River",
+                "artists": [
+                    {
+                        "name": "Justin Timberlake"
+                    }
+                ],
+                "album": {
+                    "name": "Justified",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273346a5742374ab4cf9ed32dee"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02346a5742374ab4cf9ed32dee"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851346a5742374ab4cf9ed32dee"
+                        }
+                    ]
+                },
+                "duration_ms": 288333
+            },
+            "dateAdded": 1766596146339
+        }
+    ],
+    "_id": "vgr7M",
+    "description": "Hits from the best years of music, 2000-2010 hits from all over the world"
+},{
+    "name": "Israeli Hits 2025",
+    "imgUrl": "/src/assets/imgs/defaultStationImg.png",
+    "owner": {
+        "_id": "aLdcQ",
+        "fullname": "Adminsky",
+        "username": "admin",
+        "password": "admin",
+        "likedSongs": [
+            {
+                "id": "7lQ8MOhq6IN2w8EYcFNSUk",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Without Me",
+                "artists": [
+                    "Eminem"
+                ],
+                "durationMs": 290320,
+                "dateAddedToLikedSongs": 1766589199029
+            },
+            {
+                "id": "5In8B6Om5OKrhwBMB4tXSi",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731633c43b5695735f7de36487",
+                "title": "Fuel",
+                "artists": [
+                    "Eminem",
+                    "JID"
+                ],
+                "durationMs": 213646,
+                "videoId": "t5H_CewqpKA",
+                "dateAddedToLikedSongs": 1766589223988
+            },
+            {
+                "id": "4xkOaSrkexMciUUogZKVTS",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Till I Collapse",
+                "artists": [
+                    "Eminem",
+                    "Nate Dogg"
+                ],
+                "durationMs": 297786,
+                "videoId": "Pi3_Zs-oRUo",
+                "dateAddedToLikedSongs": 1766589471974
+            }
+        ],
+        "stationsId": []
+    },
+    "tracks": [
+        {
+            "id": "34aKXUhVdHGTzWOt85RjGq",
+            "track": {
+                "name": "אהבה",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "Part II",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d3a7fd4d957030f16d2b557f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d3a7fd4d957030f16d2b557f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d3a7fd4d957030f16d2b557f"
+                        }
+                    ]
+                },
+                "duration_ms": 205205
+            },
+            "dateAdded": 1766596353121
+        },
+        {
+            "id": "4RyMByXc5HfKc3b8wqwOso",
+            "track": {
+                "name": "אהבה חולה",
+                "artists": [
+                    {
+                        "name": "Peer Tasi"
+                    }
+                ],
+                "album": {
+                    "name": "רדיו שטח",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733c0628146c49c2201a097930"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e023c0628146c49c2201a097930"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048513c0628146c49c2201a097930"
+                        }
+                    ]
+                },
+                "duration_ms": 182700
+            },
+            "dateAdded": 1766596354745
+        },
+        {
+            "id": "3U1voPJN8NBSR96Ry0WJiF",
+            "track": {
+                "name": "מלכת הדור",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "תסמינים של פרידה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27312d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0212d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485112d961970aa13291d9720f8b"
+                        }
+                    ]
+                },
+                "duration_ms": 183031
+            },
+            "dateAdded": 1766596363586
+        },
+        {
+            "id": "2PZ8BlakFfw8T8InWlkVLg",
+            "track": {
+                "name": "איפה שתגידי",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "תסמינים של פרידה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27312d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0212d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485112d961970aa13291d9720f8b"
+                        }
+                    ]
+                },
+                "duration_ms": 175961
+            },
+            "dateAdded": 1766596364914
+        },
+        {
+            "id": "5Sn3aXG5AWFmd1ij2PTisj",
+            "track": {
+                "name": "השיר שאת אהבת",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "תסמינים של פרידה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27312d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0212d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485112d961970aa13291d9720f8b"
+                        }
+                    ]
+                },
+                "duration_ms": 218100
+            },
+            "dateAdded": 1766596365953
+        },
+        {
+            "id": "5aDaDlIrhFeXUPcBqxGisR",
+            "track": {
+                "name": "אחרי כל השנים",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "אחרי כל השנים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fffa82e73f25160bdc5cca89"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fffa82e73f25160bdc5cca89"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fffa82e73f25160bdc5cca89"
+                        }
+                    ]
+                },
+                "duration_ms": 207533
+            },
+            "dateAdded": 1766596367706
+        },
+        {
+            "id": "5ppuL7dOIhd7td0YCJJuwf",
+            "track": {
+                "name": "טקילה",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "לחנים שבורים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02635571e4dbe218b57bf5c1ff"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851635571e4dbe218b57bf5c1ff"
+                        }
+                    ]
+                },
+                "duration_ms": 160642
+            },
+            "dateAdded": 1766596369427
+        },
+        {
+            "id": "5omHkj4qY0A8f6mE4T3fAH",
+            "track": {
+                "name": "היה טוב",
+                "artists": [
+                    {
+                        "name": "Omer Adam"
+                    }
+                ],
+                "album": {
+                    "name": "תסמינים של פרידה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27312d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0212d961970aa13291d9720f8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485112d961970aa13291d9720f8b"
+                        }
+                    ]
+                },
+                "duration_ms": 213879
+            },
+            "dateAdded": 1766596371001
+        },
+        {
+            "id": "2yPnlfwQ1AmhHauqQWDlWZ",
+            "track": {
+                "name": "מנגן ושר",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "THE LAST EPISODE",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d3f6921c5c47cb7871521494"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d3f6921c5c47cb7871521494"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851d3f6921c5c47cb7871521494"
+                        }
+                    ]
+                },
+                "duration_ms": 201080
+            },
+            "dateAdded": 1766596383743
+        },
+        {
+            "id": "1946N277M0tygagJZxCP1f",
+            "track": {
+                "name": "ה' יברך אותך",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "גיטרה ולנשום",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739e7e75cc4b3333d1f6f03d56"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029e7e75cc4b3333d1f6f03d56"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519e7e75cc4b3333d1f6f03d56"
+                        }
+                    ]
+                },
+                "duration_ms": 225267
+            },
+            "dateAdded": 1766596385812
+        },
+        {
+            "id": "6qB33ch9RK0aoMfxfnlXa1",
+            "track": {
+                "name": "פלסטרים",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "פלסטרים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27340eb76ca31d27e1dcca8a1b9"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0240eb76ca31d27e1dcca8a1b9"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485140eb76ca31d27e1dcca8a1b9"
+                        }
+                    ]
+                },
+                "duration_ms": 178236
+            },
+            "dateAdded": 1766596386773
+        },
+        {
+            "id": "4WoKmBYVGyrf7t0SkHhMQ1",
+            "track": {
+                "name": "אין כבוד",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    }
+                ],
+                "album": {
+                    "name": "אוגוסט דאמפ",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2730202dab8650665de78debfa3"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e020202dab8650665de78debfa3"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048510202dab8650665de78debfa3"
+                        }
+                    ]
+                },
+                "duration_ms": 216391
+            },
+            "dateAdded": 1766596387484
+        },
+        {
+            "id": "4OSlgfWLtqDn9XCAuOmZ5k",
+            "track": {
+                "name": "מילים יפות מאלה",
+                "artists": [
+                    {
+                        "name": "Idan Raichel"
+                    }
+                ],
+                "album": {
+                    "name": "ממעמקים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273508b835b5dd68662ec44646a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02508b835b5dd68662ec44646a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851508b835b5dd68662ec44646a"
+                        }
+                    ]
+                },
+                "duration_ms": 286293
+            },
+            "dateAdded": 1766596395053
+        },
+        {
+            "id": "15sfbkhKvDOHOEpe0lsdh2",
+            "track": {
+                "name": "דברים יפים לראות",
+                "artists": [
+                    {
+                        "name": "Idan Amedi"
+                    }
+                ],
+                "album": {
+                    "name": "בזמן האחרון",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a1bd16854fe0d7a1e1232b93"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a1bd16854fe0d7a1e1232b93"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a1bd16854fe0d7a1e1232b93"
+                        }
+                    ]
+                },
+                "duration_ms": 206786
+            },
+            "dateAdded": 1766596396078
+        },
+        {
+            "id": "3HBMPTdsZQNO24vbrgcJKZ",
+            "track": {
+                "name": "מה את מרגישה",
+                "artists": [
+                    {
+                        "name": "Idan Amedi"
+                    }
+                ],
+                "album": {
+                    "name": "זוכר כמעט הכל",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273be17e21b3a2901ef4416afac"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02be17e21b3a2901ef4416afac"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851be17e21b3a2901ef4416afac"
+                        }
+                    ]
+                },
+                "duration_ms": 227604
+            },
+            "dateAdded": 1766596397526
+        },
+        {
+            "id": "5mT0kHqW0vMAjLS9dCGkeM",
+            "track": {
+                "name": "בזמן האחרון",
+                "artists": [
+                    {
+                        "name": "Idan Amedi"
+                    }
+                ],
+                "album": {
+                    "name": "בזמן האחרון",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a1bd16854fe0d7a1e1232b93"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a1bd16854fe0d7a1e1232b93"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a1bd16854fe0d7a1e1232b93"
+                        }
+                    ]
+                },
+                "duration_ms": 215573
+            },
+            "dateAdded": 1766596398375
+        },
+        {
+            "id": "3hay408PSjTAxPn5TPxzyh",
+            "track": {
+                "name": "חלק מהזמן",
+                "artists": [
+                    {
+                        "name": "Idan Amedi"
+                    }
+                ],
+                "album": {
+                    "name": "חלק מהזמן",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732e4fd8ea807b9d9c34099aa3"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022e4fd8ea807b9d9c34099aa3"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512e4fd8ea807b9d9c34099aa3"
+                        }
+                    ]
+                },
+                "duration_ms": 223453
+            },
+            "dateAdded": 1766596399222
+        },
+        {
+            "id": "1uJ95oDCyVPMLE7q34RDm9",
+            "track": {
+                "name": "אלייך",
+                "artists": [
+                    {
+                        "name": "Idan Amedi"
+                    }
+                ],
+                "album": {
+                    "name": "עידן עמדי",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273eaa14b79e1583920a78d228f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02eaa14b79e1583920a78d228f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851eaa14b79e1583920a78d228f"
+                        }
+                    ]
+                },
+                "duration_ms": 273346
+            },
+            "dateAdded": 1766596399862
+        },
+        {
+            "id": "3cmplhlwMZyQbuTHThyGe7",
+            "track": {
+                "name": "מחכה",
+                "artists": [
+                    {
+                        "name": "Idan Rafael Haviv"
+                    }
+                ],
+                "album": {
+                    "name": "כל פעם קצת",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273eca6d595e62a32fa03a9ed06"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02eca6d595e62a32fa03a9ed06"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851eca6d595e62a32fa03a9ed06"
+                        }
+                    ]
+                },
+                "duration_ms": 211493
+            },
+            "dateAdded": 1766596400983
+        },
+        {
+            "id": "4hjVi22N5fyyzpoUNJ1Bl7",
+            "track": {
+                "name": "משהו קטן וטוב",
+                "artists": [
+                    {
+                        "name": "Mashina"
+                    }
+                ],
+                "album": {
+                    "name": "עסקי הרוקנרול - אוסף כפול",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733185df4a9f74ad633e171550"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e023185df4a9f74ad633e171550"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048513185df4a9f74ad633e171550"
+                        }
+                    ]
+                },
+                "duration_ms": 281373
+            },
+            "dateAdded": 1766596406159
+        },
+        {
+            "id": "7D9SA930v2PGOEmQEBYwrs",
+            "track": {
+                "name": "משהו ממני",
+                "artists": [
+                    {
+                        "name": "Harel Skaat"
+                    }
+                ],
+                "album": {
+                    "name": "הראל סקעת",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2735524689d9913b2c10bb3ca07"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e025524689d9913b2c10bb3ca07"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048515524689d9913b2c10bb3ca07"
+                        }
+                    ]
+                },
+                "duration_ms": 252813
+            },
+            "dateAdded": 1766596407639
+        },
+        {
+            "id": "201btQ2Q0QqOqKuIHy2LWv",
+            "track": {
+                "name": "משהו חדש מתחיל",
+                "artists": [
+                    {
+                        "name": "Danny Robas"
+                    }
+                ],
+                "album": {
+                    "name": "משהו חדש מתחיל",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27377d41d5ebce8c2df3d94d06b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0277d41d5ebce8c2df3d94d06b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485177d41d5ebce8c2df3d94d06b"
+                        }
+                    ]
+                },
+                "duration_ms": 248013
+            },
+            "dateAdded": 1766596408656
+        },
+        {
+            "id": "74kYHwU43s49Y5AukKArWQ",
+            "track": {
+                "name": "משהו אמיתי בעיניים",
+                "artists": [
+                    {
+                        "name": "ששון איפרם שאולוב"
+                    }
+                ],
+                "album": {
+                    "name": "משהו אמיתי בעיניים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e294ceac8bf2ee0abfbbb863"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e294ceac8bf2ee0abfbbb863"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e294ceac8bf2ee0abfbbb863"
+                        }
+                    ]
+                },
+                "duration_ms": 171280
+            },
+            "dateAdded": 1766596409616
+        },
+        {
+            "id": "3Pmgm0QepSOImJfW29Hxy2",
+            "track": {
+                "name": "משהו בשמיים",
+                "artists": [
+                    {
+                        "name": "Jasmin Moallem"
+                    }
+                ],
+                "album": {
+                    "name": "משהו בשמיים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a81eb1803142a74811f50a8b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a81eb1803142a74811f50a8b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a81eb1803142a74811f50a8b"
+                        }
+                    ]
+                },
+                "duration_ms": 145408
+            },
+            "dateAdded": 1766596411640
+        },
+        {
+            "id": "3xnOcrVKMzcLxIL17vexrk",
+            "track": {
+                "name": "משהו באוויר",
+                "artists": [
+                    {
+                        "name": "ShrekDiMC"
+                    },
+                    {
+                        "name": "Dudu Faruk"
+                    },
+                    {
+                        "name": "אורי קומאי"
+                    }
+                ],
+                "album": {
+                    "name": "משהו באוויר",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273b7b9443bceb00f6a980ee4c7"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02b7b9443bceb00f6a980ee4c7"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851b7b9443bceb00f6a980ee4c7"
+                        }
+                    ]
+                },
+                "duration_ms": 228500
+            },
+            "dateAdded": 1766596412672
+        },
+        {
+            "id": "7jrNJv7Nt7ewrXP1V8Dtoc",
+            "track": {
+                "name": "זהב",
+                "artists": [
+                    {
+                        "name": "Static & Ben El"
+                    },
+                    {
+                        "name": "Static"
+                    },
+                    {
+                        "name": "Ben El Tavori"
+                    }
+                ],
+                "album": {
+                    "name": "זהב",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739ded4c7a6f74a492a9928c4f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029ded4c7a6f74a492a9928c4f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519ded4c7a6f74a492a9928c4f"
+                        }
+                    ]
+                },
+                "duration_ms": 193904
+            },
+            "dateAdded": 1766596417544
+        },
+        {
+            "id": "1fGMTdilaUFQ0RUxlxrkOd",
+            "track": {
+                "name": "סלסולים",
+                "artists": [
+                    {
+                        "name": "Static & Ben El"
+                    },
+                    {
+                        "name": "Static"
+                    },
+                    {
+                        "name": "Ben El Tavori"
+                    }
+                ],
+                "album": {
+                    "name": "סלסולים",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ef2753f8721927e6b37230ad"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ef2753f8721927e6b37230ad"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ef2753f8721927e6b37230ad"
+                        }
+                    ]
+                },
+                "duration_ms": 220464
+            },
+            "dateAdded": 1766596418448
+        },
+        {
+            "id": "3Au0H4VhjcXZ5HGOHo8Nc3",
+            "track": {
+                "name": "רונדלים",
+                "artists": [
+                    {
+                        "name": "Static"
+                    }
+                ],
+                "album": {
+                    "name": "לירז",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731e01c7a923e7d264998ce020"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021e01c7a923e7d264998ce020"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511e01c7a923e7d264998ce020"
+                        }
+                    ]
+                },
+                "duration_ms": 114625
+            },
+            "dateAdded": 1766596422208
+        },
+        {
+            "id": "1g0IBPZTRP7VYkctJ4Qafg",
+            "track": {
+                "name": "Silsulim",
+                "artists": [
+                    {
+                        "name": "Static & Ben El"
+                    }
+                ],
+                "album": {
+                    "name": "Silsulim",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273f5a73d0dfabcd7edc59d8836"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02f5a73d0dfabcd7edc59d8836"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851f5a73d0dfabcd7edc59d8836"
+                        }
+                    ]
+                },
+                "duration_ms": 220464
+            },
+            "dateAdded": 1766596423081
+        },
+        {
+            "id": "71Fr6FjccDocFjtsBmQHgk",
+            "track": {
+                "name": "Kvish Hachof",
+                "artists": [
+                    {
+                        "name": "Static & Ben El"
+                    }
+                ],
+                "album": {
+                    "name": "Kvish Hachof",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273eed8a93c75f68f842e963b79"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02eed8a93c75f68f842e963b79"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851eed8a93c75f68f842e963b79"
+                        }
+                    ]
+                },
+                "duration_ms": 193856
+            },
+            "dateAdded": 1766596423688
+        },
+        {
+            "id": "1wFqS3mDQKDysz0Ae7smlE",
+            "track": {
+                "name": "אם אתה גבר",
+                "artists": [
+                    {
+                        "name": "Noa Kirel"
+                    }
+                ],
+                "album": {
+                    "name": "אם אתה גבר",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273546536c28e3b63bb10d7e42e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02546536c28e3b63bb10d7e42e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851546536c28e3b63bb10d7e42e"
+                        }
+                    ]
+                },
+                "duration_ms": 195428
+            },
+            "dateAdded": 1766596434731
+        },
+        {
+            "id": "5A3bEckI7AjWTguGqZOzUm",
+            "track": {
+                "name": "פנתרה",
+                "artists": [
+                    {
+                        "name": "Noa Kirel"
+                    }
+                ],
+                "album": {
+                    "name": "פנתרה",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27383c4d7d5ae01da1278eb6774"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0283c4d7d5ae01da1278eb6774"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485183c4d7d5ae01da1278eb6774"
+                        }
+                    ]
+                },
+                "duration_ms": 173602
+            },
+            "dateAdded": 1766596436786
+        },
+        {
+            "id": "2b9TjqgLxE6zOZc4DSmYYx",
+            "track": {
+                "name": "פרובוקטיבית",
+                "artists": [
+                    {
+                        "name": "Noa Kirel"
+                    },
+                    {
+                        "name": "Forever Tel Aviv"
+                    },
+                    {
+                        "name": "Sagi Kariv"
+                    }
+                ],
+                "album": {
+                    "name": "פרובוקטיבית",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e31f0dbe1b2339f504495d6e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e31f0dbe1b2339f504495d6e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e31f0dbe1b2339f504495d6e"
+                        }
+                    ]
+                },
+                "duration_ms": 154921
+            },
+            "dateAdded": 1766596438716
+        },
+        {
+            "id": "34KzX8fwFPLchmOvYBDap0",
+            "track": {
+                "name": "אין אותי",
+                "artists": [
+                    {
+                        "name": "Osher Cohen"
+                    },
+                    {
+                        "name": "Noa Kirel"
+                    }
+                ],
+                "album": {
+                    "name": "NEXT EPISODE",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27320a23f9af4b3730119b96322"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0220a23f9af4b3730119b96322"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485120a23f9af4b3730119b96322"
+                        }
+                    ]
+                },
+                "duration_ms": 208883
+            },
+            "dateAdded": 1766596440563
+        }
+    ],
+    "_id": "O8SWH",
+    "description": "A personalized blend of your favorite Israeli artists and new discoveries tailored for you."
+},{
+    "name": "Alt-Rock Anthems",
+    "imgUrl": "/src/assets/imgs/defaultStationImg.png",
+    "owner": {
+        "_id": "aLdcQ",
+        "fullname": "Adminsky",
+        "username": "admin",
+        "password": "admin",
+        "likedSongs": [
+            {
+                "id": "7lQ8MOhq6IN2w8EYcFNSUk",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Without Me",
+                "artists": [
+                    "Eminem"
+                ],
+                "durationMs": 290320,
+                "dateAddedToLikedSongs": 1766589199029
+            },
+            {
+                "id": "5In8B6Om5OKrhwBMB4tXSi",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731633c43b5695735f7de36487",
+                "title": "Fuel",
+                "artists": [
+                    "Eminem",
+                    "JID"
+                ],
+                "durationMs": 213646,
+                "videoId": "t5H_CewqpKA",
+                "dateAddedToLikedSongs": 1766589223988
+            },
+            {
+                "id": "4xkOaSrkexMciUUogZKVTS",
+                "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+                "title": "Till I Collapse",
+                "artists": [
+                    "Eminem",
+                    "Nate Dogg"
+                ],
+                "durationMs": 297786,
+                "videoId": "Pi3_Zs-oRUo",
+                "dateAddedToLikedSongs": 1766589471974
+            }
+        ],
+        "stationsId": []
+    },
+    "tracks": [
+        {
+            "id": "4CeeEOM32jQcH3eN9Q2dGj",
+            "track": {
+                "name": "Smells Like Teen Spirit",
+                "artists": [
+                    {
+                        "name": "Nirvana"
+                    }
+                ],
+                "album": {
+                    "name": "Nevermind (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fbc71c99f9c1296c56dd51b6"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fbc71c99f9c1296c56dd51b6"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fbc71c99f9c1296c56dd51b6"
+                        }
+                    ]
+                },
+                "duration_ms": 301920
+            },
+            "dateAdded": 1766596483513
+        },
+        {
+            "id": "2RsAajgo0g7bMCHxwH3Sk0",
+            "track": {
+                "name": "Come As You Are",
+                "artists": [
+                    {
+                        "name": "Nirvana"
+                    }
+                ],
+                "album": {
+                    "name": "Nevermind (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fbc71c99f9c1296c56dd51b6"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fbc71c99f9c1296c56dd51b6"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fbc71c99f9c1296c56dd51b6"
+                        }
+                    ]
+                },
+                "duration_ms": 218920
+            },
+            "dateAdded": 1766596485576
+        },
+        {
+            "id": "11LmqTE2naFULdEP94AUBa",
+            "track": {
+                "name": "Heart-Shaped Box",
+                "artists": [
+                    {
+                        "name": "Nirvana"
+                    }
+                ],
+                "album": {
+                    "name": "In Utero (Deluxe Edition)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273aca059cebc1841277db22d1c"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02aca059cebc1841277db22d1c"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851aca059cebc1841277db22d1c"
+                        }
+                    ]
+                },
+                "duration_ms": 281160
+            },
+            "dateAdded": 1766596488776
+        },
+        {
+            "id": "0gucTLf7trAf37Ua1uAyAu",
+            "track": {
+                "name": "Smells Like Teen Spirit - Remastered",
+                "artists": [
+                    {
+                        "name": "Nirvana"
+                    }
+                ],
+                "album": {
+                    "name": "Nevermind (30th Anniversary Super Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273444f118a9126af9e1483dcc0"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02444f118a9126af9e1483dcc0"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851444f118a9126af9e1483dcc0"
+                        }
+                    ]
+                },
+                "duration_ms": 300893
+            },
+            "dateAdded": 1766596491232
+        },
+        {
+            "id": "5vHLwhxxlGzmClMcxRRFPr",
+            "track": {
+                "name": "Lithium",
+                "artists": [
+                    {
+                        "name": "Nirvana"
+                    }
+                ],
+                "album": {
+                    "name": "Nevermind (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fbc71c99f9c1296c56dd51b6"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fbc71c99f9c1296c56dd51b6"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fbc71c99f9c1296c56dd51b6"
+                        }
+                    ]
+                },
+                "duration_ms": 257053
+            },
+            "dateAdded": 1766596492177
+        },
+        {
+            "id": "0kUNGAdU8J4jDvxhBtgDF8",
+            "track": {
+                "name": "Lithium - Remastered",
+                "artists": [
+                    {
+                        "name": "Nirvana"
+                    }
+                ],
+                "album": {
+                    "name": "Nevermind (30th Anniversary Super Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273444f118a9126af9e1483dcc0"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02444f118a9126af9e1483dcc0"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851444f118a9126af9e1483dcc0"
+                        }
+                    ]
+                },
+                "duration_ms": 256398
+            },
+            "dateAdded": 1766596493609
+        },
+        {
+            "id": "5AEOqLsRJFAoSS4ay4Jzao",
+            "track": {
+                "name": "Come As You Are - Remastered",
+                "artists": [
+                    {
+                        "name": "Nirvana"
+                    }
+                ],
+                "album": {
+                    "name": "Nevermind (30th Anniversary Super Deluxe)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273444f118a9126af9e1483dcc0"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02444f118a9126af9e1483dcc0"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851444f118a9126af9e1483dcc0"
+                        }
+                    ]
+                },
+                "duration_ms": 218920
+            },
+            "dateAdded": 1766596494513
+        },
+        {
+            "id": "57bgtoPSgt236HzfBOd8kj",
+            "track": {
+                "name": "Thunderstruck",
+                "artists": [
+                    {
+                        "name": "AC/DC"
+                    }
+                ],
+                "album": {
+                    "name": "The Razors Edge",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739a9b1cc067e4460da04adce2"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029a9b1cc067e4460da04adce2"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519a9b1cc067e4460da04adce2"
+                        }
+                    ]
+                },
+                "duration_ms": 292333
+            },
+            "dateAdded": 1766596499506
+        },
+        {
+            "id": "2zYzyRzz6pRmhPzyfMEC8s",
+            "track": {
+                "name": "Highway to Hell",
+                "artists": [
+                    {
+                        "name": "AC/DC"
+                    }
+                ],
+                "album": {
+                    "name": "Highway to Hell",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27343058ea096fa35ac33c43587"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0243058ea096fa35ac33c43587"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485143058ea096fa35ac33c43587"
+                        }
+                    ]
+                },
+                "duration_ms": 208110
+            },
+            "dateAdded": 1766596500657
+        },
+        {
+            "id": "08mG3Y1vljYA6bvDt4Wqkj",
+            "track": {
+                "name": "Back In Black",
+                "artists": [
+                    {
+                        "name": "AC/DC"
+                    }
+                ],
+                "album": {
+                    "name": "Back In Black",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ff191d7fbdb5a13eaf84132b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ff191d7fbdb5a13eaf84132b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ff191d7fbdb5a13eaf84132b"
+                        }
+                    ]
+                },
+                "duration_ms": 256000
+            },
+            "dateAdded": 1766596503457
+        },
+        {
+            "id": "69QHm3pustz01CJRwdo20z",
+            "track": {
+                "name": "Hells Bells",
+                "artists": [
+                    {
+                        "name": "AC/DC"
+                    }
+                ],
+                "album": {
+                    "name": "Back In Black",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ff191d7fbdb5a13eaf84132b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ff191d7fbdb5a13eaf84132b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ff191d7fbdb5a13eaf84132b"
+                        }
+                    ]
+                },
+                "duration_ms": 312815
+            },
+            "dateAdded": 1766596507227
+        },
+        {
+            "id": "0C80GCp0mMuBzLf3EAXqxv",
+            "track": {
+                "name": "Shoot to Thrill",
+                "artists": [
+                    {
+                        "name": "AC/DC"
+                    }
+                ],
+                "album": {
+                    "name": "Back In Black",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ff191d7fbdb5a13eaf84132b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ff191d7fbdb5a13eaf84132b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ff191d7fbdb5a13eaf84132b"
+                        }
+                    ]
+                },
+                "duration_ms": 318231
+            },
+            "dateAdded": 1766596508442
+        },
+        {
+            "id": "2SiXAy7TuUkycRVbbWDEpo",
+            "track": {
+                "name": "You Shook Me All Night Long",
+                "artists": [
+                    {
+                        "name": "AC/DC"
+                    }
+                ],
+                "album": {
+                    "name": "Back In Black",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ff191d7fbdb5a13eaf84132b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ff191d7fbdb5a13eaf84132b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ff191d7fbdb5a13eaf84132b"
+                        }
+                    ]
+                },
+                "duration_ms": 210328
+            },
+            "dateAdded": 1766596509083
+        },
+        {
+            "id": "7snQQk1zcKl8gZ92AnueZW",
+            "track": {
+                "name": "Sweet Child O' Mine",
+                "artists": [
+                    {
+                        "name": "Guns N' Roses"
+                    }
+                ],
+                "album": {
+                    "name": "Appetite For Destruction",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27321ebf49b3292c3f0f575f0f5"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0221ebf49b3292c3f0f575f0f5"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485121ebf49b3292c3f0f575f0f5"
+                        }
+                    ]
+                },
+                "duration_ms": 356066
+            },
+            "dateAdded": 1766596509940
+        },
+        {
+            "id": "7LRMbd3LEoV5wZJvXT1Lwb",
+            "track": {
+                "name": "T.N.T.",
+                "artists": [
+                    {
+                        "name": "AC/DC"
+                    }
+                ],
+                "album": {
+                    "name": "High Voltage",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2738c7f355d649e0a3cfcf6fc39"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e028c7f355d649e0a3cfcf6fc39"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048518c7f355d649e0a3cfcf6fc39"
+                        }
+                    ]
+                },
+                "duration_ms": 215096
+            },
+            "dateAdded": 1766596510675
+        },
+        {
+            "id": "70LcF31zb1H0PyJoS1Sx1r",
+            "track": {
+                "name": "Creep",
+                "artists": [
+                    {
+                        "name": "Radiohead"
+                    }
+                ],
+                "album": {
+                    "name": "Pablo Honey",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ec548c00d3ac2f10be73366d"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ec548c00d3ac2f10be73366d"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ec548c00d3ac2f10be73366d"
+                        }
+                    ]
+                },
+                "duration_ms": 238640
+            },
+            "dateAdded": 1766596517229
+        },
+        {
+            "id": "63OQupATfueTdZMWTxW03A",
+            "track": {
+                "name": "Karma Police",
+                "artists": [
+                    {
+                        "name": "Radiohead"
+                    }
+                ],
+                "album": {
+                    "name": "OK Computer",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02c8b444df094279e70d0ed856"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851c8b444df094279e70d0ed856"
+                        }
+                    ]
+                },
+                "duration_ms": 264066
+            },
+            "dateAdded": 1766596522197
+        },
+        {
+            "id": "2fuYa3Lx06QQJAm0MjztKr",
+            "track": {
+                "name": "Let Down",
+                "artists": [
+                    {
+                        "name": "Radiohead"
+                    }
+                ],
+                "album": {
+                    "name": "OK Computer",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02c8b444df094279e70d0ed856"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851c8b444df094279e70d0ed856"
+                        }
+                    ]
+                },
+                "duration_ms": 299560
+            },
+            "dateAdded": 1766596524357
+        },
+        {
+            "id": "1dyTcli07c77mtQK3ahUZR",
+            "track": {
+                "name": "Just",
+                "artists": [
+                    {
+                        "name": "Radiohead"
+                    }
+                ],
+                "album": {
+                    "name": "The Bends",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2739293c743fa542094336c5e12"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e029293c743fa542094336c5e12"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048519293c743fa542094336c5e12"
+                        }
+                    ]
+                },
+                "duration_ms": 234800
+            },
+            "dateAdded": 1766596526285
+        },
+        {
+            "id": "5XeFesFbtLpXzIVDNQP22n",
+            "track": {
+                "name": "I Wanna Be Yours",
+                "artists": [
+                    {
+                        "name": "Arctic Monkeys"
+                    }
+                ],
+                "album": {
+                    "name": "AM",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514ae1c4c5c45aabe565499163"
+                        }
+                    ]
+                },
+                "duration_ms": 183956
+            },
+            "dateAdded": 1766596535649
+        },
+        {
+            "id": "5TTGoX70AFrTvuEtqHK37S",
+            "track": {
+                "name": "No. 1 Party Anthem",
+                "artists": [
+                    {
+                        "name": "Arctic Monkeys"
+                    }
+                ],
+                "album": {
+                    "name": "AM",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514ae1c4c5c45aabe565499163"
+                        }
+                    ]
+                },
+                "duration_ms": 243131
+            },
+            "dateAdded": 1766596536463
+        },
+        {
+            "id": "0BxE4FqsDD1Ot4YuBXwAPp",
+            "track": {
+                "name": "505",
+                "artists": [
+                    {
+                        "name": "Arctic Monkeys"
+                    }
+                ],
+                "album": {
+                    "name": "Favourite Worst Nightmare",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273b1f8da74f225fa1225cdface"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02b1f8da74f225fa1225cdface"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851b1f8da74f225fa1225cdface"
+                        }
+                    ]
+                },
+                "duration_ms": 253586
+            },
+            "dateAdded": 1766596537832
+        },
+        {
+            "id": "2AT8iROs4FQueDv2c8q2KE",
+            "track": {
+                "name": "R U Mine?",
+                "artists": [
+                    {
+                        "name": "Arctic Monkeys"
+                    }
+                ],
+                "album": {
+                    "name": "AM",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514ae1c4c5c45aabe565499163"
+                        }
+                    ]
+                },
+                "duration_ms": 201726
+            },
+            "dateAdded": 1766596538600
+        },
+        {
+            "id": "5FVd6KXrgO9B3JPmC8OPst",
+            "track": {
+                "name": "Do I Wanna Know?",
+                "artists": [
+                    {
+                        "name": "Arctic Monkeys"
+                    }
+                ],
+                "album": {
+                    "name": "AM",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514ae1c4c5c45aabe565499163"
+                        }
+                    ]
+                },
+                "duration_ms": 272394
+            },
+            "dateAdded": 1766596539256
+        },
+        {
+            "id": "086myS9r57YsLbJpU0TgK9",
+            "track": {
+                "name": "Why'd You Only Call Me When You're High?",
+                "artists": [
+                    {
+                        "name": "Arctic Monkeys"
+                    }
+                ],
+                "album": {
+                    "name": "AM",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024ae1c4c5c45aabe565499163"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514ae1c4c5c45aabe565499163"
+                        }
+                    ]
+                },
+                "duration_ms": 161123
+            },
+            "dateAdded": 1766596540576
+        },
+        {
+            "id": "2fyIS6GXMgUcSv4oejx63f",
+            "track": {
+                "name": "Mardy Bum",
+                "artists": [
+                    {
+                        "name": "Arctic Monkeys"
+                    }
+                ],
+                "album": {
+                    "name": "Whatever People Say I Am, That's What I'm Not",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736b3fa88bdd4af566fbbf2bbf"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026b3fa88bdd4af566fbbf2bbf"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516b3fa88bdd4af566fbbf2bbf"
+                        }
+                    ]
+                },
+                "duration_ms": 175440
+            },
+            "dateAdded": 1766596541487
+        },
+        {
+            "id": "2zzLRQ78kKfPTx8FJQCdC2",
+            "track": {
+                "name": "When The Sun Goes Down",
+                "artists": [
+                    {
+                        "name": "Arctic Monkeys"
+                    }
+                ],
+                "album": {
+                    "name": "Whatever People Say I Am, That's What I'm Not",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736b3fa88bdd4af566fbbf2bbf"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e026b3fa88bdd4af566fbbf2bbf"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048516b3fa88bdd4af566fbbf2bbf"
+                        }
+                    ]
+                },
+                "duration_ms": 202133
+            },
+            "dateAdded": 1766596542254
+        },
+        {
+            "id": "3huV7eiNpaQlCB3LbZi9bB",
+            "track": {
+                "name": "Bad Habit",
+                "artists": [
+                    {
+                        "name": "The Kooks"
+                    }
+                ],
+                "album": {
+                    "name": "Listen",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732bc58e4de7c41e84aeacee40"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022bc58e4de7c41e84aeacee40"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512bc58e4de7c41e84aeacee40"
+                        }
+                    ]
+                },
+                "duration_ms": 221413
+            },
+            "dateAdded": 1766596558114
+        },
+        {
+            "id": "6ZygaqgtPkiahkiYJhYWhn",
+            "track": {
+                "name": "Seaside",
+                "artists": [
+                    {
+                        "name": "The Kooks"
+                    }
+                ],
+                "album": {
+                    "name": "Inside In / Inside Out",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27363a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0263a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485163a28c5ecb7b13e9b329fe47"
+                        }
+                    ]
+                },
+                "duration_ms": 99226
+            },
+            "dateAdded": 1766596558929
+        },
+        {
+            "id": "5xoUgPXbMNUmoHU0Enwtwq",
+            "track": {
+                "name": "She Moves In Her Own Way",
+                "artists": [
+                    {
+                        "name": "The Kooks"
+                    }
+                ],
+                "album": {
+                    "name": "Inside In / Inside Out",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27363a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0263a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485163a28c5ecb7b13e9b329fe47"
+                        }
+                    ]
+                },
+                "duration_ms": 169306
+            },
+            "dateAdded": 1766596559618
+        },
+        {
+            "id": "7BHPGtpuuWWsvE7cCaMuEU",
+            "track": {
+                "name": "Naive",
+                "artists": [
+                    {
+                        "name": "The Kooks"
+                    }
+                ],
+                "album": {
+                    "name": "Inside In / Inside Out",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27363a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0263a28c5ecb7b13e9b329fe47"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485163a28c5ecb7b13e9b329fe47"
+                        }
+                    ]
+                },
+                "duration_ms": 203506
+            },
+            "dateAdded": 1766596560314
+        }
+    ],
+    "_id": "EMfKL",
+    "description": "Raw energy, powerful vocals, and heavy riffs to fuel your day."
+},{
+    "name": "Best of 1960's",
+    "imgUrl": "/src/assets/imgs/defaultStationImg.png",
+    "owner": {
+        "_id": "lsQSK",
+        "fullname": "Adminsky",
+        "username": "admin",
+        "password": "admin",
+        "likedSongs": [],
+        "stationsId": []
+    },
+    "tracks": [
+        {
+            "id": "6VojZJpMyuKClbwyilWlQj",
+            "track": {
+                "name": "Wouldn't It Be Nice",
+                "artists": [
+                    {
+                        "name": "The Beach Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Greatest Hits",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27387ff937488599a929a5bfff5"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0287ff937488599a929a5bfff5"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485187ff937488599a929a5bfff5"
+                        }
+                    ]
+                },
+                "duration_ms": 153866
+            },
+            "dateAdded": 1766602160105
+        },
+        {
+            "id": "5t9KYe0Fhd5cW6UYT4qP8f",
+            "track": {
+                "name": "Good Vibrations - Remastered 2001",
+                "artists": [
+                    {
+                        "name": "The Beach Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Smiley Smile (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fb9dac3244b8486758058a81"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fb9dac3244b8486758058a81"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fb9dac3244b8486758058a81"
+                        }
+                    ]
+                },
+                "duration_ms": 219026
+            },
+            "dateAdded": 1766602164522
+        },
+        {
+            "id": "2KOt2JrCB720UxIbyzweQo",
+            "track": {
+                "name": "Barbara Ann",
+                "artists": [
+                    {
+                        "name": "The Beach Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Spirit Of America",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273af188836621942122e3832f5"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02af188836621942122e3832f5"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851af188836621942122e3832f5"
+                        }
+                    ]
+                },
+                "duration_ms": 133893
+            },
+            "dateAdded": 1766602166170
+        },
+        {
+            "id": "1Umw3vhysHBodpBFpFsVgK",
+            "track": {
+                "name": "God Only Knows",
+                "artists": [
+                    {
+                        "name": "The Beach Boys"
+                    }
+                ],
+                "album": {
+                    "name": "50 Big Ones: Greatest Hits",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27310d709d905d269d37a41d4c4"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0210d709d905d269d37a41d4c4"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485110d709d905d269d37a41d4c4"
+                        }
+                    ]
+                },
+                "duration_ms": 175786
+            },
+            "dateAdded": 1766602169460
+        },
+        {
+            "id": "4IHc6SzGPnzSPuHVEPzpJc",
+            "track": {
+                "name": "Wouldn't It Be Nice",
+                "artists": [
+                    {
+                        "name": "The Beach Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Pet Sounds",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27350eb0c521d2d3b2f599bff04"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0250eb0c521d2d3b2f599bff04"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485150eb0c521d2d3b2f599bff04"
+                        }
+                    ]
+                },
+                "duration_ms": 153240
+            },
+            "dateAdded": 1766602174020
+        },
+        {
+            "id": "17QTsL4K9B9v4rI8CAIdfC",
+            "track": {
+                "name": "God Only Knows - Remastered 1996",
+                "artists": [
+                    {
+                        "name": "The Beach Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Pet Sounds",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27350eb0c521d2d3b2f599bff04"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0250eb0c521d2d3b2f599bff04"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485150eb0c521d2d3b2f599bff04"
+                        }
+                    ]
+                },
+                "duration_ms": 174906
+            },
+            "dateAdded": 1766602174756
+        },
+        {
+            "id": "0wz1LjDb9ZNEYwOmDJ3Q4b",
+            "track": {
+                "name": "Surfin' U.S.A. - Remastered 2001",
+                "artists": [
+                    {
+                        "name": "The Beach Boys"
+                    }
+                ],
+                "album": {
+                    "name": "Surfin' USA (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2737cb33b8fab5302942e6a78fb"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e027cb33b8fab5302942e6a78fb"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048517cb33b8fab5302942e6a78fb"
+                        }
+                    ]
+                },
+                "duration_ms": 149373
+            },
+            "dateAdded": 1766602175884
+        },
+        {
+            "id": "6dGnYIeXmHdcikdzNNDMm2",
+            "track": {
+                "name": "Here Comes The Sun - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Abbey Road (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273dc30583ba717007b00cceb25"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02dc30583ba717007b00cceb25"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851dc30583ba717007b00cceb25"
+                        }
+                    ]
+                },
+                "duration_ms": 185733
+            },
+            "dateAdded": 1766602184221
+        },
+        {
+            "id": "3KfbEIOC7YIv90FIfNSZpo",
+            "track": {
+                "name": "In My Life - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Rubber Soul (Remastered 2009)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ed801e58a9ababdea6ac7ce4"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ed801e58a9ababdea6ac7ce4"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851ed801e58a9ababdea6ac7ce4"
+                        }
+                    ]
+                },
+                "duration_ms": 146333
+            },
+            "dateAdded": 1766602185300
+        },
+        {
+            "id": "7iN1s7xHE4ifF5povM6A48",
+            "track": {
+                "name": "Let It Be - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Let It Be (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27384243a01af3c77b56fe01ab1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0284243a01af3c77b56fe01ab1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485184243a01af3c77b56fe01ab1"
+                        }
+                    ]
+                },
+                "duration_ms": 243026
+            },
+            "dateAdded": 1766602185924
+        },
+        {
+            "id": "3BQHpFgAp4l80e1XslIjNI",
+            "track": {
+                "name": "Yesterday - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Help! (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e3e3b64cea45265469d4cafa"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e3e3b64cea45265469d4cafa"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e3e3b64cea45265469d4cafa"
+                        }
+                    ]
+                },
+                "duration_ms": 125666
+            },
+            "dateAdded": 1766602186373
+        },
+        {
+            "id": "1eT2CjXwFXNx6oY5ydvzKU",
+            "track": {
+                "name": "Hey Jude",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Love",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27330503dbc30e621c96913379b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0230503dbc30e621c96913379b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485130503dbc30e621c96913379b"
+                        }
+                    ]
+                },
+                "duration_ms": 238854
+            },
+            "dateAdded": 1766602187374
+        },
+        {
+            "id": "389QX9Q1eUOEZ19vtzzI9O",
+            "track": {
+                "name": "While My Guitar Gently Weeps - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "The Beatles (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024ce8b4e42588bf18182a1ad2"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514ce8b4e42588bf18182a1ad2"
+                        }
+                    ]
+                },
+                "duration_ms": 285000
+            },
+            "dateAdded": 1766602187861
+        },
+        {
+            "id": "65vdMBskhx3akkG9vQlSH1",
+            "track": {
+                "name": "And I Love Her - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "A Hard Day's Night (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273e230f303815e82a86713eedd"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02e230f303815e82a86713eedd"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851e230f303815e82a86713eedd"
+                        }
+                    ]
+                },
+                "duration_ms": 149693
+            },
+            "dateAdded": 1766602188638
+        },
+        {
+            "id": "5jgFfDIR6FR0gvlA56Nakr",
+            "track": {
+                "name": "Blackbird - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "The Beatles (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e024ce8b4e42588bf18182a1ad2"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048514ce8b4e42588bf18182a1ad2"
+                        }
+                    ]
+                },
+                "duration_ms": 138386
+            },
+            "dateAdded": 1766602189069
+        },
+        {
+            "id": "3Am0IbOxmvlSXro7N5iSfZ",
+            "track": {
+                "name": "Strawberry Fields Forever - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Beatles"
+                    }
+                ],
+                "album": {
+                    "name": "Magical Mystery Tour (Remastered)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273692d9189b2bd75525893f0c1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02692d9189b2bd75525893f0c1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851692d9189b2bd75525893f0c1"
+                        }
+                    ]
+                },
+                "duration_ms": 247320
+            },
+            "dateAdded": 1766602189661
+        },
+        {
+            "id": "6H3kDe7CGoWYBabAeVWGiD",
+            "track": {
+                "name": "Gimme Shelter",
+                "artists": [
+                    {
+                        "name": "The Rolling Stones"
+                    }
+                ],
+                "album": {
+                    "name": "Let It Bleed",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732af30c881bb23cfb82a8cf99"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022af30c881bb23cfb82a8cf99"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512af30c881bb23cfb82a8cf99"
+                        }
+                    ]
+                },
+                "duration_ms": 270773
+            },
+            "dateAdded": 1766602199791
+        },
+        {
+            "id": "1GcVa4jFySlun4jLSuMhiq",
+            "track": {
+                "name": "Angie - Remastered 2009",
+                "artists": [
+                    {
+                        "name": "The Rolling Stones"
+                    }
+                ],
+                "album": {
+                    "name": "Goats Head Soup (Remastered 2009)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fa3c4374e2cdd3cc1636c79b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fa3c4374e2cdd3cc1636c79b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fa3c4374e2cdd3cc1636c79b"
+                        }
+                    ]
+                },
+                "duration_ms": 272000
+            },
+            "dateAdded": 1766602200391
+        },
+        {
+            "id": "63T7DJ1AFDD6Bn8VzG6JE8",
+            "track": {
+                "name": "Paint It, Black",
+                "artists": [
+                    {
+                        "name": "The Rolling Stones"
+                    }
+                ],
+                "album": {
+                    "name": "Aftermath",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273bad7062c3fd2f2d037989694"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02bad7062c3fd2f2d037989694"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851bad7062c3fd2f2d037989694"
+                        }
+                    ]
+                },
+                "duration_ms": 202266
+            },
+            "dateAdded": 1766602201090
+        },
+        {
+            "id": "6KOtheMY0KN4s9TrQHr9It",
+            "track": {
+                "name": "She's A Rainbow",
+                "artists": [
+                    {
+                        "name": "The Rolling Stones"
+                    }
+                ],
+                "album": {
+                    "name": "She's A Rainbow / Dandelion / We Love You",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273b98f37642280c7edad050c5e"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02b98f37642280c7edad050c5e"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851b98f37642280c7edad050c5e"
+                        }
+                    ]
+                },
+                "duration_ms": 253720
+            },
+            "dateAdded": 1766602201562
+        },
+        {
+            "id": "2PzU4IB8Dr6mxV3lHuaG34",
+            "track": {
+                "name": "(I Can't Get No) Satisfaction - Mono",
+                "artists": [
+                    {
+                        "name": "The Rolling Stones"
+                    }
+                ],
+                "album": {
+                    "name": "Out Of Our Heads",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27305c5be85b64eaff732f7cb0b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0205c5be85b64eaff732f7cb0b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485105c5be85b64eaff732f7cb0b"
+                        }
+                    ]
+                },
+                "duration_ms": 222813
+            },
+            "dateAdded": 1766602202111
+        },
+        {
+            "id": "3gvyksxkLbyKwi0WjCiPXE",
+            "track": {
+                "name": "She's Only 18",
+                "artists": [
+                    {
+                        "name": "Red Hot Chili Peppers"
+                    }
+                ],
+                "album": {
+                    "name": "Stadium Arcadium",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27309fd83d32aee93dceba78517"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0209fd83d32aee93dceba78517"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485109fd83d32aee93dceba78517"
+                        }
+                    ]
+                },
+                "duration_ms": 205266
+            },
+            "dateAdded": 1766602205263
+        },
+        {
+            "id": "7Cwhlma0JgRVhDHR5CftD5",
+            "track": {
+                "name": "She's A Rainbow",
+                "artists": [
+                    {
+                        "name": "The Rolling Stones"
+                    }
+                ],
+                "album": {
+                    "name": "Forty Licks",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273fbf1cc20744dc138f1bfb9bc"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02fbf1cc20744dc138f1bfb9bc"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851fbf1cc20744dc138f1bfb9bc"
+                        }
+                    ]
+                },
+                "duration_ms": 253075
+            },
+            "dateAdded": 1766602206319
+        },
+        {
+            "id": "5uvosCdMlFdTXhoazkTI5R",
+            "track": {
+                "name": "Light My Fire",
+                "artists": [
+                    {
+                        "name": "The Doors"
+                    }
+                ],
+                "album": {
+                    "name": "The Doors",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2735b96a8c5d61be8878452f8f1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e025b96a8c5d61be8878452f8f1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048515b96a8c5d61be8878452f8f1"
+                        }
+                    ]
+                },
+                "duration_ms": 429760
+            },
+            "dateAdded": 1766602218577
+        },
+        {
+            "id": "1Jmqubf9kGkWeYQXQKImL5",
+            "track": {
+                "name": "People Are Strange",
+                "artists": [
+                    {
+                        "name": "The Doors"
+                    }
+                ],
+                "album": {
+                    "name": "Strange Days",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27386339e6cd71cc2a167451ee5"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0286339e6cd71cc2a167451ee5"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485186339e6cd71cc2a167451ee5"
+                        }
+                    ]
+                },
+                "duration_ms": 130173
+            },
+            "dateAdded": 1766602219812
+        },
+        {
+            "id": "5UgT7w6zVZjP3oyawMzbiK",
+            "track": {
+                "name": "The End",
+                "artists": [
+                    {
+                        "name": "The Doors"
+                    }
+                ],
+                "album": {
+                    "name": "The Doors",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2735b96a8c5d61be8878452f8f1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e025b96a8c5d61be8878452f8f1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048515b96a8c5d61be8878452f8f1"
+                        }
+                    ]
+                },
+                "duration_ms": 703373
+            },
+            "dateAdded": 1766602220865
+        },
+        {
+            "id": "3dj4wgM3cPeuLwMNHDuBon",
+            "track": {
+                "name": "The Door",
+                "artists": [
+                    {
+                        "name": "Teddy Swims"
+                    }
+                ],
+                "album": {
+                    "name": "I've Tried Everything But Therapy (Part 1)",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2731a0323cc23419360a34a3ace"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e021a0323cc23419360a34a3ace"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048511a0323cc23419360a34a3ace"
+                        }
+                    ]
+                },
+                "duration_ms": 212648
+            },
+            "dateAdded": 1766602221913
+        },
+        {
+            "id": "4BVE5tIIpYabZcYCbephNW",
+            "track": {
+                "name": "Touch Me",
+                "artists": [
+                    {
+                        "name": "The Doors"
+                    }
+                ],
+                "album": {
+                    "name": "The Soft Parade",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273a0c993789a4875837cf7cf71"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02a0c993789a4875837cf7cf71"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851a0c993789a4875837cf7cf71"
+                        }
+                    ]
+                },
+                "duration_ms": 190253
+            },
+            "dateAdded": 1766602223283
+        },
+        {
+            "id": "1Q5kgpp4pmyGqPwNBzkSrw",
+            "track": {
+                "name": "Roadhouse Blues",
+                "artists": [
+                    {
+                        "name": "The Doors"
+                    }
+                ],
+                "album": {
+                    "name": "Morrison Hotel",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273f12a8a7e0b2cbe16d2bef4dc"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02f12a8a7e0b2cbe16d2bef4dc"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851f12a8a7e0b2cbe16d2bef4dc"
+                        }
+                    ]
+                },
+                "duration_ms": 243826
+            },
+            "dateAdded": 1766602226146
+        },
+        {
+            "id": "3MFFDRC4wTN9JNGtzXsZlN",
+            "track": {
+                "name": "Love Her Madly",
+                "artists": [
+                    {
+                        "name": "The Doors"
+                    }
+                ],
+                "album": {
+                    "name": "L.A. Woman",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733992c7ab57975935b29fa22b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e023992c7ab57975935b29fa22b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048513992c7ab57975935b29fa22b"
+                        }
+                    ]
+                },
+                "duration_ms": 198466
+            },
+            "dateAdded": 1766602227114
+        },
+        {
+            "id": "6ToM0uwxtPKo9CMpbPGYvM",
+            "track": {
+                "name": "Break on Through (To the Other Side)",
+                "artists": [
+                    {
+                        "name": "The Doors"
+                    }
+                ],
+                "album": {
+                    "name": "The Doors",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2735b96a8c5d61be8878452f8f1"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e025b96a8c5d61be8878452f8f1"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048515b96a8c5d61be8878452f8f1"
+                        }
+                    ]
+                },
+                "duration_ms": 145866
+            },
+            "dateAdded": 1766602227706
+        },
+        {
+            "id": "14XWXWv5FoCbFzLksawpEe",
+            "track": {
+                "name": "Riders on the Storm",
+                "artists": [
+                    {
+                        "name": "The Doors"
+                    }
+                ],
+                "album": {
+                    "name": "L.A. Woman",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733992c7ab57975935b29fa22b"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e023992c7ab57975935b29fa22b"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048513992c7ab57975935b29fa22b"
+                        }
+                    ]
+                },
+                "duration_ms": 434720
+            },
+            "dateAdded": 1766602228618
+        }
+    ],
+    "_id": "ADu7J",
+    "description": "Some of the best song written in 1960's featuring The Beatles, The Rolling Stones  and The Beach Boys"
+}
+]

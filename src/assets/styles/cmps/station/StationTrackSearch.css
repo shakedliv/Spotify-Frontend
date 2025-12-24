@@ -1,7 +1,7 @@
 .station-track-search-container {
     .station-track-search {
         border-top: 1px solid var(--bg-highlight);
-        margin: 20px;
+        margin-inline: 40px;
         display: flex;
         /* flex-direction: row; */
         justify-content: space-between;
@@ -10,8 +10,8 @@
     }
     .station-track-search-header {
         display: grid;
-        padding: 20px;
         row-gap: 20px;
+        padding-block: 20px;
 
         h4 {
             font-size: 30px;
@@ -38,7 +38,7 @@
     }
 
     .close-btn {
-        margin-right: 18px;
+        /* margin-right: 18px; */
         align-self: stretch;
         &:hover {
             color: var(--text-subdued);
@@ -54,8 +54,8 @@
         text-align: end;
         margin-inline-end: 60px;
     }
-    .recommended-container {
-        padding: 10px 20px;
+    .recommended-headers {
+        margin-inline: 40px;
     }
     .recommended-header {
         font-size: 35px;
