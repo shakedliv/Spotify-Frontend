@@ -56,7 +56,8 @@ export function LikedSongs() {
                 tracks={likedTracks}
                 isSearch={false}
                 isDraggable={false}
-                onReorder={onReorder}
+             onReorder={onReorder}
+             isLikedSongsPage={true}
             />
         </section>
     )

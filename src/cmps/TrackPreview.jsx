@@ -36,7 +36,8 @@ export function TrackPreview({
     isOperationsOpen,
     isDraggable,
    isSearch,
-    trackIndex,
+   trackIndex,
+    isLikedSongsPage = false,
 }) {
     const organizedTrack = track.track
     const dispatch = useDispatch()
@@ -120,7 +121,7 @@ export function TrackPreview({
                         {organizedTrack.album?.name}{' '}
                     </span>
                     <span className='track-date'>
-                        {formatDate(track.dateAdded)}
+                        {isLikedSongsPage? formatDate(track.dateAddedToLikedSongs) : formatDate(track.dateAdded)}
                     </span>
                 </>
             )}
