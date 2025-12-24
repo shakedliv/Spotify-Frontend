@@ -27,11 +27,11 @@ function loadYoutubeIframeApi() {
     return youtubeApiPromise
 }
 
-export function useYoutubePlayer(containerRef) {
+export function useYoutubePlayer(containerRef, onTrackEnd) {
     const dispatch = useDispatch()
-
     const playerRef = useRef(null)
     const intervalRef = useRef(null)
+    const onTrackEndRef = useRef(onTrackEnd)
 
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
@@ -52,7 +52,9 @@ export function useYoutubePlayer(containerRef) {
         },
         [stopTrackingTime]
     )
-
+    useEffect(() => {
+        onTrackEndRef.current = onTrackEnd
+    }, [onTrackEnd])
     useEffect(() => {
         return () => {
             stopTrackingTime()
@@ -100,9 +102,9 @@ export function useYoutubePlayer(containerRef) {
                             startTrackingTime(e.target)
                         }
 
-                        if (e.data === YTState.PAUSED || e.data === YTState.ENDED) {
-                            dispatch(setIsPlaying(false))
+                        if (e.data === YTState.ENDED) {
                             stopTrackingTime()
+                            if (onTrackEndRef.current) onTrackEndRef.current()
                         }
                     },
                 },

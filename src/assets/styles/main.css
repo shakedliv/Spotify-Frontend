@@ -6,18 +6,18 @@
 @import "basics/base";
 @import "basics/scrollbars";
 
-
 @import "RootCmp";
 
 @import "cmps/AboutUs";
 @import "cmps/HomePage";
+@import "auth/auth";
+
 @import "cmps/UserDetails";
 @import "cmps/LoginSignup";
 @import "cmps/Chat";
 
 @import "cmps/AppHeader";
 @import "cmps/SearchBar";
-
 
 @import "cmps/ExplorerList";
 @import "cmps/ExplorerPreview";
@@ -43,4 +43,3 @@
 @import "cmps/track/TrackHeader.css";
 @import "cmps/track/TrackList.css";
 @import "cmps/track/TrackSearchPreview.css";
-

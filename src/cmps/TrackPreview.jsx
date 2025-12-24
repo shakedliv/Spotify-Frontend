@@ -3,7 +3,7 @@ import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { adaptTrackForPlayer } from '../services/track/track.util'
-import { setCurrentTrack } from '../store/actions/system.actions'
+import { setCurrentTrack , setTracks} from '../store/actions/system.actions'
 import { youtubeService } from '../services/youtube.service'
 import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
 import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
@@ -27,14 +27,16 @@ import { ViewCreditsIcon } from '../assets/svg/ViewCreditsIcon.jsx'
 import { ShareIcon } from '../assets/svg/ShareIcon.jsx'
 
 export function TrackPreview({
-    track,
+   track,
+   tracks = [],
     onAddTrack,
     onRemoveTrack,
     trackNum,
     onToggleOptions,
     isOperationsOpen,
     isDraggable,
-    isSearch,
+   isSearch,
+    trackIndex,
 }) {
     const organizedTrack = track.track
     const dispatch = useDispatch()
@@ -43,10 +45,10 @@ export function TrackPreview({
     const menuRef = useRef(null)
     const btnRef = useRef(null)
     const [menuStyle, setMenuStyle] = useState({})
-    const classContainer = isDraggable
-        ? 'track-preview draggable'
-        : 'track-preview'
     const wideClass = isSearch ? 'wide' : ''
+   //  const classContainer = isDraggable
+   //      ? 'track-preview draggable'
+   //      : 'track-preview'
 
     useCloseOnOutside(menuRef, () => {
         if (isOperationsOpen) onToggleOptions(null)
@@ -55,13 +57,12 @@ export function TrackPreview({
     async function onPlayTrack() {
         try {
             const videoId = await youtubeService.resolveVideoId(track)
-
             const adaptedTrack = {
                 ...adaptTrackForPlayer(track),
                 videoId,
             }
-
-            dispatch(setCurrentTrack(adaptedTrack))
+            dispatch(setTracks(tracks))
+            dispatch(setCurrentTrack(adaptedTrack, trackIndex))
         } catch (err) {
             console.error('Failed to resolve YouTube video', err)
         }
@@ -92,7 +93,7 @@ export function TrackPreview({
         onToggleOptions(track.id)
     }
     return (
-        <article className={classContainer} onClick={onPlayTrack}>
+        <article className={'track-preview'} onClick={onPlayTrack}>
             {isSearch ? (
                 <span className='hidden'></span>
             ) : (

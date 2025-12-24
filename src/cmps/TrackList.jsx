@@ -113,7 +113,9 @@ export function TrackList({
                                     onAddTrack={onAddTrack}
                                 />
                             ) : (
-                                <TrackPreview
+                                  <TrackPreview
+                                     tracks={tracks}
+                                     trackIndex={index}
                                     trackNum={index + 1}
                                     track={track}
                                     isSearch={isSearch}
