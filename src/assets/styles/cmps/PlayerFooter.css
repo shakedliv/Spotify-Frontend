@@ -105,7 +105,7 @@
 }
 
 .play-btn.is-playing {
-  background-color: var(--spotify-green);
+  /* background-color: var(--spotify-green); */
   color: var(--spotify-black);
   box-shadow: none;
 }
