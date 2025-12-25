@@ -1,141 +1,166 @@
 .auth-layout {
-  min-height: 70vh;
-  background-color: #000;
-  display: grid;
-  grid-template-rows: 72px 1fr 72px;
-  justify-items: center;
+    height: 100vh;
+    background-color: #121212;
+    display: grid;
+    grid-template-rows: 72px 1fr 38px;
+    justify-items: center;
+    padding-block: 48px 30px;
+    p {
+        text-align: center;
+    }
+    
 }
-
 .auth-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 95px;
-  margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 95px;
+    margin-top: 0px;
 }
 
-.auth-logo svg {
-  height: 40px;
-  width: 50px;
-}
 
 .auth-content {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      gap: 44px;
+    .login-signup-link {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 20px;
+    }
 }
 
 .login-form,
 .signup-form {
-  width: 100%;
-  max-width: 360px;
-  padding: 0 24px;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
+    width: 100%;
+    max-width: 360px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
 }
 
 .login-form h1,
 .signup-form h1 {
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
-  margin: 5px 0 5px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px 0 5px;
 }
 
 .login-form input,
 .signup-form input {
-  background-color: #121212;
-  border: 1px solid #727272;
-  border-radius: 6px;
-  padding: 14px 12px;
-  font-size: 14px;
-  color: #fff;
+    background-color: #121212;
+    border: 1px solid #727272;
+    border-radius: 6px;
+    padding: 14px 12px;
+    font-size: 14px;
+    color: #fff;
 }
 
 .login-form input + input,
 .signup-form input + input {
-  margin-top: 12px;
+    margin-top: 12px;
 }
 
 .login-form input::placeholder,
 .signup-form input::placeholder {
-  color: #b3b3b3;
+    color: #b3b3b3;
 }
 
 .login-btn,
 .signup-btn {
-  margin-top: 24px;
-  background-color: #1ed760;
-  color: #000;
-  border: none;
-  border-radius: 999px;
-  padding: 14px;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
+    margin-top: 24px;
+    background-color: #1ed760;
+    color: #000;
+    border: none;
+    border-radius: 999px;
+    padding: 14px;
+    font-size: 20px;
+    font-family: 'FigTreeBold', sans-serif;
+    cursor: pointer;
 }
 
 .login-btn:hover,
 .signup-btn:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .login-divider,
 .signup-divider {
-  display: flex;
-  align-items: center;
-  margin: 32px 0 24px;
-  color: #b3b3b3;
-  font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0 16px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
-.login-divider::before,
+/* .login-divider::before,
 .login-divider::after,
 .signup-divider::before,
 .signup-divider::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: #333;
-}
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #333;
+} */
 
 .login-divider span,
 .signup-divider span {
-  padding: 0 12px;
+    padding: 0 12px;
 }
 
 .social-btn {
-  background: transparent;
-  border: 1px solid #727272;
-  border-radius: 999px;
-  padding: 14px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  margin-bottom: 12px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   background: transparent;
+   border-radius: 999px;
+   border: 1.5px solid #727272;
+   color: #fff;
+   font-size: 20px;
+   font-family: 'FigTreeBold', sans-serif;
+   cursor: pointer;
+    margin-bottom: 8px;
+    padding: 10px 30px 10px 20px;
 }
 
 .social-btn:hover {
-  border-color: #fff;
+    border-color: #fff;
+    scale: 1.05;
 }
 
 .auth-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  color: #b3b3b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #b3b3b3;
 }
 
 .auth-footer a {
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .auth-footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+.auth-layout .credits {
+   font-size: 15px;
+   max-width: 360px;
+   text-wrap: balance;
+    span{
+         text-decoration: underline;
+         cursor: pointer;
+    }
+    span:hover {
+        color: #1ed760;
+    }
 }
