@@ -22,7 +22,6 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
     console.log('Library stations:', stations)
     console.log('Library userStationsIds:', user?.userStationsIds)
 
-    // user.stationsIds = ['694ce849c0bc7450d7e5d6a6', '694ce91e8c40e6f8838f6545']
 
     const stationsForUser = stations.filter(station =>
         user?.userStationsIds?.includes(station._id))
@@ -44,7 +43,7 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
 
     async function onAddStation() {
         const station = stationService.getEmptyStation()
-        station.name = `My Playlist #${stations.length + 1}`
+        station.name = `My Playlist #${stationsForUser.length + 1}`
         try {
             const savedStation = await addStation(station)
             showSuccessMsg(`Station added (id: ${savedStation._id})`)
