@@ -14,10 +14,24 @@ import { LibraryOpenIcon, LibraryCloseIcon, ExpandIcon, SearchIcon } from '../se
 
 export function Library({ isLibraryOpen, onToggleLibrary }) {
     const stations = useSelector(storeState => storeState.stationModule.stations)
+    const user = useSelector(storeState => storeState.userModule.user)
     const [activeTab, setActiveTab] = useState('')
 
     const navigate = useNavigate()
-  async function onRemoveStation(stationId) {
+
+    console.log(user)
+  
+    // user.stationsIds = ['694ce849c0bc7450d7e5d6a6', '694ce91e8c40e6f8838f6545']
+
+    const stationsForUser = stations.filter(station =>
+        user?.userStationsIds?.includes(station._id))
+
+    console.log(stationsForUser)
+
+
+
+
+    async function onRemoveStation(stationId) {
         try {
             await removeStation(stationId)
             showSuccessMsg('Station removed')
@@ -26,10 +40,10 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
         }
     }
 
-   
+
     async function onAddStation() {
         const station = stationService.getEmptyStation()
-        station.name = `My Playlist #${stations.length+1}`
+        station.name = `My Playlist #${stations.length + 1}`
         try {
             const savedStation = await addStation(station)
             showSuccessMsg(`Station added (id: ${savedStation._id})`)
@@ -82,9 +96,9 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
             </div>
 
             <section className={`library-station-list ${className}`}>
-             <LibraryStationList
-                     onRemoveStation={(stationId) => {onRemoveStation(stationId)}}
-                    stations={stations}
+                <LibraryStationList
+                    onRemoveStation={(stationId) => { onRemoveStation(stationId) }}
+                    stations={stationsForUser}
                 />
             </section>
         </div>
