@@ -127,7 +127,8 @@ export function StationDetails() {
                         <button className='shuffle-btn'>
                             {' '}
                             <ShuffleIcon />
-                        </button>
+                   </button>
+                  
                     </div>
                     <div className='list-btn'>
                         List

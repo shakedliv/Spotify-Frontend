@@ -2,180 +2,211 @@
   {
     "id": "0JQ5DAqbMKFC7do0jUgBzi",
     "name": "2025 in Music",
+    "searchKey": "pop",
     "imgUrl": "https://campaigns-service.spotifycdn.com/wrapped-2025/subfeed/shortcut-music-55473faa772a83c5e6b7150079dcdfa1.png",
     "bgColor": "#148A08"
   },
   {
     "id": "0JQ5DAt0tbjZptfcdMSKl3",
     "name": "Made For You",
+    "searchKey": "dance-pop",
     "imgUrl": "https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg",
     "bgColor": "#1E3264"
   },
   {
     "id": "0JQ5DAqbMKFz6FAsUtgAab",
     "name": "New Releases",
+    "searchKey": "indie-pop",
     "imgUrl": "https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg",
     "bgColor": "#8D67AB"
   },
-  {
-    "id": "0JQ5DAqbMKFEC4WFtoNRpw",
-    "name": "Pop",
-    "imgUrl": "https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg",
-    "bgColor": "#E8115B"
-  },
+ 
   {
     "id": "0JQ5DAqbMKFQ00XGBls6ym",
     "name": "Hip-Hop",
+    "searchKey": "hip-hop",
     "imgUrl": "https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg",
     "bgColor": "#F037A5"
   },
   {
     "id": "0JQ5DAqbMKFDXXwE9BDJAr",
     "name": "Rock",
+    "searchKey": "rock",
     "imgUrl": "https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg",
     "bgColor": "#AF2896"
   },
   {
     "id": "0JQ5DAqbMKFxXaXKP7zcDp",
     "name": "Latin",
+    "searchKey": "latin",
     "imgUrl": "https://t.scdn.co/media/derived/latin-274x274_befbbd1fbb8e045491576e317cb16cdf_0_0_274_274.jpg",
     "bgColor": "#0D73EC"
   },
   {
     "id": "0JQ5DAudkNjCgYMM0TZXDw",
     "name": "Charts",
+    "searchKey": "top-hits",
     "imgUrl": "https://charts-images.scdn.co/spotify-charts-logos/music_charts_search_arrow_274x274.jpeg",
     "bgColor": "#477D95"
   },
   {
     "id": "0JQ5DAqbMKFHOzuVTgTizF",
     "name": "Dance/Electronic",
+    "searchKey": "dance",
     "imgUrl": "https://t.scdn.co/media/derived/edm-274x274_0ef612604200a9c14995432994455a6d_0_0_274_274.jpg",
     "bgColor": "#503750"
+  },
+   {
+    "id": "0JQ5DAqbMKFEC4WFtoNRpw",
+    "name": "Pop",
+    "searchKey": "pop",
+    "imgUrl": "https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg",
+    "bgColor": "#E8115B"
   },
   {
     "id": "0JQ5DAqbMKFzHmL4tf05da",
     "name": "Mood",
+    "searchKey": "mood",
     "imgUrl": "https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg",
     "bgColor": "#BA5D07"
   },
   {
     "id": "0JQ5DAqbMKFCWjUTdzaG0e",
     "name": "Indie",
+    "searchKey": "indie",
     "imgUrl": "https://t.scdn.co/images/fe06caf056474bc58862591cd60b57fc.jpeg",
     "bgColor": "#E13300"
   },
   {
     "id": "0JQ5DAqbMKFAXlCG6QvYQ4",
     "name": "Workout",
+    "searchKey": "work-out",
     "imgUrl": "https://t.scdn.co/media/links/workout-274x274.png",
     "bgColor": "#537AA1"
   },
   {
     "id": "0JQ5DAtOnAEpjOgUKwXyxj",
     "name": "Discover",
+    "searchKey": "pop",
     "imgUrl": "https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg",
     "bgColor": "#148A08"
   },
   {
     "id": "0JQ5DAqbMKFKLfwjuJMoNC",
     "name": "Country",
+    "searchKey": "country",
     "imgUrl": "https://t.scdn.co/images/a2e0ebe2ebed4566ba1d8236b869241f.jpeg",
     "bgColor": "#1E3264"
   },
   {
     "id": "0JQ5DAqbMKFEZPnFQSFB1T",
     "name": "R&B",
+    "searchKey": "r-n-b",
     "imgUrl": "https://t.scdn.co/media/derived/r-b-274x274_fd56efa72f4f63764b011b68121581d8_0_0_274_274.jpg",
     "bgColor": "#8D67AB"
   },
   {
     "id": "0JQ5DAqbMKFGvOw3O4nLAf",
     "name": "K-pop",
+    "searchKey": "k-pop",
     "imgUrl": "https://t.scdn.co/images/2078afd91e4d431eb19efc5bee5ab131.jpeg",
     "bgColor": "#E8115B"
   },
   {
     "id": "0JQ5DAqbMKFFzDl7qN9Apr",
     "name": "Chill",
+    "searchKey": "chill",
     "imgUrl": "https://t.scdn.co/media/derived/chill-274x274_4c46374f007813dd10b37e8d8fd35b4b_0_0_274_274.jpg",
     "bgColor": "#F037A5"
   },
   {
     "id": "0JQ5DAqbMKFCuoRTxhYWow",
     "name": "Sleep",
+    "searchKey": "sleep",
     "imgUrl": "https://t.scdn.co/media/derived/sleep-274x274_0d4f836af8fab7bf31526968073e671c_0_0_274_274.jpg",
     "bgColor": "#AF2896"
   },
   {
     "id": "0JQ5DAqbMKFA6SOHvT3gck",
     "name": "Party",
+    "searchKey": "party",
     "imgUrl": "https://t.scdn.co/images/7ee6530d5b3c4acc9a0957046bf11d63",
     "bgColor": "#0D73EC"
   },
   {
     "id": "0JQ5DAqbMKFx0uLQR2okcc",
     "name": "At Home",
+    "searchKey": "acoustic",
     "imgUrl": "https://t.scdn.co/images/04da469dd7be4dab96659aa1fa9f0ac9.jpeg",
     "bgColor": "#477D95"
   },
   {
     "id": "0JQ5DAqbMKFIVNxQgRNSg0",
     "name": "Decades",
+    "searchKey": "oldies",
     "imgUrl": "https://t.scdn.co/images/04111a3b810243288d81a539ba03f8d0",
     "bgColor": "#503750"
   },
   {
     "id": "0JQ5DAqbMKFAUsdyVjCQuL",
     "name": "Love",
+    "searchKey": "romance",
     "imgUrl": "https://t.scdn.co/media/derived/romance-274x274_8100794c94847b6d27858bed6fa4d91b_0_0_274_274.jpg",
     "bgColor": "#BA5D07"
   },
   {
     "id": "0JQ5DAqbMKFDkd668ypn6O",
     "name": "Metal",
+    "searchKey": "metal",
     "imgUrl": "https://t.scdn.co/media/original/metal_27c921443fd0a5ba95b1b2c2ae654b2b_274x274.jpg",
     "bgColor": "#E13300"
   },
   {
     "id": "0JQ5DAqbMKFAJ5xb0fwo9m",
     "name": "Jazz",
+    "searchKey": "jazz",
     "imgUrl": "https://t.scdn.co/images/568f37f1cab54136939d63bd1f59d40c",
     "bgColor": "#537AA1"
   },
   {
     "id": "0JQ5DAqbMKFQIL0AXnG5AK",
     "name": "Trending",
+    "searchKey": "pop",
     "imgUrl": "https://t.scdn.co/images/ac75ec857b714a118c73218bb58664e5.jpeg",
     "bgColor": "#148A08"
   },
   {
     "id": "0JQ5DAqbMKFLb2EqgLtpjC",
     "name": "Wellness",
+    "searchKey": "wellness",
     "imgUrl": "https://t.scdn.co/images/3710b68657574bc79df14bd74629e5ac",
     "bgColor": "#1E3264"
   },
   {
     "id": "0JQ5DAqbMKFziKOShCi009",
     "name": "Anime",
+    "searchKey": "anime",
     "imgUrl": "https://t.scdn.co/images/54841f7d6a774ef096477c99c23f0cf1.jpeg",
     "bgColor": "#8D67AB"
   },
   {
     "id": "0JQ5DAqbMKFCfObibaOZbv",
     "name": "Gaming",
+    "searchKey": "gaming",
     "imgUrl": "https://t.scdn.co/images/0d39395309ba47838ef12ce987f19d16.jpeg",
     "bgColor": "#E8115B"
   },
   {
     "id": "0JQ5DAqbMKFy78wprEpAjl",
     "name": "Folk & Acoustic",
+    "searchKey": "folk",
     "imgUrl": "https://t.scdn.co/images/7fe0f2c9c91f45a3b6bae49d298201a4.jpeg",
     "bgColor": "#F037A5"
   },
   {
     "id": "0JQ5DAqbMKFCbimwdOYlsl",
     "name": "Focus",
+    "searchKey": "focus",
     "imgUrl": "https://t.scdn.co/media/original/genre-images-square-274x274_5e50d72b846a198fcd2ca9b3aef5f0c8_274x274.jpg",
     "bgColor": "#AF2896"
   }

@@ -61,7 +61,7 @@ export function Signup() {
         <span>or</span>
       </div>
 
-      <GoogleOAuthButton />
+      <GoogleOAuthButton className="social-btn google "/>
 
       {/* <button type="button" className="social-btn google ">
         <GoogleIcon /> Continue with Google

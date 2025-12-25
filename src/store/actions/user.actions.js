@@ -78,12 +78,17 @@ export async function logout() {
 }
 
 export async function toggleLikedSong(track) {
-    track.dateAddedToLikedSongs = Date.now()
-    store.dispatch({ type: TOGGLE_LIKED_SONG, track })
-    const state = store.getState()
-    const user = state.userModule.user
-    const savedUser = await userService.update(user)
-    store.dispatch({ type: SET_USER, user: savedUser })
+   try {
+      track.dateAddedToLikedSongs = Date.now()
+      store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+      const state = store.getState()
+      const user = state.userModule.user
+      const savedUser = await userService.update(user)
+      store.dispatch({ type: SET_USER, user: savedUser })
+   } catch (err) {
+      showErrorMsg('Cannot Add to liked songs')
+      store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+   }
 }
 
 // export async function loadUser(userId) {

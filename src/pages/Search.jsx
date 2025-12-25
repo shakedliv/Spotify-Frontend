@@ -1,49 +1,52 @@
-import { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
-import { spotifyService } from "../services/spotify.service";
-import { TrackList } from "../cmps/TrackList";
-import { ExplorerList } from "../cmps/ExplorerList";
-import { StationList } from "../cmps/StationList";
+import { useEffect, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
+import { spotifyService } from '../services/spotify.service'
+import { TrackList } from '../cmps/TrackList'
+import { ExplorerList } from '../cmps/ExplorerList'
+import { StationList } from '../cmps/StationList'
 
 export function Search() {
-  const [searchParams] = useSearchParams();
-  const [tracks, setTracks] = useState([]);
-  const [explorerItems, setExplorerItems] = useState([]);
+    const [searchParams] = useSearchParams()
+    const [tracks, setTracks] = useState([])
+    const [explorerItems, setExplorerItems] = useState([])
 
-  const query = searchParams.get("q") || "";
+    let query = searchParams.get('q') || ''
+   //  if (query.includes('genre:')) {
+   //      query = query.slice(6, query.length - 1)
+   //  }
 
-  useEffect(() => {
-    if (!query) {
-      setTracks([]);
-      setExplorerItems(spotifyService.getExplorerItems());
-      return;
-    }
+    useEffect(() => {
+        if (!query) {
+            setTracks([])
+            setExplorerItems(spotifyService.getExplorerItems())
+            return
+        }
 
-    let isActive = true;
-    const timeoutId = setTimeout(() => {
-      spotifyService
-        .searchTracksRemote(query)
-        .then((results) => {
-          if (!isActive) return;
-          setTracks(results);
-        })
-        .catch((err) => {
-          console.error("Spotify search failed:", err);
-        });
-    }, 400);
+        let isActive = true
+        const timeoutId = setTimeout(() => {
+            spotifyService
+                .searchTracksRemote(query)
+                .then((results) => {
+                    if (!isActive) return
+                    setTracks(results)
+                })
+                .catch((err) => {
+                    console.error('Spotify search failed:', err)
+                })
+        }, 400)
 
-    return () => {
-      isActive = false;
-      clearTimeout(timeoutId);
-    };
-  }, [query]);
+        return () => {
+            isActive = false
+            clearTimeout(timeoutId)
+        }
+    }, [query])
 
-  return (
-    <section className="search-page">
-      {!query && <ExplorerList items={explorerItems} />}
-      {query && <TrackList tracks={tracks} isSearch={true} />}
-    </section>
-  );
+    return (
+        <section className='search-page'>
+            {!query && <ExplorerList items={explorerItems} />}
+            {query && <TrackList tracks={tracks} isSearch={true} />}
+        </section>
+    )
 }
 
 //--------------------------------------------------------------

@@ -23,7 +23,19 @@ export function SearchBar() {
 
   function handleInputBlur() {
     setIsFocused(false);
-  }
+   }
+
+   function getDisplayQuery(rawQuery) {
+    if (!rawQuery) return ''
+    
+      if (rawQuery.startsWith('genre:"')) {
+      //   const genre = rawQuery.match(/"([^"]+)"/)?.[1] || ''
+      //      return genre.charAt(0).toUpperCase() + genre.slice(1) + ' songs'
+         return ''
+    }
+    
+    return rawQuery
+}
 
   function handleBrowseClick(ev) {
     ev.preventDefault();
@@ -65,7 +77,7 @@ export function SearchBar() {
         id="main-search"
         type="text"
         placeholder="What do you want to play?"
-        value={searchTerm}
+        value={ getDisplayQuery(searchTerm) }
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
         onChange={handleChange}

@@ -74,7 +74,7 @@ export function TrackPreview({
     }
 
     function onLikeClick(ev) {
-        ev.stopPropagation()
+       ev.stopPropagation()
         toggleLikedSong(track)
     }
 
