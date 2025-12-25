@@ -19,8 +19,9 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
 
     const navigate = useNavigate()
 
-    console.log(user)
-  
+    console.log('Library stations:', stations)
+    console.log('Library userStationsIds:', user?.userStationsIds)
+
     // user.stationsIds = ['694ce849c0bc7450d7e5d6a6', '694ce91e8c40e6f8838f6545']
 
     const stationsForUser = stations.filter(station =>
