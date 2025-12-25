@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "../store/actions/user.actions";
+import { GoogleIcon } from '../assets/svg/GoogleIcon';
+import { FacebookIcon } from '../assets/svg/FacebookIcon';
+import { AppleIcon } from '../assets/svg/AppleIcon';
 
 export function Login() {
   const [credentials, setCredentials] = useState({
@@ -50,16 +53,16 @@ export function Login() {
         <span>or</span>
       </div>
 
-      <button type="button" className="social-btn google">
-        Continue with Google
+      <button type="button" className="social-btn google ">
+           <GoogleIcon /> Continue with Google
       </button>
 
-      <button type="button" className="social-btn facebook">
-        Continue with Facebook
+      <button type="button" className="social-btn facebook ">
+       <FacebookIcon/>  Continue with Facebook
       </button>
 
       <button type="button" className="social-btn apple">
-        Continue with Apple
+       <AppleIcon/> Continue with Apple
       </button>
     </form>
   );

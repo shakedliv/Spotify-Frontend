@@ -2,6 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signup } from "../store/actions/user.actions";
 import { userService } from "../services/user";
+import { AppleIcon } from '../assets/svg/AppleIcon';
+import { FacebookIcon } from '../assets/svg/FacebookIcon';
+import { GoogleIcon } from '../assets/svg/GoogleIcon';
 
 export function Signup() {
   const [credentials, setCredentials] = useState(userService.getEmptyUser());
@@ -57,16 +60,12 @@ export function Signup() {
         <span>or</span>
       </div>
 
-      <button type="button" className="social-btn google">
-        Sign up with Google
-      </button>
-
-      <button type="button" className="social-btn facebook">
-        Sign up with Facebook
+      <button type="button" className="social-btn google ">
+        <GoogleIcon /> Continue with Google
       </button>
 
       <button type="button" className="social-btn apple">
-        Sign up with Apple
+       <AppleIcon/> Continue with Apple
       </button>
     </form>
   );
