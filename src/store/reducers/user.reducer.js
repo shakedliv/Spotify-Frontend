@@ -32,8 +32,8 @@ export function userReducer(state = initialState, action) {
             if (!state.user) return state
             const track = action.track
             const isLiked = state.user.likedSongs?.some(t => t.id === track.id)
-            const likedSongs = isLiked
-                ? state.user.likedSongs.filter(t => t.id !== track.id)
+            const likedSongs = isLiked ?
+                state.user.likedSongs.filter(t => t.id !== track.id)
                 : [...(state.user.likedSongs || []), track]
 
             return {

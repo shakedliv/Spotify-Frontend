@@ -27,14 +27,9 @@ function remove(userId) {
 	return httpService.delete(`user/${userId}`)
 }
 
-async function update({ _id, score }) {
-	const user = await httpService.put(`user/${_id}`, { _id, score })
-
-	// When admin updates other user's details, do not update loggedinUser
-	const loggedinUser = getLoggedinUser() // Might not work because its defined in the main service???
-	if (loggedinUser._id === user._id) saveLoggedinUser(user)
-
-	return user
+async function update(user) {
+	const updatedUser = await httpService.put(`user/${user._id}`, user)
+	return saveLoggedinUser(updatedUser)
 }
 
 async function login(userCred) {
@@ -60,7 +55,8 @@ function saveLoggedinUser(user) {
 	user = {
 		_id: user._id,
 		fullname: user.fullname,
-		userStationsIds: user.userStationsIds
+		userStationsIds: user.userStationsIds,
+		likedSongs: user.likedSongs
 	}
 	sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
 	return user

@@ -22,9 +22,12 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
     console.log('Library stations:', stations)
     console.log('Library userStationsIds:', user?.userStationsIds)
 
+    console.log('SESSION userStationsIds:',
+        JSON.parse(sessionStorage.getItem('loggedinUser'))?.userStationsIds?.length)
+
 
     const stationsForUser = stations.filter(station =>
-        user?.userStationsIds?.includes(station._id))
+            user?.userStationsIds?.includes(station._id))
 
     console.log(stationsForUser)
 

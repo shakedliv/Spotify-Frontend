@@ -40,11 +40,12 @@ export async function addStation(station) {
 
         const user = store.getState().userModule.user
         if (user) {
-            const updatedUser = {
-                ...user,
-                userStationsIds: [...(user.userStationsIds || []), savedStation._id]
-            }
-            store.dispatch({ type: 'SET_USER', user: updatedUser })
+            const updatedUserStationsIds = [...(user.userStationsIds || []), savedStation._id]
+            const updatedUser = { ...user, userStationsIds: updatedUserStationsIds }
+            
+            const savedUserResponse = await userService.update(updatedUser)
+            
+            store.dispatch({ type: 'SET_USER', user: savedUserResponse }) 
         }
 
         return savedStation
