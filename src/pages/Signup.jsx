@@ -63,9 +63,9 @@ export function Signup() {
 
       <GoogleOAuthButton />
 
-      <button type="button" className="social-btn google ">
+      {/* <button type="button" className="social-btn google ">
         <GoogleIcon /> Continue with Google
-      </button>
+      </button> */}
 
       <button type="button" className="social-btn apple">
        <AppleIcon/> Continue with Apple

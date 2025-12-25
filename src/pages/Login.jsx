@@ -56,9 +56,9 @@ export function Login() {
 
       <GoogleOAuthButton />
 
-      <button type="button" className="social-btn google">
+      {/* <button type="button" className="social-btn google">
         Continue with Google
-      </button>
+      </button> */}
 
       <button type="button" className="social-btn facebook ">
        <FacebookIcon/>  Continue with Facebook
