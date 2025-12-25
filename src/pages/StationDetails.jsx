@@ -117,7 +117,7 @@ export function StationDetails() {
                 <h1 onClick={() => setIsEditOpen(true)}>{station.name}</h1>
                 <h4 className='desc'>{station.description || ''}</h4>
                 <h5>
-                    {station.owner.fullname} •{' '}
+                    {station.owner?.fullname} •{' '}
                     <span>{station?.tracks?.length} songs</span>
                 </h5>
 

@@ -37,6 +37,16 @@ export async function addStation(station) {
     try {
         const savedStation = await stationService.save(station)
         store.dispatch(getCmdAddStation(savedStation))
+
+        const user = store.getState().userModule.user
+        if (user) {
+            const updatedUser = {
+                ...user,
+                userStationsIds: [...(user.userStationsIds || []), savedStation._id]
+            }
+            store.dispatch({ type: 'SET_USER', user: updatedUser })
+        }
+
         return savedStation
     } catch (err) {
         console.log('Cannot add station', err)
@@ -79,11 +89,6 @@ export async function addStationMsg(stationId, txt) {
 //         throw err
 //     }
 // }
-
-
-
-
-
 
 
 // Command Creators:

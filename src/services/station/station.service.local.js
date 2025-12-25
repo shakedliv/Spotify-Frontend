@@ -15,17 +15,17 @@ export const stationService = {
     query,
     getById,
     save,
-   remove,
+    remove,
 }
 window.cs = stationService
 
-   async function query(filterBy = { txt: '' }) {
-      var stations = await storageService.query(STORAGE_KEY)
-      if (!stations || !stations.length) {
-          await storageService.postMany(STORAGE_KEY, demoStations)
-      }
-   const { txt, sortField, sortDir } = filterBy
-   
+async function query(filterBy = { txt: '' }) {
+    var stations = await storageService.query(STORAGE_KEY)
+    if (!stations || !stations.length) {
+        await storageService.postMany(STORAGE_KEY, demoStations)
+    }
+    const { txt, sortField, sortDir } = filterBy
+
     if (txt) {
         const regex = new RegExp(filterBy.txt, 'i')
         stations = stations.filter(station => regex.test(station.name) || regex.test(station.description))
@@ -56,7 +56,6 @@ async function save(station) {
     } else {
         const stationToSave = {
             name: station.name,
-            imgUrl: defaultStationImg,
             owner: userService.getLoggedinUser(),
             tracks: []
         }

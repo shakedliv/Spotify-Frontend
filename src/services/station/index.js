@@ -1,6 +1,7 @@
 const { DEV, VITE_LOCAL } = import.meta.env
 
 import { getRandomIntInclusive, makeId } from '../util.service'
+import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
 
 import { stationService as local } from './station.service.local'
 import { stationService as remote } from './station.service.remote'
@@ -9,6 +10,7 @@ function getEmptyStation() {
     return {
         _id: '',
         name: '',
+        imgUrl: defaultStationImg,
     }
 }
 

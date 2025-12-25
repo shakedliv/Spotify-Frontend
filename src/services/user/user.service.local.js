@@ -15,7 +15,7 @@ export const userService = {
     getLoggedinUser,
     saveLoggedinUser,
 }
-_createLoggedinUser()
+// _createLoggedinUser()
 
 
 async function getUsers() {
@@ -56,7 +56,7 @@ async function signup(userCred) {
         fullname: userCred.fullname,
         username: userCred.username,
         password: userCred.password,
-       likedSongs: userCred.likedSongs || [], 
+        likedSongs: userCred.likedSongs || [],
         stationsId: userCred.stationsId || []
     }
     const newUser = await storageService.post('user', user)
@@ -78,7 +78,7 @@ function saveLoggedinUser(user) {
         username: user.username,
         password: user.password,
         likedSongs: user.likedSongs || [],
-        stationsId: user.stationsId || []
+        userStationsIds: user.userStationsIds || []
     }
     sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
     return user
@@ -87,7 +87,7 @@ function saveLoggedinUser(user) {
 // To quickly create an admin user, uncomment the next line
 async function _createLoggedinUser() {
     const users = localStorage.getItem('user')
-    console.log(users)
+   
 
     // const user = users.find(user => user.username === 'admin')
     // console.log(user)
@@ -96,7 +96,7 @@ async function _createLoggedinUser() {
         const user = {
             username: 'admin',
             password: 'admin',
-           fullname: 'Adminsky',
+            fullname: 'Adminsky',
             likedSongs: demoLikedSongs || []
         }
 
