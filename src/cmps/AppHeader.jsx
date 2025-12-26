@@ -51,7 +51,13 @@ export function AppHeader() {
     <header className="app-header full">
       <nav>
         <div className="nav-left">
-          <SpotifyLogo />
+          <button
+            className="logo-btn"
+            onClick={() => navigate("/")}
+            aria-label="Go to home"
+          >
+            <SpotifyLogo />
+          </button>{" "}
         </div>
 
         <div className="nav-center">
