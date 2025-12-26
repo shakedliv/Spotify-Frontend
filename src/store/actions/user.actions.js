@@ -9,6 +9,7 @@ import {
     SET_USER,
     SET_USERS,
     TOGGLE_LIKED_SONG,
+    TOGGLE_STATION_LIKE,
 } from '../reducers/user.reducer'
 import { formatDate } from '../../services/util.service'
 
@@ -35,7 +36,7 @@ export async function removeUser(userId) {
 
 export async function login(credentials) {
     try {
-       const user = await userService.login(credentials)
+        const user = await userService.login(credentials)
         store.dispatch({
             type: SET_USER,
             user,
@@ -78,21 +79,36 @@ export async function logout() {
 }
 
 export async function toggleLikedSong(track) {
-   const state = store.getState()
-   const user = state.userModule.user
-   if (!user) {
-      showErrorMsg('You must log in to like songs')
-      return
-   }
-   try {
-      track.dateAddedToLikedSongs = Date.now()
-      store.dispatch({ type: TOGGLE_LIKED_SONG, track })
-      const savedUser = await userService.update(user)
-      store.dispatch({ type: SET_USER, user: savedUser })
-   } catch (err) {
-      showErrorMsg('Cannot Add to liked songs')
-      store.dispatch({ type: TOGGLE_LIKED_SONG, track })
-   }
+    const state = store.getState()
+    const user = state.userModule.user
+    if (!user) {
+        showErrorMsg('You must log in to like songs')
+        return
+    }
+    try {
+        track.dateAddedToLikedSongs = Date.now()
+        store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+        const savedUser = await userService.update(user)
+        store.dispatch({ type: SET_USER, user: savedUser })
+    } catch (err) {
+        showErrorMsg('Cannot Add to liked songs')
+        store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+    }
+}
+export async function toggleStationLike(stationId) {
+    const state = store.getState()
+    const user = state.userModule.user
+    if (!user) {
+        showErrorMsg('You must login to like playlist')
+        return
+    }
+    try {
+       const updatedUser = store.getState().userModule.user
+       const savedUser = await userService.update(updatedUser)
+       store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
+    } catch (err) {
+        showErrorMsg('Cannot Add to liked playlists')
+    }
 }
 
 // export async function loadUser(userId) {

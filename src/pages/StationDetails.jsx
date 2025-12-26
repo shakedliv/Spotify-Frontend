@@ -9,15 +9,25 @@ import { TrackList } from '../cmps/TrackList'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted'
 import { ShuffleIcon } from '../services/svg.service.js'
+import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
+import { toggleLikedSong, toggleStationLike } from '../store/actions/user.actions.js'
 import { FastAverageColor } from 'fast-average-color'
 import { StationTrackSearch } from '../cmps/StationTrackSearch'
-import { SAVE_LAST_ORDER, UPDATE_STATION } from '../store/reducers/station.reducer.js'
+import {
+    SAVE_LAST_ORDER,
+    UPDATE_STATION,
+} from '../store/reducers/station.reducer.js'
 import defaultStationImg from '../assets/imgs/defaultStationImg.png'
 
-
-
-import { SOCKET_EMIT_STATION_WATCH, SOCKET_EVENT_ADD_TRACK, SOCKET_EVENT_REMOVE_TRACK, SOCKET_EVENT_STATION_UPDATED, socketService } from '../services/socket.service.js'
-import { showErrorMsg } from '../services/event-bus.service.js'
+import {
+    SOCKET_EMIT_STATION_WATCH,
+    SOCKET_EVENT_ADD_TRACK,
+    SOCKET_EVENT_REMOVE_TRACK,
+    SOCKET_EVENT_STATION_UPDATED,
+    socketService,
+} from '../services/socket.service.js'
+import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
+import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
 
 export function StationDetails() {
     const { stationId } = useParams()
@@ -32,8 +42,8 @@ export function StationDetails() {
     const [isEditOpen, setIsEditOpen] = useState(false)
     const [isFindMore, setIsFindMore] = useState(false)
 
-
-
+    const user = useSelector((storeState) => storeState.userModule.user)
+    const isStationLiked = user?.userStationsIds?.includes(stationId) || false
 
     useEffect(() => {
         loadStation(stationId)
@@ -47,7 +57,6 @@ export function StationDetails() {
             return
         }
         const fac = new FastAverageColor()
-
 
         async function calcColor() {
             try {
@@ -68,7 +77,6 @@ export function StationDetails() {
         }
 
         calcColor()
-
     }, [station])
 
     useEffect(() => {
@@ -84,15 +92,12 @@ export function StationDetails() {
             socketService.off(SOCKET_EVENT_REMOVE_TRACK, onStationUpdate)
             socketService.off(SOCKET_EVENT_STATION_UPDATED, onStationUpdate)
         }
-
     }, [stationId])
-
 
     function onStationUpdate(station) {
         showSuccessMsg(`${station.name} just got updated`)
         // store.dispatch({ type: 'SET_WATCHED_USER', user })
     }
-
 
     async function onRemoveTrack(trackId) {
         const updatedTracks = station.tracks.filter(
@@ -123,22 +128,38 @@ export function StationDetails() {
         try {
             await updateStation(updatedStation)
         } catch (err) {
-           console.error('Failed to update tracks order:', err)
-           showErrorMsg('Failed to Reorder songs.')
+            console.error('Failed to update tracks order:', err)
+            showErrorMsg('Failed to Reorder songs.')
         }
     }
 
     function toggleFindMore() {
         setIsFindMore(!isFindMore)
     }
-    if (!station) return <div>Loading...</div>
+   async function handleStationLike() {
+      try {
+        await toggleStationLike(stationId)
+        showSuccessMsg(!isStationLiked ? 'Saved to library' : 'Removed from library')
+      } catch (err) {
+         console.log('err:', err)
+        showErrorMsg('Could not update library')
+    }
+            
+    }
 
+    if (!station) return <div>Loading...</div>
     return (
-        <section className='station-details' style={{ backgroundImage: bgGradient }}>
-            <header className='station-details-header' >
+        <section
+            className='station-details'
+            style={{ backgroundImage: bgGradient }}
+        >
+            <header className='station-details-header'>
                 <img
                     src={
-                        station.imgUrl !== defaultStationImg ? station.imgUrl : station.tracks[0]?.track.album.images[0].url || defaultStationImg
+                        station.imgUrl !== defaultStationImg
+                            ? station.imgUrl
+                            : station.tracks[0]?.track.album.images[0].url ||
+                              defaultStationImg
                     }
                     alt={station.name}
                 />
@@ -156,7 +177,16 @@ export function StationDetails() {
                             {' '}
                             <ShuffleIcon />
                         </button>
-
+                        <button
+                            className='like-btn'
+                            onClick={handleStationLike}
+                        >
+                            {isStationLiked ? (
+                                <RemoveFromLikedSongs size={2 + 'em'} />
+                            ) : (
+                                <AddToLikedSongs size={2 + 'em'} />
+                            )}
+                        </button>
                     </div>
                     <div className='list-btn'>
                         List

@@ -36,7 +36,7 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
     async function onAddStation() {
        const station = stationService.getEmptyStation()
        if (!user) {
-         showErrorMsg('login to create stations') 
+         showErrorMsg('Login to create stations') 
           return
        }
        station.name = `My Playlist #${stationsForUser.length + 1}`

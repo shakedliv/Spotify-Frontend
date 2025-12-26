@@ -28,7 +28,7 @@ export function AppHeader() {
       await logout();
       setIsUserMenuOpen(false);
       navigate("/");
-      showSuccessMsg("Bye now");
+      showSuccessMsg("Logged out successfully");
     } catch (err) {
       showErrorMsg("Cannot logout");
     }
