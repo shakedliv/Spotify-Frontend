@@ -23,7 +23,8 @@ export function LikedSongs() {
             await updateStation(updatedStation)
             //update user
         } catch (err) {
-            console.error('Failed to update tracks order:', err)
+           console.error('Failed to update tracks order:', err)
+           showErrorMsg('Failed to Reorder songs.')
         }
     }
 

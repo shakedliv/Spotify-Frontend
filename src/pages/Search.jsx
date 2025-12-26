@@ -4,6 +4,7 @@ import { spotifyService } from '../services/spotify.service'
 import { TrackList } from '../cmps/TrackList'
 import { ExplorerList } from '../cmps/ExplorerList'
 import { StationList } from '../cmps/StationList'
+import { showErrorMsg } from '../services/event-bus.service'
 
 export function Search() {
     const [searchParams] = useSearchParams()
@@ -31,7 +32,8 @@ export function Search() {
                     setTracks(results)
                 })
                 .catch((err) => {
-                    console.error('Spotify search failed:', err)
+                   console.error('Spotify search failed:', err)
+                   showErrorMsg('Spotify search failed. Please try again later.')
                 })
         }, 400)
 

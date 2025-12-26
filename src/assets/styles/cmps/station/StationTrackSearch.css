@@ -7,6 +7,7 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 24px;
+       
     }
     .station-track-search-header {
         display: grid;
@@ -19,10 +20,12 @@
         .station-search-bar {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 2px;
             background-color: #2d2c2d;
             margin-bottom: 12px;
+            border-radius: 4px;
             max-width: 400px;
+            padding: 8px 10px;
 
             input {
                 flex: 1;
@@ -32,7 +35,6 @@
                 font-size: 1.1em;
                 font-weight: bold;
                 color: var(--text-primary);
-                padding: 0;
             }
         }
     }

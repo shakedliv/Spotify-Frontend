@@ -5,6 +5,7 @@ import { GoogleIcon } from '../assets/svg/GoogleIcon';
 import { FacebookIcon } from '../assets/svg/FacebookIcon';
 import { AppleIcon } from '../assets/svg/AppleIcon';
 import { GoogleOAuthButton } from "../cmps/GoogleOAuthButton";
+import { showErrorMsg } from '../services/event-bus.service';
 
 export function Login() {
   const [credentials, setCredentials] = useState({
@@ -20,10 +21,18 @@ export function Login() {
   }
 
   async function onLogin(ev) {
-    ev.preventDefault();
+     ev.preventDefault();
+     ev.stopPropagation()
     if (!credentials.username || !credentials.password) return;
-    await login(credentials);
-    navigate("/");
+     try {
+        await login(credentials);
+        console.log('Login successful, navigating...')
+        navigate("/");
+     } catch (err) {
+        showErrorMsg('Username or password incorrect')
+        return
+        
+     }
   }
 
   return (

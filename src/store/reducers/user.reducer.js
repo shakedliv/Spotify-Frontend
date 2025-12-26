@@ -6,11 +6,11 @@ export const REMOVE_USER = 'REMOVE_USER'
 export const SET_USERS = 'SET_USERS'
 
 export const TOGGLE_LIKED_SONG = 'TOGGLE_LIKED_SONG'
+export const TOGGLE_STATION_LIKE = 'TOGGLE_STATION_LIKE'
 
 const initialState = {
     user: userService.getLoggedinUser(),
     users: [],
-
 }
 
 export function userReducer(state = initialState, action) {
@@ -22,7 +22,7 @@ export function userReducer(state = initialState, action) {
         case REMOVE_USER:
             newState = {
                 ...state,
-                users: state.users.filter(user => user._id !== action.userId)
+                users: state.users.filter((user) => user._id !== action.userId),
             }
             break
         case SET_USERS:
@@ -31,13 +31,28 @@ export function userReducer(state = initialState, action) {
         case TOGGLE_LIKED_SONG: {
             if (!state.user) return state
             const track = action.track
-            const isLiked = state.user.likedSongs?.some(t => t.id === track.id)
-            const likedSongs = isLiked ?
-                state.user.likedSongs.filter(t => t.id !== track.id)
+            const isLiked = state.user.likedSongs?.some(
+                (t) => t.id === track.id
+            )
+            const likedSongs = isLiked
+                ? state.user.likedSongs.filter((t) => t.id !== track.id)
                 : [...(state.user.likedSongs || []), track]
 
             return {
-                ...state, user: { ...state.user, likedSongs }
+                ...state,
+                user: { ...state.user, likedSongs },
+            }
+        }
+        case TOGGLE_STATION_LIKE: {
+            if (!state.user) return state
+            const { stationId } = action
+            const isLiked = state.user.userStationsIds.includes(stationId)
+            const userStationsIds = isLiked
+                ? state.user.userStationsIds.filter((id) => id !== stationId)
+                : [...state.user.userStationsIds, stationId]
+            return {
+                ...state,
+                user: { ...state.user, userStationsIds },
             }
         }
         default:
@@ -46,5 +61,4 @@ export function userReducer(state = initialState, action) {
     // window.userState = newState
     // console.log('State:', newState)
     return newState
-
 }

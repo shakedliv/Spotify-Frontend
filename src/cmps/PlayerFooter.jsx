@@ -16,7 +16,6 @@ import { NextIcon } from "../assets/svg/NextIcon.jsx";
 import { VolumeIcon } from "../assets/svg/VolumeIcon.jsx";
 import { ShuffleIcon } from "../assets/svg/ShuffleIcon.jsx";
 import { RepeatIcon } from "../assets/svg/RepeatIcon.jsx";
-import { AddIcon } from "../assets/svg/AddIcon.jsx";
 import { LyricsIcon } from "../assets/svg/LyricsIcon.jsx";
 import { QueueIcon } from "../assets/svg/QueueIcon.jsx";
 import { ConnectIcon } from "../assets/svg/ConnectIcon.jsx";

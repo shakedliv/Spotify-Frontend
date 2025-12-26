@@ -12,15 +12,14 @@ export function TrackSearchPreview({ track, onAddTrack }) {
     async function onPlayTrack() {
         try {
             const videoId = await youtubeService.resolveVideoId(track)
-
             const adaptedTrack = {
                 ...adaptTrackForPlayer(track),
                 videoId,
             }
-
             dispatch(setCurrentTrack(adaptedTrack))
         } catch (err) {
-            console.error('Failed to resolve YouTube video', err)
+           console.error('Failed to resolve YouTube video', err)
+           showErrorMsg('Failed to play track. Please try again later.')
         }
     }
     return (
