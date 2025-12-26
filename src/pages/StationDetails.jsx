@@ -14,9 +14,8 @@ import { StationTrackSearch } from '../cmps/StationTrackSearch'
 import { SAVE_LAST_ORDER, UPDATE_STATION } from '../store/reducers/station.reducer.js'
 import defaultStationImg from '../assets/imgs/defaultStationImg.png'
 
-
-
 import { SOCKET_EMIT_STATION_WATCH, SOCKET_EVENT_ADD_TRACK, SOCKET_EVENT_REMOVE_TRACK, SOCKET_EVENT_STATION_UPDATED, socketService } from '../services/socket.service.js'
+
 
 export function StationDetails() {
     const { stationId } = useParams()
@@ -33,10 +32,6 @@ export function StationDetails() {
 
 
 
-
-    useEffect(() => {
-        loadStation(stationId)
-    }, [stationId])
 
     useEffect(() => {
         const img = station?.tracks[0]?.track.album.images[0].url
@@ -72,38 +67,56 @@ export function StationDetails() {
 
     useEffect(() => {
         loadStation(stationId)
-
         socketService.emit(SOCKET_EMIT_STATION_WATCH, stationId)
-        socketService.on(SOCKET_EVENT_ADD_TRACK, onStationUpdate)
-        socketService.on(SOCKET_EVENT_REMOVE_TRACK, onStationUpdate)
-        socketService.on(SOCKET_EVENT_STATION_UPDATED, onStationUpdate)
+        socketService.on(SOCKET_EVENT_ADD_TRACK, onAddTrackFromSocket)
+        socketService.on(SOCKET_EVENT_REMOVE_TRACK, onRemoveTrackFromSocket)
+
+
 
         return () => {
-            socketService.off(SOCKET_EVENT_ADD_TRACK, onStationUpdate)
-            socketService.off(SOCKET_EVENT_REMOVE_TRACK, onStationUpdate)
-            socketService.off(SOCKET_EVENT_STATION_UPDATED, onStationUpdate)
+            socketService.off(SOCKET_EVENT_ADD_TRACK, onAddTrackFromSocket)
+            socketService.off(SOCKET_EVENT_REMOVE_TRACK, onRemoveTrackFromSocket)
+    
         }
-
     }, [stationId])
 
 
-    function onStationUpdate(station) {
-        showSuccessMsg(`${station.name} just got updated`)
-        // store.dispatch({ type: 'SET_WATCHED_USER', user })
+    function onAddTrackFromSocket(track) {
+        const currentStation = store.getState().stationModule.station
+
+        const currentTracks = currentStation.tracks || []
+        const updatedTracks = [...currentTracks, track]
+
+        store.dispatch({ type: UPDATE_STATION, station: { ...currentStation, tracks: updatedTracks } })
+    }
+
+    function onRemoveTrackFromSocket(trackId) {
+        const currentStation = store.getState().stationModule.station
+
+        const currentTracks = currentStation.tracks || []
+        const updatedTracks = currentTracks.filter(t => t.id !== trackId)
+
+        store.dispatch({ type: UPDATE_STATION, station: { ...currentStation, tracks: updatedTracks } })
     }
 
 
     async function onRemoveTrack(trackId) {
-        const updatedTracks = station.tracks.filter(
+        const updatedTracks = station.tracks?.filter(
             (track) => track.id !== trackId
         )
         const updatedStation = { ...station, tracks: updatedTracks }
         store.dispatch({ type: UPDATE_STATION, station: updatedStation })
-        await updateStation(updatedStation)
+
+        try {
+            await updateStation(updatedStation)
+            socketService.emit(SOCKET_EVENT_REMOVE_TRACK, { stationId, trackId })
+        } catch (error) {
+            console.error('Failed to remove track:', error)
+        }
     }
 
     async function onAddTrack(track) {
-        const isTrackExists = station.tracks.some((t) => t.id === track.id)
+        const isTrackExists = station.tracks?.some((t) => t.id === track.id)
         if (isTrackExists) {
             console.log('Track already exists in this station')
             return
@@ -112,7 +125,12 @@ export function StationDetails() {
         const updatedTracks = [...station.tracks, track]
         const updatedStation = { ...station, tracks: updatedTracks }
         store.dispatch({ type: UPDATE_STATION, station: updatedStation })
-        await updateStation(updatedStation)
+        try {
+            await updateStation(updatedStation)
+            socketService.emit(SOCKET_EVENT_ADD_TRACK, { stationId, track })
+        } catch (error) {
+            console.error('Failed to add track:', error)
+        }
     }
 
     async function onReorder(newTracks) {

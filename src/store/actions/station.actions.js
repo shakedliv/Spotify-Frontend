@@ -42,10 +42,10 @@ export async function addStation(station) {
         if (user) {
             const updatedUserStationsIds = [...(user.userStationsIds || []), savedStation._id]
             const updatedUser = { ...user, userStationsIds: updatedUserStationsIds }
-            
+
             const savedUserResponse = await userService.update(updatedUser)
-            
-            store.dispatch({ type: 'SET_USER', user: savedUserResponse }) 
+
+            store.dispatch({ type: 'SET_USER', user: savedUserResponse })
         }
 
         return savedStation
@@ -60,6 +60,7 @@ export async function updateStation(station) {
         const savedStation = await stationService.save(station)
         console.log('station:', savedStation)
         store.dispatch({ type: UPDATE_STATION, station: savedStation })
+
         return savedStation
     } catch (err) {
         store.dispatch(getCmdUndoReorder())
