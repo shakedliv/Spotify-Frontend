@@ -24,9 +24,7 @@ export function StationDetails() {
     const [g, setG] = useState(0)
     const [b, setB] = useState(0)
 
-    const [bgGradient, setBgGradient] = useState(
-        'linear-gradient(180deg, #666666ff 0%, #181818 40%)'
-    )
+    const [bgGradient, setBgGradient] = useState('')
 
     const station = useSelector(
         (storeState) => storeState.stationModule.station
@@ -34,8 +32,6 @@ export function StationDetails() {
     const tracks = station?.tracks || []
     const [isEditOpen, setIsEditOpen] = useState(false)
     const [isFindMore, setIsFindMore] = useState(false)
-
-
 
 
     useEffect(() => {
@@ -47,7 +43,7 @@ export function StationDetails() {
         }
         const fac = new FastAverageColor()
 
-
+        calcColor()
         async function calcColor() {
             try {
                 const color = await fac.getColorAsync(img)
@@ -59,15 +55,13 @@ export function StationDetails() {
                 setB(b)
 
                 setBgGradient(
-                    `linear-gradient(180deg, rgb(${r},${g},${b}), transparent)`
+                    `linear-gradient(180deg, transparent, rgb(${r},${g},${b}))`
                 )
             } catch (err) {
                 console.error('error getting color:', err)
                 setBgGradient('linear-gradient(180deg, #333 0%, #000 70%)')
             }
         }
-
-        calcColor()
 
     }, [station])
 
@@ -157,7 +151,7 @@ export function StationDetails() {
 
     return (
         <section className='station-details' >
-            <header className='station-details-header' style={{ backgroundImage: bgGradient, backgroundColor: `rgb(${r},${g},${b}` }} >
+            <header className='station-details-header' style={{ backgroundImage: bgGradient, backgroundColor: `rgb(${r - 80},${g - 80},${b - 80}` }} >
                 <img
                     src={
                         station.imgUrl !== defaultStationImg ? station.imgUrl : station.tracks[0]?.track.album.images[0].url || defaultStationImg
