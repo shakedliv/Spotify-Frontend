@@ -157,7 +157,7 @@ export function StationDetails() {
 
     return (
         <section className='station-details' >
-            <header className='station-details-header' style={{ backgroundImage: bgGradient, backgroundColor: `rgb(${r},${g},${b}`, }} >
+            <header className='station-details-header' style={{ backgroundImage: bgGradient, backgroundColor: `rgb(${r},${g},${b}` }} >
                 <img
                     src={
                         station.imgUrl !== defaultStationImg ? station.imgUrl : station.tracks[0]?.track.album.images[0].url || defaultStationImg
