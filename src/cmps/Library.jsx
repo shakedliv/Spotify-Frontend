@@ -34,8 +34,12 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
     }
 
     async function onAddStation() {
-        const station = stationService.getEmptyStation()
-        station.name = `My Playlist #${stationsForUser.length + 1}`
+       const station = stationService.getEmptyStation()
+       if (!user) {
+         showErrorMsg('Login to create stations') 
+          return
+       }
+       station.name = `My Playlist #${stationsForUser.length + 1}`
         try {
             const savedStation = await addStation(station)
             showSuccessMsg(`Station added (id: ${savedStation._id})`)

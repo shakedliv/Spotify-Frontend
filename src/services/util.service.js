@@ -1,3 +1,5 @@
+
+
 export function makeId(length = 6) {
     var txt = ''
     var possible =
@@ -101,7 +103,7 @@ export function formatDate(timestamp) {
         return `a few seconds ago`
     }
 
-   
+
     if (diffInSeconds < 60) {
         return `${diffInSeconds} seconds ago`
     }
@@ -142,3 +144,5 @@ export function formatDuration(durationMs) {
     // padStart ensures we get '05' instead of '5' for seconds
     return `${minutes}:${seconds.toString().padStart(2, '0')}`
 }
+
+

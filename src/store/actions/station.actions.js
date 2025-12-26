@@ -1,6 +1,8 @@
 import { stationService } from '../../services/station'
 import { store } from '../store'
 import { ADD_STATION, UNDO_REORDER, REMOVE_STATION, SET_STATIONS, SET_STATION, UPDATE_STATION, ADD_STATION_MSG } from '../reducers/station.reducer'
+import { showErrorMsg } from '../../services/event-bus.service'
+import { SET_USER } from '../reducers/user.reducer'
 
 export async function loadStations(filterBy) {
     try {
@@ -28,7 +30,8 @@ export async function removeStation(stationId) {
         await stationService.remove(stationId)
         store.dispatch(getCmdRemoveStation(stationId))
     } catch (err) {
-        console.log('Cannot remove station', err)
+       console.log('Cannot remove station', err)
+       showErrorMsg('Could not remove station. Please try again')
         throw err
     }
 }
@@ -42,15 +45,17 @@ export async function addStation(station) {
         if (user) {
             const updatedUserStationsIds = [...(user.userStationsIds || []), savedStation._id]
             const updatedUser = { ...user, userStationsIds: updatedUserStationsIds }
-            
+
             const savedUserResponse = await userService.update(updatedUser)
-            
-            store.dispatch({ type: 'SET_USER', user: savedUserResponse }) 
+
+            store.dispatch({ type: SET_USER, user: savedUserResponse })
         }
 
         return savedStation
     } catch (err) {
-        console.log('Cannot add station', err)
+       console.log('Cannot add station', err)
+       showErrorMsg('Could not add station. Please try again')
+       
         throw err
     }
 }
@@ -60,10 +65,13 @@ export async function updateStation(station) {
         const savedStation = await stationService.save(station)
         console.log('station:', savedStation)
         store.dispatch({ type: UPDATE_STATION, station: savedStation })
+
         return savedStation
     } catch (err) {
         store.dispatch(getCmdUndoReorder())
-        console.log('Cannot save station', err)
+       console.log('Cannot save station', err)
+       showErrorMsg('Could not save station. Please try again')
+       
         throw err
     }
 }
@@ -74,7 +82,9 @@ export async function addStationMsg(stationId, txt) {
         store.dispatch(getCmdAddStationMsg(msg))
         return msg
     } catch (err) {
-        console.log('Cannot add station msg', err)
+       console.log('Cannot add station msg', err)
+       showErrorMsg('Could not add station message. Please try again')
+       
         throw err
     }
 }
