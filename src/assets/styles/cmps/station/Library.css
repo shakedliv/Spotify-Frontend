@@ -192,6 +192,7 @@
 
 .library.closed {
     display: grid;
+    grid-template-rows: auto auto 1fr;
     justify-content: center;
     overflow: hidden;
     height: 100%;
