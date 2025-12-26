@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+
 import { store } from '../store/store'
 import { loadStation, updateStation } from '../store/actions/station.actions'
 import { StationEdit } from '../cmps/StationEdit'
@@ -15,8 +15,8 @@ import { SAVE_LAST_ORDER, UPDATE_STATION } from '../store/reducers/station.reduc
 import defaultStationImg from '../assets/imgs/defaultStationImg.png'
 
 
-import { formatDate } from '../services/util.service.js'
-import { CloseIcon } from '../assets/svg/CloseIcon.jsx'
+
+import { SOCKET_EMIT_STATION_WATCH, SOCKET_EVENT_ADD_TRACK, SOCKET_EVENT_REMOVE_TRACK, SOCKET_EVENT_STATION_UPDATED, socketService } from '../services/socket.service.js'
 
 export function StationDetails() {
     const { stationId } = useParams()
@@ -30,6 +30,9 @@ export function StationDetails() {
     const tracks = station?.tracks || []
     const [isEditOpen, setIsEditOpen] = useState(false)
     const [isFindMore, setIsFindMore] = useState(false)
+
+
+
 
     useEffect(() => {
         loadStation(stationId)
@@ -66,6 +69,29 @@ export function StationDetails() {
         calcColor()
 
     }, [station])
+
+    useEffect(() => {
+        loadStation(stationId)
+
+        socketService.emit(SOCKET_EMIT_STATION_WATCH, stationId)
+        socketService.on(SOCKET_EVENT_ADD_TRACK, onStationUpdate)
+        socketService.on(SOCKET_EVENT_REMOVE_TRACK, onStationUpdate)
+        socketService.on(SOCKET_EVENT_STATION_UPDATED, onStationUpdate)
+
+        return () => {
+            socketService.off(SOCKET_EVENT_ADD_TRACK, onStationUpdate)
+            socketService.off(SOCKET_EVENT_REMOVE_TRACK, onStationUpdate)
+            socketService.off(SOCKET_EVENT_STATION_UPDATED, onStationUpdate)
+        }
+
+    }, [stationId])
+
+
+    function onStationUpdate(station) {
+        showSuccessMsg(`${station.name} just got updated`)
+        // store.dispatch({ type: 'SET_WATCHED_USER', user })
+    }
+
 
     async function onRemoveTrack(trackId) {
         const updatedTracks = station.tracks.filter(
@@ -127,8 +153,8 @@ export function StationDetails() {
                         <button className='shuffle-btn'>
                             {' '}
                             <ShuffleIcon />
-                   </button>
-                  
+                        </button>
+
                     </div>
                     <div className='list-btn'>
                         List

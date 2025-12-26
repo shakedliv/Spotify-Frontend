@@ -76,26 +76,19 @@ export async function logout() {
         throw err
     }
 }
+
 export async function toggleLikedSong(track) {
-    try {
-        console.log('🔥 TRACK BEFORE:', track._id, track.title)
-        track.dateAddedToLikedSongs = Date.now()
-        store.dispatch({ type: TOGGLE_LIKED_SONG, track })
-
-        const state = store.getState()
-        const user = state.userModule.user
-
-        // 🔥 הוסף בדיוק 3 שורות:
-        console.log('🔥 FRONTEND SENDING:', user.likedSongs?.length || 0)
-        console.log('🔥 FIRST SONG ID:', user.likedSongs?.[0]?._id)
-
-        const savedUser = await userService.update(user)
-        console.log('🔥 BACKEND RETURNED:', savedUser?.likedSongs?.length || 0)
-
-        store.dispatch({ type: SET_USER, user: savedUser })
-    } catch (err) {
-        // ...
-    }
+   try {
+      track.dateAddedToLikedSongs = Date.now()
+      store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+      const state = store.getState()
+      const user = state.userModule.user
+      const savedUser = await userService.update(user)
+      store.dispatch({ type: SET_USER, user: savedUser })
+   } catch (err) {
+      showErrorMsg('Cannot Add to liked songs')
+      store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+   }
 }
 
 // export async function loadUser(userId) {
