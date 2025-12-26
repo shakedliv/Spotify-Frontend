@@ -25,6 +25,7 @@ import { ArtistIcon } from '../assets/svg/ArtistIcon.jsx'
 import { AlbumIcon } from '../assets/svg/AlbumIcon.jsx'
 import { ViewCreditsIcon } from '../assets/svg/ViewCreditsIcon.jsx'
 import { ShareIcon } from '../assets/svg/ShareIcon.jsx'
+import { showErrorMsg } from '../services/event-bus.service.js'
 
 export function TrackPreview({
    track,
@@ -65,7 +66,8 @@ export function TrackPreview({
             dispatch(setTracks(tracks))
             dispatch(setCurrentTrack(adaptedTrack, trackIndex))
         } catch (err) {
-            console.error('Failed to resolve YouTube video', err)
+           console.error('Failed to resolve YouTube video', err)
+           showErrorMsg('Failed to play track. Please try again later.')
         }
     }
     function handleAddTrack(track) {

@@ -35,7 +35,7 @@ export async function removeUser(userId) {
 
 export async function login(credentials) {
     try {
-        const user = await userService.login(credentials)
+       const user = await userService.login(credentials)
         store.dispatch({
             type: SET_USER,
             user,
@@ -78,11 +78,15 @@ export async function logout() {
 }
 
 export async function toggleLikedSong(track) {
+   const state = store.getState()
+   const user = state.userModule.user
+   if (!user) {
+      showErrorMsg('You must log in to like songs')
+      return
+   }
    try {
       track.dateAddedToLikedSongs = Date.now()
       store.dispatch({ type: TOGGLE_LIKED_SONG, track })
-      const state = store.getState()
-      const user = state.userModule.user
       const savedUser = await userService.update(user)
       store.dispatch({ type: SET_USER, user: savedUser })
    } catch (err) {

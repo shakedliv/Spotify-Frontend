@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search'
 import { CloseIcon } from '../assets/svg/CloseIcon'
 import { Recommend } from '@mui/icons-material'
 import { RecommendedSongs } from './RecommendedSongs'
+import { showErrorMsg } from '../services/event-bus.service'
 
 export function StationTrackSearch({
     onAddTrack,
@@ -27,11 +28,12 @@ export function StationTrackSearch({
             spotifyService
                 .searchTracksRemote(query)
                 .then((results) => {
-                    if (!isActive) return
-                    setTracks(results)
+                   if (!isActive) return
+                   setTracks(results)
                 })
                 .catch((err) => {
-                    console.error('Spotify search failed:', err)
+                   console.error('Spotify search failed:', err)
+                   showErrorMsg('Spotify search failed. Please try again later.')
                 })
         }, 400)
 

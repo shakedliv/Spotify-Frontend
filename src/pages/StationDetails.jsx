@@ -17,6 +17,7 @@ import defaultStationImg from '../assets/imgs/defaultStationImg.png'
 
 
 import { SOCKET_EMIT_STATION_WATCH, SOCKET_EVENT_ADD_TRACK, SOCKET_EVENT_REMOVE_TRACK, SOCKET_EVENT_STATION_UPDATED, socketService } from '../services/socket.service.js'
+import { showErrorMsg } from '../services/event-bus.service.js'
 
 export function StationDetails() {
     const { stationId } = useParams()
@@ -122,7 +123,8 @@ export function StationDetails() {
         try {
             await updateStation(updatedStation)
         } catch (err) {
-            console.error('Failed to update tracks order:', err)
+           console.error('Failed to update tracks order:', err)
+           showErrorMsg('Failed to Reorder songs.')
         }
     }
 
