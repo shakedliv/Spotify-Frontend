@@ -61,12 +61,13 @@ export function StationTrackSearch({
                     <section className='station-track-search-header'>
                         <h4>Let's find something for your playlist</h4>
                         <div className='station-search-bar'>
-                            <SearchIcon className='search-icon' />
+                           <SearchIcon className='search-icon' />
                             <input
                                 type='text'
                                 placeholder='Search for songs'
                                 value={query}
-                                onChange={handleChange}
+                         onChange={handleChange}
+                         className='station-track-search-input'
                             />
                         </div>
                     </section>
