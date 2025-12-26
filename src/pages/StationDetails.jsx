@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-
+import { AddToLikedSongs } from "../assets/svg/AddToLikedSongs.jsx"
 import { store } from '../store/store'
 import { loadStation, updateStation } from '../store/actions/station.actions'
 import { StationEdit } from '../cmps/StationEdit'
@@ -16,6 +16,7 @@ import defaultStationImg from '../assets/imgs/defaultStationImg.png'
 
 import { SOCKET_EMIT_STATION_WATCH, SOCKET_EVENT_ADD_TRACK, SOCKET_EVENT_REMOVE_TRACK, SOCKET_EVENT_STATION_UPDATED, socketService } from '../services/socket.service.js'
 import { CoPresent } from '@mui/icons-material'
+import { SET_USER } from '../store/reducers/user.reducer.js'
 
 
 export function StationDetails() {
@@ -23,7 +24,7 @@ export function StationDetails() {
     const [r, setR] = useState(0)
     const [g, setG] = useState(0)
     const [b, setB] = useState(0)
-
+    const user = useSelector((state) => state.userModule.user)
     const [bgGradient, setBgGradient] = useState('')
 
     const station = useSelector(
@@ -133,6 +134,28 @@ export function StationDetails() {
         }
     }
 
+
+    async function onAddStationToLibrary(stationId) {
+        console.log('click')
+
+        // const isStationExists = user.userStationsIds?.some((s) => s.id === stationId)
+        // if (isStationExists) {
+        //     console.log('Station already in library')
+        //     return
+        // }
+        const updatedUserStationsIds = [...user.userStationsIds, stationId]
+        const updatedUser = { ...user, userStationsIds: updatedUserStationsIds }
+        try {
+            const savedUserResponse = await userService.update(updatedUser)
+
+            store.dispatch({ type: SET_USER, user: savedUserResponse })
+        } catch (error) {
+            console.error('Failed to add station:', error)
+        }
+    }
+
+
+
     async function onReorder(newTracks) {
         store.dispatch({ type: SAVE_LAST_ORDER, station: station })
         const updatedStation = { ...station, tracks: newTracks }
@@ -173,6 +196,11 @@ export function StationDetails() {
                     <button className='shuffle-btn'>
                         {' '}
                         <ShuffleIcon />
+                    </button>
+                    <button className='add-to-library-btn'
+                        onClick={() => onAddStationToLibrary(stationId)}>
+                        <AddToLikedSongs size={'2em'}
+                        />
                     </button>
 
                 </div>

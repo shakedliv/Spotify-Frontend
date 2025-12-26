@@ -1,6 +1,7 @@
 import { stationService } from '../../services/station'
 import { store } from '../store'
 import { ADD_STATION, UNDO_REORDER, REMOVE_STATION, SET_STATIONS, SET_STATION, UPDATE_STATION, ADD_STATION_MSG } from '../reducers/station.reducer'
+import { SET_USER } from '../reducers/user.reducer'
 
 export async function loadStations(filterBy) {
     try {
@@ -45,7 +46,7 @@ export async function addStation(station) {
 
             const savedUserResponse = await userService.update(updatedUser)
 
-            store.dispatch({ type: 'SET_USER', user: savedUserResponse })
+            store.dispatch({ type: SET_USER, user: savedUserResponse })
         }
 
         return savedStation
