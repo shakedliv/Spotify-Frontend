@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { AddToLikedSongs } from "../assets/svg/AddToLikedSongs.jsx"
+
 import { store } from '../store/store'
 import { loadStation, updateStation } from '../store/actions/station.actions'
 import { StationEdit } from '../cmps/StationEdit'
@@ -24,7 +24,6 @@ export function StationDetails() {
     const [r, setR] = useState(0)
     const [g, setG] = useState(0)
     const [b, setB] = useState(0)
-    const user = useSelector((state) => state.userModule.user)
     const [bgGradient, setBgGradient] = useState('')
 
     const station = useSelector(
@@ -135,27 +134,6 @@ export function StationDetails() {
     }
 
 
-    async function onAddStationToLibrary(stationId) {
-        console.log('click')
-
-        // const isStationExists = user.userStationsIds?.some((s) => s.id === stationId)
-        // if (isStationExists) {
-        //     console.log('Station already in library')
-        //     return
-        // }
-        const updatedUserStationsIds = [...user.userStationsIds, stationId]
-        const updatedUser = { ...user, userStationsIds: updatedUserStationsIds }
-        try {
-            const savedUserResponse = await userService.update(updatedUser)
-
-            store.dispatch({ type: SET_USER, user: savedUserResponse })
-        } catch (error) {
-            console.error('Failed to add station:', error)
-        }
-    }
-
-
-
     async function onReorder(newTracks) {
         store.dispatch({ type: SAVE_LAST_ORDER, station: station })
         const updatedStation = { ...station, tracks: newTracks }
@@ -197,12 +175,7 @@ export function StationDetails() {
                         {' '}
                         <ShuffleIcon />
                     </button>
-                    <button className='add-to-library-btn'
-                        onClick={() => onAddStationToLibrary(stationId)}>
-                        <AddToLikedSongs size={'2em'}
-                        />
-                    </button>
-
+   
                 </div>
                 <div className='list-btn'>
                     List
