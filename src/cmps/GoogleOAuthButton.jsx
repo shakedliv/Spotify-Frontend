@@ -1,28 +1,27 @@
 import { GoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { jwtDecode } from "jwt-decode";
 
+import { userService } from "../services/user";
 import { SET_USER } from "../store/reducers/user.reducer";
 
 export function GoogleOAuthButton() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  function handleSuccess(credentialResponse) {
-    const googleUser = jwtDecode(credentialResponse.credential);
+  async function handleSuccess(credentialResponse) {
+    try {
+      const user = await userService.loginWithGoogle(
+        credentialResponse.credential
+      );
 
-    const user = {
-      _id: googleUser.sub,
-      username: googleUser.email,
-      fullname: googleUser.name,
-      password: "google-oauth",
-      likedSongs: [],
-      userStations: [],
-    };
-
-    dispatch({ type: SET_USER, user });
-    navigate("/");
+      if (user) {
+        dispatch({ type: SET_USER, user });
+        navigate("/");
+      }
+    } catch (err) {
+      console.error("Google login failed", err);
+    }
   }
 
   function handleError() {
