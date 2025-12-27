@@ -57,7 +57,10 @@ export function StationDetails() {
         const img = station?.tracks[0]?.track.album.images[0].url
 
         if (!img) {
-            setBgGradient('linear-gradient(180deg, #666666ff 0%, #181818 40%)')
+            setBgGradient('linear-gradient(180deg, rgba(102, 102, 102, 1) 0%, #181818 40%)')
+            setR(38)
+            setG(38)
+            setB(38)
             return
         }
         const fac = new FastAverageColor()

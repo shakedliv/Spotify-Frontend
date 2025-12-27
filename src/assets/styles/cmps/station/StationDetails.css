@@ -8,12 +8,9 @@
 
     .station-details-header {
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: minmax(128px, 232px) 1fr;
         column-gap: 24px;
         row-gap: 8px;
-        /* margin-bottom: 1em; */
-        /* background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, #181818 100%); */
-
         align-items: end;
         padding: 80px 20px 20px 20px;
      
