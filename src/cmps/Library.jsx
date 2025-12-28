@@ -42,10 +42,11 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
        station.name = `My Playlist #${stationsForUser.length + 1}`
         try {
             const savedStation = await addStation(station)
-            showSuccessMsg(`Station added (id: ${savedStation._id})`)
+            showSuccessMsg(`Station created`)
+            console.log(`Station added (id: ${savedStation._id})`)
             navigate(`/station/${savedStation._id}`)
         } catch (err) {
-            showErrorMsg('Cannot add playlist')
+            showErrorMsg('Cannot create playlist, try again later')
         }
     }
 

@@ -175,7 +175,7 @@ export function StationDetails() {
     async function handleStationLike() {
         try {
             await toggleStationLike(stationId)
-            showSuccessMsg(!isStationLiked ? 'Saved to library' : 'Removed from library')
+            // showSuccessMsg(!isStationLiked ? 'Saved to library' : 'Removed from library')
         } catch (err) {
             console.log('err:', err)
             showErrorMsg('Could not update library')
