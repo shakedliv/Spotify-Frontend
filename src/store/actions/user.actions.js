@@ -103,10 +103,12 @@ export async function toggleStationLike(stationId) {
         return
     }
     try {
+       store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
        const updatedUser = store.getState().userModule.user
        const savedUser = await userService.update(updatedUser)
-       store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
+       store.dispatch({ type: 'SET_USER', user: savedUser })
     } catch (err) {
+       store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
         showErrorMsg('Cannot Add to liked playlists')
     }
 }
