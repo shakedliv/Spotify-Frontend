@@ -1,5 +1,6 @@
 @import "setup/var";
 @import "setup/typography";
+@import "setup/mq";
 
 @import "basics/helpers";
 @import "basics/layout";

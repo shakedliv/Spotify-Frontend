@@ -1,35 +1,39 @@
 .track-preview {
     display: grid;
-    grid-template-columns: 40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr) 120px;
     justify-content: space-between;
     justify-items: start;
     align-items: center;
     gap: 16px;
-    &:has(.wide) {
-        grid-template-columns: 1fr 120px;
-    }
     border-radius: 6px;
     padding: 0.3rem 1rem;
-    font-size: 17.5px;
+    font-size: 14px;
 
     color: var(--text-secondary);
 
+    &:has(.wide) {
+        grid-template-columns: 1fr 120px;
+    }
+
+
     &:hover {
         background-color: var(--bg-highlight);
+
         .like-btn,
         .time-options .options {
             opacity: 1;
         }
+
         .track-num {
             opacity: 0;
         }
+
         .play-icon {
             opacity: 1;
         }
     }
+
     .basic-info-container {
         display: grid;
-        align-items: center;
         grid-template-columns: auto 1fr;
         min-width: 0;
 
@@ -40,29 +44,33 @@
         &.wide {
             max-width: none;
             grid-column: 1 / 2;
+
             .track-name,
             .track-artist {
                 text-overflow: clip;
             }
         }
     }
+
     .track-num {
         place-self: center;
         margin-left: 16px;
     }
+
     .track-name {
+        align-content: center;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
 
         grid-area: name;
-        align-self: start;
-        font-size: 20px;
+        font-size: 16px;
         /* font-family: 'FigTreeBold', sans-serif;  */
         font-weight: normal;
 
         color: white;
     }
+
     .track-img {
         grid-area: img;
         border-radius: 5px;
@@ -70,29 +78,21 @@
         max-width: 45px;
         max-height: 45px;
     }
+
     .track-artist {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         grid-area: artist;
-        align-self: end;
-        font-size: 17.5px;
+
+        font-size: 14px;
     }
-    .track-album,
-    .track-date {
-        display: block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        min-width: 0px;
-        width: 100%;
-    }
+
     .track-actions {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        width: 100%;
-        min-width: 80px;
+        /* width: 100%; */
+     
 
         .time-options {
             display: flex;
@@ -101,11 +101,11 @@
             position: relative;
 
             .duration {
-                align-self: start;
+                align-self: center;
             }
 
             .options {
-                opacity: 0;
+                /* opacity: 1; */
                 margin-left: 2px;
                 margin-top: 1px;
             }
@@ -117,18 +117,19 @@
                 box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3),
                     0 6px 8px rgba(0, 0, 0, 0.2);
                 border-radius: 4px;
-               font-size: 17.5px;
-               font-family: 'FigTreeRegular', sans-serif;
-               padding: 4px;
-               min-width: 325px;
-               max-width: 70vh;
-               overflow-y: auto;
+                font-size: 17.5px;
+                font-family: 'FigTreeRegular', sans-serif;
+                padding: 4px;
+                min-width: 325px;
+                max-width: 70vh;
+                overflow-y: auto;
                 display: flex;
                 flex-direction: column;
                 z-index: 1000;
                 animation: menuFadeIn 0.1s ease-out;
+
                 button {
-                   font-family: 'figtreeRegular', sans-serif;
+                    font-family: 'figtreeRegular', sans-serif;
                     background: none;
                     border: none;
                     color: #eaeaea;
@@ -145,6 +146,7 @@
                         color: #fff;
                     }
                 }
+
                 .separator {
                     height: 1px;
                     background-color: hsla(0, 0%, 100%, 0.1);
@@ -152,9 +154,7 @@
                 }
             }
         }
-        .like-btn {
-            opacity: 0;
-        }
+
     }
 
     .track-preview:hover {
@@ -182,6 +182,7 @@
 .track-preview:hover .track-album {
     color: white;
 }
+
 .like-btn:hover {
     transform: scale(1.05);
 }
@@ -197,6 +198,13 @@
 
 
 @keyframes menuFadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

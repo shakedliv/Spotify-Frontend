@@ -1,6 +1,5 @@
 .main-container {
     display: grid;
-    grid-template-rows: 66px 1fr 104px;
 
 
 }
@@ -13,18 +12,5 @@ html {
 #root,
 .main-container {
     height: 100%;
-}
-
-.main-layout {
-    display: grid;
-    grid-template-columns: minmax(auto, 420px) 1fr;
-    background-color: #000;
-    gap: 0.7em;
-    height: 100%;
-    padding: 0 0.7em;
-}
-
-.main-layout.library-closed {
-  grid-template-columns: 72px 1fr;
 }
 

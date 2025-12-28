@@ -1,0 +1,487 @@
+@media (max-width: 600px) {
+
+    .tracks-header-container,
+    .library,
+    .app-header {
+        display: none;
+    }
+
+    .track-preview {
+        grid-template-columns: 40px minmax(0, 4fr) minmax(0, 1fr);
+
+        .duration,
+        .track-album,
+        .track-date {
+            display: none;
+            white-space: nowrap;
+        }
+
+        options {
+            opacity: 1;
+            margin-left: 2px;
+            margin-top: 1px;
+        }
+    }
+
+    .like-btn {
+        opacity: 1;
+    }
+
+    .track-actions {
+        display: flex;
+        gap: 6px;
+        justify-content: end;
+        min-width: 60px;
+    }
+
+    .track-search-preview {
+        grid-template-columns: 48px 1fr auto;
+        padding: 6px 16px;
+        font-size: 1em;
+
+        .album {
+            display: none;
+        }
+
+    }
+    .station-track-search-container {
+        h4 {
+            font-size: 16px;
+        }
+        .close-btn {
+            align-self: start;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+
+    .main-container {
+        display: grid;
+        grid-template-rows: 66px 1fr 104px;
+
+
+    }
+
+    .main-layout {
+        display: grid;
+        grid-template-columns: minmax(auto, 420px) 1fr;
+        background-color: #000;
+        gap: 0.7em;
+        height: 100%;
+        padding: 0 0.7em;
+    }
+
+    .main-layout.library-closed {
+        grid-template-columns: 72px 1fr;
+    }
+
+
+    .library.open {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-base);
+        color: var(--text-primary);
+        border-radius: 12px;
+        padding: 8px;
+        gap: 8px;
+
+        button {
+            color: var(--text-primary);
+        }
+
+        .icon-title-div {
+            display: flex;
+        }
+
+        &:hover .library-toggle {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        &:hover .LibraryOpenIcon {
+            display: block;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'FigTreeBold', sans-serif;
+            padding: 8px;
+            font-size: 16px;
+            flex: 0 0 auto;
+
+            .LibraryOpenIcon {
+                width: 2em;
+                fill: var(--text-secondary);
+                display: none;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .library-toggle {
+                opacity: 0;
+                transform: translateX(-10px);
+                transition: opacity 0.4s ease, transform 0.4s ease;
+            }
+
+
+            .library-toggle:hover .LibraryOpenIcon {
+                fill: var(--text-primary)
+            }
+
+            .library-header-btns {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                .add-station-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    border-radius: 50vh;
+                    color: var(--text-subdued);
+                    background-color: #1f1f1f;
+                    gap: 6px;
+                    padding: 6px 12px;
+                    font-size: 14px;
+                    font-family: 'FigTreeBold', sans-serif;
+
+
+                    span {
+                        color: var(--text-primary)
+                    }
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.15);
+                        color: var(--text-primary);
+                    }
+                }
+
+                .expand-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    background: transparent;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    width: 28px;
+
+
+                    &:hover {
+                        background-color: var(--bg-highlight);
+                    }
+
+                    &:hover .ExpandIcon {
+                        fill: var(--text-primary);
+                    }
+
+                    .ExpandIcon {
+                        fill: var(--text-secondary);
+                    }
+                }
+            }
+        }
+
+        header h2 {
+            font-size: 1em;
+        }
+
+        .filter-btns {
+            display: flex;
+            padding: 0 8px;
+            gap: 0.6rem;
+            flex: 0 0 auto;
+
+            .library-btn {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                border-radius: 50vh;
+                padding: 8px 12px;
+                font-size: 1em;
+                background-color: #2a2a2a;
+
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.15);
+                }
+
+                &.active {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+
+        .search-sort {
+            display: flex;
+            padding: 8px 8px 0;
+            flex: 0 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-subdued);
+
+            span {
+                display: flex;
+                align-items: center;
+            }
+
+            .search {
+                padding-left: 8px;
+                background-color: transparent;
+                border-radius: 50%;
+                color: var(--text-subdued);
+
+                &:hover {
+                    background-color: #2a2a2a;
+                    color: #fff;
+                }
+
+                .search-icon {
+                    width: 16px;
+                }
+            }
+
+            .sort-list {
+                display: flex;
+                gap: 5px;
+                transition: scale 0.25s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #fff;
+                    scale: 1.05;
+                }
+            }
+        }
+    }
+
+
+
+    /* TOGGLING LIBRARY */
+
+    .library.closed {
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+        justify-content: center;
+        overflow: hidden;
+        height: 100%;
+        background-color: var(--bg-base);
+        color: var(--text-primary);
+        border-radius: 12px;
+
+        header {
+            padding: 16px 16px 8px;
+            display: grid;
+            justify-content: center;
+            row-gap: 8px;
+
+            .LibraryOpenIcon {
+                width: 2em;
+                fill: var(--text-secondary);
+
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .LibraryCloseIcon {
+                display: grid;
+                justify-self: center;
+                margin-top: 8px;
+                width: 24px;
+                fill: var(--text-secondary);
+
+                &:hover {
+                    cursor: pointer;
+                    fill: var(--text-primary)
+                }
+            }
+
+            .library-toggle:hover .LibraryOpenIcon {
+                fill: var(--text-primary)
+            }
+
+            .add-station-btn {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                border-radius: 50vh;
+                color: var(--text-subdued);
+                background-color: #1f1f1f;
+                gap: 6px;
+                padding: 6px;
+                margin: 8px 0;
+                font-size: 14px;
+                font-family: 'FigTreeBold', sans-serif;
+
+                span {
+                    display: none
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.15);
+                    color: var(--text-primary);
+                }
+            }
+        }
+
+        h2,
+        .search-sort,
+        .filter-btns,
+        .expand-btn {
+            display: none;
+        }
+    }
+
+
+    .station-details-header {
+        display: grid;
+        grid-template-columns: minmax(128px, 232px) 1fr;
+        column-gap: 24px;
+        row-gap: 8px;
+        align-items: end;
+        padding: 80px 20px 20px 20px;
+
+        transition: background-color 0.15s ease, transform 0.1s ease;
+
+        grid-template-areas:
+            'img .'
+            'img h'
+            'img e'
+            'img c'
+            'b b';
+
+        h1 {
+            grid-area: h;
+            font-size: 6.85em;
+            font-family: FigTreeBold;
+            margin: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .desc {
+            grid-area: e;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        h5 {
+            grid-area: c;
+
+            span {
+                color: var(--text-secondary);
+            }
+        }
+
+        img {
+            grid-area: img;
+            width: 230px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+    }
+
+    .tracks-header-container {
+        display: grid;
+        grid-template-columns: 40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr) 120px;
+        justify-content: space-between;
+        justify-items: start;
+        align-items: center;
+        gap: 16px;
+        padding: 0.3rem 1rem;
+
+        margin-bottom: 12px;
+        font-size: 17.5px;
+
+        .duration-container {
+            justify-self: end;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .number {
+            place-self: center;
+            margin-left: 16px;
+            font-family: 'FigTreeMedium';
+            font-size: 20px;
+            color: var(--text-secondary);
+        }
+
+        .title {
+            font-family: 'FigTreeMedium';
+        }
+
+        .demoBtn {
+            cursor: default;
+            opacity: 0;
+            /* margin-left: 10px; */
+        }
+    }
+
+    .songs-header {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+
+    .track-preview {
+        display: grid;
+        grid-template-columns: 40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr) 120px;
+
+
+        .track-album,
+        .track-date {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: 0px;
+            width: 100%;
+        }
+
+        .like-btn,
+        .options {
+            opacity: 0;
+
+        }
+
+        .track-actions {
+            display: flex;
+            justify-content: space-between;
+            min-width: 80px;
+            width: 100%;
+        }
+    }
+
+
+    .track-search-preview {
+        grid-template-columns: 48px 1fr 1fr auto;
+        padding: 6px 40px;
+    }
+
+    .station-track-search-container {
+
+        h4 {
+            font-size: 24px;
+        }
+
+    }
+
+}

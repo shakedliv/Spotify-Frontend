@@ -1,12 +1,14 @@
 .track-search-preview {
     display: grid;
-    grid-template-columns: 48px 1fr 1fr auto;
     align-items: center;
     gap: 12px;
-    padding: 6px 40px;
     border-radius: 4px;
     color: #b3b3b3;
-    font-size: 17.5px;
+    font-size: 16px;
+
+    .artist{
+        font-size: 14px;
+    }
 }
 
 .track-search-preview:hover {
@@ -26,7 +28,7 @@
 
 .track-search-preview .name {
     color: white;
-    font-size: 20px;
+  
    }
 
 .track-search-preview .add-btn {

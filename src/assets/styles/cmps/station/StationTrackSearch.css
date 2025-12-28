@@ -7,16 +7,16 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 24px;
-       
+
     }
+
     .station-track-search-header {
         display: grid;
         row-gap: 20px;
         padding-block: 20px;
 
-        h4 {
-            font-size: 30px;
-        }
+      
+
         .station-search-bar {
             display: flex;
             align-items: center;
@@ -41,28 +41,33 @@
 
     .close-btn {
         /* margin-right: 18px; */
-        align-self: stretch;
+        /* align-self: stretch; */
+
         &:hover {
             color: var(--text-subdued);
             transition: none;
         }
     }
+
     .find-more {
         color: var(--text-primary);
-        font-size: 20px;
+        font-size: 14px;
         font-family: 'FigTreeBold', sans-serif;
         margin-block: 20px;
         cursor: pointer;
         text-align: end;
-        margin-inline-end: 60px;
+        margin-inline-end: 40px;
     }
+
     .recommended-headers {
         margin-inline: 40px;
     }
+
     .recommended-header {
         font-size: 35px;
         margin-bottom: 4px;
     }
+
     .recommended-subheader {
         font-size: 20px;
         color: var(--text-secondary);
