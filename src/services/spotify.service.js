@@ -75,7 +75,7 @@ async function searchTracksRemote(query) {
         const params = new URLSearchParams({
             q: term,
             type: 'track',
-            limit: 10,
+            limit: 30,
         })
 
         const res = await fetch(`${SPOTIFY_SEARCH_URL}?${params.toString()}`, {
