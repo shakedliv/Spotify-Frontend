@@ -27,16 +27,16 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
     async function onRemoveStation(stationId) {
         try {
             await removeStation(stationId)
-            showSuccessMsg('Station removed')
+            showSuccessMsg('Playlist removed')
         } catch (err) {
-            showErrorMsg('Cannot remove station')
+            showErrorMsg('Cannot remove playlist')
         }
     }
 
     async function onAddStation() {
        const station = stationService.getEmptyStation()
        if (!user) {
-         showErrorMsg('Login to create stations') 
+         showErrorMsg('Login to create playlists') 
           return
        }
        station.name = `My Playlist #${stationsForUser.length + 1}`
@@ -45,7 +45,7 @@ export function Library({ isLibraryOpen, onToggleLibrary }) {
             showSuccessMsg(`Station added (id: ${savedStation._id})`)
             navigate(`/station/${savedStation._id}`)
         } catch (err) {
-            showErrorMsg('Cannot add station')
+            showErrorMsg('Cannot add playlist')
         }
     }
 
