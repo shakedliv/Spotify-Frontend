@@ -1,5 +1,4 @@
 @media (max-width: 600px) {
-
     .tracks-header-container,
     .library,
     .app-header {
@@ -32,6 +31,9 @@
         gap: 6px;
         justify-content: end;
         min-width: 60px;
+        .like-btn {
+            display: none;
+        }
     }
 
     .track-search-preview {
@@ -42,7 +44,6 @@
         .album {
             display: none;
         }
-
     }
     .station-track-search-container {
         h4 {
@@ -52,15 +53,76 @@
             align-self: start;
         }
     }
+
+    .player-footer {
+        height: auto !important;
+        background-color: var(--bg-highlight) !important;
+        grid-template-columns: 50px 1fr !important;
+        grid-template-rows: auto auto !important;
+        grid-template-areas:
+            'info info'
+            'controls controls';
+        padding: 4px 8px 0px 8px !important;
+        gap: 2px;
+
+        .player-footer-left {
+            background-color: var(--bg-base);
+            border-radius: 5px;
+            grid-area: info;
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            grid-template-areas:
+                'img title'
+                'img artist';
+            column-gap: 12px;
+            align-items: center;
+            img {
+                grid-area: img;
+                width: 50px;
+                height: 50px;
+            }
+            .track-info {
+                display: contents;
+                grid-area: controls;
+            }
+            .track-title {
+                grid-area: title;
+                justify-self: start;
+                font-size: 1rem;
+                /* font-weight: bold; */
+            }
+            .track-artist {
+                align-self: start;
+                grid-area: artist;
+                font-size: 12px;
+            }
+            .like-btn {
+                display: none;
+            }
+        }
+        .player-footer-center {
+            grid-area: controls;
+            width: 100%;
+            .player-controls {
+                width: 90%;
+                align-items: center;
+                padding-block: 4px;
+                justify-content: space-between;
+            }
+            .player-progress {
+                display: none;
+            }
+        }
+        .player-footer-right {
+            display: none;
+        }
+    }
 }
 
 @media (min-width: 600px) {
-
     .main-container {
         display: grid;
         grid-template-rows: 66px 1fr 104px;
-
-
     }
 
     .main-layout {
@@ -75,7 +137,6 @@
     .main-layout.library-closed {
         grid-template-columns: 72px 1fr;
     }
-
 
     .library.open {
         display: flex;
@@ -131,9 +192,8 @@
                 transition: opacity 0.4s ease, transform 0.4s ease;
             }
 
-
             .library-toggle:hover .LibraryOpenIcon {
-                fill: var(--text-primary)
+                fill: var(--text-primary);
             }
 
             .library-header-btns {
@@ -153,9 +213,8 @@
                     font-size: 14px;
                     font-family: 'FigTreeBold', sans-serif;
 
-
                     span {
-                        color: var(--text-primary)
+                        color: var(--text-primary);
                     }
 
                     &:hover {
@@ -174,7 +233,6 @@
                     border-radius: 50%;
                     background-color: transparent;
                     width: 28px;
-
 
                     &:hover {
                         background-color: var(--bg-highlight);
@@ -209,7 +267,6 @@
                 padding: 8px 12px;
                 font-size: 1em;
                 background-color: #2a2a2a;
-
 
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.15);
@@ -265,8 +322,6 @@
         }
     }
 
-
-
     /* TOGGLING LIBRARY */
 
     .library.closed {
@@ -289,7 +344,6 @@
                 width: 2em;
                 fill: var(--text-secondary);
 
-
                 &:hover {
                     cursor: pointer;
                 }
@@ -304,12 +358,12 @@
 
                 &:hover {
                     cursor: pointer;
-                    fill: var(--text-primary)
+                    fill: var(--text-primary);
                 }
             }
 
             .library-toggle:hover .LibraryOpenIcon {
-                fill: var(--text-primary)
+                fill: var(--text-primary);
             }
 
             .add-station-btn {
@@ -326,7 +380,7 @@
                 font-family: 'FigTreeBold', sans-serif;
 
                 span {
-                    display: none
+                    display: none;
                 }
 
                 &:hover {
@@ -343,7 +397,6 @@
             display: none;
         }
     }
-
 
     .station-details-header {
         display: grid;
@@ -397,7 +450,9 @@
 
     .tracks-header-container {
         display: grid;
-        grid-template-columns: 40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr) 120px;
+        grid-template-columns:
+            40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr)
+            120px;
         justify-content: space-between;
         justify-items: start;
         align-items: center;
@@ -440,11 +495,11 @@
         font-size: 30px;
     }
 
-
     .track-preview {
         display: grid;
-        grid-template-columns: 40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr) 120px;
-
+        grid-template-columns:
+            40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr)
+            120px;
 
         .track-album,
         .track-date {
@@ -459,7 +514,6 @@
         .like-btn,
         .options {
             opacity: 0;
-
         }
 
         .track-actions {
@@ -470,18 +524,14 @@
         }
     }
 
-
     .track-search-preview {
         grid-template-columns: 48px 1fr 1fr auto;
         padding: 6px 40px;
     }
 
     .station-track-search-container {
-
         h4 {
             font-size: 24px;
         }
-
     }
-
 }
