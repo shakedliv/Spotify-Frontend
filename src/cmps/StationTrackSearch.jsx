@@ -56,7 +56,7 @@ export function StationTrackSearch({
     }
     return (
         <section className='station-track-search-container'>
-            {isFindMore ? (
+            {!isFindMore ? (
                 <section className='station-track-search'>
                     <section className='station-track-search-header'>
                         <h4>Let's find something for your playlist</h4>

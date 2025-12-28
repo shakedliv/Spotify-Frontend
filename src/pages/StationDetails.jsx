@@ -119,7 +119,8 @@ export function StationDetails() {
         const updatedTracks = currentTracks.filter(t => t.id !== trackId)
 
         store.dispatch({ type: UPDATE_STATION, station: { ...currentStation, tracks: updatedTracks } })
-    }
+   }
+  
 
     async function onRemoveTrack(trackId) {
         const updatedTracks = station.tracks?.filter(
@@ -139,7 +140,8 @@ export function StationDetails() {
     async function onAddTrack(track) {
         const isTrackExists = station.tracks?.some((t) => t.id === track.id)
         if (isTrackExists) {
-            console.log('Track already exists in this station')
+           console.log('Track already exists in this station')
+           showErrorMsg('Track already exists in this playlist')
             return
         }
         track.dateAdded = Date.now()

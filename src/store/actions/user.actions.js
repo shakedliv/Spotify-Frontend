@@ -87,8 +87,9 @@ export async function toggleLikedSong(track) {
     }
     try {
         track.dateAddedToLikedSongs = Date.now()
-        store.dispatch({ type: TOGGLE_LIKED_SONG, track })
-        const savedUser = await userService.update(user)
+       store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+       const updatedUser = store.getState().userModule.user
+        const savedUser = await userService.update(updatedUser)
         store.dispatch({ type: SET_USER, user: savedUser })
     } catch (err) {
         showErrorMsg('Cannot Add to liked songs')
