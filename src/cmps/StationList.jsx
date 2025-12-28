@@ -21,17 +21,8 @@ export function StationList({ onRemoveStation, stations, title }) {
     return (
         <>
             {!!stations.length &&
-
-                (title === 'Made For') ?
-                <div>
-                    <h3 className="username-station-header">{title}</h3>
-                    <h1 className='index-header' >{user?.fullname}</h1>
-                </div>
-                :
-                <div className='index-header'>{title}</div>
-
-
-
+         
+                <div className='index-header'>{title.charAt(0).toUpperCase() + title.slice(1)}</div>
             }
             <section className="station-row">
 

@@ -18,7 +18,6 @@ export const SOCKET_EVENT_STATION_UPDATED = 'station-updated'
 
 
 
-
 const SOCKET_EMIT_LOGIN = 'set-user-socket'
 const SOCKET_EMIT_LOGOUT = 'unset-user-socket'
 

@@ -8,15 +8,12 @@
 
     .station-details-header {
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: minmax(128px, 232px) 1fr;
         column-gap: 24px;
         row-gap: 8px;
-        margin-bottom: 1em;
-        /* background: linear-gradient(180deg, #5b44ff 0%, #4a2c99 40%, #181818 100%); */
-
         align-items: end;
         padding: 80px 20px 20px 20px;
-        border-radius: 8px;
+     
         transition: background-color 0.15s ease, transform 0.1s ease;
 
         grid-template-areas:
@@ -62,7 +59,10 @@
     .station-details-btns {
         display: flex;
         justify-content: space-between;
-
+        height: 92px;
+        width: 100%;
+        padding: 0 16px;
+        /* border-top: 1px solid rgba(47, 47, 47, 0.7); */
         grid-area: b;
 
         .play-btns {
@@ -72,7 +72,7 @@
             justify-content: start;
             column-gap: 1em;
         }
-
+       
         .list-btn {
             display: flex;
             align-items: center;
