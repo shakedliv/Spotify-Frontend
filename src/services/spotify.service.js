@@ -90,7 +90,7 @@ async function searchTracksRemote(query) {
 
         const data = await res.json()
         const tracks = data.tracks?.items || []
-
+console.log('tracks:', tracks)
         return tracks.map(adaptSpotifyTrack)
     })()
 
