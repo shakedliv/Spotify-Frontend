@@ -30,8 +30,8 @@ export async function removeStation(stationId) {
         await stationService.remove(stationId)
         store.dispatch(getCmdRemoveStation(stationId))
     } catch (err) {
-       console.log('Cannot remove station', err)
-       showErrorMsg('Could not remove station. Please try again')
+        console.log('Cannot remove station', err)
+        showErrorMsg('Could not remove station. Please try again')
         throw err
     }
 }
@@ -53,9 +53,9 @@ export async function addStation(station) {
 
         return savedStation
     } catch (err) {
-       console.log('Cannot add station', err)
-       showErrorMsg('Could not add station. Please try again')
-       
+        console.log('Cannot add station', err)
+        showErrorMsg('Could not add station. Please try again')
+
         throw err
     }
 }
@@ -69,25 +69,44 @@ export async function updateStation(station) {
         return savedStation
     } catch (err) {
         store.dispatch(getCmdUndoReorder())
-       console.log('Cannot save station', err)
-       showErrorMsg('Could not save station. Please try again')
-       
+        console.log('Cannot save station', err)
+        showErrorMsg('Could not save station. Please try again')
+
         throw err
     }
 }
 
-export async function addStationMsg(stationId, txt) {
+
+export async function addTrackToStation(track) {
+
     try {
-        const msg = await stationService.addStationMsg(stationId, txt)
-        store.dispatch(getCmdAddStationMsg(msg))
-        return msg
+
+
+
     } catch (err) {
-       console.log('Cannot add station msg', err)
-       showErrorMsg('Could not add station message. Please try again')
-       
+
+
         throw err
     }
 }
+
+export async function removeTrackFromStation(trackId) {
+    try {
+
+        await updateStation(updatedStation)
+        store.dispatch({ type: REMOVE_TRACK, trackId })
+
+    } catch (err) {
+
+
+        throw err
+    }
+}
+
+
+
+
+
 
 
 // export async function addTrackToStation(station,track) {

@@ -6,6 +6,8 @@ export const UPDATE_STATION = 'UPDATE_STATION'
 export const ADD_STATION_MSG = 'ADD_STATION_MSG'
 export const UNDO_REORDER = 'UNDO_REORDER'
 export const SAVE_LAST_ORDER = 'SAVE_LAST_ORDER'
+export const ADD_TRACK = 'ADD_TRACK'
+export const REMOVE_TRACK = 'REMOVE_TRACK'
 
 const initialState = {
     stations: [],
@@ -15,7 +17,8 @@ const initialState = {
 
 export function stationReducer(state = initialState, action) {
     var newState = state
-    var stations
+
+    var { stations, station } = state
     switch (action.type) {
         case SET_STATIONS:
             newState = { ...state, stations: action.stations }
@@ -57,6 +60,17 @@ export function stationReducer(state = initialState, action) {
         case SAVE_LAST_ORDER:
             newState = { ...state, lastStationOrder: { ...action.station } }
             break
+        case REMOVE_TRACK:
+            newState = {
+                ...state, station: {
+                    ...station,
+                    tracks: station?.tracks?.filter(track => track.id !== action.trackId)
+                }
+            }
+            break
+
+
+
         default:
     }
     return newState
