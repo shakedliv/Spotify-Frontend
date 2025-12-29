@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 import { store } from '../store/store'
-import { loadStation, updateStation } from '../store/actions/station.actions'
+import { addTrackToStation, loadStation, removeTrackFromStation, updateStation } from '../store/actions/station.actions'
 import { StationEdit } from '../cmps/StationEdit'
 import { TrackList } from '../cmps/TrackList'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
@@ -14,6 +14,7 @@ import { toggleLikedSong, toggleStationLike } from '../store/actions/user.action
 import { FastAverageColor } from 'fast-average-color'
 import { StationTrackSearch } from '../cmps/StationTrackSearch'
 import {
+    REMOVE_TRACK,
     SAVE_LAST_ORDER,
     UPDATE_STATION,
 } from '../store/reducers/station.reducer.js'
@@ -43,7 +44,7 @@ export function StationDetails() {
         (storeState) => storeState.stationModule.station
     )
 
-    console.log(station, 'top')
+
 
     const tracks = station?.tracks || []
     const [isEditOpen, setIsEditOpen] = useState(false)
@@ -123,14 +124,8 @@ export function StationDetails() {
   
 
     async function onRemoveTrack(trackId) {
-        const updatedTracks = station.tracks?.filter(
-            (track) => track.id !== trackId
-        )
-        const updatedStation = { ...station, tracks: updatedTracks }
-        store.dispatch({ type: UPDATE_STATION, station: updatedStation })
-
         try {
-            await updateStation(updatedStation)
+            await removeTrackFromStation(trackId)
             socketService.emit(SOCKET_EVENT_REMOVE_TRACK, { stationId, trackId })
         } catch (error) {
             console.error('Failed to remove track:', error)
@@ -138,18 +133,8 @@ export function StationDetails() {
     }
 
     async function onAddTrack(track) {
-        const isTrackExists = station.tracks?.some((t) => t.id === track.id)
-        if (isTrackExists) {
-           console.log('Track already exists in this station')
-           showErrorMsg('Track already exists in this playlist')
-            return
-        }
-        track.dateAdded = Date.now()
-        const updatedTracks = [...station.tracks, track]
-        const updatedStation = { ...station, tracks: updatedTracks }
-        store.dispatch({ type: UPDATE_STATION, station: updatedStation })
         try {
-            await updateStation(updatedStation)
+            await addTrackToStation(track)
             socketService.emit(SOCKET_EVENT_ADD_TRACK, { stationId, track })
         } catch (error) {
             console.error('Failed to add track:', error)

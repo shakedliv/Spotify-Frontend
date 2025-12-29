@@ -1,7 +1,7 @@
 .first-station-list {
     display: grid;
     gap: 0.5em;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+   
     margin-bottom: 32px;
     margin-right: 16px;
     padding: 0 16px;
@@ -57,7 +57,6 @@
         h3 {
             font-size: 1em;
             font-family: 'FigTreeBold', sans-serif
-              
         }
     }
 
