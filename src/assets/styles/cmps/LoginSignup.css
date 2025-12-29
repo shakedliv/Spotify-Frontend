@@ -1,55 +1,39 @@
-
 .login-form,
 .signup-form {
-    display: grid;
-    width: min(80%, 500px);
-
-    padding: 0em 1em;
-
-   
-    h1{
-      margin-block:0 40px;
-      font-size: 48px;
-      font-family: 'FigTreeBold', sans-serif;
-    }
+  width: 100%;
 }
 
-.signup-form {
-    > input {
-        width: 100%;
-        margin: 0.4em 0;
-    }
+.signup-form > input {
+  width: 100%;
+}
 
-    .admin-toggle {
-        display: flex;
-        align-items: center;
-        justify-self: start;
+.signup-form .admin-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-        > span {
-            font-size: 0.8em;
-        }
-    }
+.signup-form .admin-toggle span {
+  font-size: 13px;
 }
 
 .login-page nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
 
-    margin-block: 100px 0.5em;
+.login-page nav > a {
+  font-size: 13px;
+  color: var(--clr4);
+}
 
-    > a {
-        font-size: 0.8em;
-        color: var(--clr4);
+.login-page nav > a:hover {
+  color: var(--clr1);
+}
 
-        &:hover {
-            color: var(--clr1);
-        }
-
-        &.active {
-            text-decoration: underline;
-            color: var(--clr2);
-        }
-    }
+.login-page nav > a.active {
+  text-decoration: underline;
+  color: var(--clr2);
 }
