@@ -3,6 +3,8 @@ import { updateStation } from '../store/actions/station.actions'
 import { useDropzone } from 'react-dropzone'
 import { CloseIconX, EditPenIcon, LockIcon } from '../services/svg.service'
 import defaultStationImg from '../assets/imgs/defaultStationImg.png'
+import { uploadService } from '../services/cloudinary.service'
+import { showErrorMsg } from '../services/event-bus.service'
 
 export function StationEdit({ station, onClose }) {
 
@@ -13,22 +15,26 @@ export function StationEdit({ station, onClose }) {
 
 
 
-  const onDrop = useCallback((acceptedFiles) => {
-
+  const onDrop = useCallback(async (acceptedFiles) => {
     const file = acceptedFiles[0]
     if (file) {
       const previewUrl = URL.createObjectURL(file)
       setImagePreview(previewUrl)
 
-      const reader = new FileReader()
-      reader.onloadend = () => {
-        console.log(reader.result)
-
-        setStationToEdit(prev => ({ ...prev, imgUrl: reader.result }))
+      try {
+        const imgData = await uploadService.uploadImg(file)
+        setStationToEdit(prev => ({
+          ...prev,
+          imgUrl: imgData.url
+        }))
+      } catch (error) {
+        console.error('Upload failed:', error)
+        showErrorMsg('Failed to upload image')
       }
-      reader.readAsDataURL(file)
     }
   }, [])
+
+
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop, accept: { 'image/*': [] } })
 
