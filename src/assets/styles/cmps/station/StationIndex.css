@@ -4,10 +4,10 @@
             #5b44ff 0%,
             #4a2c99 5%,
             var(--bg-base) 20%);
-    border-radius: 8px;
+   
     max-width: 100%;
     overflow-x: hidden;
-    padding: 1em 0 1em 24px;
+    /* padding: 1em 0 1em 24px; */
     overflow-y: auto;
     height: 100%;
     /* scrollbar-gutter: stable; */

@@ -12,15 +12,23 @@
 }
 
 @media (max-width: 600px) {
+
     .tracks-header-container,
     .library,
     .app-header {
         display: none;
     }
 
-    .first-station-list {
-        grid-template-columns: repeat(2, 150px);
+
+    .station-index {
+        padding: 1em 0;
+
+        .first-station-list {
+            grid-template-columns: repeat(2, 170px);
+        }
+
     }
+
 
 
     .track-preview {
@@ -49,6 +57,7 @@
         gap: 6px;
         justify-content: end;
         min-width: 60px;
+
         .like-btn {
             display: none;
         }
@@ -96,43 +105,52 @@
                 'img artist';
             column-gap: 12px;
             align-items: center;
+
             img {
                 grid-area: img;
                 width: 50px;
                 height: 50px;
             }
+
             .track-info {
                 display: contents;
                 grid-area: controls;
             }
+
             .track-title {
                 grid-area: title;
                 justify-self: start;
                 font-size: 1rem;
                 /* font-weight: bold; */
             }
+
             .track-artist {
                 align-self: start;
                 grid-area: artist;
                 font-size: 12px;
             }
+
             .like-btn {
                 display: none;
             }
         }
+
         .player-footer-center {
             grid-area: controls;
             width: 100%;
+
             .player-controls {
                 width: 90%;
                 align-items: center;
                 padding-block: 4px;
                 justify-content: space-between;
             }
+
             .player-progress {
                 display: none;
             }
         }
+
         .player-footer-right {
             display: none;
         }
@@ -153,6 +171,11 @@
         gap: 0.7em;
         height: 100%;
         padding: 0 0.7em;
+    }
+
+    .station-index {
+        padding: 1em 0 1em 24px;
+        border-radius: 8px;
     }
 
     .main-layout.library-closed {
@@ -472,8 +495,7 @@
     .tracks-header-container {
         display: grid;
         grid-template-columns:
-            40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr)
-            120px;
+            40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr) 120px;
         justify-content: space-between;
         justify-items: start;
         align-items: center;
@@ -519,8 +541,7 @@
     .track-preview {
         display: grid;
         grid-template-columns:
-            40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr)
-            120px;
+            40px minmax(0, 2.5fr) minmax(0, 2fr) minmax(0, 2fr) 120px;
 
         .track-album,
         .track-date {
