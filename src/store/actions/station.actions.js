@@ -1,6 +1,6 @@
 import { stationService } from '../../services/station'
 import { store } from '../store'
-import { ADD_STATION, UNDO_REORDER, REMOVE_STATION, SET_STATIONS, SET_STATION, UPDATE_STATION, ADD_STATION_MSG } from '../reducers/station.reducer'
+import { ADD_STATION, UNDO_REORDER, REMOVE_STATION, SET_STATIONS, SET_STATION, UPDATE_STATION, ADD_STATION_MSG, REMOVE_TRACK, ADD_TRACK } from '../reducers/station.reducer'
 import { showErrorMsg } from '../../services/event-bus.service'
 import { SET_USER } from '../reducers/user.reducer'
 
@@ -78,47 +78,42 @@ export async function updateStation(station) {
 
 
 export async function addTrackToStation(track) {
-
+    const station = store.getState().stationModule.station
+    const isTrackExists = station.tracks?.some((t) => t.id === track.id)
+    if (isTrackExists) {
+        console.log('Track already exists in this station')
+        showErrorMsg('Track already exists in this playlist')
+        return
+    }
+    track.dateAdded = Date.now()
+    const updatedTracks = [...station.tracks, track]
+    const updatedStation = { ...station, tracks: updatedTracks }
     try {
-
-
-
+        await updateStation(updatedStation)
+        store.dispatch({ type: ADD_TRACK, track })
     } catch (err) {
-
-
+        console.error('Failed to add track:', err)
         throw err
     }
 }
 
 export async function removeTrackFromStation(trackId) {
     try {
+        const station = store.getState().stationModule.station
 
+        const updatedStation = {
+            ...station,
+            tracks: station.tracks.filter(track => track.id !== trackId)
+        }
         await updateStation(updatedStation)
         store.dispatch({ type: REMOVE_TRACK, trackId })
 
     } catch (err) {
-
-
+        console.error('Failed to remove track:', err)
         throw err
     }
 }
 
-
-
-
-
-
-
-// export async function addTrackToStation(station,track) {
-//     try {
-//         const msg = await stationService.addStationMsg(stationId, txt)
-//         store.dispatch(getCmdAddStationMsg(msg))
-//         return msg
-//     } catch (err) {
-//         console.log('Cannot add station msg', err)
-//         throw err
-//     }
-// }
 
 
 // Command Creators:

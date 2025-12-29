@@ -133,18 +133,8 @@ export function StationDetails() {
     }
 
     async function onAddTrack(track) {
-        const isTrackExists = station.tracks?.some((t) => t.id === track.id)
-        if (isTrackExists) {
-           console.log('Track already exists in this station')
-           showErrorMsg('Track already exists in this playlist')
-            return
-        }
-        track.dateAdded = Date.now()
-        const updatedTracks = [...station.tracks, track]
-        const updatedStation = { ...station, tracks: updatedTracks }
-        store.dispatch({ type: UPDATE_STATION, station: updatedStation })
         try {
-            await updateStation(updatedStation)
+            await addTrackToStation(track)
             socketService.emit(SOCKET_EVENT_ADD_TRACK, { stationId, track })
         } catch (error) {
             console.error('Failed to add track:', error)

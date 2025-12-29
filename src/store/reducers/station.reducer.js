@@ -68,7 +68,13 @@ export function stationReducer(state = initialState, action) {
                 }
             }
             break
-
+        case ADD_TRACK:
+            newState = {
+                ...state, station: {
+                    ...station, tracks: [...station.tracks, action.track]
+                }
+            }
+            break
 
 
         default:
