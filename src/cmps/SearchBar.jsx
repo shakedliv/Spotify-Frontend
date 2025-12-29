@@ -10,9 +10,7 @@ export function SearchBar() {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const searchTerm = searchParams.get("q") || "";
-  // const isSearchPage = location.pathname === "/search"; ----
-  const hasSearchQuery = !!searchTerm;
-  const isSearchPage = location.pathname === "/search" && !hasSearchQuery;
+  const isSearchPage = location.pathname === "/search";
 
   const [isFocused, setIsFocused] = useState(false);
   const didRedirectFromHomeRef = useRef(false);
@@ -23,19 +21,17 @@ export function SearchBar() {
 
   function handleInputBlur() {
     setIsFocused(false);
-   }
+  }
 
-   function getDisplayQuery(rawQuery) {
-    if (!rawQuery) return ''
-    
-      if (rawQuery.startsWith('genre:"')) {
-      //   const genre = rawQuery.match(/"([^"]+)"/)?.[1] || ''
-      //      return genre.charAt(0).toUpperCase() + genre.slice(1) + ' songs'
-         return ''
+  function getDisplayQuery(rawQuery) {
+    if (!rawQuery) return "";
+
+    if (rawQuery.startsWith('genre:"')) {
+      return "";
     }
-    
-    return rawQuery
-}
+
+    return rawQuery;
+  }
 
   function handleBrowseClick(ev) {
     ev.preventDefault();
@@ -59,10 +55,11 @@ export function SearchBar() {
 
     if (!isSearchPage) {
       didRedirectFromHomeRef.current = true;
-      navigate(`/search?q=${value}`, { replace: true });
-    } else {
-      setSearchParams({ q: value });
+      navigate(`/search?q=${value}`);
+      return;
     }
+
+    setSearchParams({ q: value });
   }
 
   return (
@@ -77,7 +74,7 @@ export function SearchBar() {
         id="main-search"
         type="text"
         placeholder="What do you want to play?"
-        value={ getDisplayQuery(searchTerm) }
+        value={searchTerm}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
         onChange={handleChange}
