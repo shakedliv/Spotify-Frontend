@@ -1,6 +1,6 @@
 import { storageService } from '../async-storage.service'
-import { makeId, formatDate } from '../util.service'
-import { userService } from '../user'
+import {  formatDate } from '../util.service'
+
 
 const STORAGE_KEY = 'station'
 
@@ -57,7 +57,6 @@ function getById(trackId) {
 }
 
 async function remove(trackId) {
-    // throw new Error('Nope')
     await storageService.remove(STORAGE_KEY, trackId)
 }
 

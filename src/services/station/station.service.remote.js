@@ -5,7 +5,7 @@ export const stationService = {
     getById,
     save,
     remove,
-    addStationMsg
+   
 }
 
 async function query(filterBy = { txt: '' }) {
@@ -29,7 +29,3 @@ async function save(station) {
     return savedStation
 }
 
-async function addStationMsg(stationId, txt) {
-    const savedMsg = await httpService.post(`station/${stationId}/msg`, {txt})
-    return savedMsg
-}

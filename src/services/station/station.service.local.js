@@ -1,13 +1,12 @@
 
 import { storageService } from '../async-storage.service'
-import { makeId } from '../util.service'
+
 import { userService } from '../user'
-import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
-// import demoPlaylist from '../../assets/styles/data/station.sample.raw.json'
-// import stationSample from '../../assets/data/station.sample.raw.json'
+
+
 import { demoStations } from '../../assets/data/demo.stations.js'
 
-// const demoData = stationSample.tracks.items
+
 
 const STORAGE_KEY = 'station'
 
@@ -44,7 +43,7 @@ function getById(stationId) {
 }
 
 async function remove(stationId) {
-    // throw new Error('Nope')
+  
     await storageService.remove(STORAGE_KEY, stationId)
 }
 
@@ -64,20 +63,6 @@ async function save(station) {
     return savedStation
 }
 
-// async function addStationMsg(stationId, txt) {
-//     // Later, this is all done by the backend
-//     const station = await getById(stationId)
-
-//     const msg = {
-//         id: makeId(),
-//         by: userService.getLoggedinUser(),
-//         txt
-//     }
-//     station.msgs.push(msg)
-//     await storageService.put(STORAGE_KEY, station)
-
-//     return msg
-// }
 
 function _mapSpotifyPlaylistToStation(demoPlaylist) {
     const playlist = demoPlaylist.playlist
