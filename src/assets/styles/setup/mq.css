@@ -55,41 +55,45 @@
     }
 
     .player-footer {
-        height: auto !important;
-        background-color: var(--bg-highlight) !important;
-        grid-template-columns: 50px 1fr !important;
-        grid-template-rows: auto auto !important;
+        bottom: 50px;
+        /* left: 5px; */
+        /* right: 5px; */
+        background-color: var( --bg-highlight);
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: auto auto;
+        border-radius: 5px;
         grid-template-areas:
             'info info'
             'controls controls';
-        padding: 4px 8px 0px 8px !important;
-        gap: 2px;
 
+        height: auto;
+        padding: 0;
         .player-footer-left {
-            background-color: var(--bg-base);
-            border-radius: 5px;
+            padding: 5px 5px 0 5px;
             grid-area: info;
             display: grid;
-            grid-template-columns: 50px 1fr;
+            gap: 4px;
+            grid-template-columns: 40px minmax(0,1fr);
             grid-template-areas:
                 'img title'
                 'img artist';
             column-gap: 12px;
             align-items: center;
+            overflow: hidden;
             img {
                 grid-area: img;
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
+                margin: 0;
             }
             .track-info {
                 display: contents;
-                grid-area: controls;
             }
             .track-title {
                 grid-area: title;
                 justify-self: start;
                 font-size: 1rem;
-                /* font-weight: bold; */
+                width: 100%;
             }
             .track-artist {
                 align-self: start;
@@ -104,10 +108,15 @@
             grid-area: controls;
             width: 100%;
             .player-controls {
-                width: 90%;
+                width: 100%;
                 align-items: center;
-                padding-block: 4px;
-                justify-content: space-between;
+                justify-content: space-around;
+                margin: 0;
+                padding-bottom: 3px;
+                .play-btn {
+                    width: 30px;
+                    height: 30px;
+                }
             }
             .player-progress {
                 display: none;
@@ -115,6 +124,21 @@
         }
         .player-footer-right {
             display: none;
+        }
+        .mobile-nav-bar {
+            color: var(--text-secondary);
+            position: fixed;
+            bottom: 0;
+            left:0;
+            right:0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            background-color: black;
+        }
+        .mobile-nav-bar a{
+         flex: 1;
         }
     }
 }
@@ -533,5 +557,8 @@
         h4 {
             font-size: 24px;
         }
+    }
+    .mobile-nav-bar {
+        display: none;
     }
 }

@@ -1,6 +1,5 @@
 @import "setup/var";
 @import "setup/typography";
-@import "setup/mq";
 
 @import "basics/helpers";
 @import "basics/layout";
@@ -44,3 +43,5 @@
 @import "cmps/track/TrackHeader.css";
 @import "cmps/track/TrackList.css";
 @import "cmps/track/TrackSearchPreview.css";
+
+@import "setup/mq.css";
