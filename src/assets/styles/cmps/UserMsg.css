@@ -31,14 +31,19 @@
         color: var(--error);
     }
 
-    & button{
-        background-color: var(--spotify-green);
+    & button {
+        background-color: transparent;
         padding: 1px 6px;
         border: 0;
         border-radius: 50%;
         color: var(--bg-elevated-base);
     }
-    &.error button{
+
+    &.error button {
         background-color: var(--error);
+    }
+
+    &.success button {
+        background-color: var(--spotify-green);
     }
 }

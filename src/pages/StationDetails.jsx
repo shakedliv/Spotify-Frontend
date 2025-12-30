@@ -14,6 +14,7 @@ import { toggleLikedSong, toggleStationLike } from '../store/actions/user.action
 import { FastAverageColor } from 'fast-average-color'
 import { StationTrackSearch } from '../cmps/StationTrackSearch'
 import {
+    ADD_TRACK,
     REMOVE_TRACK,
     SAVE_LAST_ORDER,
     UPDATE_STATION,
@@ -59,11 +60,9 @@ export function StationDetails() {
         socketService.on(SOCKET_EVENT_ADD_TRACK, onAddTrackFromSocket)
         socketService.on(SOCKET_EVENT_REMOVE_TRACK, onRemoveTrackFromSocket)
 
-
         return () => {
             socketService.off(SOCKET_EVENT_ADD_TRACK, onAddTrackFromSocket)
             socketService.off(SOCKET_EVENT_REMOVE_TRACK, onRemoveTrackFromSocket)
-
         }
 
     }, [stationId])
@@ -105,23 +104,30 @@ export function StationDetails() {
 
 
     function onAddTrackFromSocket(track) {
-        const currentStation = store.getState().stationModule.station
+        // const currentStation = store.getState().stationModule.station
 
-        const currentTracks = currentStation.tracks || []
-        const updatedTracks = [...currentTracks, track]
+        // console.log('onaddtrackfromsocket')
 
-        store.dispatch({ type: UPDATE_STATION, station: { ...currentStation, tracks: updatedTracks } })
+
+        // const currentTracks = currentStation.tracks || []
+        // const updatedTracks = [...currentTracks, track]
+
+
+        store.dispatch({ type: ADD_TRACK, track })
+        // store.dispatch({ type: UPDATE_STATION, station: { ...currentStation, tracks: updatedTracks } })
     }
 
     function onRemoveTrackFromSocket(trackId) {
-        const currentStation = store.getState().stationModule.station
+        // const currentStation = store.getState().stationModule.station
 
-        const currentTracks = currentStation.tracks || []
-        const updatedTracks = currentTracks.filter(t => t.id !== trackId)
+        // const currentTracks = currentStation.tracks || []
+        // const updatedTracks = currentTracks.filter(t => t.id !== trackId)
 
-        store.dispatch({ type: UPDATE_STATION, station: { ...currentStation, tracks: updatedTracks } })
-   }
-  
+        // store.dispatch({ type: UPDATE_STATION, station: { ...currentStation, tracks: updatedTracks } })
+
+        store.dispatch({ type: REMOVE_TRACK, trackId })
+    }
+
 
     async function onRemoveTrack(trackId) {
         try {
@@ -133,6 +139,11 @@ export function StationDetails() {
     }
 
     async function onAddTrack(track) {
+        const isTrackExists = station.tracks?.some((t) => t.id === track.id)
+        if (isTrackExists) {
+            showErrorMsg('Track already exists in this playlist')
+            return
+        }
         try {
             await addTrackToStation(track)
             socketService.emit(SOCKET_EVENT_ADD_TRACK, { stationId, track })
