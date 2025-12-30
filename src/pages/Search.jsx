@@ -13,7 +13,6 @@ export function Search() {
 
     let query = searchParams.get('q') || ''
   
-
   useEffect(() => {
     if (!query) {
       setTracks([]);
