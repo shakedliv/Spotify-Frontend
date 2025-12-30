@@ -18,7 +18,7 @@
   top: 16px;
   left: 16px;
   z-index: 2;
-  font-family: 'FigTreeBold', sans-serif;
+  font-family: "FigTreeBold", sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
   color: var(--text-primary);
@@ -30,7 +30,6 @@
   right: -30px;
   bottom: 0;
   width: 45%;
-  /* height: 160px; */
   z-index: 1;
 
   transform: rotate(18deg);

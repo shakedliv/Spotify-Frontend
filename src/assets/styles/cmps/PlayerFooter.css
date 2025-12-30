@@ -105,7 +105,6 @@
 }
 
 .play-btn.is-playing {
-  /* background-color: var(--spotify-green); */
   color: var(--spotify-black);
   box-shadow: none;
 }
@@ -257,13 +256,13 @@
 }
 .player-footer-center .btn-repeat,
 .player-footer-center .btn-shuffle {
-    position: relative;
-    background: none;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    cursor: pointer;
-    transition: color 0.2s ease;
+  position: relative;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }

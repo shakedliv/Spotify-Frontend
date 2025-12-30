@@ -11,8 +11,6 @@
   margin-bottom: 0;
 
   overflow-x: clip;
-
-  /* contain: layout; */
 }
 
 .app-header nav {
@@ -61,7 +59,6 @@
   display: grid;
   place-items: center;
   min-width: 0;
-  /* overflow: hidden; */
 }
 
 .app-header .nav-center-inner {
@@ -85,63 +82,7 @@
   margin-top: 0.2%;
   margin-left: 8px;
   padding-top: 1px;
-  /* padding-bottom: 0px; */
-  /* padding-right: 1px; */
 }
-
-/* .home-btn.active svg {
-  font-size: 200%;
-  margin-top: 1px;
-  color: var(--text-primary);
-} */
-/* 
-.search-bar {
-  height: 44px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-
-  background-color: #2a2a2a;
-  border-radius: 999px;
-  padding: 1px 0;
-
-  transition: background-color 0.2s ease;
-  min-width: 0;
-} */
-
-/* .search-bar:hover,
-.search-bar.active {
-  background-color: #3a3a3a;
-} */
-
-/* .search-indicator {
-  font-size: 20px;
-  color: var(--text-secondary);
-
-  display: flex;
-  align-items: center;
-} */
-
-/* .search-bar input {
-  width: 100%;
-  max-width: 360px;
-  min-width: 0;
-
-  background: transparent;
-  border: none;
-  outline: none;
-
-  height: 100%;
-  color: var(--text-primary);
-  font-size: 15px;
-  line-height: 1;
-
-  margin-right: 20px;
-} */
-
-/* .search-bar input::placeholder {
-  color: var(--text-secondary);
-} */
 
 .app-header .nav-right {
   display: flex;
@@ -155,8 +96,6 @@
 
   margin-left: 20px;
   padding-left: 50px;
-
-  /* overflow: visible; */
 }
 
 .user-popover {

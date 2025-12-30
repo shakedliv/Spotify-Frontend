@@ -1,6 +1,6 @@
 
 import { storageService } from '../async-storage.service'
-import { makeId } from '../util.service'
+
 import { userService } from '../user'
 import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
 import { demoStations } from '../../assets/data/demo.stations.js'
