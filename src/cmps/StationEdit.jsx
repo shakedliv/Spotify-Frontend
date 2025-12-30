@@ -20,8 +20,7 @@ export function StationEdit({ station, onClose }) {
     console.log(file)
 
     if (file) {
-      // const previewUrl = URL.createObjectURL(file)
-      
+    
       try {
         const imgData = await uploadService.uploadImg(file)
         setStationToEdit(prev => ({
