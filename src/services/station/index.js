@@ -1,7 +1,7 @@
 const { DEV, VITE_LOCAL } = import.meta.env
 
 import { getRandomIntInclusive, makeId } from '../util.service'
-import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
+import defaultStationImg from '/img/defaultStationImg.png'
 
 import { stationService as local } from './station.service.local'
 import { stationService as remote } from './station.service.remote'

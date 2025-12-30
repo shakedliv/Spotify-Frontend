@@ -4,7 +4,7 @@ import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import { LibraryOptionsModal } from './LibraryOptionsModal'
 import { useCloseOnOutside } from '../hooks/useCloseOnOutside.js'
-import defaultStationImg from '../assets/imgs/defaultStationImg.png'
+import defaultStationImg from '/img/defaultStationImg.png'
 
 export function StationPreview({ station, onRemoveStation, type }) {
     const [isModalOpen, setIsModalOpen] = useState(false)

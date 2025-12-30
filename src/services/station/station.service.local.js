@@ -2,7 +2,7 @@
 import { storageService } from '../async-storage.service'
 
 import { userService } from '../user'
-import defaultStationImg from '../../assets/imgs/defaultStationImg.png'
+import defaultStationImg from '/img/defaultStationImg.png'
 import { demoStations } from '../../assets/data/demo.stations.js'
 
 

@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react'
 import { updateStation } from '../store/actions/station.actions'
 import { useDropzone } from 'react-dropzone'
 import { CloseIconX, EditPenIcon, LockIcon } from '../services/svg.service'
-import defaultStationImg from '../assets/imgs/defaultStationImg.png'
+import defaultStationImg from '/img/defaultStationImg.png'
 import { uploadService } from '../services/cloudinary.service'
 import { showErrorMsg } from '../services/event-bus.service'
 

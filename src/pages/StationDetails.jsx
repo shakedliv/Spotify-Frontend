@@ -19,7 +19,7 @@ import {
     SAVE_LAST_ORDER,
     UPDATE_STATION,
 } from '../store/reducers/station.reducer.js'
-import defaultStationImg from '../assets/imgs/defaultStationImg.png'
+import defaultStationImg from '/img/defaultStationImg.png'
 
 import {
     SOCKET_EMIT_STATION_WATCH,

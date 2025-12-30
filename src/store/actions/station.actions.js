@@ -3,6 +3,7 @@ import { store } from '../store'
 import { ADD_STATION, UNDO_REORDER, REMOVE_STATION, SET_STATIONS, SET_STATION, UPDATE_STATION, ADD_STATION_MSG, REMOVE_TRACK, ADD_TRACK } from '../reducers/station.reducer'
 import { showErrorMsg } from '../../services/event-bus.service'
 import { SET_USER } from '../reducers/user.reducer'
+import { userService } from '../../services/user'
 
 export async function loadStations(filterBy) {
     try {
