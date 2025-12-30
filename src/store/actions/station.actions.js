@@ -151,7 +151,6 @@ function getCmdAddStationMsg(msg) {
     }
 }
 
-// unitTestActions()
 async function unitTestActions() {
     await loadStations()
     await addStation(stationService.getEmptyStation())
@@ -160,5 +159,4 @@ async function unitTestActions() {
         name: 'Station-Good',
     })
     await removeStation('m1oC7')
-    // TODO unit test addStationMsg
 }

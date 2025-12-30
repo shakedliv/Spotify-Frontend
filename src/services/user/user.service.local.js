@@ -15,7 +15,6 @@ export const userService = {
     getLoggedinUser,
     saveLoggedinUser,
 }
-// _createLoggedinUser()
 
 
 async function getUsers() {
@@ -84,14 +83,9 @@ function saveLoggedinUser(user) {
     return user
 }
 
-// To quickly create an admin user, uncomment the next line
 async function _createLoggedinUser() {
     const users = localStorage.getItem('user')
    
-
-    // const user = users.find(user => user.username === 'admin')
-    // console.log(user)
-
     if (!users) {
         const user = {
             username: 'admin',

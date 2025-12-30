@@ -104,27 +104,10 @@ export function StationDetails() {
 
 
     function onAddTrackFromSocket(track) {
-        // const currentStation = store.getState().stationModule.station
-
-        // console.log('onaddtrackfromsocket')
-
-
-        // const currentTracks = currentStation.tracks || []
-        // const updatedTracks = [...currentTracks, track]
-
-
         store.dispatch({ type: ADD_TRACK, track })
-        // store.dispatch({ type: UPDATE_STATION, station: { ...currentStation, tracks: updatedTracks } })
     }
 
     function onRemoveTrackFromSocket(trackId) {
-        // const currentStation = store.getState().stationModule.station
-
-        // const currentTracks = currentStation.tracks || []
-        // const updatedTracks = currentTracks.filter(t => t.id !== trackId)
-
-        // store.dispatch({ type: UPDATE_STATION, station: { ...currentStation, tracks: updatedTracks } })
-
         store.dispatch({ type: REMOVE_TRACK, trackId })
     }
 
@@ -171,7 +154,6 @@ export function StationDetails() {
     async function handleStationLike() {
         try {
             await toggleStationLike(stationId)
-            // showSuccessMsg(!isStationLiked ? 'Saved to library' : 'Removed from library')
         } catch (err) {
             console.log('err:', err)
             showErrorMsg('Could not update library')

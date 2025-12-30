@@ -107,7 +107,6 @@ export function StationTrackSearch({
                     tracks={tracks}
                     onAddTrack={onAddTrack}
                     isSearch={true}
-                    // no onRemoveTrack here – this list is only for adding
                 />
             )}
         </section>

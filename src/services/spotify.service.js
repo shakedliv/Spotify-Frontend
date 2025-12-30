@@ -52,20 +52,16 @@ function adaptTrackForList(track) {
 
 async function searchTracksRemote(query) {
     if (!query) return []
-    // if (VITE_LOCAL === 'true') return []
-
     const term = query.toLowerCase().trim()
     if (queryCache.has(term)) return queryCache.get(term)
 
     const promise = (async () => {
         const token = await getAccessToken()
-
         const params = new URLSearchParams({
             q: term,
             type: 'track',
             limit: 30,
         })
-
         const res = await fetch(`${SPOTIFY_SEARCH_URL}?${params.toString()}`, {
             headers: {
                 Authorization: `Bearer ${token}`,

@@ -1,5 +1,3 @@
-
-
 export function makeId(length = 6) {
     var txt = ''
     var possible =
@@ -103,7 +101,6 @@ export function formatDate(timestamp) {
         return `a few seconds ago`
     }
 
-
     if (diffInSeconds < 60) {
         return `${diffInSeconds} seconds ago`
     }
@@ -135,14 +132,9 @@ export function formatDate(timestamp) {
 export function formatDuration(durationMs) {
     if (!durationMs) return '0:00'
 
-    // Convert milliseconds to total seconds
     const totalSeconds = Math.floor(durationMs / 1000)
-
     const minutes = Math.floor(totalSeconds / 60)
     const seconds = totalSeconds % 60
 
-    // padStart ensures we get '05' instead of '5' for seconds
     return `${minutes}:${seconds.toString().padStart(2, '0')}`
 }
-
-

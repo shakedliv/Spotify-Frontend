@@ -8,7 +8,6 @@ export function LibraryStationList({ onRemoveStation, stations }) {
     const user = useSelector((storeState) => storeState.userModule.user)
 function handleLikedSongsRightClick(e) {
    e.preventDefault()
-   // can open a model with pin later 
     }
     return (
         <>

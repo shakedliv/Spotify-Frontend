@@ -60,6 +60,10 @@ export async function signup(credentials) {
         return user
     } catch (err) {
         console.log('Cannot signup', err)
+        const users = await userService.getUsers()
+        if (users.some((u) => u.username === credentials.username))
+            showErrorMsg('Username already taken, please choose another one')
+        else showErrorMsg('Cannot signup, try again later')
         throw err
     }
 }
@@ -87,8 +91,8 @@ export async function toggleLikedSong(track) {
     }
     try {
         track.dateAddedToLikedSongs = Date.now()
-       store.dispatch({ type: TOGGLE_LIKED_SONG, track })
-       const updatedUser = store.getState().userModule.user
+        store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+        const updatedUser = store.getState().userModule.user
         const savedUser = await userService.update(updatedUser)
         store.dispatch({ type: SET_USER, user: savedUser })
     } catch (err) {
@@ -104,22 +108,12 @@ export async function toggleStationLike(stationId) {
         return
     }
     try {
-       store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
-       const updatedUser = store.getState().userModule.user
-       const savedUser = await userService.update(updatedUser)
-       store.dispatch({ type: 'SET_USER', user: savedUser })
+        store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
+        const updatedUser = store.getState().userModule.user
+        const savedUser = await userService.update(updatedUser)
+        store.dispatch({ type: 'SET_USER', user: savedUser })
     } catch (err) {
-       store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
+        store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
         showErrorMsg('Cannot Add to liked playlists')
     }
 }
-
-// export async function loadUser(userId) {
-//     try {
-//         const user = await userService.getById(userId)
-//         store.dispatch({ type: SET_WATCHED_USER, user })
-//     } catch (err) {
-//         showErrorMsg('Cannot load user')
-//         console.log('Cannot load user', err)
-//     }
-// }

@@ -13,10 +13,6 @@ import { InviteCollaboratorsIcon } from '../assets/svg/InviteCollaboratorsIcon.j
 import { FolderIcon } from '../assets/svg/FolderIcon.jsx'
 import { PinIcon } from '../assets/svg/PinIcon.jsx'
 
-// import { FolderIcon } from '../assets/svg/FolderIcon.jsx'
-// import { LockIcon } from '../assets/svg/LockIcon.jsx'
-// import { PinIcon } from '../assets/svg/PinIcon.jsx'
-
 export function LibraryOptionsModal({  onRemoveStation }) {
     return (
         <section className='library-options-modal flex column'>

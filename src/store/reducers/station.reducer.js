@@ -82,7 +82,6 @@ export function stationReducer(state = initialState, action) {
     return newState
 }
 
-// unitTestReducer()
 
 function unitTestReducer() {
     var state = initialState

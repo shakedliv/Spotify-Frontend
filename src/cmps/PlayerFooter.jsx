@@ -161,12 +161,6 @@ export function PlayerFooter() {
         toggleLikedSong(originalTrack)
     }
 
-    // function handleLike() {
-    //    console.log('displayTrack:', displayTrack)
-    //    console.log('currentTrack:', currentTrack)
-    //     if (!displayTrack) return
-    //     toggleLikedSong(displayTrack)
-    // }
 
     const progressPercent =
         duration > 0 ? `${(seekValue / duration) * 100}%` : '0%'

@@ -57,7 +57,6 @@ function getById(trackId) {
 }
 
 async function remove(trackId) {
-    // throw new Error('Nope')
     await storageService.remove(STORAGE_KEY, trackId)
 }
 

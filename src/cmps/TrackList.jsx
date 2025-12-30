@@ -49,7 +49,6 @@ export function TrackList({
         setActiveId(event.active.id)
     }
     function onSort(sortBy) {
-        // sortBy = {sortField: name, sortDirection: -1}
         const tracksToSort = [...currTracks]
         const { sortField, sortDirection } = sortBy
 
