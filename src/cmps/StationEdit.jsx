@@ -17,16 +17,18 @@ export function StationEdit({ station, onClose }) {
 
   const onDrop = useCallback(async (acceptedFiles) => {
     const file = acceptedFiles[0]
-    if (file) {
-      const previewUrl = URL.createObjectURL(file)
-      setImagePreview(previewUrl)
+    console.log(file)
 
+    if (file) {
+      // const previewUrl = URL.createObjectURL(file)
+      
       try {
         const imgData = await uploadService.uploadImg(file)
         setStationToEdit(prev => ({
           ...prev,
           imgUrl: imgData.url
         }))
+        setImagePreview(imgData.url)
       } catch (error) {
         console.error('Upload failed:', error)
         showErrorMsg('Failed to upload image')
@@ -34,9 +36,9 @@ export function StationEdit({ station, onClose }) {
     }
   }, [])
 
-
-
   const { getRootProps, getInputProps } = useDropzone({ onDrop, accept: { 'image/*': [] } })
+
+
 
   function handleChange({ target }) {
     const { name, value } = target
@@ -45,6 +47,7 @@ export function StationEdit({ station, onClose }) {
 
   async function onSave(ev) {
     ev.preventDefault()
+
     await updateStation(stationToEdit)
     onClose()
   }

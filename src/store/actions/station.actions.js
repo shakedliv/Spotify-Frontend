@@ -61,6 +61,7 @@ export async function addStation(station) {
 }
 
 export async function updateStation(station) {
+   
     try {
         const savedStation = await stationService.save(station)
         store.dispatch({ type: UPDATE_STATION, station: savedStation })
@@ -84,7 +85,7 @@ export async function addTrackToStation(track) {
     const updatedStation = { ...station, tracks: updatedTracks }
     try {
         await updateStation(updatedStation)
-    
+
     } catch (err) {
         console.error('Failed to add track:', err)
         throw err
