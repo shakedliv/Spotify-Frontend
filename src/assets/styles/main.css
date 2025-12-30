@@ -8,9 +8,8 @@
 
 @import "RootCmp";
 
-
 @import "auth/auth";
-
+@import "cmps/LoginSignup.css";
 
 @import "cmps/AppHeader";
 @import "cmps/SearchBar";
