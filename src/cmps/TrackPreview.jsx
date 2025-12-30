@@ -35,7 +35,6 @@ export function TrackPreview({
     trackNum,
     onToggleOptions,
     isOperationsOpen,
-    isDraggable,
    isSearch,
    trackIndex,
     isLikedSongsPage = false,
@@ -47,11 +46,8 @@ export function TrackPreview({
     const menuRef = useRef(null)
     const btnRef = useRef(null)
     const [menuStyle, setMenuStyle] = useState({})
-    const wideClass = isSearch ? 'wide' : ''
-   //  const classContainer = isDraggable
-   //      ? 'track-preview draggable'
-   //      : 'track-preview'
-
+   const wideClass = isSearch ? 'wide' : ''
+   
     useCloseOnOutside(menuRef, () => {
         if (isOperationsOpen) onToggleOptions(null)
     })

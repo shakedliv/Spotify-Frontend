@@ -1,12 +1,8 @@
-
 import rawTracks from '../services/spotify/data/tracks.raw.json'
 import rawExplorerItems from '../services/spotify/data/genres.raw.json'
 
-const {
-    VITE_SPOTIFY_CLIENT_ID,
-    VITE_SPOTIFY_CLIENT_SECRET,
-    VITE_LOCAL,
-} = import.meta.env
+const { VITE_SPOTIFY_CLIENT_ID, VITE_SPOTIFY_CLIENT_SECRET, VITE_LOCAL } =
+    import.meta.env
 
 const SPOTIFY_TOKEN_URL = 'https://accounts.spotify.com/api/token'
 const SPOTIFY_SEARCH_URL = 'https://api.spotify.com/v1/search'
@@ -23,16 +19,13 @@ export const spotifyService = {
     adaptTrackForList,
 }
 
-
 function searchTracks(query) {
     if (!query) return []
 
     const term = query.toLowerCase().trim()
 
     return rawTracks
-        .filter(track =>
-            track.name.toLowerCase().startsWith(term)
-        )
+        .filter((track) => track.name.toLowerCase().startsWith(term))
         .map(adaptTrackForList)
 }
 
@@ -45,7 +38,7 @@ function adaptTrackForList(track) {
         id: track.id,
         track: {
             name: track.name,
-            artists: track.artists.map(artist => ({
+            artists: track.artists.map((artist) => ({
                 name: artist.name,
             })),
             album: {
@@ -57,12 +50,7 @@ function adaptTrackForList(track) {
     }
 }
 
-
 async function searchTracksRemote(query) {
-    console.log('VITE_LOCAL:', import.meta.env.VITE_LOCAL)
-
-     console.log('[Spotify remote search]', query)
-
     if (!query) return []
     // if (VITE_LOCAL === 'true') return []
 
@@ -90,7 +78,6 @@ async function searchTracksRemote(query) {
 
         const data = await res.json()
         const tracks = data.tracks?.items || []
-console.log('tracks:', tracks)
         return tracks.map(adaptSpotifyTrack)
     })()
 
@@ -103,8 +90,6 @@ console.log('tracks:', tracks)
         throw err
     }
 }
-
-
 
 async function getAccessToken() {
     const now = Date.now()
@@ -141,7 +126,7 @@ function adaptSpotifyTrack(track) {
         id: track.id,
         track: {
             name: track.name,
-            artists: track.artists.map(a => ({ name: a.name })),
+            artists: track.artists.map((a) => ({ name: a.name })),
             album: {
                 name: track.album.name,
                 images: track.album.images,
@@ -150,48 +135,3 @@ function adaptSpotifyTrack(track) {
         },
     }
 }
-
-
-// import rawTracks from '../services/spotify/data/tracks.raw.json'
-// import rawExplorerItems from '../services/spotify/data/genres.raw.json'
-
-// export const spotifyService = {
-//     searchTracks,
-//    getExplorerItems,
-//     adaptTrackForList,
-// }
-
-// function searchTracks(query) {
-//     if (!query) return []
-
-//     const term = query.toLowerCase().trim()
-
-//     return rawTracks
-//         .filter(track =>
-//             track.name.toLowerCase().startsWith(term)
-//         )
-//         .map(adaptTrackForList)
-// }
-
-// function getExplorerItems() {
-//     return rawExplorerItems
-// }
-
-// function adaptTrackForList(track) {
-//     return {
-//         id: track.id,
-//         track: {
-//             name: track.name,
-//             artists: track.artists.map(artist => ({
-//                 name: artist.name,
-//             })),
-//             album: {
-//                 name: track.album.name,
-//                 images: track.album.images,
-//             },
-//             duration_ms: track.duration_ms,
-//         },
-//     }
-// }
-
-
