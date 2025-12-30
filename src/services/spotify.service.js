@@ -52,7 +52,6 @@ function adaptTrackForList(track) {
 
 async function searchTracksRemote(query) {
     if (!query) return []
-    // if (VITE_LOCAL === 'true') return []
 
     const term = query.toLowerCase().trim()
     if (queryCache.has(term)) return queryCache.get(term)

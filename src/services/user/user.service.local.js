@@ -15,8 +15,6 @@ export const userService = {
     getLoggedinUser,
     saveLoggedinUser,
 }
-// _createLoggedinUser()
-
 
 async function getUsers() {
     const users = await storageService.query('user')
@@ -87,7 +85,7 @@ function saveLoggedinUser(user) {
 // To quickly create an admin user, uncomment the next line
 async function _createLoggedinUser() {
     const users = localStorage.getItem('user')
-   
+
 
     // const user = users.find(user => user.username === 'admin')
     // console.log(user)

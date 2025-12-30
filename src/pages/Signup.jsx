@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signup } from "../store/actions/user.actions";
 import { userService } from "../services/user";
-import { AppleIcon } from '../assets/svg/AppleIcon';
-import { FacebookIcon } from '../assets/svg/FacebookIcon';
-import { GoogleIcon } from '../assets/svg/GoogleIcon';
+import { AppleIcon } from "../assets/svg/AppleIcon";
+import { FacebookIcon } from "../assets/svg/FacebookIcon";
+import { GoogleIcon } from "../assets/svg/GoogleIcon";
 import { GoogleOAuthButton } from "../cmps/GoogleOAuthButton";
 
 export function Signup() {
@@ -61,14 +61,10 @@ export function Signup() {
         <span>or</span>
       </div>
 
-      <GoogleOAuthButton className="social-btn google "/>
-
-      {/* <button type="button" className="social-btn google ">
-        <GoogleIcon /> Continue with Google
-      </button> */}
+      <GoogleOAuthButton className="social-btn google " />
 
       <button type="button" className="social-btn apple">
-       <AppleIcon/> Continue with Apple
+        <AppleIcon /> Continue with Apple
       </button>
     </form>
   );

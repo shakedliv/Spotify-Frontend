@@ -87,8 +87,8 @@ export async function toggleLikedSong(track) {
     }
     try {
         track.dateAddedToLikedSongs = Date.now()
-       store.dispatch({ type: TOGGLE_LIKED_SONG, track })
-       const updatedUser = store.getState().userModule.user
+        store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+        const updatedUser = store.getState().userModule.user
         const savedUser = await userService.update(updatedUser)
         store.dispatch({ type: SET_USER, user: savedUser })
     } catch (err) {
@@ -104,13 +104,12 @@ export async function toggleStationLike(stationId) {
         return
     }
     try {
-       store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
-       const updatedUser = store.getState().userModule.user
-       const savedUser = await userService.update(updatedUser)
-       store.dispatch({ type: 'SET_USER', user: savedUser })
+        store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
+        const updatedUser = store.getState().userModule.user
+        const savedUser = await userService.update(updatedUser)
+        store.dispatch({ type: 'SET_USER', user: savedUser })
     } catch (err) {
-       store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
+        store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
         showErrorMsg('Cannot Add to liked playlists')
     }
 }
-
