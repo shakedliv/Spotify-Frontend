@@ -9,7 +9,7 @@ export function TracksHeader({ onSort, isSearch, isTrackSearch }) {
         setSortDir(sortDir * -1)
         onSort(sortBy)
     }
-if(isTrackSearch) return <></>
+    if (isTrackSearch) return <></>
     if (isSearch) return <h1 className='songs-header'>Songs</h1>
     return (
         <section className='tracks-header-container'>
