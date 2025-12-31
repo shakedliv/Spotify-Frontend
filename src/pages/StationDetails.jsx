@@ -17,6 +17,7 @@ import {
     ADD_TRACK,
     REMOVE_TRACK,
     SAVE_LAST_ORDER,
+    SET_STATION,
     UPDATE_STATION,
 } from '../store/reducers/station.reducer.js'
 import defaultStationImg from '/img/defaultStationImg.png'
