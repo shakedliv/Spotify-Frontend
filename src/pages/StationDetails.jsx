@@ -25,14 +25,13 @@ import {
     SOCKET_EMIT_STATION_WATCH,
     SOCKET_EVENT_ADD_TRACK,
     SOCKET_EVENT_REMOVE_TRACK,
-    SOCKET_EVENT_STATION_UPDATED,
     socketService,
 } from '../services/socket.service.js'
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
 import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
 
-import { CoPresent } from '@mui/icons-material'
-import { SET_USER } from '../store/reducers/user.reducer.js'
+
+
 
 export function StationDetails() {
     const { stationId } = useParams()
@@ -46,7 +45,6 @@ export function StationDetails() {
     )
 
 
-
     const tracks = station?.tracks || []
     const [isEditOpen, setIsEditOpen] = useState(false)
     const [isFindMore, setIsFindMore] = useState(false)
@@ -55,6 +53,7 @@ export function StationDetails() {
     const isStationLiked = user?.userStationsIds?.includes(stationId) || false
 
     useEffect(() => {
+        store.dispatch({ type: SET_STATION, station: null })
         loadStation(stationId)
         socketService.emit(SOCKET_EMIT_STATION_WATCH, stationId)
         socketService.on(SOCKET_EVENT_ADD_TRACK, onAddTrackFromSocket)
@@ -63,6 +62,7 @@ export function StationDetails() {
         return () => {
             socketService.off(SOCKET_EVENT_ADD_TRACK, onAddTrackFromSocket)
             socketService.off(SOCKET_EVENT_REMOVE_TRACK, onRemoveTrackFromSocket)
+
         }
 
     }, [stationId])
