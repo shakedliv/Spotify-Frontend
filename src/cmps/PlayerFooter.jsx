@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useYoutubePlayer } from "../customHooks/useYoutubePlayer";
 import { toggleLikedSong } from "../store/actions/user.actions.js";
 import { getRandomIntInclusive } from "../services/util.service.js";
-import { adaptTrackForPlayer } from "../services/track/track.util";
+import { trackService } from "../services/track/track.service.remote.js";
 import {
   setCurrentTrack,
   setIsPlaying,
@@ -68,7 +68,7 @@ export function PlayerFooter() {
     const nextTrack = tracks[nextIndex];
     try {
       const videoId = await youtubeService.resolveVideoId(nextTrack);
-      const adaptedTrack = { ...adaptTrackForPlayer(nextTrack), videoId };
+      const adaptedTrack = { ...trackService.adaptTrackForPlayer(nextTrack), videoId };
       dispatch(setCurrentTrack(adaptedTrack, nextIndex));
       dispatch(setIsPlaying(true));
     } catch (err) {
@@ -88,7 +88,7 @@ export function PlayerFooter() {
     const prevTrack = tracks[prevIndex];
     try {
       const videoId = await youtubeService.resolveVideoId(prevTrack);
-      const adaptedTrack = { ...adaptTrackForPlayer(prevTrack), videoId };
+      const adaptedTrack = { ...trackService.adaptTrackForPlayer(prevTrack), videoId };
       dispatch(setCurrentTrack(adaptedTrack, prevIndex));
       dispatch(setIsPlaying(true));
     } catch (err) {
@@ -143,7 +143,7 @@ export function PlayerFooter() {
   const displayTrack = useMemo(() => {
     if (currentTrack) return currentTrack;
     if (!randomSpotifyTrack) return null;
-    return adaptTrackForPlayer(randomSpotifyTrack);
+    return trackService.adaptTrackForPlayer(randomSpotifyTrack);
   }, [currentTrack, randomSpotifyTrack]);
 
   function formatTime(seconds = 0) {

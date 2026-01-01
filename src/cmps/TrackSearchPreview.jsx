@@ -1,7 +1,7 @@
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import { useDispatch } from 'react-redux'
 
-import { adaptTrackForPlayer } from '../services/track/track.util'
+import { trackService } from '../services/track/track.service.remote'
 import { setCurrentTrack } from '../store/actions/system.actions'
 import { youtubeService } from '../services/youtube.service'
 
@@ -13,7 +13,7 @@ export function TrackSearchPreview({ track, onAddTrack }) {
         try {
             const videoId = await youtubeService.resolveVideoId(track)
             const adaptedTrack = {
-                ...adaptTrackForPlayer(track),
+                ...trackService.adaptTrackForPlayer(track),
                 videoId,
             }
             dispatch(setCurrentTrack(adaptedTrack))

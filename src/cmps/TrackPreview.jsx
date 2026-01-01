@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { adaptTrackForPlayer } from '../services/track/track.util'
+import { trackService } from '../services/track/track.service.remote.js'
 import { setCurrentTrack , setTracks} from '../store/actions/system.actions'
 import { youtubeService } from '../services/youtube.service'
 import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
@@ -56,7 +56,7 @@ export function TrackPreview({
         try {
             const videoId = await youtubeService.resolveVideoId(track)
             const adaptedTrack = {
-                ...adaptTrackForPlayer(track),
+                ...trackService.adaptTrackForPlayer(track),
                 videoId,
             }
             dispatch(setTracks(tracks))
