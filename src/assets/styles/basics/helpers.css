@@ -20,6 +20,9 @@
   &.space-between {
     justify-content: space-between;
   }
+   &.gap-1 {
+      gap: 1rem;
+   }
 }
 
 /* Simple and useful CSS Debugging Technique */

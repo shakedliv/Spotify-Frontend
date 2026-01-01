@@ -3,7 +3,7 @@ import { formatDate, formatDuration } from '../services/util.service.js'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { trackService } from '../services/track/track.service.remote.js'
-import { setCurrentTrack , setTracks} from '../store/actions/system.actions'
+import { setCurrentTrack, setTracks } from '../store/actions/system.actions'
 import { youtubeService } from '../services/youtube.service'
 import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
 import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
@@ -28,15 +28,15 @@ import { ShareIcon } from '../assets/svg/ShareIcon.jsx'
 import { showErrorMsg } from '../services/event-bus.service.js'
 
 export function TrackPreview({
-   track,
-   tracks = [],
+    track,
+    tracks = [],
     onAddTrack,
     onRemoveTrack,
     trackNum,
     onToggleOptions,
     isOperationsOpen,
-   isSearch,
-   trackIndex,
+    isSearch,
+    trackIndex,
     isLikedSongsPage = false,
 }) {
     const organizedTrack = track.track
@@ -44,10 +44,9 @@ export function TrackPreview({
     const user = useSelector((state) => state.userModule.user)
     const isLiked = user?.likedSongs?.some((t) => t.id === track.id)
     const menuRef = useRef(null)
-    const btnRef = useRef(null)
     const [menuStyle, setMenuStyle] = useState({})
-   const wideClass = isSearch ? 'wide' : ''
-   
+    const wideClass = isSearch ? 'wide' : ''
+
     useCloseOnOutside(menuRef, () => {
         if (isOperationsOpen) onToggleOptions(null)
     })
@@ -62,8 +61,8 @@ export function TrackPreview({
             dispatch(setTracks(tracks))
             dispatch(setCurrentTrack(adaptedTrack, trackIndex))
         } catch (err) {
-           console.error('Failed to resolve YouTube video', err)
-           showErrorMsg('Failed to play track. Please try again later.')
+            console.error('Failed to resolve YouTube video', err)
+            showErrorMsg('Failed to play track. Please try again later.')
         }
     }
     function handleAddTrack(track) {
@@ -72,22 +71,20 @@ export function TrackPreview({
     }
 
     function onLikeClick(ev) {
-       ev.stopPropagation()
+        ev.stopPropagation()
         toggleLikedSong(track)
     }
 
-    function ToggleOptions(ev) {
+    function toggleOptions(ev) {
         ev.stopPropagation()
         const rect = ev.currentTarget.getBoundingClientRect()
         const screenHeight = window.innerHeight
         const menuHeight = 450
-        let style = {}
+        const style =
+            rect.bottom + menuHeight > screenHeight
+                ? { bottom: '100%', top: 'auto' }
+                : { top: '100%', bottom: 'auto' }
 
-        if (rect.bottom + menuHeight > screenHeight) {
-            style = { bottom: '100%', top: 'auto' }
-        } else {
-            style = { top: '100%', bottom: 'auto' }
-        }
         setMenuStyle(style)
         onToggleOptions(track.id)
     }
@@ -119,7 +116,9 @@ export function TrackPreview({
                         {organizedTrack.album?.name}{' '}
                     </span>
                     <span className='track-date'>
-                        {isLikedSongsPage? formatDate(track.dateAddedToLikedSongs) : formatDate(track.dateAdded)}
+                        {isLikedSongsPage
+                            ? formatDate(track.dateAddedToLikedSongs)
+                            : formatDate(track.dateAdded)}
                     </span>
                 </>
             )}
@@ -131,7 +130,7 @@ export function TrackPreview({
                     <span className={'duration'}>
                         {formatDuration(organizedTrack.duration_ms)}
                     </span>
-                    <button className={'options'} onClick={ToggleOptions}>
+                    <button className={'options'} onClick={toggleOptions}>
                         <Options />
                     </button>
                     {isOperationsOpen && (
@@ -145,10 +144,7 @@ export function TrackPreview({
                                 className='flex align-center space-between'
                                 onClick={() => handleAddTrack(track)}
                             >
-                                <div
-                                    className='flex align-center'
-                                    style={{ gap: '12px' }}
-                                >
+                                <div className='flex align-center gap-1'>
                                     <PlusIcon />
                                     <span>Add to playlist</span>
                                 </div>
@@ -156,8 +152,7 @@ export function TrackPreview({
                             </button>
 
                             <button
-                                className='flex align-center'
-                                style={{ gap: '12px' }}
+                                className='flex align-center gap-1'
                                 onClick={() =>
                                     onRemoveTrack(track.id || organizedTrack.id)
                                 }
@@ -167,72 +162,50 @@ export function TrackPreview({
                             </button>
 
                             <button
-                                className='flex align-center'
-                                style={{ gap: '12px' }}
+                                className='flex align-center gap-1'
                                 onClick={onLikeClick}
                             >
                                 <AddIcon />
                                 <span>Save to your Liked Songs</span>
                             </button>
 
-                            <button
-                                className='flex align-center'
-                                style={{ gap: '12px' }}
-                            >
+                            <button className='flex align-center gap-1'>
                                 <AddToQueueIcon />
                                 <span>Add to queue</span>
                             </button>
 
-                            <button
-                                className='flex align-center'
-                                style={{ gap: '12px' }}
-                            >
+                            <button className='flex align-center gap-1'>
                                 <ExcludeIcon />
                                 <span>Exclude from your taste profile</span>
                             </button>
 
                             <div className='separator'></div>
 
-                            <button
-                                className='flex align-center'
-                                style={{ gap: '12px' }}
-                            >
+                            <button className='flex align-center gap-1'>
                                 <SongRadioIcon />
                                 <span>Go to song radio</span>
                             </button>
 
                             <button className='flex align-center space-between'>
-                                <div
-                                    className='flex align-center'
-                                    style={{ gap: '12px' }}
-                                >
+                                <div className='flex align-center gap-1'>
                                     <ArtistIcon />
                                     <span>Go to artist</span>
                                 </div>
                                 <ArrowAsideIcon />
                             </button>
 
-                            <button
-                                className='flex align-center'
-                                style={{ gap: '12px' }}
-                            >
+                            <button className='flex align-center gap-1'>
                                 <AlbumIcon />
                                 <span>Go to album</span>
                             </button>
 
-                            <button
-                                className='flex align-center'
-                                style={{ gap: '12px' }}
-                            >
+                            <button className='flex align-center gap-1'>
                                 <ViewCreditsIcon />
                                 <span>View credits</span>
                             </button>
 
                             <button className='flex align-center space-between'>
-                                <div
-                                    className='flex align-center'
-                                    style={{ gap: '12px' }}
-                                >
+                                <div className='flex align-center gap-1'>
                                     <ShareIcon />
                                     <span>Share</span>
                                 </div>
@@ -241,14 +214,10 @@ export function TrackPreview({
 
                             <div className='separator'></div>
 
-                            <button
-                                className='flex align-center'
-                                style={{ gap: '12px' }}
-                            >
+                            <button className='flex align-center gap-1'>
                                 <SpotifyIcon />
                                 <span>Open in Desktop app</span>
                             </button>
-                          
                         </div>
                     )}
                 </div>
