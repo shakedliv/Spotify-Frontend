@@ -60,10 +60,6 @@ export async function signup(credentials) {
         return user
     } catch (err) {
         console.log('Cannot signup', err)
-        const users = await userService.getUsers()
-        if (users.some((u) => u.username === credentials.username))
-            showErrorMsg('Username already taken, please choose another one')
-        else showErrorMsg('Cannot signup, try again later')
         throw err
     }
 }
@@ -96,8 +92,8 @@ export async function toggleLikedSong(track) {
         const savedUser = await userService.update(updatedUser)
         store.dispatch({ type: SET_USER, user: savedUser })
     } catch (err) {
-        showErrorMsg('Cannot Add to liked songs')
-        store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+       store.dispatch({ type: TOGGLE_LIKED_SONG, track })
+       throw err
     }
 }
 export async function toggleStationLike(stationId) {
@@ -113,7 +109,7 @@ export async function toggleStationLike(stationId) {
         const savedUser = await userService.update(updatedUser)
         store.dispatch({ type: 'SET_USER', user: savedUser })
     } catch (err) {
-        store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
-        showErrorMsg('Cannot Add to liked playlists')
+       store.dispatch({ type: TOGGLE_STATION_LIKE, stationId })
+         throw err
     }
 }

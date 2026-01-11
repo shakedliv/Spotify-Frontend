@@ -5,7 +5,7 @@ import { StationIndex } from "./pages/StationIndex.jsx";
 import { StationDetails } from "./pages/StationDetails";
 import { AppHeader } from "./cmps/AppHeader";
 import { Search } from "./pages/Search";
-import { PlayerFooter } from "./cmps/PlayerFooter";
+import { AppFooter } from "./cmps/AppFooter";
 import { UserMsg } from "./cmps/UserMsg.jsx";
 import { LoginSignup } from "./pages/LoginSignup.jsx";
 import { Login } from "./pages/Login.jsx";
@@ -60,7 +60,7 @@ export function RootCmp() {
         </Routes>
       </main>
 
-      <PlayerFooter />
+      <AppFooter />
     </div>
   );
 }

@@ -72,7 +72,11 @@ export function TrackPreview({
 
     function onLikeClick(ev) {
         ev.stopPropagation()
-        toggleLikedSong(track)
+         try {
+             toggleLikedSong(track)
+        } catch (err) {
+            showErrorMsg('Cannot Add to liked songs')
+        }
     }
 
     function toggleOptions(ev) {
