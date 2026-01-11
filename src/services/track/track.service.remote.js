@@ -5,7 +5,8 @@ export const trackService = {
     getById,
     add,
    remove,
-    adaptTrackForPlayer,
+   adaptTrackForPlayer,
+    sortTracks,
 }
 
 async function query(filterBy = { name: ''}) {
@@ -34,4 +35,35 @@ function adaptTrackForPlayer(track) {
        artists: organizedTrack.artists.map(artist => artist.name),
         durationMs: organizedTrack.duration_ms,
     }
+}
+
+function sortTracks(sortBy, tracksToSort) {
+        const { sortField, sortDirection } = sortBy
+
+        if (sortField === 'name') {
+            tracksToSort.sort(
+                (track1, track2) =>
+                    track1.track.name.localeCompare(track2.track.name) *
+                    +sortDirection
+            )
+        } else if (sortField === 'album') {
+            tracksToSort.sort(
+                (track1, track2) =>
+                    track1.track.album.name.localeCompare(
+                        track2.track.album.name
+                    ) * +sortDirection
+            )
+        } else if (sortField === 'duration') {
+            tracksToSort.sort(
+                (track1, track2) =>
+                    (track1.track.duration_ms - track2.track.duration_ms) *
+                    +sortDirection
+            )
+        } else if (sortField === 'date-added') {
+            tracksToSort.sort(
+                (track1, track2) =>
+                    (track1.dateAdded - track2.dateAdded) * +sortDirection
+            )
+   }
+   return tracksToSort
 }

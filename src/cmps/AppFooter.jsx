@@ -5,6 +5,7 @@ import { useYoutubePlayer } from '../customHooks/useYoutubePlayer.js'
 import { toggleLikedSong } from '../store/actions/user.actions.js'
 import { getRandomIntInclusive } from '../services/util.service.js'
 import { trackService } from '../services/track/track.service.remote.js'
+import { youtubeService } from '../services/youtube.service.js'
 import {
     setCurrentTrack,
     setIsPlaying,
@@ -25,17 +26,15 @@ import { QueueIcon } from '../assets/svg/QueueIcon.jsx'
 import { ConnectIcon } from '../assets/svg/ConnectIcon.jsx'
 import { FullscreenIcon } from '../assets/svg/FullscreenIcon.jsx'
 import { PictureInPictureIcon } from '../assets/svg/PictureInPictureIcon.jsx'
-import { youtubeService } from '../services/youtube.service.js'
 import { ActiveIndicator } from '../assets/svg/ActiveIndicator.jsx'
 import { RemoveFromLikedSongs } from '../assets/svg/RemoveFromLikedSongs.jsx'
 import { AddToLikedSongs } from '../assets/svg/AddToLikedSongs.jsx'
-import { HomeIconActive } from '../assets/svg/HomeIconActive.jsx'
 import { LibraryIcon } from '../assets/svg/LibraryIcon.jsx'
 import { SearchIcon } from '../services/svg.service.js'
 import { HomeIcon } from '../assets/svg/HomeIcon.jsx'
 import { VolumeOffIcon } from '../assets/svg/VolumeOffIcon.jsx'
 
-const FALLBACK_VIDEO_ID = 'dQw4w9WgXcQ'
+const FALLBACK_VIDEO_ID = youtubeService.fallbackVideoId()
 
 export function AppFooter() {
     const dispatch = useDispatch()

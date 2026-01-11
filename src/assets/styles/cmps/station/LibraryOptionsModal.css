@@ -1,0 +1,4 @@
+.library-options-modal button,
+.library-options-modal .flex {
+    gap: 12px;
+}

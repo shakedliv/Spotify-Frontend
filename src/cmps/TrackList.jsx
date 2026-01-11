@@ -19,6 +19,7 @@ import stationSample from '../assets/data/station.sample.raw.json'
 import { UPDATE_STATION } from '../store/reducers/station.reducer.js'
 import { store } from '../store/store.js'
 import { TrackSearchPreview } from './TrackSearchPreview.jsx'
+import { trackService } from '../services/track/track.service.remote.js'
 const demoData = stationSample.tracks.items
 
 export function TrackList({
@@ -28,7 +29,7 @@ export function TrackList({
     onAddTrack,
     isSearch,
     isDraggable = true,
-   isTrackSearch = false,
+    isTrackSearch = false,
     isLikedSongsPage = false,
 }) {
     const [openedTrackId, setOpenedTrackId] = useState(null)
@@ -50,34 +51,7 @@ export function TrackList({
     }
     function onSort(sortBy) {
         const tracksToSort = [...currTracks]
-        const { sortField, sortDirection } = sortBy
-
-        if (sortField === 'name') {
-            tracksToSort.sort(
-                (track1, track2) =>
-                    track1.track.name.localeCompare(track2.track.name) *
-                    +sortDirection
-            )
-        } else if (sortField === 'album') {
-            tracksToSort.sort(
-                (track1, track2) =>
-                    track1.track.album.name.localeCompare(
-                        track2.track.album.name
-                    ) * +sortDirection
-            )
-        } else if (sortField === 'duration') {
-            tracksToSort.sort(
-                (track1, track2) =>
-                    (track1.track.duration_ms - track2.track.duration_ms) *
-                    +sortDirection
-            )
-        } else if (sortField === 'date-added') {
-            tracksToSort.sort(
-                (track1, track2) =>
-                    (track1.dateAdded - track2.dateAdded) * +sortDirection
-            )
-        }
-        setCurrTracks(tracksToSort)
+        setCurrTracks(trackService.sortTracks(sortBy, tracksToSort))
     }
     function handleDragEnd(event) {
         const { active, over } = event
@@ -94,7 +68,13 @@ export function TrackList({
     }
     return (
         <section className={activeId ? 'track-list is-dragging' : 'track-list'}>
-          {!!tracks.length && <TracksHeader onSort={onSort} isSearch={isSearch} isTrackSearch={isTrackSearch} />}
+            {!!tracks.length && (
+                <TracksHeader
+                    onSort={onSort}
+                    isSearch={isSearch}
+                    isTrackSearch={isTrackSearch}
+                />
+            )}
             <DndContext
                 collisionDetection={closestCenter}
                 onDragStart={handleDragStart}
@@ -113,10 +93,10 @@ export function TrackList({
                                     onAddTrack={onAddTrack}
                                 />
                             ) : (
-                                  <TrackPreview
-                                     tracks={tracks}
-                                     trackIndex={index}
-                                     isLikedSongsPage={isLikedSongsPage}
+                                <TrackPreview
+                                    tracks={tracks}
+                                    trackIndex={index}
+                                    isLikedSongsPage={isLikedSongsPage}
                                     trackNum={index + 1}
                                     track={track}
                                     isSearch={isSearch}

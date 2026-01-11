@@ -6,7 +6,8 @@ const trackIdCache = new Map()
 
 export const youtubeService = {
     searchVideo,
-    resolveVideoId,
+   resolveVideoId,
+    fallbackVideoId: () => FALLBACK_VIDEO_ID,
 }
 
 const FALLBACK_VIDEO_ID = "dQw4w9WgXcQ"

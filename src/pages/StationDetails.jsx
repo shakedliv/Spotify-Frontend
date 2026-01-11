@@ -157,7 +157,7 @@ export function StationDetails() {
             await toggleStationLike(stationId)
         } catch (err) {
             console.log('err:', err)
-            showErrorMsg('Could not update library')
+            showErrorMsg('Cannot add/remove playlist')
         }
 
     }

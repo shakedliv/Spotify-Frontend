@@ -16,27 +16,25 @@ import { PinIcon } from '../assets/svg/PinIcon.jsx'
 export function LibraryOptionsModal({  onRemoveStation }) {
     return (
         <section className='library-options-modal flex column'>
-            <button className='flex align-center' style={{ gap: '12px' }}>
+            <button className='flex align-center'>
                 <AddToQueueIcon />
                 <span>Add to queue</span>
             </button>
 
             <button
                 className='flex align-center'
-                style={{ gap: '12px' }}
             >
                 <UserIcon />
                 <span>Remove from profile</span>
             </button>
 
-            <button className='flex align-center' style={{ gap: '12px' }}>
+            <button className='flex align-center'>
                 <EditIcon />
                 <span>Edit details</span>
             </button>
 
             <button
                 className='flex align-center'
-                style={{ gap: '12px' }}
                 onClick={onRemoveStation}
             >
                 <DeleteIcon />
@@ -45,48 +43,48 @@ export function LibraryOptionsModal({  onRemoveStation }) {
 
             <div className='separator'></div>
 
-            <button className='flex align-center' style={{ gap: '12px' }}>
+            <button className='flex align-center'>
                 <CreatePlaylistIcon />
                 <span>Create playlist</span>
             </button>
 
-            <button className='flex align-center' style={{ gap: '12px' }}>
+            <button className='flex align-center'>
                 <PlusIcon />
                 <span>Create folder</span>
             </button>
 
             <div className='separator'></div>
 
-            <button className='flex align-center' style={{ gap: '12px' }}>
+            <button className='flex align-center'>
                <MakePrivateIcon />
                 <span>Make private</span>
             </button>
 
-          <button className='flex align-center' style={{ gap: '12px' }}>
+          <button className='flex align-center'>
              <InviteCollaboratorsIcon />
                 <span>Invite collaborators</span>
             </button>
 
-            <button className='flex align-center' style={{ gap: '12px' }}>
+            <button className='flex align-center'>
                 <ExcludeIcon />
                 <span>Exclude from your taste profile</span>
             </button>
 
             <button className='flex align-center space-between'>
-                <div className='flex align-center' style={{ gap: '12px' }}>
+                <div className='flex align-center'>
                     <FolderIcon/>
                     <span>Move to folder</span>
                 </div>
                 <ArrowAsideIcon />
             </button>
 
-            <button className='flex align-center' style={{ gap: '12px' }}>
+            <button className='flex align-center'>
                <PinIcon />
                 <span>Pin playlist</span>
             </button>
 
             <button className='flex align-center space-between'>
-                <div className='flex align-center' style={{ gap: '12px' }}>
+                <div className='flex align-center'>
                     <ShareIcon />
                     <span>Share</span>
                 </div>
